@@ -4,6 +4,7 @@
   "description": "A growing eslint config for projects that require it.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --config index.js .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,23 @@
   "bugs": {
     "url": "https://github.com/zmrl010/eslint-config/issues"
   },
-  "homepage": "https://github.com/zmrl010/eslint-config#readme"
+  "homepage": "https://github.com/zmrl010/eslint-config#readme",
+  "packageManager": "yarn@3.2.0",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=5.0.0",
+    "eslint": ">=8.0.0",
+    "eslint-plugin-prettier": ">=4.0.0",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint-config-prettier": "^8.5.0"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
+  }
 }
