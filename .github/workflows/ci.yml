@@ -51,7 +51,15 @@ jobs:
       - name: Install Deps
         run: yarn install --immutable
 
-      - name: Release
+      - name: Install Semantic Release
+        run: |
+          yarn add 
+          semantic-release@19 
+          @semantic-release/changelog@6.0.1 
+          @semantic-release/exec@6.0.3 
+          @semantic-release/git@10.0.1
+
+      - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
