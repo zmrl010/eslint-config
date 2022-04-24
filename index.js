@@ -6,7 +6,7 @@ const path = require("path");
  * @param  {...string} pathSegments
  * @returns {string | undefined}
  */
-const tryResolve = (...pathSegments) => {
+const resolveFirstExistingPath = (...pathSegments) => {
   for (const pathSeg of pathSegments) {
     if (fs.existsSync(path)) {
       return path.resolve(pathSeg);
@@ -15,7 +15,10 @@ const tryResolve = (...pathSegments) => {
   return undefined;
 };
 
-const tsConfig = tryResolve("tsconfig.json", "types/tsconfig.json");
+const tsConfig = resolveFirstExistingPath(
+  "tsconfig.json",
+  "types/tsconfig.json"
+);
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
