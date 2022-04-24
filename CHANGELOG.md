@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/zmrl010/eslint-config/compare/v1.0.6...v1.0.7) (2022-04-24)
+
+
+### Bug Fixes
+
+* update token name in ci ([629d7d6](https://github.com/zmrl010/eslint-config/commit/629d7d61a5d0bf1c52e4736ea17487178188f3b3))
+
 ## [1.0.6](https://github.com/zmrl010/eslint-config/compare/v1.0.5...v1.0.6) (2022-04-24)
 
 
