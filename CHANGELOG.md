@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/zmrl010/eslint-config/compare/v1.0.5...v1.0.6) (2022-04-24)
+
+
+### Bug Fixes
+
+* set npm auth to read from env var ([94e364e](https://github.com/zmrl010/eslint-config/commit/94e364e71d93643b8d5d8183ef47fa043f68ed14))
+
 ## [1.0.5](https://github.com/zmrl010/eslint-config/compare/v1.0.4...v1.0.5) (2022-04-24)
 
 
