@@ -52,7 +52,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Install Semantic Release
-        run: |
+        run: >
           yarn add 
           semantic-release@19 
           @semantic-release/changelog@6.0.1 
