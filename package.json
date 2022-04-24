@@ -1,16 +1,17 @@
 {
   "name": "@zmrl/eslint-config",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "A growing eslint config for projects that require it.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --config index.js .",
     "prepare": "husky install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zmrl010/eslint-config.git"
+    "url": "https://github.com/zmrl010/eslint-config.git"
   },
   "keywords": [
     "eslint"
@@ -38,7 +39,8 @@
     "husky": "^7.0.4",
     "prettier": "^2.6.2",
     "pretty-quick": "^3.1.3",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "semantic-release": "^19.0.2"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.20.0",
