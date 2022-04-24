@@ -1,3 +1,11 @@
+## [1.0.9](https://github.com/zmrl010/eslint-config/compare/v1.0.8...v1.0.9) (2022-04-24)
+
+
+### Bug Fixes
+
+* is-ci husky condition ([135b424](https://github.com/zmrl010/eslint-config/commit/135b4246948683f11456d4326941d205186ec3fb))
+* publish access ([8e48583](https://github.com/zmrl010/eslint-config/commit/8e48583ca54e71039553cb66ca17b2b57e08bab2))
+
 ## [1.0.8](https://github.com/zmrl010/eslint-config/compare/v1.0.7...v1.0.8) (2022-04-24)
 
 
