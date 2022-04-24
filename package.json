@@ -1,9 +1,8 @@
 {
   "name": "@zmrl/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A growing eslint config for projects that require it.",
   "main": "index.js",
-  "private": false,
   "scripts": {
     "lint": "eslint --config index.js .",
     "postinstall": "husky install",

@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/zmrl010/eslint-config/compare/v1.0.7...v1.0.8) (2022-04-24)
+
+
+### Bug Fixes
+
+* trying to get SR working still ([a70fbb4](https://github.com/zmrl010/eslint-config/commit/a70fbb46415e637737cb8c925965c4d468182874))
+
 ## [1.0.7](https://github.com/zmrl010/eslint-config/compare/v1.0.6...v1.0.7) (2022-04-24)
 
 
