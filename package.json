@@ -43,9 +43,9 @@
     "eslint-import-resolver-typescript": "^2.7.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^26.1.2",
-    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-testing-library": "^5.1.0",
-    "read-pkg-up": "^9.1.0"
+    "read-pkg-up": "^9.1.0",
+    "semver": "^7.3.7"
   },
   "eslintConfig": {
     "extends": "./index.js"
