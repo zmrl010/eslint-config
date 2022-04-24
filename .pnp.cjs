@@ -48,6 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:4.4.0"],\
             ["eslint-plugin-testing-library", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:5.3.1"],\
             ["husky", "npm:7.0.4"],\
+            ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["pretty-quick", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:3.1.3"],\
             ["read-pkg-up", "npm:9.1.0"],\
@@ -574,6 +575,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:4.4.0"],\
             ["eslint-plugin-testing-library", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:5.3.1"],\
             ["husky", "npm:7.0.4"],\
+            ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["pretty-quick", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:3.1.3"],\
             ["read-pkg-up", "npm:9.1.0"],\
@@ -2835,6 +2837,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/picomatch-npm-2.3.1-c782cfd986-050c865ce8.zip/node_modules/picomatch/",\
           "packageDependencies": [\
             ["picomatch", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["pinst", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/pinst-npm-3.0.0-5d2b6c1dda-4ae48a6a60.zip/node_modules/pinst/",\
+          "packageDependencies": [\
+            ["pinst", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
