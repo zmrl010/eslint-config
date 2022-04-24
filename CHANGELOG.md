@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/zmrl010/eslint-config/compare/v1.0.4...v1.0.5) (2022-04-24)
+
+
+### Bug Fixes
+
+* publish cmd in release config ([4beb456](https://github.com/zmrl010/eslint-config/commit/4beb456766c360f702f8e28dff307d0f816b1578))
+
 ## [1.0.4](https://github.com/zmrl010/eslint-config/compare/v1.0.3...v1.0.4) (2022-04-24)
 
 
