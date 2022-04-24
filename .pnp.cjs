@@ -51,6 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:4.4.0"],\
             ["eslint-plugin-testing-library", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:5.3.1"],\
             ["husky", "npm:7.0.4"],\
+            ["is-ci", "npm:3.0.1"],\
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["pretty-quick", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:3.1.3"],\
@@ -1264,6 +1265,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:4.4.0"],\
             ["eslint-plugin-testing-library", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:5.3.1"],\
             ["husky", "npm:7.0.4"],\
+            ["is-ci", "npm:3.0.1"],\
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["pretty-quick", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:3.1.3"],\
@@ -1828,6 +1830,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/chownr-npm-2.0.0-638f1c9c61-c57cf9dd07.zip/node_modules/chownr/",\
           "packageDependencies": [\
             ["chownr", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ci-info", [\
+        ["npm:3.3.0", {\
+          "packageLocation": "./.yarn/cache/ci-info-npm-3.3.0-bc2aaaca96-c3d86fe374.zip/node_modules/ci-info/",\
+          "packageDependencies": [\
+            ["ci-info", "npm:3.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3878,6 +3889,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-callable-npm-1.2.4-03fc17459c-1a28d57dc4.zip/node_modules/is-callable/",\
           "packageDependencies": [\
             ["is-callable", "npm:1.2.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["is-ci", [\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/is-ci-npm-3.0.1-d9aea361e1-192c66dc78.zip/node_modules/is-ci/",\
+          "packageDependencies": [\
+            ["is-ci", "npm:3.0.1"],\
+            ["ci-info", "npm:3.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
