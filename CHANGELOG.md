@@ -1,3 +1,11 @@
+## [1.0.10](https://github.com/zmrl010/eslint-config/compare/v1.0.9...v1.0.10) (2022-04-24)
+
+
+### Bug Fixes
+
+* move semantic-release to ci only ([3c6af8d](https://github.com/zmrl010/eslint-config/commit/3c6af8d097bd1255db7a20b7471d57a6829c62ee))
+* SR ci config to use folded style block ([97f581e](https://github.com/zmrl010/eslint-config/commit/97f581ea4f0d5b0e7f2d3ba13fe8f5270e179ee0))
+
 ## [1.0.9](https://github.com/zmrl010/eslint-config/compare/v1.0.8...v1.0.9) (2022-04-24)
 
 
