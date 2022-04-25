@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/zmrl010/eslint-config/compare/v1.0.12...v1.0.13) (2022-04-25)
+
+
+### Bug Fixes
+
+* add ci check to pack scripts ([fb37e90](https://github.com/zmrl010/eslint-config/commit/fb37e901bc598cc62c37e77af4e9284a6c0d9a1d))
+
 ## [1.0.12](https://github.com/zmrl010/eslint-config/compare/v1.0.11...v1.0.12) (2022-04-25)
 
 
