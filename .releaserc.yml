@@ -13,10 +13,7 @@ plugins:
   - ['@semantic-release/npm', { npmPublish: false }]
   - [
       '@semantic-release/exec',
-      {
-        prepareCmd: 'YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install && git add ../../yarn.lock',
-        publishCmd: 'yarn npm publish --access public',
-      },
+      { publishCmd: 'yarn npm publish --access public' },
     ]
   - [
       '@semantic-release/git',
