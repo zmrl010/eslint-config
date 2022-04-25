@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/zmrl010/eslint-config/compare/v1.0.16...v1.0.17) (2022-04-25)
+
+
+### Bug Fixes
+
+* try yarn exec ([94f9167](https://github.com/zmrl010/eslint-config/commit/94f916781d9a4eb7f26b59fa70edd963cdbc4de3))
+
 ## [1.0.16](https://github.com/zmrl010/eslint-config/compare/v1.0.15...v1.0.16) (2022-04-25)
 
 
