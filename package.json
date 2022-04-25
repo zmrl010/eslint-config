@@ -6,8 +6,6 @@
   "scripts": {
     "lint": "eslint --config index.js .",
     "postinstall": "is-ci || husky install",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable",
     "test": "echo \"Error: no test specified\" && exit 1",
     "validate": "yarn lint"
   },
