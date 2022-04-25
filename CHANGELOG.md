@@ -1,3 +1,11 @@
+## [1.0.11](https://github.com/zmrl010/eslint-config/compare/v1.0.10...v1.0.11) (2022-04-25)
+
+
+### Bug Fixes
+
+* move semantic release to dev deps ([0974151](https://github.com/zmrl010/eslint-config/commit/0974151fcada096834706f5be14ab8bedb7a6ad0))
+* secret token names ([c29a3ea](https://github.com/zmrl010/eslint-config/commit/c29a3ea2be1695ef9343fbb87a0e3bd9cd6d9797))
+
 ## [1.0.10](https://github.com/zmrl010/eslint-config/compare/v1.0.9...v1.0.10) (2022-04-24)
 
 
