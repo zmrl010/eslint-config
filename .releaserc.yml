@@ -3,10 +3,8 @@ branches:
   - main
   - next
   - next-major
-  - name: beta
-    prerelease: true
-  - name: alpha
-    prerelease: true
+  - { name: beta, prerelease: true }
+  - { name: alpha, prerelease: true }
 
 plugins:
   - '@semantic-release/commit-analyzer'
@@ -15,7 +13,10 @@ plugins:
   - ['@semantic-release/npm', { npmPublish: false }]
   - [
       '@semantic-release/exec',
-      { publishCmd: 'yarn npm publish --access public' },
+      {
+        prepareCmd: 'YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install && git add ../../yarn.lock',
+        publishCmd: 'yarn npm publish --access public',
+      },
     ]
   - [
       '@semantic-release/git',
