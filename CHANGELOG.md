@@ -1,3 +1,11 @@
+## [1.0.18](https://github.com/zmrl010/eslint-config/compare/v1.0.17...v1.0.18) (2022-04-25)
+
+
+### Bug Fixes
+
+* revert prepare cmd ([b397deb](https://github.com/zmrl010/eslint-config/commit/b397debdf98f2a20fe9c39d7417be79f14d0f37b))
+* try lock install hack ([d0f2fed](https://github.com/zmrl010/eslint-config/commit/d0f2fed36659043fb854e91beeb54a3ef8ccf1fc))
+
 ## [1.0.17](https://github.com/zmrl010/eslint-config/compare/v1.0.16...v1.0.17) (2022-04-25)
 
 
