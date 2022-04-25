@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/zmrl010/eslint-config/compare/v1.0.11...v1.0.12) (2022-04-25)
+
+
+### Bug Fixes
+
+* add alt auth token key back in ([faf51b8](https://github.com/zmrl010/eslint-config/commit/faf51b8779aef48357097cba201115b13ea514a6))
+
 ## [1.0.11](https://github.com/zmrl010/eslint-config/compare/v1.0.10...v1.0.11) (2022-04-25)
 
 
