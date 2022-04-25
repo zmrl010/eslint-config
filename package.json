@@ -2,13 +2,10 @@
   "name": "@zmrl/eslint-config",
   "version": "1.0.18",
   "description": "A growing eslint config for projects that require it",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint --config index.js .",
-    "postinstall": "is-ci || husky install",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "yarn lint"
-  },
+  "main": "config/index.js",
+  "files": [
+    "config"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/zmrl010/eslint-config.git"
@@ -23,6 +20,12 @@
   },
   "homepage": "https://github.com/zmrl010/eslint-config#readme",
   "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "lint": "eslint --config ./config/index.js .",
+    "postinstall": "is-ci || husky install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "yarn lint"
+  },
   "peerDependencies": {
     "eslint": "^8.0.0",
     "typescript": ">=4.6.0"
@@ -63,6 +66,6 @@
     "semver": "^7.3.7"
   },
   "eslintConfig": {
-    "extends": "./index.js"
+    "extends": "./config/index.js"
   }
 }
