@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/zmrl010/eslint-config/compare/v1.0.14...v1.0.15) (2022-04-25)
+
+
+### Bug Fixes
+
+* run ci ([0d6a3cc](https://github.com/zmrl010/eslint-config/commit/0d6a3cc3cb703ffa3cdab6fe2b26bb22a58b68ba))
+
 ## [1.0.14](https://github.com/zmrl010/eslint-config/compare/v1.0.13...v1.0.14) (2022-04-25)
 
 
