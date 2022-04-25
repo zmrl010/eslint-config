@@ -1,3 +1,11 @@
+## [1.0.16](https://github.com/zmrl010/eslint-config/compare/v1.0.15...v1.0.16) (2022-04-25)
+
+
+### Bug Fixes
+
+* releaserc ([7fd7de8](https://github.com/zmrl010/eslint-config/commit/7fd7de88388f1bacd456a4622c2cc89f80f9d915))
+* try removing husky workarounds ([6348fde](https://github.com/zmrl010/eslint-config/commit/6348fde17627ea40b97bedfebe34e156a4156fca))
+
 ## [1.0.15](https://github.com/zmrl010/eslint-config/compare/v1.0.14...v1.0.15) (2022-04-25)
 
 
