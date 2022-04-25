@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/zmrl010/eslint-config/compare/v1.0.13...v1.0.14) (2022-04-25)
+
+
+### Bug Fixes
+
+* wrap command in quotes ([93e83b6](https://github.com/zmrl010/eslint-config/commit/93e83b61df0e7fd2230899a225f1f8f5b2098ebe))
+
 ## [1.0.13](https://github.com/zmrl010/eslint-config/compare/v1.0.12...v1.0.13) (2022-04-25)
 
 
