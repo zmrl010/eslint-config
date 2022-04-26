@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/zmrl010/eslint-config/compare/v1.0.18...v1.0.19) (2022-04-26)
+
+
+### Bug Fixes
+
+* add pinst scripts back in ([e9f7d06](https://github.com/zmrl010/eslint-config/commit/e9f7d066d02abf5cc04e8dc5445f6a99905a006d))
+
 ## [1.0.18](https://github.com/zmrl010/eslint-config/compare/v1.0.17...v1.0.18) (2022-04-25)
 
 
