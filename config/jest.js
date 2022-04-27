@@ -1,23 +1,12 @@
-const readPkgUp = require('read-pkg-up');
+const { dependencyMap } = require('./package');
 
-let hasJestDom = false;
-let hasTestingLibrary = false;
-
-try {
-  const { packageJson } = readPkgUp.readPackageUpSync({ normalize: true });
-  const allDeps = Object.keys({
-    ...packageJson.peerDependencies,
-    ...packageJson.devDependencies,
-    ...packageJson.dependencies,
-  });
-
-  hasJestDom = allDeps.includes('@testing-library/jest-dom');
-  hasTestingLibrary = ['@testing-library/dom', '@testing-library/react'].some(
-    (dependency) => allDeps.includes(dependency)
-  );
-} catch (err) {
-  // ignore error
-}
+const hasJestDom = dependencyMap.has('@testing-library/jest-dom');
+const hasTestingLibrary = [
+  '@testing-library/dom',
+  '@testing-library/react',
+  '@testing-library/angular',
+  '@testing-library/vue',
+].some((dependency) => dependencyMap.has(dependency));
 
 module.exports = {
   env: {

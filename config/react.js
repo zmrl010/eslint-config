@@ -1,28 +1,23 @@
-const readPkgUp = require('read-pkg-up');
 const semver = require('semver');
+const { dependencyMap } = require('./package');
 
-let oldestSupportedReactVersion = '17.0.2';
+const hasPropTypes = dependencyMap.has('prop-types');
 
-let hasPropTypes = false;
-try {
-  const pkg = readPkgUp.sync({ normalize: true });
-  // eslint-disable-next-line prefer-object-spread
-  const allDeps = Object.assign(
-    { react: '17.0.2' },
-    pkg.peerDependencies,
-    pkg.devDependencies,
-    pkg.dependencies
-  );
-  hasPropTypes = allDeps.hasOwnProp('prop-types');
-  oldestSupportedReactVersion = semver
-    .validRange(allDeps.react)
-    .replace(/[>=<|]/g, ' ')
-    .split(' ')
-    .filter(Boolean)
-    .sort(semver.compare)[0];
-} catch (error) {
-  // ignore error
-}
+const oldestSupportedReactVersion = (() => {
+  let oldestVersion = '17.0.2';
+  try {
+    const range = dependencyMap.react || oldestVersion;
+    oldestVersion = semver
+      .validRange(range)
+      .replace(/[>=<|]/g, ' ')
+      .split(' ')
+      .filter(Boolean)
+      .sort(semver.compare)[0];
+  } catch (error) {
+    // ignore error
+  }
+  return oldestVersion;
+})();
 
 module.exports = {
   env: {

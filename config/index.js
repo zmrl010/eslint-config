@@ -1,24 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-/**
- * Check if each path exists and return the first one resolved
- * @param  {...string} pathSegments
- * @returns {string | undefined}
- */
-const resolveFirstExistingPath = (...pathSegments) => {
-  for (const pathSeg of pathSegments) {
-    if (fs.existsSync(path)) {
-      return path.resolve(pathSeg);
-    }
-  }
-  return undefined;
-};
-
-const tsConfig = resolveFirstExistingPath(
-  'tsconfig.json',
-  'types/tsconfig.json'
-);
+const { tsConfig } = require('./package');
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {

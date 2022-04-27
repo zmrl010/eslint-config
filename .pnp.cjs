@@ -57,7 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["pretty-quick", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:3.1.3"],\
-            ["read-pkg-up", "npm:9.1.0"],\
+            ["read-pkg-up", "npm:7.0.1"],\
             ["semantic-release", "npm:19.0.2"],\
             ["semver", "npm:7.3.7"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
@@ -1273,7 +1273,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["pretty-quick", "virtual:a40275b69d9f7da78e94c004be6decd7c8ad88727d0e4f8f6c52602811b70be44d8aef9268611708cbb08d74cc9f7c0016a57e5b9bcfaa3750923f0f934a66db#npm:3.1.3"],\
-            ["read-pkg-up", "npm:9.1.0"],\
+            ["read-pkg-up", "npm:7.0.1"],\
             ["semantic-release", "npm:19.0.2"],\
             ["semver", "npm:7.3.7"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
@@ -3286,15 +3286,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["path-exists", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:6.3.0", {\
-          "packageLocation": "./.yarn/cache/find-up-npm-6.3.0-e5056fc655-9a21b7f924.zip/node_modules/find-up/",\
-          "packageDependencies": [\
-            ["find-up", "npm:6.3.0"],\
-            ["locate-path", "npm:7.1.0"],\
-            ["path-exists", "npm:5.0.0"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["find-versions", [\
@@ -4610,14 +4601,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["p-locate", "npm:4.1.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:7.1.0", {\
-          "packageLocation": "./.yarn/cache/locate-path-npm-7.1.0-d19ada3feb-17d5eb6c04.zip/node_modules/locate-path/",\
-          "packageDependencies": [\
-            ["locate-path", "npm:7.1.0"],\
-            ["p-locate", "npm:6.0.0"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["lodash", [\
@@ -5677,14 +5660,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["p-try", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:4.0.0", {\
-          "packageLocation": "./.yarn/cache/p-limit-npm-4.0.0-5dccf29b67-01d9d70695.zip/node_modules/p-limit/",\
-          "packageDependencies": [\
-            ["p-limit", "npm:4.0.0"],\
-            ["yocto-queue", "npm:1.0.0"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["p-locate", [\
@@ -5701,14 +5676,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["p-locate", "npm:4.1.0"],\
             ["p-limit", "npm:2.3.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:6.0.0", {\
-          "packageLocation": "./.yarn/cache/p-locate-npm-6.0.0-b6cfb720dc-2bfe5234ef.zip/node_modules/p-locate/",\
-          "packageDependencies": [\
-            ["p-locate", "npm:6.0.0"],\
-            ["p-limit", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5852,13 +5819,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/path-exists-npm-4.0.0-e9e4f63eb0-505807199d.zip/node_modules/path-exists/",\
           "packageDependencies": [\
             ["path-exists", "npm:4.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:5.0.0", {\
-          "packageLocation": "./.yarn/cache/path-exists-npm-5.0.0-0bf403c56c-8ca842868c.zip/node_modules/path-exists/",\
-          "packageDependencies": [\
-            ["path-exists", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6259,17 +6219,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["type-fest", "npm:0.6.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:7.1.0", {\
-          "packageLocation": "./.yarn/cache/read-pkg-npm-7.1.0-26dc176eba-20d11c59be.zip/node_modules/read-pkg/",\
-          "packageDependencies": [\
-            ["read-pkg", "npm:7.1.0"],\
-            ["@types/normalize-package-data", "npm:2.4.1"],\
-            ["normalize-package-data", "npm:3.0.3"],\
-            ["parse-json", "npm:5.2.0"],\
-            ["type-fest", "npm:2.12.1"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["read-pkg-up", [\
@@ -6280,16 +6229,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["find-up", "npm:4.1.0"],\
             ["read-pkg", "npm:5.2.0"],\
             ["type-fest", "npm:0.8.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:9.1.0", {\
-          "packageLocation": "./.yarn/cache/read-pkg-up-npm-9.1.0-5b28d0b0bb-41b8ba4bdb.zip/node_modules/read-pkg-up/",\
-          "packageDependencies": [\
-            ["read-pkg-up", "npm:9.1.0"],\
-            ["find-up", "npm:6.3.0"],\
-            ["read-pkg", "npm:7.1.0"],\
-            ["type-fest", "npm:2.12.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7281,13 +7220,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["type-fest", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:2.12.1", {\
-          "packageLocation": "./.yarn/cache/type-fest-npm-2.12.1-b91b20a811-faac076681.zip/node_modules/type-fest/",\
-          "packageDependencies": [\
-            ["type-fest", "npm:2.12.1"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["typescript", [\
@@ -7633,15 +7565,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yargs-parser-npm-20.2.9-a1d19e598d-8bb69015f2.zip/node_modules/yargs-parser/",\
           "packageDependencies": [\
             ["yargs-parser", "npm:20.2.9"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["yocto-queue", [\
-        ["npm:1.0.0", {\
-          "packageLocation": "./.yarn/cache/yocto-queue-npm-1.0.0-7b502f1987-2cac84540f.zip/node_modules/yocto-queue/",\
-          "packageDependencies": [\
-            ["yocto-queue", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
