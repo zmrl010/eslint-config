@@ -21,12 +21,17 @@
   "homepage": "https://github.com/zmrl010/eslint-config#readme",
   "packageManager": "yarn@3.2.0",
   "scripts": {
+    "find-new-rules": "run-p find-new-rules:*",
+    "find-new-rules:jest": "eslint-find-rules -u ./test/jest/index.js",
+    "find-new-rules:jsx-a11y": "eslint-find-rules -u ./test/jsx-a11y/index.js",
+    "find-new-rules:main": "eslint-find-rules -u ./config/index.js",
+    "find-new-rules:react": "eslint-find-rules -u ./test/react/index.js",
     "lint": "eslint --config ./config/index.js .",
     "postinstall": "is-ci || husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "yarn lint"
+    "test": "run-p lint",
+    "validate": "run-p test"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
@@ -47,6 +52,7 @@
     "eslint-find-rules": "^4.1.0",
     "husky": "^7.0.4",
     "is-ci": "^3.0.1",
+    "npm-run-all": "^4.1.5",
     "pinst": "^3.0.0",
     "prettier": "^2.6.2",
     "pretty-quick": "^3.1.3",
