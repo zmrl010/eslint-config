@@ -56,4 +56,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn exec semantic-release
+        run: >
+          yarn dlx
+          -p "semantic-release"@"^19.0.2"
+          -p "@semantic-release/changelog"@"^6.0.1"
+          -p "@semantic-release/exec"@"^6.0.3"
+          -p "@semantic-release/git"@"^10.0.1"
+          semantic-release
