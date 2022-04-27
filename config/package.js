@@ -25,18 +25,11 @@ function createDependencyMap(pkg) {
 }
 
 /**
- * Wraps read-pkg-up using required settings
- */
-function readPackage() {
-  return readPackageUp.sync({ normalize: true });
-}
-
-/**
  * @type {Map<string, string>}
  */
 const dependencyMap = (() => {
   try {
-    const { packageJson } = readPackage();
+    const { packageJson } = readPackageUp.sync();
     return createDependencyMap(packageJson);
   } catch (err) {
     return new Map();
