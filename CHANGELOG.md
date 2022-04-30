@@ -1,3 +1,10 @@
+## [1.0.20](https://github.com/zmrl010/eslint-config/compare/v1.0.19...v1.0.20) (2022-04-27)
+
+
+### Bug Fixes
+
+* semantic release install for ci only ([33517cb](https://github.com/zmrl010/eslint-config/commit/33517cbc1c92a4cb6f9acfe6467d3d52ce615f58))
+
 ## [1.0.19](https://github.com/zmrl010/eslint-config/compare/v1.0.18...v1.0.19) (2022-04-26)
 
 
