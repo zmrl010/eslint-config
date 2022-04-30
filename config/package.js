@@ -1,11 +1,10 @@
+/**
+ * @fileoverview
+ * utils for reading package data
+ */
 const fs = require('fs');
 const path = require('path');
 const readPackageUp = require('read-pkg-up');
-
-/**
- * @fileoverview
- * utils for package data reading and parsing
- */
 
 /**
  * Create a map object composed of dependencies

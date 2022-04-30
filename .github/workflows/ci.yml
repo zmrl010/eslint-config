@@ -10,7 +10,7 @@ on:
       - alpha
   pull_request: {}
 jobs:
-  main:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
@@ -31,7 +31,7 @@ jobs:
       - name: Run Validate Script
         run: yarn validate
   release:
-    needs: main
+    needs: validate
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'zmrl010/eslint-config' &&
       github.event_name == 'push' }}
