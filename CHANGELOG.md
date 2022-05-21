@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/zmrl010/eslint-config/compare/v1.1.0...v1.1.1) (2022-05-21)
+
+
+### Bug Fixes
+
+* tsconfig resolution to use relative path ([12d3a43](https://github.com/zmrl010/eslint-config/commit/12d3a437651e53f704812b00c11c41306cdec415))
+
 # [1.1.0](https://github.com/zmrl010/eslint-config/compare/v1.0.22...v1.1.0) (2022-05-21)
 
 
