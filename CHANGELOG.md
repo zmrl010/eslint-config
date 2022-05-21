@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/zmrl010/eslint-config/compare/v1.0.20...v1.0.21) (2022-05-21)
+
+
+### Bug Fixes
+
+* point import resolver to tsconfig ([489df0b](https://github.com/zmrl010/eslint-config/commit/489df0b10967252ceb87cfb4f299603ab77c6056))
+
 ## [1.0.20](https://github.com/zmrl010/eslint-config/compare/v1.0.19...v1.0.20) (2022-04-27)
 
 
