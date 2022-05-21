@@ -4,7 +4,8 @@
   "description": "A growing eslint config for projects that require it",
   "main": "./config/index.js",
   "files": [
-    "config"
+    "config",
+    "patch"
   ],
   "repository": {
     "type": "git",
@@ -56,6 +57,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.3",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "eslint-config-prettier": "^8.5.0",
