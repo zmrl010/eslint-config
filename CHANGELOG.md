@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/zmrl010/eslint-config/compare/v1.0.22...v1.1.0) (2022-05-21)
+
+
+### Features
+
+* module resolution patch ([0ab713f](https://github.com/zmrl010/eslint-config/commit/0ab713f121a9607ad058fe080eceb29bf42df20f))
+
 ## [1.0.22](https://github.com/zmrl010/eslint-config/compare/v1.0.21...v1.0.22) (2022-05-21)
 
 
