@@ -1,3 +1,5 @@
+const { tsConfigPath } = require('./package');
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   env: {
@@ -10,6 +12,12 @@ module.exports = {
   plugins: ['import'],
   settings: {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css)$'],
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: tsConfigPath,
+      },
+    },
   },
   rules: {
     'import/default': 'error',

@@ -49,12 +49,12 @@ function resolveFirstExistingPath(...pathSegments) {
   return undefined;
 }
 
-const tsConfig = resolveFirstExistingPath(
+const tsConfigPath = resolveFirstExistingPath(
   'tsconfig.json',
   'types/tsconfig.json'
 );
 
 module.exports = {
-  tsConfig,
+  tsConfigPath,
   dependencyMap,
 };

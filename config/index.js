@@ -1,4 +1,4 @@
-const { tsConfig } = require('./package');
+const { tsConfigPath: tsConfig } = require('./package');
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
