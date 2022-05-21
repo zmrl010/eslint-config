@@ -12,12 +12,6 @@ module.exports = {
   plugins: ['import'],
   settings: {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css)$'],
-    'import/resolver': {
-      typescript: {
-        alwaysTryTypes: true,
-        project: tsConfigPath,
-      },
-    },
   },
   rules: {
     'import/default': 'error',
@@ -90,6 +84,7 @@ module.exports = {
         'import/resolver': {
           typescript: {
             alwaysTryTypes: true,
+            project: tsConfigPath,
           },
         },
       },
