@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/zmrl010/eslint-config/compare/v1.0.21...v1.0.22) (2022-05-21)
+
+
+### Bug Fixes
+
+* actually fix tsconfig path for typescript ([9535d32](https://github.com/zmrl010/eslint-config/commit/9535d32e4cd11656954fa671ab7785cb1fd418d1))
+
 ## [1.0.21](https://github.com/zmrl010/eslint-config/compare/v1.0.20...v1.0.21) (2022-05-21)
 
 
