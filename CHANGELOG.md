@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/zmrl010/eslint-config/compare/v1.1.1...v1.1.2) (2022-05-21)
+
+
+### Bug Fixes
+
+* remove invalid import config ([ad6cc3a](https://github.com/zmrl010/eslint-config/commit/ad6cc3a85f963289cd5f37b1255a6a737d93e7da))
+
 ## [1.1.1](https://github.com/zmrl010/eslint-config/compare/v1.1.0...v1.1.1) (2022-05-21)
 
 
