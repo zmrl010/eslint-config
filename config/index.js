@@ -1,5 +1,3 @@
-const { tsConfigPath: tsConfig } = require('./package');
-
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   env: {
@@ -234,8 +232,8 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
+        project: './tsconfig.json',
         ecmaVersion: 2018,
-        project: tsConfig,
         sourceType: 'module',
       },
       plugins: ['@typescript-eslint'],

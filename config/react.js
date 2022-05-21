@@ -1,5 +1,5 @@
 const semver = require('semver');
-const { dependencyMap } = require('./package');
+const { dependencyMap } = require('./dependencies');
 
 const hasPropTypes = dependencyMap.has('prop-types');
 

@@ -2,8 +2,6 @@
  * @fileoverview
  * utils for reading package data
  */
-const fs = require('fs');
-const path = require('path');
 const readPackageUp = require('read-pkg-up');
 
 /**
@@ -31,30 +29,13 @@ const dependencyMap = (() => {
     const { packageJson } = readPackageUp.sync();
     return createDependencyMap(packageJson);
   } catch (err) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.error(err);
+    }
     return new Map();
   }
 })();
 
-/**
- * Check if each path exists and return the first one resolved
- * @param  {...string} pathSegments
- * @returns {string | undefined}
- */
-function resolveFirstExistingPath(...pathSegments) {
-  for (const pathSeg of pathSegments) {
-    if (fs.existsSync(pathSeg)) {
-      return path.resolve(pathSeg);
-    }
-  }
-  return undefined;
-}
-
-const tsConfigPath = resolveFirstExistingPath(
-  'tsconfig.json',
-  'types/tsconfig.json'
-);
-
 module.exports = {
-  tsConfigPath,
   dependencyMap,
 };

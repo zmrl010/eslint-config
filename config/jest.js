@@ -1,4 +1,4 @@
-const { dependencyMap } = require('./package');
+const { dependencyMap } = require('./dependencies');
 
 const hasJestDom = dependencyMap.has('@testing-library/jest-dom');
 const hasTestingLibrary = [

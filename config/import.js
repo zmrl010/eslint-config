@@ -1,5 +1,3 @@
-const { tsConfigPath } = require('./package');
-
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   env: {
@@ -73,6 +71,7 @@ module.exports = {
       extends: 'plugin:import/typescript',
       parser: '@typescript-eslint/parser',
       parserOptions: {
+        project: './tsconfig.json',
         sourceType: 'module',
         ecmaVersion: 2018,
       },
@@ -84,7 +83,7 @@ module.exports = {
         'import/resolver': {
           typescript: {
             alwaysTryTypes: true,
-            project: tsConfigPath,
+            project: './tsconfig.json',
           },
         },
       },
