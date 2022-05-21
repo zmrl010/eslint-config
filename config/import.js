@@ -76,17 +76,6 @@ module.exports = {
         ecmaVersion: 2018,
       },
       plugins: ['@typescript-eslint'],
-      settings: {
-        'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx'],
-        },
-        'import/resolver': {
-          typescript: {
-            alwaysTryTypes: true,
-            project: './tsconfig.json',
-          },
-        },
-      },
       rules: {
         'import/no-unresolved': 'off',
       },
