@@ -1,3 +1,11 @@
+## [1.1.4](https://github.com/zmrl010/eslint-config/compare/v1.1.3...v1.1.4) (2022-05-25)
+
+
+### Bug Fixes
+
+* more explicit resolver config ([a1a6b4b](https://github.com/zmrl010/eslint-config/commit/a1a6b4b6fe11b0c605394f354e67c8a9741c3a17))
+* set root in base config ([9a0aa14](https://github.com/zmrl010/eslint-config/commit/9a0aa142c766a4a3ddbc908f6cf9716d812d66ba))
+
 ## [1.1.3](https://github.com/zmrl010/eslint-config/compare/v1.1.2...v1.1.3) (2022-05-25)
 
 
