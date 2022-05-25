@@ -6,7 +6,7 @@ const hasPropTypes = dependencyMap.has('prop-types');
 const oldestSupportedReactVersion = (() => {
   let oldestVersion = '17.0.2';
   try {
-    const range = dependencyMap.react || oldestVersion;
+    const range = dependencyMap.get('react') || oldestVersion;
     oldestVersion = semver
       .validRange(range)
       .replace(/[>=<|]/g, ' ')
