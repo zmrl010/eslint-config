@@ -71,12 +71,15 @@ module.exports = {
       extends: 'plugin:import/typescript',
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: './tsconfig.json',
         sourceType: 'module',
         ecmaVersion: 2018,
       },
       settings: {
-        'import/resolver': 'typescript',
+        'import/resolver': {
+          typescript: {
+            alwaysTryTypes: true,
+          },
+        },
       },
       plugins: ['@typescript-eslint'],
       rules: {
