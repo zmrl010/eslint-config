@@ -75,6 +75,9 @@ module.exports = {
         sourceType: 'module',
         ecmaVersion: 2018,
       },
+      settings: {
+        'import/resolver': 'typescript',
+      },
       plugins: ['@typescript-eslint'],
       rules: {
         'import/no-unresolved': 'off',
