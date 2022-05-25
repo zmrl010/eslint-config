@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/zmrl010/eslint-config/compare/v1.1.4...v1.1.5) (2022-05-25)
+
+
+### Bug Fixes
+
+* trying out import without typescript resolver ([6af9b88](https://github.com/zmrl010/eslint-config/commit/6af9b887f8afa4af893b05db487c2c99cbe6c21f))
+
 ## [1.1.4](https://github.com/zmrl010/eslint-config/compare/v1.1.3...v1.1.4) (2022-05-25)
 
 
