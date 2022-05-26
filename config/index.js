@@ -1,5 +1,3 @@
-const { parserOptions } = require('./common');
-
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
@@ -8,7 +6,10 @@ module.exports = {
     es6: true,
     node: true,
   },
-  parserOptions,
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2018,
+  },
   extends: ['prettier', './import.js'],
   rules: {
     'accessor-pairs': 'error',

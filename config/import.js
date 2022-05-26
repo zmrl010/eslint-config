@@ -1,9 +1,13 @@
-const { parserOptions } = require('./common');
-
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
+  env: {
+    es6: true,
+  },
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2018,
+  },
   plugins: ['import'],
-  parserOptions,
   settings: {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css)$'],
   },
@@ -66,6 +70,10 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       extends: 'plugin:import/typescript',
       parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: 'module',
+        ecmaVersion: 2018,
+      },
       plugins: ['@typescript-eslint'],
       rules: {
         'import/no-unresolved': 'off',

@@ -1,7 +1,3 @@
-/**
- * @fileoverview
- * utils for reading package data
- */
 const readPackageUp = require('read-pkg-up');
 
 /**
