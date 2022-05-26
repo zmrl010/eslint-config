@@ -1,3 +1,23 @@
+const fs = require('fs');
+const path = require('path');
+
+/**
+ * Resolve first existing path from a list of paths
+ * @param  {...string} paths
+ * @returns {string | undefined}
+ */
+function resolveFirst(...paths) {
+  for (const filepath of paths) {
+    if (fs.existsSync(filepath)) {
+      return path.resolve(filepath);
+    }
+  }
+
+  return undefined;
+}
+
+const tsConfig = resolveFirst('tsconfig.json', 'types/tsconfig.json');
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
@@ -237,7 +257,7 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: './tsconfig.json',
+        project: tsConfig,
         ecmaVersion: 2018,
         sourceType: 'module',
       },
