@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/zmrl010/eslint-config/compare/v1.1.5...v1.1.6) (2022-05-26)
+
+
+### Bug Fixes
+
+* manually get tsconfig path ([0d59cbd](https://github.com/zmrl010/eslint-config/commit/0d59cbd26671c4d6d0b200187739ec036e328b96))
+
 ## [1.1.5](https://github.com/zmrl010/eslint-config/compare/v1.1.4...v1.1.5) (2022-05-25)
 
 
