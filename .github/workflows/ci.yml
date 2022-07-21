@@ -61,9 +61,9 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: >
           pnpm 
-          --project=semantic-release@19
-          --project=@semantic-release/changelog@6
-          --project=@semantic-release/exec@6
-          --project=@semantic-release/git@10
-          --project=conventional-changelog-conventionalcommits@5
+          --package=semantic-release@19
+          --package=@semantic-release/changelog@6
+          --package=@semantic-release/exec@6
+          --package=@semantic-release/git@10
+          --package=conventional-changelog-conventionalcommits@5
           dlx semantic-release
