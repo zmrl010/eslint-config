@@ -57,7 +57,8 @@ jobs:
         run: >
           yarn dlx
           -p semantic-release@19
-          -p @semantic-release/changelog@^6
-          -p @semantic-release/exec@^6
-          -p @semantic-release/git@^10
+          -p @semantic-release/changelog@6
+          -p @semantic-release/exec@6
+          -p @semantic-release/git@10
+          -p conventional-changelog-conventionalcommits@5
           semantic-release
