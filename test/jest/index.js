@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../../config/index.js', '../../config/jest.js'],
+  extends: ['../../dist/config/index.js', '../../dist/config/jest.js'],
 };
