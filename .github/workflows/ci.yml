@@ -14,17 +14,22 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: yarn
+          node-version: 18
+          cache: 'pnpm'
 
       - name: Install Deps
-        run: yarn install
+        run: pnpm install
 
       - name: Run Validate Script
-        run: yarn validate
+        run: pnpm validate
   release:
     needs: validate
     runs-on: ubuntu-latest
@@ -36,25 +41,29 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: yarn
+          node-version: 18
+          cache: 'pnpm'
 
       - name: Install Deps
-        run: yarn install --immutable
+        run: pnpm install
 
       - name: Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: >
-          yarn dlx
-          -p semantic-release@19
-          -p @semantic-release/changelog@6
-          -p @semantic-release/exec@6
-          -p @semantic-release/git@10
-          -p conventional-changelog-conventionalcommits@5
+          pnpm dlx
+          --project semantic-release@19
+          --project @semantic-release/changelog@6
+          --project @semantic-release/exec@6
+          --project @semantic-release/git@10
+          --project conventional-changelog-conventionalcommits@5
           semantic-release
