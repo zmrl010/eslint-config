@@ -1,3 +1,18 @@
+# [3.0.0](https://github.com/zmrl010/eslint-config/compare/v2.0.0...v3.0.0) (2022-07-21)
+
+
+### Bug Fixes
+
+* migrate release from yarn to pnpm ([8ffe61e](https://github.com/zmrl010/eslint-config/commit/8ffe61e67a8d69adbeba51400d482c09cb5948fd))
+* reorder pnpm dlx command ([46e3322](https://github.com/zmrl010/eslint-config/commit/46e33227e46e77636b74941b38e1ed0b71c087b9))
+* round 2 of fix dlx command ([83045bd](https://github.com/zmrl010/eslint-config/commit/83045bd2ca717023deea36ff75f67aecb05c45c7))
+* round 3 of fix dlx command ([aa0e8c3](https://github.com/zmrl010/eslint-config/commit/aa0e8c363e2b81d5b9250dbe86d3488a91b7d9a3))
+
+
+### Features
+
+* switch to pnpm ([59f6793](https://github.com/zmrl010/eslint-config/commit/59f679343b219c481a35c926edf219c0e252e1c0))
+
 # [2.0.0](https://github.com/zmrl010/eslint-config/compare/v1.1.6...v2.0.0) (2022-07-21)
 
 
