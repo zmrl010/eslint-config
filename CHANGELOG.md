@@ -1,3 +1,11 @@
+# [2.0.0](https://github.com/zmrl010/eslint-config/compare/v1.1.6...v2.0.0) (2022-07-21)
+
+
+### Bug Fixes
+
+* install conventialcommits package for release ([8bd0b9e](https://github.com/zmrl010/eslint-config/commit/8bd0b9e4b710a38a5ca7d4e6a13214a3151bd0a9))
+* turn off import rules that are already checked by typescript ([08bd254](https://github.com/zmrl010/eslint-config/commit/08bd254f362964e8d48f802ddb613acfd5b87d58))
+
 ## [1.1.6](https://github.com/zmrl010/eslint-config/compare/v1.1.5...v1.1.6) (2022-05-26)
 
 
