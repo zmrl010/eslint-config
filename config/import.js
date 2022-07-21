@@ -12,7 +12,6 @@ module.exports = {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css)$'],
   },
   rules: {
-    'import/default': 'error',
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
     'import/exports-last': 'off',
@@ -20,8 +19,6 @@ module.exports = {
     'import/first': 'error',
     'import/group-exports': 'off',
     'import/max-dependencies': 'off',
-    'import/named': 'error',
-    'import/namespace': 'error',
     'import/newline-after-import': 'off',
     'import/no-absolute-path': 'error',
     'import/no-amd': 'error',
@@ -76,6 +73,10 @@ module.exports = {
       },
       plugins: ['@typescript-eslint'],
       rules: {
+        'import/default': 'off',
+        'import/named': 'off',
+        'import/namespace': 'off',
+        'import/no-named-as-default-member': 'off',
         'import/no-unresolved': 'off',
       },
     },
