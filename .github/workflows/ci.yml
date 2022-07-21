@@ -60,10 +60,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: >
-          pnpm dlx
+          pnpm 
           --project semantic-release@19
           --project @semantic-release/changelog@6
           --project @semantic-release/exec@6
           --project @semantic-release/git@10
           --project conventional-changelog-conventionalcommits@5
-          semantic-release
+          dlx semantic-release
