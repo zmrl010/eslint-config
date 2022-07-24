@@ -1,4 +1,4 @@
-import { dependencyMap } from './deps';
+import { dependencyMap } from '../deps';
 
 const hasJestDom = dependencyMap.has('@testing-library/jest-dom');
 const hasTestingLibrary = [

@@ -1,22 +1,19 @@
 import fs from 'fs';
 import path from 'path';
+import type { Linter } from 'eslint';
 
 /**
  * Resolve first existing path from a list of paths
  */
 function resolveFirst(...paths: string[]): string | undefined {
-  for (const filepath of paths) {
-    if (fs.existsSync(filepath)) {
-      return path.resolve(filepath);
-    }
-  }
-  return undefined;
+  const filepath = paths.find((p) => fs.existsSync(p));
+
+  return filepath ? path.resolve(filepath) : undefined;
 }
 
 const tsConfig = resolveFirst('tsconfig.json', 'types/tsconfig.json');
 
-/** @type {import('eslint').Linter.Config} */
-export = {
+const index: Linter.Config = {
   root: true,
   env: {
     browser: true,
@@ -436,3 +433,5 @@ export = {
     },
   ],
 };
+
+export = index;

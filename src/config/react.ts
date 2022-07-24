@@ -1,5 +1,5 @@
 import semver from 'semver';
-import { dependencyMap } from './deps';
+import { dependencyMap } from '../deps';
 
 const hasPropTypes = dependencyMap.has('prop-types');
 
