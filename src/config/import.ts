@@ -11,6 +11,9 @@ export = {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css)$'],
   },
   rules: {
+    'import/default': 'error',
+    'import/named': 'error',
+    'import/namespace': 'error',
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
     'import/exports-last': 'off',

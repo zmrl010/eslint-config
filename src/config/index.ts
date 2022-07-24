@@ -88,6 +88,7 @@ export = {
     'no-cond-assign': 'error',
     'no-console': 'off',
     'no-const-assign': 'error',
+    'no-constant-binary-expression': 'error',
     'no-constant-condition': 'error',
     'no-constructor-return': 'error',
     'no-continue': 'off',
