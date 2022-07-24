@@ -73,5 +73,11 @@
   },
   "eslintConfig": {
     "extends": "./dist/config/index.js"
-  }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist",
+    "pnpm-lock.yaml"
+  ]
 }
