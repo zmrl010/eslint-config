@@ -8,9 +8,6 @@ plugins:
   - '@semantic-release/npm'
   - [
       '@semantic-release/git',
-      {
-        assets: [CHANGELOG.md, package.json, yarn.lock],
-        message: "chore(release): ${nextRelease.gitTag} \n\n${nextRelease.notes}",
-      },
+      { assets: [CHANGELOG.md, package.json, pnpm-lock.yaml] },
     ]
   - '@semantic-release/github'

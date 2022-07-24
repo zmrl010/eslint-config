@@ -1,8 +1,5 @@
-.yarn/
 .vscode/
 .husky/
-.pnp.cjs
-.pnp.loader.mjs
-yarn.lock
+pnpm-lock.yaml
 coverage
 dist
