@@ -1,4 +1,5 @@
-import { dependencyMap } from '../deps';
+import { dependencyMap } from './deps';
+import '@rushstack/eslint-patch/modern-module-resolution';
 
 const hasJestDom = dependencyMap.has('@testing-library/jest-dom');
 const hasTestingLibrary = [
