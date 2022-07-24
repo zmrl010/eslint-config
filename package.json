@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/zmrl010/eslint-config#readme",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "find-new-rules": "run-p find-new-rules:*",
     "find-new-rules:jest": "eslint-find-rules -u ./test/jest/index.js",
     "find-new-rules:jsx-a11y": "eslint-find-rules -u \"./test/jsx-a11y/index.js\"",
