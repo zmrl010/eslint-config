@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "declaration": false,
-    "target": "ES2020",
+    "target": "ES2018",
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
