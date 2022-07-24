@@ -14,7 +14,7 @@ npm i -D @zmrl/eslint-config
 
 There is a
 [long-standing eslint issue](https://github.com/eslint/eslint/issues/3458)
-where sharable eslint configs like this one cannot install plugins for you.
+where shareable eslint configs like this one cannot install plugins for you.
 You can either install them manually or you can use
 [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch)
 as a workable hack to use this config's already installed dependencies.
