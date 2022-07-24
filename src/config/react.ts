@@ -65,6 +65,7 @@ export = {
     'react/jsx-no-constructed-context-values': 'off',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'off',
+    'react/jsx-no-leaked-render': 'error',
     'react/jsx-no-script-url': 'error',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
