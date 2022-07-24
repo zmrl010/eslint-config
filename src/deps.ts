@@ -21,9 +21,7 @@ export const dependencyMap = (() => {
     const { packageJson = {} } = readPackageUp.sync() ?? {};
     return createDependencyMap(packageJson);
   } catch (err: unknown) {
-    if (process.env.NODE_ENV !== 'production') {
-      console.error(err);
-    }
+    console.error(err);
     return new Map<string, string>();
   }
 })();
