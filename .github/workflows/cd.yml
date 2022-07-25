@@ -5,7 +5,6 @@ on:
       - main
 jobs:
   release:
-    needs: validate
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
