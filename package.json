@@ -30,7 +30,6 @@
     "lint": "eslint --config ./dist/index.js ./src",
     "prepare": "pnpm build && (is-ci || husky install)",
     "test": "run-p lint find-new-rules",
-    "validate": "run-p lint",
     "build": "tsc"
   },
   "peerDependencies": {
