@@ -1,3 +1,12 @@
+## [3.0.1](https://github.com/zmrl010/eslint-config/compare/v3.0.0...v3.0.1) (2022-07-25)
+
+
+### Bug Fixes
+
+* escape jsx-a11y test command ([95baf0e](https://github.com/zmrl010/eslint-config/commit/95baf0e2b8b0b247f83a0629457fcdb08bea2897))
+* **react:** include react/jsx-no-leaked-render ([f69bdb1](https://github.com/zmrl010/eslint-config/commit/f69bdb1fe7a8d05d6659e67789c82cd10fa66f83))
+* **react:** turn off unneeded rules ([6927e91](https://github.com/zmrl010/eslint-config/commit/6927e919e8003593c8655cb62e3c7b2d502753bf))
+
 # [3.0.0](https://github.com/zmrl010/eslint-config/compare/v2.0.0...v3.0.0) (2022-07-21)
 
 
