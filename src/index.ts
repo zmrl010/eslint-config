@@ -14,7 +14,6 @@ function resolveFirst(...paths: string[]): string | undefined {
 const tsConfig = resolveFirst('tsconfig.json', 'types/tsconfig.json');
 
 const index: Linter.Config = {
-  root: true,
   env: {
     browser: true,
     es6: true,

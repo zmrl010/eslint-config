@@ -30,6 +30,7 @@ export = {
 
         'jest/consistent-test-it': 'off',
         'jest/expect-expect': 'off',
+        'jest/max-expects': 'error',
         'jest/max-nested-describe': 'error',
         'jest/no-alias-methods': 'off',
         'jest/no-commented-out-tests': 'warn',
@@ -59,6 +60,7 @@ export = {
         'jest/prefer-expect-assertions': 'off',
         'jest/prefer-expect-resolves': 'off',
         'jest/prefer-hooks-on-top': 'error',
+        'jest/prefer-hooks-in-order': 'error',
         'jest/prefer-lowercase-title': 'off',
         'jest/prefer-snapshot-hint': 'error',
         'jest/prefer-spy-on': 'off',
