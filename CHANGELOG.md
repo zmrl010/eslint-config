@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/zmrl010/eslint-config/compare/v3.0.1...v3.0.2) (2022-08-08)
+
+
+### Bug Fixes
+
+* fix filepath exports ([0664016](https://github.com/zmrl010/eslint-config/commit/0664016434f37a35093e81455f8c7a630615a735))
+
 ## [3.0.1](https://github.com/zmrl010/eslint-config/compare/v3.0.0...v3.0.1) (2022-07-25)
 
 
