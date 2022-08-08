@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/zmrl010/eslint-config/compare/v3.0.2...v3.1.0) (2022-08-08)
+
+
+### Features
+
+* include eslint patch import for every config ([be58cc2](https://github.com/zmrl010/eslint-config/commit/be58cc284078132f690d81bdbf6618b59f23d57b))
+
 ## [3.0.2](https://github.com/zmrl010/eslint-config/compare/v3.0.1...v3.0.2) (2022-08-08)
 
 
