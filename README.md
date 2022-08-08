@@ -9,22 +9,11 @@ _Inspired by [eslint-config-kentcdodds](https://github.com/kentcdodds/eslint-con
 This package can be installed with npm
 
 ```shell
-npm i -D @zmrl/eslint-config
-```
-
-There is a
-[long-standing eslint issue](https://github.com/eslint/eslint/issues/3458)
-where shareable eslint configs like this one cannot install plugins for you.
-You can either install them manually or you can use
-[@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch)
-as a workable hack to use this config's already installed dependencies.
-
-This package exports the patch under the
-`patch/modern-module-resolution` subpath.
-Place it at the top of .eslintrc.js
-
-```js
-require('@zmrl/eslint-config/patch/modern-module-resolution');
+npm add -D @zmrl/eslint-config
+# or
+yarn add -D @zmrl/eslint-config
+# or
+pnpm add -D @zmrl/eslint-config
 ```
 
 ## Extend
@@ -32,9 +21,31 @@ require('@zmrl/eslint-config/patch/modern-module-resolution');
 Add package scope to extends in your eslint config:
 
 ```js
-require('@zmrl/eslint-config/patch/modern-module-resolution');
-
 module.exports = {
   extends: ['@zmrl'],
 };
 ```
+
+The base config includes many rules for JavaScript and TypeScript,
+but this config also exports several sub-configs for things like react
+and jest. Extend sub-configs as needed.
+
+```js
+module.exports = {
+  extends: ['@zmrl', '@zmrl/react', '@zmrl/jest'],
+};
+```
+
+## Included Patch
+
+There is a
+[long-standing eslint issue](https://github.com/eslint/eslint/issues/3458)
+requesting shareable eslint configs like this one to be able to install
+plugins for you as a part of its own dependencies. Since this is not currently
+possible, there is a
+[patch](https://www.npmjs.com/package/@rushstack/eslint-patch)
+that can be used as a workaround.
+
+This config automatically includes the patch for every configuration.
+That means you only have to install eslint plugins that are not included
+with this config.
