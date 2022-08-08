@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import type { Linter } from 'eslint';
 
+import './eslint-patch/modern-module-resolution';
+
 /**
  * Resolve first existing path from a list of paths
  */

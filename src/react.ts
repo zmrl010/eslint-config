@@ -1,6 +1,8 @@
 import semver from 'semver';
 import { dependencyMap } from './deps';
 
+import './eslint-patch/modern-module-resolution';
+
 const hasPropTypes = dependencyMap.has('prop-types');
 
 const oldestSupportedReactVersion = (() => {

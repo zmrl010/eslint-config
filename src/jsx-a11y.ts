@@ -1,3 +1,5 @@
+import './eslint-patch/modern-module-resolution';
+
 export = {
   env: {
     browser: true,
