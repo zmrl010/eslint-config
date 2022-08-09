@@ -28,11 +28,17 @@ module.exports = {
 
 The base config includes many rules for JavaScript and TypeScript,
 but this config also exports several sub-configs for things like react
-and jest. Extend sub-configs as needed.
+and jest. Extend sub-configs as needed. Note that `import` config is
+extended by the default exported config.
 
 ```js
 module.exports = {
-  extends: ['@zmrl', '@zmrl/react', '@zmrl/jest'],
+  extends: [
+    '@zmrl/eslint-config/import',
+    '@zmrl/eslint-config/react',
+    '@zmrl/eslint-config/jest',
+    '@zmrl/eslint-config/jsx-a11y',
+  ],
 };
 ```
 
