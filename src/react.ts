@@ -1,14 +1,12 @@
 import semver from 'semver';
-import { dependencyMap } from './deps';
+import { hasDependency, getVersion } from './lib/dependency';
 
 import './eslint-patch/modern-module-resolution';
-
-const hasPropTypes = dependencyMap.has('prop-types');
 
 const oldestSupportedReactVersion = (() => {
   let oldestVersion = '17.0.2';
   try {
-    const range = dependencyMap.get('react') ?? oldestVersion;
+    const range = getVersion('react') ?? oldestVersion;
     oldestVersion =
       semver
         .validRange(range)
@@ -40,13 +38,17 @@ export = {
   rules: {
     'react/boolean-prop-naming': 'off',
     'react/button-has-type': 'off',
-    'react/default-props-match-prop-types': hasPropTypes ? 'error' : 'off',
+    'react/default-props-match-prop-types': hasDependency('prop-types')
+      ? 'error'
+      : 'off',
     'react/destructuring-assignment': 'off',
     'react/display-name': ['error', { ignoreTranspilerName: false }],
     'react/forbid-component-props': 'off',
     'react/forbid-dom-props': 'off',
     'react/forbid-elements': 'off',
-    'react/forbid-foreign-prop-types': hasPropTypes ? 'error' : 'off',
+    'react/forbid-foreign-prop-types': hasDependency('prop-types')
+      ? 'error'
+      : 'off',
     'react/forbid-prop-types': 'off',
     'react/function-component-definition': 'off',
     'react/hook-use-state': 'off',
@@ -105,14 +107,14 @@ export = {
     'react/no-unsafe': 'warn', // if you need it there should be a comment explaining why
     'react/no-unstable-nested-components': ['error', { allowAsProps: true }],
     'react/no-unused-class-component-methods': 'error',
-    'react/no-unused-prop-types': hasPropTypes ? 'error' : 'off',
+    'react/no-unused-prop-types': hasDependency('prop-types') ? 'error' : 'off',
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': 'off',
     'react/prefer-exact-props': 'off',
     'react/prefer-read-only-props': 'off',
     'react/prefer-stateless-function': 'off',
-    'react/prop-types': hasPropTypes ? 'error' : 'off',
+    'react/prop-types': hasDependency('prop-types') ? 'error' : 'off',
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'off', // sometimes the default value is undefined so that's fine...
     'react/require-optimization': 'off',

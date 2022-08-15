@@ -1,14 +1,15 @@
-import { dependencyMap } from './deps';
+import jestPkg from 'jest/package.json';
+import { hasDependency } from './lib/dependency';
 
 import './eslint-patch/modern-module-resolution';
 
-const hasJestDom = dependencyMap.has('@testing-library/jest-dom');
+const hasJestDom = hasDependency('@testing-library/jest-dom');
 const hasTestingLibrary = [
   '@testing-library/dom',
   '@testing-library/react',
   '@testing-library/angular',
   '@testing-library/vue',
-].some((dependency) => dependencyMap.has(dependency));
+].some(hasDependency);
 
 export = {
   env: {
@@ -20,6 +21,11 @@ export = {
     hasTestingLibrary ? 'testing-library' : null,
   ].filter(Boolean),
   rules: {},
+  settings: {
+    jest: {
+      version: jestPkg.version,
+    },
+  },
   overrides: [
     {
       files: [
