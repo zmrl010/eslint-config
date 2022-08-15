@@ -63,6 +63,7 @@ export = {
         'jest/prefer-hooks-on-top': 'error',
         'jest/prefer-hooks-in-order': 'error',
         'jest/prefer-lowercase-title': 'off',
+        'jest/prefer-mock-promise-shorthand': 'warn',
         'jest/prefer-snapshot-hint': 'error',
         'jest/prefer-spy-on': 'off',
         'jest/prefer-strict-equal': 'off',
