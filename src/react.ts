@@ -1,4 +1,5 @@
 import semver from 'semver';
+import { type Linter } from 'eslint';
 import { hasDependency, getVersion } from './lib/dependency';
 
 import './eslint-patch/modern-module-resolution';
@@ -20,7 +21,9 @@ const oldestSupportedReactVersion = (() => {
   return oldestVersion;
 })();
 
-export = {
+const propTypesValue = hasDependency('prop-types') ? 'error' : 'off';
+
+const react: Linter.Config = {
   env: {
     browser: true,
   },
@@ -38,17 +41,11 @@ export = {
   rules: {
     'react/boolean-prop-naming': 'off',
     'react/button-has-type': 'off',
-    'react/default-props-match-prop-types': hasDependency('prop-types')
-      ? 'error'
-      : 'off',
     'react/destructuring-assignment': 'off',
     'react/display-name': ['error', { ignoreTranspilerName: false }],
     'react/forbid-component-props': 'off',
     'react/forbid-dom-props': 'off',
     'react/forbid-elements': 'off',
-    'react/forbid-foreign-prop-types': hasDependency('prop-types')
-      ? 'error'
-      : 'off',
     'react/forbid-prop-types': 'off',
     'react/function-component-definition': 'off',
     'react/hook-use-state': 'off',
@@ -107,14 +104,12 @@ export = {
     'react/no-unsafe': 'warn', // if you need it there should be a comment explaining why
     'react/no-unstable-nested-components': ['error', { allowAsProps: true }],
     'react/no-unused-class-component-methods': 'error',
-    'react/no-unused-prop-types': hasDependency('prop-types') ? 'error' : 'off',
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': 'off',
     'react/prefer-exact-props': 'off',
     'react/prefer-read-only-props': 'off',
     'react/prefer-stateless-function': 'off',
-    'react/prop-types': hasDependency('prop-types') ? 'error' : 'off',
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'off', // sometimes the default value is undefined so that's fine...
     'react/require-optimization': 'off',
@@ -129,6 +124,11 @@ export = {
 
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
+
+    'react/prop-types': propTypesValue,
+    'react/default-props-match-prop-types': propTypesValue,
+    'react/forbid-foreign-prop-types': propTypesValue,
+    'react/no-unused-prop-types': propTypesValue,
   },
   overrides: [
     {
@@ -138,8 +138,9 @@ export = {
           'error',
           { extensions: ['.ts', '.tsx'] },
         ],
-        'react/prop-types': 'off',
       },
     },
   ],
 };
+
+export = react;

@@ -1,4 +1,5 @@
 import semver from 'semver';
+import { type Linter } from 'eslint';
 import { hasDependency, getVersion } from './lib/dependency';
 
 import './eslint-patch/modern-module-resolution';
@@ -25,10 +26,10 @@ const isAsyncUserEvent = semver.gte(
   VERSION_USER_EVENTS_WENT_ASYNC
 );
 
-export = {
+const testingLibrary: Linter.Config = {
   plugins: [
-    hasJestDom ? 'jest-dom' : null,
-    hasTestingLibrary ? 'testing-library' : null,
+    hasJestDom ? 'jest-dom' : '',
+    hasTestingLibrary ? 'testing-library' : '',
   ].filter(Boolean),
   overrides: [
     {
@@ -95,3 +96,5 @@ export = {
     },
   ],
 };
+
+export = testingLibrary;

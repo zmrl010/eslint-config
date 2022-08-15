@@ -1,6 +1,7 @@
+import { type Linter } from 'eslint';
 import './eslint-patch/modern-module-resolution';
 
-export = {
+const jsxA11y: Linter.Config = {
   env: {
     browser: true,
   },
@@ -48,3 +49,5 @@ export = {
     'jsx-a11y/tabindex-no-positive': 'warn',
   },
 };
+
+export = jsxA11y;

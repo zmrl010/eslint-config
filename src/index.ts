@@ -1,17 +1,7 @@
-import fs from 'fs';
-import path from 'path';
 import type { Linter } from 'eslint';
+import { resolveFirst } from './lib/path';
 
 import './eslint-patch/modern-module-resolution';
-
-/**
- * Resolve first existing path from a list of paths
- */
-function resolveFirst(...paths: string[]): string | undefined {
-  const filepath = paths.find((p) => fs.existsSync(p));
-
-  return filepath ? path.resolve(filepath) : undefined;
-}
 
 const tsConfig = resolveFirst('tsconfig.json', 'types/tsconfig.json');
 

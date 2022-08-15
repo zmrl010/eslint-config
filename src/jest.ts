@@ -1,8 +1,9 @@
+import { type Linter } from 'eslint';
 import jestPkg from 'jest/package.json';
 
 import './eslint-patch/modern-module-resolution';
 
-export = {
+const jest: Linter.Config = {
   env: {
     'jest/globals': true,
   },
@@ -83,3 +84,5 @@ export = {
     },
   ],
 };
+
+export = jest;
