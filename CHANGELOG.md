@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/zmrl010/eslint-config/compare/v3.1.0...v3.1.1) (2022-08-15)
+
+
+### Bug Fixes
+
+* account for user-event being async in 14+ ([47e8470](https://github.com/zmrl010/eslint-config/commit/47e847086014e95696dcf707592e69278439e756))
+
 # [3.1.0](https://github.com/zmrl010/eslint-config/compare/v3.0.2...v3.1.0) (2022-08-08)
 
 
