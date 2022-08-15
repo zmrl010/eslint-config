@@ -35,7 +35,6 @@ jobs:
           pnpm
           --package=semantic-release@19
           --package=@semantic-release/changelog@6
-          --package=@semantic-release/exec@6
           --package=@semantic-release/git@10
           --package=conventional-changelog-conventionalcommits@5
           dlx semantic-release
