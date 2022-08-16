@@ -1,3 +1,11 @@
+## [3.1.2](https://github.com/zmrl010/eslint-config/compare/v3.1.1...v3.1.2) (2022-08-16)
+
+
+### Bug Fixes
+
+* correct exports ([f7d28ea](https://github.com/zmrl010/eslint-config/commit/f7d28eaac4e1fde33139d8cd3336d6cca78baf5e))
+* main project file ([4789ba6](https://github.com/zmrl010/eslint-config/commit/4789ba67fcfb96d84cf3c78fdda00019f2398c53))
+
 ## [3.1.1](https://github.com/zmrl010/eslint-config/compare/v3.1.0...v3.1.1) (2022-08-15)
 
 

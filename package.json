@@ -1,6 +1,6 @@
 {
   "name": "@zmrl/eslint-config",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "An evolving eslint configuration for my projects",
   "main": "./index.js",
   "files": [
