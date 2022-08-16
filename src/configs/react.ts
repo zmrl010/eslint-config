@@ -1,8 +1,8 @@
 import semver from 'semver';
 import { type Linter } from 'eslint';
-import { hasDependency, getVersion } from './lib/dependency';
+import { hasDependency, getVersion } from '../lib/dependency';
 
-import './eslint-patch/modern-module-resolution';
+import '../eslint-patch/modern-module-resolution';
 
 const oldestSupportedReactVersion = (() => {
   let oldestVersion = '17.0.2';

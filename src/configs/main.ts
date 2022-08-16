@@ -1,11 +1,11 @@
 import type { Linter } from 'eslint';
-import { resolveFirst } from './lib/path';
+import { resolveFirst } from '../lib/path';
 
-import './eslint-patch/modern-module-resolution';
+import '../eslint-patch/modern-module-resolution';
 
 const tsConfig = resolveFirst('tsconfig.json', 'types/tsconfig.json');
 
-const index: Linter.Config = {
+const main: Linter.Config = {
   env: {
     browser: true,
     es6: true,
@@ -425,4 +425,4 @@ const index: Linter.Config = {
   ],
 };
 
-export = index;
+export = main;

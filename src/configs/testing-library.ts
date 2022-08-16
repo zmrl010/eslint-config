@@ -1,8 +1,8 @@
 import semver from 'semver';
 import { type Linter } from 'eslint';
-import { hasDependency, getVersion } from './lib/dependency';
+import { hasDependency, getVersion } from '../lib/dependency';
 
-import './eslint-patch/modern-module-resolution';
+import '../eslint-patch/modern-module-resolution';
 
 const hasJestDom = hasDependency('@testing-library/jest-dom');
 const hasTestingLibrary = [
@@ -52,7 +52,7 @@ const testingLibrary: Linter.Config = {
               'jest-dom/prefer-to-have-text-content': 'error',
               'jest-dom/prefer-to-have-value': 'error',
             }
-          : null),
+          : {}),
 
         ...(hasTestingLibrary
           ? {
@@ -91,7 +91,7 @@ const testingLibrary: Linter.Config = {
               'testing-library/prefer-wait-for': 'error',
               'testing-library/render-result-naming-convention': 'error',
             }
-          : null),
+          : {}),
       },
     },
   ],

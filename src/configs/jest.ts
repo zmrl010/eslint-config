@@ -1,7 +1,7 @@
 import { type Linter } from 'eslint';
 import jestPkg from 'jest/package.json';
 
-import './eslint-patch/modern-module-resolution';
+import '../eslint-patch/modern-module-resolution';
 
 const jest: Linter.Config = {
   env: {

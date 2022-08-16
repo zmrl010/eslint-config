@@ -1,5 +1,5 @@
 import { type Linter } from 'eslint';
-import './eslint-patch/modern-module-resolution';
+import '../eslint-patch/modern-module-resolution';
 
 const importConfig: Linter.Config = {
   env: {
