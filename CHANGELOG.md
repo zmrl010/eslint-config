@@ -1,3 +1,10 @@
+## [3.1.5](https://github.com/zmrl010/eslint-config/compare/v3.1.4...v3.1.5) (2022-08-16)
+
+
+### Bug Fixes
+
+* add package.json to exports ([2bd2ac6](https://github.com/zmrl010/eslint-config/commit/2bd2ac6bec4bd0840d721e509216b46a171b1b96))
+
 ## [3.1.4](https://github.com/zmrl010/eslint-config/compare/v3.1.3...v3.1.4) (2022-08-16)
 
 
