@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/zmrl010/eslint-config/compare/v3.1.3...v3.1.4) (2022-08-16)
+
+
+### Bug Fixes
+
+* module import issue ([76b1922](https://github.com/zmrl010/eslint-config/commit/76b1922a2cda18f9ddb5ecffb7fd90a1c3b9cccb))
+
 ## [3.1.3](https://github.com/zmrl010/eslint-config/compare/v3.1.2...v3.1.3) (2022-08-16)
 
 
