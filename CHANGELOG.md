@@ -1,3 +1,10 @@
+## [3.1.7](https://github.com/zmrl010/eslint-config/compare/v3.1.6...v3.1.7) (2022-08-16)
+
+
+### Bug Fixes
+
+* convert jest version to number ([6da36a5](https://github.com/zmrl010/eslint-config/commit/6da36a5964546ab7550798ac7d69edcd65369e0e))
+
 ## [3.1.6](https://github.com/zmrl010/eslint-config/compare/v3.1.5...v3.1.6) (2022-08-16)
 
 
