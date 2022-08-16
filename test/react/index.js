@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../../index.js', '../../react.js'],
+  extends: ['../../dist/configs/index.js', '../../dist/configs/react.js'],
 };
