@@ -13,7 +13,8 @@
     "./jest": "./dist/configs/jest.js",
     "./jsx-a11y": "./dist/configs/jsx-a11y.js",
     "./react": "./dist/configs/react.js",
-    "./testing-library": "./dist/configs/testing-library.js"
+    "./testing-library": "./dist/configs/testing-library.js",
+    "./package.json": "./package.json"
   },
   "repository": {
     "type": "git",
@@ -84,7 +85,10 @@
     "semver": "^7.3.7"
   },
   "eslintConfig": {
-    "extends": "./dist/configs/main.js"
+    "extends": "./dist/configs/main.js",
+    "ignorePatterns": [
+      "dist"
+    ]
   },
   "eslintIgnore": [
     "node_modules",
