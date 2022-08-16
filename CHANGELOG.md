@@ -1,3 +1,10 @@
+## [3.1.8](https://github.com/zmrl010/eslint-config/compare/v3.1.7...v3.1.8) (2022-08-16)
+
+
+### Bug Fixes
+
+* range comparison bug with testing library ([73899ec](https://github.com/zmrl010/eslint-config/commit/73899ec8a4b5b7973ad70653f93022afa218160f))
+
 ## [3.1.7](https://github.com/zmrl010/eslint-config/compare/v3.1.6...v3.1.7) (2022-08-16)
 
 
