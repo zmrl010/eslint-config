@@ -1,25 +1,11 @@
-import semver from 'semver';
 import { type Linter } from 'eslint';
-import { hasDependency, getVersion } from '../lib/dependency';
+import { getVersionRange, hasDependency } from '../lib/dependency';
+import { minVersion } from '../lib/version';
 
 import '../eslint-patch/modern-module-resolution';
 
-const oldestSupportedReactVersion = (() => {
-  let oldestVersion = '17.0.2';
-  try {
-    const range = getVersion('react') ?? oldestVersion;
-    oldestVersion =
-      semver
-        .validRange(range)
-        ?.replace(/[>=<|]/g, ' ')
-        .split(' ')
-        .filter(Boolean)
-        .sort(semver.compare)[0] ?? oldestVersion;
-  } catch (error: unknown) {
-    // ignore error
-  }
-  return oldestVersion;
-})();
+const oldestSupportedReactVersion =
+  minVersion(getVersionRange('react'))?.version ?? '17.0.2';
 
 const propTypesValue = hasDependency('prop-types') ? 'error' : 'off';
 

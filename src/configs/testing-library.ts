@@ -1,6 +1,7 @@
 import semver from 'semver';
 import { type Linter } from 'eslint';
-import { hasDependency, getVersion } from '../lib/dependency';
+import { hasDependency, getVersionRange } from '../lib/dependency';
+import { minVersion } from '../lib/version';
 
 import '../eslint-patch/modern-module-resolution';
 
@@ -14,17 +15,17 @@ const hasTestingLibrary = [
 
 const VERSION_USER_EVENTS_WENT_ASYNC = '14.0.0';
 
-const userEventVersion =
-  getVersion('@testing-library/user-event') ?? VERSION_USER_EVENTS_WENT_ASYNC;
+const userEventVersion = minVersion(
+  getVersionRange('@testing-library/user-event')
+);
 
 /**
  * v14+ of @testing-library/user-event is async
  * and some rules need to respect that
  */
-const isAsyncUserEvent = semver.gte(
-  userEventVersion,
-  VERSION_USER_EVENTS_WENT_ASYNC
-);
+const isAsyncUserEvent = userEventVersion
+  ? semver.gte(userEventVersion, VERSION_USER_EVENTS_WENT_ASYNC)
+  : true;
 
 const testingLibrary: Linter.Config = {
   plugins: [

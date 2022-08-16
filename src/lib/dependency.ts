@@ -50,12 +50,12 @@ function createDependencyRegistry(deps: Dependencies) {
      */
     hasDependency: dependencyMap.has.bind(dependencyMap),
     /**
-     * @returns version of dependency if it is listed
+     * @returns version of dependency as it is listed in package.json
      */
-    getVersion: dependencyMap.get.bind(dependencyMap),
+    getVersionRange: dependencyMap.get.bind(dependencyMap),
   };
 }
 
-export const { hasDependency, getVersion } = createDependencyRegistry(
+export const { hasDependency, getVersionRange } = createDependencyRegistry(
   readDependencies()
 );

@@ -2,19 +2,23 @@
   "name": "@zmrl/eslint-config",
   "version": "3.1.7",
   "description": "An evolving eslint configuration for my projects",
-  "main": "./dist/configs/index.js",
+  "main": "./dist/configs/main.js",
   "files": [
     "dist",
     "src"
   ],
   "exports": {
-    ".": "./dist/configs/index.js",
+    ".": "./dist/configs/main.js",
     "./import": "./dist/configs/import.js",
     "./jest": "./dist/configs/jest.js",
     "./jsx-a11y": "./dist/configs/jsx-a11y.js",
     "./react": "./dist/configs/react.js",
     "./testing-library": "./dist/configs/testing-library.js",
     "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7.9.0"
   },
   "repository": {
     "type": "git",
@@ -36,7 +40,7 @@
     "find-new-rules:jsx-a11y": "eslint-find-rules -u \"./test/jsx-a11y/index.js\"",
     "find-new-rules:main": "eslint-find-rules -u ./test/main/index.js",
     "find-new-rules:react": "eslint-find-rules -u ./test/react/index.js",
-    "lint": "eslint --config ./dist/configs/index.js ./src",
+    "lint": "eslint --config ./dist/configs/main.js ./src",
     "prepare": "pnpm build && (is-ci || husky install)",
     "test": "run-p lint find-new-rules",
     "build": "tsc --build"
@@ -64,6 +68,7 @@
     "is-ci": "^3.0.1",
     "jest": "^28.1.3",
     "npm-run-all": "^4.1.5",
+    "pnpm": "^7.9.0",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
     "react": "^18.2.0",
