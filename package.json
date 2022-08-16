@@ -2,18 +2,18 @@
   "name": "@zmrl/eslint-config",
   "version": "3.1.1",
   "description": "An evolving eslint configuration for my projects",
-  "main": "./dist/configs/main.js",
+  "main": "./index.js",
   "files": [
     "dist",
     "src"
   ],
   "exports": {
-    ".": "./dist/configs/index.js",
-    "./import": "./dist/configs/import.js",
-    "./jest": "./dist/configs/jest.js",
-    "./jsx-a11y": "./dist/configs/jsx-a11y.js",
-    "./react": "./dist/configs/react.js",
-    "./testing-library": "./dist/configs/testing-library.js"
+    ".": "./index.js",
+    "./import": "./import.js",
+    "./jest": "./jest.js",
+    "./jsx-a11y": "./jsx-a11y.js",
+    "./react": "./react.js",
+    "./testing-library": "./testing-library.js"
   },
   "repository": {
     "type": "git",
@@ -33,9 +33,9 @@
     "find-new-rules": "run-p find-new-rules:*",
     "find-new-rules:jest": "eslint-find-rules -u ./test/jest/index.js",
     "find-new-rules:jsx-a11y": "eslint-find-rules -u \"./test/jsx-a11y/index.js\"",
-    "find-new-rules:main": "eslint-find-rules -u ./dist/configs/index.js",
+    "find-new-rules:main": "eslint-find-rules -u ./index.js",
     "find-new-rules:react": "eslint-find-rules -u ./test/react/index.js",
-    "lint": "eslint --config ./dist/configs/index.js ./src",
+    "lint": "eslint --config ./index.js ./src",
     "prepare": "pnpm build && (is-ci || husky install)",
     "test": "run-p lint find-new-rules",
     "build": "tsc --build"
