@@ -1,3 +1,10 @@
+## [3.1.6](https://github.com/zmrl010/eslint-config/compare/v3.1.5...v3.1.6) (2022-08-16)
+
+
+### Bug Fixes
+
+* resolve jest version using getVersion ([7039c64](https://github.com/zmrl010/eslint-config/commit/7039c64f615fd4b974ab7abbbe02689c898fb4b4))
+
 ## [3.1.5](https://github.com/zmrl010/eslint-config/compare/v3.1.4...v3.1.5) (2022-08-16)
 
 
