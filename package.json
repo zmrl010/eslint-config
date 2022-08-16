@@ -34,7 +34,7 @@
     "find-new-rules": "run-p find-new-rules:*",
     "find-new-rules:jest": "eslint-find-rules -u ./test/jest/index.js",
     "find-new-rules:jsx-a11y": "eslint-find-rules -u \"./test/jsx-a11y/index.js\"",
-    "find-new-rules:main": "eslint-find-rules -u ./dist/configs/main.js",
+    "find-new-rules:main": "eslint-find-rules -u ./test/main/index.js",
     "find-new-rules:react": "eslint-find-rules -u ./test/react/index.js",
     "lint": "eslint --config ./dist/configs/index.js ./src",
     "prepare": "pnpm build && (is-ci || husky install)",

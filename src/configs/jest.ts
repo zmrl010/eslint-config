@@ -1,9 +1,10 @@
 import { type Linter } from 'eslint';
+import semver from 'semver';
 import { getVersion } from '../lib/dependency';
 
 import '../eslint-patch/modern-module-resolution';
 
-const jestVersion = getVersion('jest');
+const jestVersion = semver.coerce(getVersion('jest')) ?? '28.0.0';
 
 const jest: Linter.Config = {
   env: {
@@ -13,7 +14,7 @@ const jest: Linter.Config = {
   plugins: ['jest'],
   settings: {
     jest: {
-      version: jestVersion,
+      version: semver.major(jestVersion),
     },
   },
   overrides: [
