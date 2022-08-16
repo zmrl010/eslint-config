@@ -87,13 +87,10 @@
   "eslintConfig": {
     "extends": "./dist/configs/main.js",
     "ignorePatterns": [
-      "dist"
+      "node_modules",
+      "coverage",
+      "dist",
+      "pnpm-lock.yaml"
     ]
-  },
-  "eslintIgnore": [
-    "node_modules",
-    "coverage",
-    "dist",
-    "pnpm-lock.yaml"
-  ]
+  }
 }

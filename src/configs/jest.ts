@@ -1,7 +1,9 @@
 import { type Linter } from 'eslint';
-import jestPkg from 'jest/package.json';
+import { getVersion } from '../lib/dependency';
 
 import '../eslint-patch/modern-module-resolution';
+
+const jestVersion = getVersion('jest');
 
 const jest: Linter.Config = {
   env: {
@@ -11,7 +13,7 @@ const jest: Linter.Config = {
   plugins: ['jest'],
   settings: {
     jest: {
-      version: jestPkg.version,
+      version: jestVersion,
     },
   },
   overrides: [
