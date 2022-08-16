@@ -84,7 +84,7 @@
     "semver": "^7.3.7"
   },
   "eslintConfig": {
-    "extends": "./dist/index.js"
+    "extends": "./index.js"
   },
   "eslintIgnore": [
     "node_modules",
