@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/zmrl010/eslint-config/compare/v3.1.2...v3.1.3) (2022-08-16)
+
+
+### Bug Fixes
+
+* correct module extends ([3c14a80](https://github.com/zmrl010/eslint-config/commit/3c14a8017dece50a2b615b4ae3207e7ee2486bfc))
+
 ## [3.1.2](https://github.com/zmrl010/eslint-config/compare/v3.1.1...v3.1.2) (2022-08-16)
 
 
