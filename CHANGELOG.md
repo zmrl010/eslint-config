@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/zmrl010/eslint-config/compare/v3.1.8...v3.2.0) (2022-08-17)
+
+
+### Features
+
+* use workspace projects for accurate tests ([04304b2](https://github.com/zmrl010/eslint-config/commit/04304b277bc8fc7ca8779ad18acac106a7921845))
+
 ## [3.1.8](https://github.com/zmrl010/eslint-config/compare/v3.1.7...v3.1.8) (2022-08-16)
 
 
