@@ -16,6 +16,15 @@
     "./testing-library": "./dist/configs/testing-library.js",
     "./package.json": "./package.json"
   },
+  "eslintConfig": {
+    "extends": "./dist/configs/main.js",
+    "ignorePatterns": [
+      "node_modules",
+      "coverage",
+      "dist",
+      "pnpm-lock.yaml"
+    ]
+  },
   "engines": {
     "node": ">=18",
     "pnpm": ">=7.9.0"
@@ -35,12 +44,8 @@
   "homepage": "https://github.com/zmrl010/eslint-config#readme",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "find-new-rules": "run-p find-new-rules:*",
-    "find-new-rules:jest": "eslint-find-rules -u ./test/jest/index.js",
-    "find-new-rules:jsx-a11y": "eslint-find-rules -u \"./test/jsx-a11y/index.js\"",
-    "find-new-rules:main": "eslint-find-rules -u ./test/main/index.js",
-    "find-new-rules:react": "eslint-find-rules -u ./test/react/index.js",
-    "lint": "eslint --config ./dist/configs/main.js ./src",
+    "find-new-rules": "pnpm -r --parallel find-new-rules",
+    "lint": "eslint ./src",
     "prepare": "pnpm build && (is-ci || husky install)",
     "test": "run-p lint find-new-rules",
     "build": "tsc --build"
@@ -88,14 +93,5 @@
     "eslint-plugin-testing-library": "^5.6.0",
     "read-pkg-up": "^7.0.1",
     "semver": "^7.3.7"
-  },
-  "eslintConfig": {
-    "extends": "./dist/configs/main.js",
-    "ignorePatterns": [
-      "node_modules",
-      "coverage",
-      "dist",
-      "pnpm-lock.yaml"
-    ]
   }
 }

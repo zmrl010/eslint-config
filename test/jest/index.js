@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../../dist/configs/main.js', '../../dist/configs/jest.js'],
+  extends: ['@zmrl', '@zmrl/eslint-config/jest'],
 };

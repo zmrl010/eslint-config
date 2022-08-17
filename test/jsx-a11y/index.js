@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../../dist/configs/main.js', '../../dist/configs/jsx-a11y.js'],
+  extends: ['@zmrl', '@zmrl/eslint-config/jsx-a11y'],
 };

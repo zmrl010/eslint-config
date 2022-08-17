@@ -1,8 +1,8 @@
 import { type Linter } from 'eslint';
 import { minVersion } from '../lib/version';
+import { getVersionRange } from '../lib/dependency';
 
 import '../eslint-patch/modern-module-resolution';
-import { getVersionRange } from '../lib/dependency';
 
 /**
  * We don't necessarily care if jest is installed.
