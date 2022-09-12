@@ -1,6 +1,6 @@
 import { type Linter } from 'eslint';
-import { minVersion } from '../lib/version';
 import { getVersionRange } from '../lib/dependency';
+import { minVersion } from '../lib/version';
 
 import '../eslint-patch/modern-module-resolution';
 
@@ -58,6 +58,7 @@ const jest: Linter.Config = {
         'jest/no-test-return-statement': 'off',
         'jest/prefer-called-with': 'error',
         'jest/prefer-comparison-matcher': 'error',
+        'jest/prefer-each': 'error',
         'jest/prefer-equality-matcher': 'error',
         'jest/prefer-expect-assertions': 'off',
         'jest/prefer-expect-resolves': 'off',
