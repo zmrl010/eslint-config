@@ -5,7 +5,7 @@ import '../eslint-patch/modern-module-resolution';
 
 const tsConfig = resolveFirst('tsconfig.json', 'types/tsconfig.json');
 
-const main: Linter.Config = {
+const config: Linter.Config = {
   env: {
     browser: true,
     es6: true,
@@ -425,4 +425,4 @@ const main: Linter.Config = {
   ],
 };
 
-export = main;
+export = config;

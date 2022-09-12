@@ -1,7 +1,7 @@
 import { type Linter } from 'eslint';
 import '../eslint-patch/modern-module-resolution';
 
-const importConfig: Linter.Config = {
+const config: Linter.Config = {
   env: {
     es6: true,
   },
@@ -88,4 +88,4 @@ const importConfig: Linter.Config = {
   ],
 };
 
-export = importConfig;
+export = config;
