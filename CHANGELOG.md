@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/zmrl010/eslint-config/compare/v3.2.0...v3.3.0) (2022-09-12)
+
+
+### Features
+
+* use lit and wc plugins for web components ([fe321fe](https://github.com/zmrl010/eslint-config/commit/fe321fe3537a6487ee1178899e60c9bc9eca20c9))
+
 # [3.2.0](https://github.com/zmrl010/eslint-config/compare/v3.1.8...v3.2.0) (2022-08-17)
 
 
