@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/zmrl010/eslint-config/compare/v3.3.0...v3.4.0) (2022-09-15)
+
+
+### Features
+
+* support lit-a11y ([9ef5772](https://github.com/zmrl010/eslint-config/commit/9ef5772dd263118eeeb74e286268f96fa873f858))
+
 # [3.3.0](https://github.com/zmrl010/eslint-config/compare/v3.2.0...v3.3.0) (2022-09-12)
 
 
