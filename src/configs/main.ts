@@ -47,6 +47,7 @@ const config: Linter.Config = {
     'init-declarations': 'off',
     'line-comment-position': 'off',
     'lines-between-class-members': 'off',
+    'logical-assignment-operators': 'error',
     'max-classes-per-file': 'off',
     'max-depth': ['error', 4],
     'max-lines': [
@@ -89,6 +90,8 @@ const config: Linter.Config = {
     'no-else-return': 'off',
     'no-empty': 'error',
     'no-empty-character-class': 'error',
+    'no-empty-static-block': 'error',
+    'no-new-native-nonconstructor': 'error',
     'no-empty-function': 'off',
     'no-empty-pattern': 'error',
     'no-eq-null': 'off',
