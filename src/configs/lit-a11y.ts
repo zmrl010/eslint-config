@@ -1,11 +1,11 @@
-import { type Linter } from 'eslint';
-import '../eslint-patch/modern-module-resolution';
+import { TSESLint } from '@typescript-eslint/utils';
+import litA11y from 'eslint-plugin-lit-a11y';
+import { defineConfig } from '../lib/config.js';
 
-const config: Linter.Config = {
-  env: {
-    browser: true,
+export default defineConfig({
+  plugins: {
+    'lit-a11y': litA11y as TSESLint.Linter.Plugin,
   },
-  plugins: ['lit-a11y'],
   rules: {
     'lit-a11y/accessible-emoji': 'off',
     'lit-a11y/alt-text': 'error',
@@ -33,6 +33,4 @@ const config: Linter.Config = {
     'lit-a11y/tabindex-no-positive': 'error',
     'lit-a11y/valid-lang': 'off',
   },
-};
-
-export = config;
+});

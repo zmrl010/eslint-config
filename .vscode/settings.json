@@ -8,6 +8,7 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.nodePath": ".yarn/sdks",
   "cSpell.words": [
-    "rushstack"
+    "rushstack",
+    "TSES"
   ]
 }

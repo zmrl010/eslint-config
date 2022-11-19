@@ -1,10 +1,10 @@
-import { Linter } from 'eslint';
-import '../eslint-patch/modern-module-resolution';
+import type { TSESLint } from '@typescript-eslint/utils';
+import eslintPluginWebComponents from 'eslint-plugin-wc';
+import { defineConfig } from '../lib/config.js';
 
-const config: Linter.Config = {
-  plugins: ['wc'],
-  parserOptions: {
-    sourceType: 'module',
+export default defineConfig({
+  plugins: {
+    wc: eslintPluginWebComponents as TSESLint.Linter.Plugin,
   },
   rules: {
     'wc/no-constructor-attributes': 'error',
@@ -17,6 +17,4 @@ const config: Linter.Config = {
     'wc/no-typos': 'error',
     'wc/require-listener-teardown': 'error',
   },
-};
-
-export = config;
+});

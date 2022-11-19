@@ -9,5 +9,6 @@
   "scripts": {
     "find-new-rules": "eslint-find-rules -u"
   },
+  "type": "module",
   "version": "1.2.3"
 }

@@ -1,16 +1,9 @@
-import { type Linter } from 'eslint';
-import '../eslint-patch/modern-module-resolution';
+import { TSESLint } from '@typescript-eslint/utils';
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import { defineConfig } from '../lib/config.js';
 
-const jsxA11y: Linter.Config = {
-  env: {
-    browser: true,
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  plugins: ['jsx-a11y'],
+export default defineConfig({
+  plugins: { 'jsx-a11y': jsxA11yPlugin as unknown as TSESLint.Linter.Plugin },
   rules: {
     'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'warn',
@@ -48,6 +41,4 @@ const jsxA11y: Linter.Config = {
     'jsx-a11y/scope': 'error',
     'jsx-a11y/tabindex-no-positive': 'warn',
   },
-};
-
-export = jsxA11y;
+});

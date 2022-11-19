@@ -1,1 +1,1 @@
-export = require('./main');
+export { default } from './main.js';

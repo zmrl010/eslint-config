@@ -1,10 +1,12 @@
-import { Linter } from 'eslint';
-import '../eslint-patch/modern-module-resolution';
+import { TSESLint } from '@typescript-eslint/utils';
+import litPlugin from 'eslint-plugin-lit';
+import { defineConfig } from '../lib/config.js';
+import webComponentConfig from './wc.js';
 
-const config: Linter.Config = {
-  extends: ['./wc'],
-  plugins: ['lit'],
-
+export default defineConfig(...webComponentConfig, {
+  plugins: {
+    lit: litPlugin as unknown as TSESLint.Linter.Plugin,
+  },
   rules: {
     'lit/attribute-value-entities': 'error',
     'lit/binding-positions': 'error',
@@ -24,6 +26,4 @@ const config: Linter.Config = {
     'lit/prefer-static-styles': 'off',
     'lit/quoted-expressions': 'off',
   },
-};
-
-export = config;
+});

@@ -1,12 +1,10 @@
-import readPackageUp, {
-  type Options,
-  type NormalizedPackageJson,
-} from 'read-pkg-up';
+import { readPackageUpSync } from 'read-pkg-up';
 
-export type Dependencies = Pick<
-  NormalizedPackageJson,
-  'peerDependencies' | 'devDependencies' | 'dependencies'
->;
+export type Dependencies = {
+  peerDependencies?: Record<string, string>;
+  devDependencies?: Record<string, string>;
+  dependencies?: Record<string, string>;
+};
 
 /**
  * Create a Map object that maps dependency names
@@ -19,8 +17,8 @@ export type Dependencies = Pick<
  * - dependencies
  */
 function createDependencyVersionMap(pkg: Dependencies): Map<string, string> {
-  return new Map(
-    Object.entries({
+  return new Map<string, string>(
+    Object.entries<string>({
       ...pkg.peerDependencies,
       ...pkg.devDependencies,
       ...pkg.dependencies,
@@ -33,12 +31,12 @@ function createDependencyVersionMap(pkg: Dependencies): Map<string, string> {
  *
  * *fails silently by returning empty object*
  */
-function readDependencies(opts: Options = {}): Dependencies {
-  try {
-    return readPackageUp.sync(opts)?.packageJson ?? {};
-  } catch {
+function readDependencies(): Dependencies {
+  const result = readPackageUpSync();
+  if (!result) {
     return {};
   }
+  return result.packageJson as Dependencies;
 }
 
 function createDependencyRegistry(deps: Dependencies) {
@@ -48,14 +46,14 @@ function createDependencyRegistry(deps: Dependencies) {
     /**
      * @returns true when dependency listed in package.json
      */
-    hasDependency: dependencyMap.has.bind(dependencyMap),
+    hasDependency: (key: string) => dependencyMap.has(key),
     /**
      * @returns version of dependency as it is listed in package.json
      */
-    getVersionRange: dependencyMap.get.bind(dependencyMap),
+    getVersion: (key: string) => dependencyMap.get(key),
   };
 }
 
-export const { hasDependency, getVersionRange } = createDependencyRegistry(
+export const { hasDependency, getVersion } = createDependencyRegistry(
   readDependencies()
 );

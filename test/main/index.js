@@ -1,3 +1,3 @@
-module.exports = {
-  extends: ['@zmrl'],
-};
+import eslintConfig from '@zmrl/eslint-config';
+
+export default [eslintConfig];

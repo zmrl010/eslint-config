@@ -1,19 +1,15 @@
-import { type Range } from 'semver';
-import semVerMinVersion from 'semver/ranges/min-version';
-import validRange from 'semver/ranges/valid';
+import { minVersion as semVerMinVersion, validRange, type Range } from 'semver';
 
 /**
  * @returns the lowest version that can possibly
- * match the given range.
+ * match the given range or null if input.
  *
  * @see {semVerMinVersion}
  */
 export function minVersion(versionRange?: string | Range | null | undefined) {
   const range = validRange(versionRange);
-
   if (!range) {
     return null;
   }
-
   return semVerMinVersion(range);
 }
