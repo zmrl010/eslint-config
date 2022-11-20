@@ -1,14 +1,17 @@
 import jestPlugin from 'eslint-plugin-jest';
+import { minVersion } from 'semver';
 import { defineConfig } from '../lib/config.js';
-import { getVersion } from '../lib/dependency.js';
-import { minVersion } from '../lib/version.js';
+import { getDependencyVersion } from '../lib/dependency.js';
+import { readPackage } from '../lib/read-package.js';
 import testingLibrary from './testing-library.js';
 
+const packageJson = readPackage();
 /**
  * We don't necessarily care if jest is installed.
  * We need to provide a version so rules work correctly.
  */
-const jestVersion = minVersion(getVersion('jest'))?.version ?? '28.0.0';
+const jestVersion =
+  minVersion(getDependencyVersion(packageJson, 'jest'))?.version ?? '28.0.0';
 
 export default defineConfig(
   ...testingLibrary,

@@ -1,15 +1,18 @@
 import type { TSESLint } from '@typescript-eslint/utils';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import { minVersion } from 'semver';
 import { defineConfig } from '../lib/config.js';
+import { getDependencyVersion, isDependencyListed } from '../lib/dependency.js';
+import { readPackage } from '../lib/read-package.js';
 
-import { getVersion, hasDependency } from '../lib/dependency.js';
-import { minVersion } from '../lib/version.js';
-
+const packageJson = readPackage();
+const reactVersion = getDependencyVersion(packageJson, 'react');
 const oldestSupportedReactVersion =
-  minVersion(getVersion('react'))?.version ?? '17.0.2';
-
-const propTypesValue = hasDependency('prop-types') ? 'error' : 'off';
+  minVersion(reactVersion)?.version ?? '17.0.2';
+const propTypesValue = isDependencyListed(packageJson, 'prop-types')
+  ? 'error'
+  : 'off';
 
 export default defineConfig(
   {

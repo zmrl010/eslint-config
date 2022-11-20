@@ -1,7 +1,5 @@
 import type { TSESLint } from '@typescript-eslint/utils';
 
-export type RulesRecord = TSESLint.Linter.RulesRecord;
-
 /**
  * An object containing settings related to the linting process.
  */

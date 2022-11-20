@@ -2,7 +2,7 @@ import jestDomPlugin from 'eslint-plugin-jest-dom';
 import testingLibraryPlugin from 'eslint-plugin-testing-library';
 import semver from 'semver';
 import { defineConfig } from '../lib/config.js';
-import { getVersion, hasDependency } from '../lib/dependency.js';
+import { getDependencyVersion, hasDependency } from '../lib/dependency.js';
 import { minVersion } from '../lib/version.js';
 
 const hasJestDom = hasDependency('@testing-library/jest-dom');
@@ -15,7 +15,9 @@ const hasTestingLibrary = [
 
 const VERSION_USER_EVENTS_WENT_ASYNC = '14.0.0';
 
-const userEventVersion = minVersion(getVersion('@testing-library/user-event'));
+const userEventVersion = minVersion(
+  getDependencyVersion('@testing-library/user-event')
+);
 
 /**
  * v14+ of @testing-library/user-event is async
