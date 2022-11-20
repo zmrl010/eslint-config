@@ -1,28 +1,29 @@
 import jestDomPlugin from 'eslint-plugin-jest-dom';
 import testingLibraryPlugin from 'eslint-plugin-testing-library';
-import semver from 'semver';
+import semver, { minVersion } from 'semver';
 import { defineConfig } from '../lib/config.js';
-import { getDependencyVersion, hasDependency } from '../lib/dependency.js';
-import { minVersion } from '../lib/version.js';
+import { getDependencyVersion, isDependencyListed } from '../lib/dependency.js';
+import { readPackage } from '../lib/read-package.js';
 
-const hasJestDom = hasDependency('@testing-library/jest-dom');
+const packageJson = readPackage();
+
+const hasJestDom = isDependencyListed(packageJson, '@testing-library/jest-dom');
 const hasTestingLibrary = [
   '@testing-library/dom',
   '@testing-library/react',
   '@testing-library/angular',
   '@testing-library/vue',
-].some(hasDependency);
-
-const VERSION_USER_EVENTS_WENT_ASYNC = '14.0.0';
+].some((value) => isDependencyListed(packageJson, value));
 
 const userEventVersion = minVersion(
-  getDependencyVersion('@testing-library/user-event')
+  getDependencyVersion(packageJson, '@testing-library/user-event')
 );
 
 /**
  * v14+ of @testing-library/user-event is async
  * and some rules need to respect that
  */
+const VERSION_USER_EVENTS_WENT_ASYNC = '14.0.0';
 const isAsyncUserEvent = userEventVersion
   ? semver.gte(userEventVersion, VERSION_USER_EVENTS_WENT_ASYNC)
   : true;
