@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "outDir": "./dist"
+  },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true,
+    "emit": true
+  },
+  "extends": "../../tsconfig.json",
+  "include": ["../../types/*", "./src/*.ts"]
+}
