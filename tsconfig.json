@@ -2,18 +2,18 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "maxNodeModuleJsDepth": 1,
+    "maxNodeModuleJsDepth": 10,
     "declaration": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "module": "NodeNext",
     "outDir": "./dist",
-    "rootDir": "./src",
+    // "rootDir": "./src",
     "resolveJsonModule": true,
     "strict": true,
     "target": "ES2022"
   },
   "exclude": ["test"],
-  "include": ["src", "types", "typings"]
+  "include": ["src", "types"]
 }

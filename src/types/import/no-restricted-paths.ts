@@ -1,0 +1,36 @@
+
+/**
+ * THIS FILE IS AUTO-GENERATED.
+ * RUN `pnpm generate:types` TO REGENERATE IT.
+ */
+
+/**
+ * @minItems 1
+ */
+type NoRestrictedPaths0 =
+  | ['off' | 'error' | 'warn']
+  | [
+      'off' | 'error' | 'warn',
+      {
+        /**
+         * @minItems 1
+         */
+        zones?: [
+          {
+            target?: string;
+            from?: string;
+            except?: string[];
+            message?: string;
+          },
+          ...{
+            target?: string;
+            from?: string;
+            except?: string[];
+            message?: string;
+          }[]
+        ];
+        basePath?: string;
+      }
+    ];
+
+export type NoRestrictedPaths = 'off' | NoRestrictedPaths0;
