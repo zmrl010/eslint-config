@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type ArrowSpacing0 =
       }
     ];
 
+/**
+ * Enforce consistent spacing before and after the arrow in arrow functions
+ * @see https://eslint.org/docs/rules/arrow-spacing
+ */
 export type ArrowSpacing = 'off' | ArrowSpacing0;

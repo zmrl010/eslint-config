@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -26,4 +26,8 @@ type BasicConfig =
       minItems?: number | null;
     };
 
+/**
+ * Enforce line breaks after each array element
+ * @see https://eslint.org/docs/rules/array-element-newline
+ */
 export type ArrayElementNewline = 'off' | ArrayElementNewline0;

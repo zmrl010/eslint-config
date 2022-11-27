@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type NoUnreachableLoop0 =
       }
     ];
 
+/**
+ * Disallow loops with a body that allows only one iteration
+ * @see https://eslint.org/docs/rules/no-unreachable-loop
+ */
 export type NoUnreachableLoop = 'off' | NoUnreachableLoop0;

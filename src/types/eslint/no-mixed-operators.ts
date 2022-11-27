@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -105,4 +105,8 @@ type NoMixedOperators0 =
       }
     ];
 
+/**
+ * Disallow mixed binary operators
+ * @see https://eslint.org/docs/rules/no-mixed-operators
+ */
 export type NoMixedOperators = 'off' | NoMixedOperators0;

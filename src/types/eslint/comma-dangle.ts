@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -30,4 +30,8 @@ type ValueWithIgnore =
   | 'never'
   | 'only-multiline';
 
+/**
+ * Require or disallow trailing commas
+ * @see https://eslint.org/docs/rules/comma-dangle
+ */
 export type CommaDangle = 'off' | CommaDangle0;

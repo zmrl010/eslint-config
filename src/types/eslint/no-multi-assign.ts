@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoMultiAssign0 =
       }
     ];
 
+/**
+ * Disallow use of chained assignment expressions
+ * @see https://eslint.org/docs/rules/no-multi-assign
+ */
 export type NoMultiAssign = 'off' | NoMultiAssign0;

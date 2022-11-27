@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type ClassMethodsUseThis0 =
       }
     ];
 
+/**
+ * Enforce that class methods utilize `this`
+ * @see https://eslint.org/docs/rules/class-methods-use-this
+ */
 export type ClassMethodsUseThis = 'off' | ClassMethodsUseThis0;

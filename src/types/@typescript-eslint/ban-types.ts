@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -26,4 +26,8 @@ type BanTypes0 =
       }
     ];
 
+/**
+ * Disallow certain types
+ * @see https://typescript-eslint.io/rules/ban-types
+ */
 export type BanTypes = 'off' | BanTypes0;

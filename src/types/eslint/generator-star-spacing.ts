@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -38,4 +38,8 @@ type GeneratorStarSpacing0 =
       )
     ];
 
+/**
+ * Enforce consistent spacing around `*` operators in generator functions
+ * @see https://eslint.org/docs/rules/generator-star-spacing
+ */
 export type GeneratorStarSpacing = 'off' | GeneratorStarSpacing0;

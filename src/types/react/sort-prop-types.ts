@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type SortPropTypes0 =
       }
     ];
 
+/**
+ * Enforce propTypes declarations alphabetical sorting
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/sort-prop-types.md
+ */
 export type SortPropTypes = 'off' | SortPropTypes0;

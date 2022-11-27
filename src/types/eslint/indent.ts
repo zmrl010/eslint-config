@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -48,4 +48,8 @@ type Indent0 =
       }
     ];
 
+/**
+ * Enforce consistent indentation
+ * @see https://eslint.org/docs/rules/indent
+ */
 export type Indent = 'off' | Indent0;

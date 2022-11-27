@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoEmptyInterface0 =
       }
     ];
 
+/**
+ * Disallow the declaration of empty interfaces
+ * @see https://typescript-eslint.io/rules/no-empty-interface
+ */
 export type NoEmptyInterface = 'off' | NoEmptyInterface0;

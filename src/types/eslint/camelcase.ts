@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type Camelcase0 =
       }
     ];
 
+/**
+ * Enforce camelcase naming convention
+ * @see https://eslint.org/docs/rules/camelcase
+ */
 export type Camelcase = 'off' | Camelcase0;

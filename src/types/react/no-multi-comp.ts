@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoMultiComp0 =
       }
     ];
 
+/**
+ * Disallow multiple component definition per file
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-multi-comp.md
+ */
 export type NoMultiComp = 'off' | NoMultiComp0;

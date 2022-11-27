@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type ForbidForeignPropTypes0 =
       }
     ];
 
+/**
+ * Disallow using another component's propTypes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-foreign-prop-types.md
+ */
 export type ForbidForeignPropTypes = 'off' | ForbidForeignPropTypes0;

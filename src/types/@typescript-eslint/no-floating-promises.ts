@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type NoFloatingPromises0 =
       }
     ];
 
+/**
+ * Require Promise-like statements to be handled appropriately
+ * @see https://typescript-eslint.io/rules/no-floating-promises
+ */
 export type NoFloatingPromises = 'off' | NoFloatingPromises0;

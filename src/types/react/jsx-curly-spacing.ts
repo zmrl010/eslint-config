@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -50,4 +50,8 @@ interface BasicConfig {
   [k: string]: unknown;
 }
 
+/**
+ * Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-curly-spacing.md
+ */
 export type JsxCurlySpacing = 'off' | JsxCurlySpacing0;

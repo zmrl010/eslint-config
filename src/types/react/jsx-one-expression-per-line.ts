@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type JsxOneExpressionPerLine0 =
       }
     ];
 
+/**
+ * Require one JSX element per line
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-one-expression-per-line.md
+ */
 export type JsxOneExpressionPerLine = 'off' | JsxOneExpressionPerLine0;

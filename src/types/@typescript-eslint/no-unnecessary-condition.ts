@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type NoUnnecessaryCondition0 =
       }
     ];
 
+/**
+ * Disallow conditionals where the type is always truthy or always falsy
+ * @see https://typescript-eslint.io/rules/no-unnecessary-condition
+ */
 export type NoUnnecessaryCondition = 'off' | NoUnnecessaryCondition0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type NoUselessRename0 =
       }
     ];
 
+/**
+ * Disallow renaming import, export, and destructured assignments to the same name
+ * @see https://eslint.org/docs/rules/no-useless-rename
+ */
 export type NoUselessRename = 'off' | NoUselessRename0;

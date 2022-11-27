@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -29,4 +29,8 @@ type SortImports0 =
       }
     ];
 
+/**
+ * Enforce sorted import declarations within modules
+ * @see https://eslint.org/docs/rules/sort-imports
+ */
 export type SortImports = 'off' | SortImports0;

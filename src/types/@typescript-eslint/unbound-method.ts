@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type UnboundMethod0 =
       }
     ];
 
+/**
+ * Enforce unbound methods are called with their expected scope
+ * @see https://typescript-eslint.io/rules/unbound-method
+ */
 export type UnboundMethod = 'off' | UnboundMethod0;

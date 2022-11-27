@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -21,4 +21,8 @@ type SpaceBeforeBlocks0 =
       )
     ];
 
+/**
+ * Enforce consistent spacing before blocks
+ * @see https://typescript-eslint.io/rules/space-before-blocks
+ */
 export type SpaceBeforeBlocks = 'off' | SpaceBeforeBlocks0;

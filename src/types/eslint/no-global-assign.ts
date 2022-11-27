@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoGlobalAssign0 =
       }
     ];
 
+/**
+ * Disallow assignments to native objects or read-only global variables
+ * @see https://eslint.org/docs/rules/no-global-assign
+ */
 export type NoGlobalAssign = 'off' | NoGlobalAssign0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -21,4 +21,8 @@ type SortKeys0 =
       }
     ];
 
+/**
+ * Require object keys to be sorted
+ * @see https://eslint.org/docs/rules/sort-keys
+ */
 export type SortKeys = 'off' | SortKeys0;

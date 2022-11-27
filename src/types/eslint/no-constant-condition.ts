@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoConstantCondition0 =
       }
     ];
 
+/**
+ * Disallow constant expressions in conditions
+ * @see https://eslint.org/docs/rules/no-constant-condition
+ */
 export type NoConstantCondition = 'off' | NoConstantCondition0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type JsxNoBind0 =
       }
     ];
 
+/**
+ * Disallow `.bind()` or arrow functions in JSX props
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-bind.md
+ */
 export type JsxNoBind = 'off' | JsxNoBind0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoExtendNative0 =
       }
     ];
 
+/**
+ * Disallow extending native types
+ * @see https://eslint.org/docs/rules/no-extend-native
+ */
 export type NoExtendNative = 'off' | NoExtendNative0;

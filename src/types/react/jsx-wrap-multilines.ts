@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type JsxWrapMultilines0 =
       }
     ];
 
+/**
+ * Disallow missing parentheses around multiline JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-wrap-multilines.md
+ */
 export type JsxWrapMultilines = 'off' | JsxWrapMultilines0;

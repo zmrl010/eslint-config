@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type NoConsole0 =
       }
     ];
 
+/**
+ * Disallow the use of `console`
+ * @see https://eslint.org/docs/rules/no-console
+ */
 export type NoConsole = 'off' | NoConsole0;

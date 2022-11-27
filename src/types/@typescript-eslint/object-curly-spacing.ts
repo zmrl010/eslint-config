@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type ObjectCurlySpacing0 =
       }
     ];
 
+/**
+ * Enforce consistent spacing inside braces
+ * @see https://typescript-eslint.io/rules/object-curly-spacing
+ */
 export type ObjectCurlySpacing = 'off' | ObjectCurlySpacing0;

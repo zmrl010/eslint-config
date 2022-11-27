@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type FuncStyle0 =
       }
     ];
 
+/**
+ * Enforce the consistent use of either `function` declarations or expressions
+ * @see https://eslint.org/docs/rules/func-style
+ */
 export type FuncStyle = 'off' | FuncStyle0;

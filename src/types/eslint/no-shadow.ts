@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type NoShadow0 =
       }
     ];
 
+/**
+ * Disallow variable declarations from shadowing variables declared in the outer scope
+ * @see https://eslint.org/docs/rules/no-shadow
+ */
 export type NoShadow = 'off' | NoShadow0;

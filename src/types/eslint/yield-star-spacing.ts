@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type YieldStarSpacing0 =
       )
     ];
 
+/**
+ * Require or disallow spacing around the `*` in `yield*` expressions
+ * @see https://eslint.org/docs/rules/yield-star-spacing
+ */
 export type YieldStarSpacing = 'off' | YieldStarSpacing0;

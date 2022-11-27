@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type Complexity0 =
       )
     ];
 
+/**
+ * Enforce a maximum cyclomatic complexity allowed in a program
+ * @see https://eslint.org/docs/rules/complexity
+ */
 export type Complexity = 'off' | Complexity0;

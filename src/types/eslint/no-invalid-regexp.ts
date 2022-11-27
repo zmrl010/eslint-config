@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoInvalidRegexp0 =
       }
     ];
 
+/**
+ * Disallow invalid regular expression strings in `RegExp` constructors
+ * @see https://eslint.org/docs/rules/no-invalid-regexp
+ */
 export type NoInvalidRegexp = 'off' | NoInvalidRegexp0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type PreferPromiseRejectErrors0 =
       }
     ];
 
+/**
+ * Require using Error objects as Promise rejection reasons
+ * @see https://eslint.org/docs/rules/prefer-promise-reject-errors
+ */
 export type PreferPromiseRejectErrors = 'off' | PreferPromiseRejectErrors0;

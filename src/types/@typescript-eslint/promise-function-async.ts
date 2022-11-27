@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -27,4 +27,8 @@ type PromiseFunctionAsync0 =
       }
     ];
 
+/**
+ * Require any function or method that returns a Promise to be marked async
+ * @see https://typescript-eslint.io/rules/promise-function-async
+ */
 export type PromiseFunctionAsync = 'off' | PromiseFunctionAsync0;

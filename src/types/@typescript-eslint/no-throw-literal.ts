@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type NoThrowLiteral0 =
       }
     ];
 
+/**
+ * Disallow throwing literals as exceptions
+ * @see https://typescript-eslint.io/rules/no-throw-literal
+ */
 export type NoThrowLiteral = 'off' | NoThrowLiteral0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type NoIrregularWhitespace0 =
       }
     ];
 
+/**
+ * Disallow irregular whitespace
+ * @see https://eslint.org/docs/rules/no-irregular-whitespace
+ */
 export type NoIrregularWhitespace = 'off' | NoIrregularWhitespace0;

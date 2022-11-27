@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type BooleanPropNaming0 =
       }
     ];
 
+/**
+ * Enforces consistent naming for boolean props
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/boolean-prop-naming.md
+ */
 export type BooleanPropNaming = 'off' | BooleanPropNaming0;

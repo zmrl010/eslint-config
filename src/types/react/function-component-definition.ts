@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -26,4 +26,8 @@ type FunctionComponentDefinition0 =
       }
     ];
 
+/**
+ * Enforce a specific function type for function components
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/function-component-definition.md
+ */
 export type FunctionComponentDefinition = 'off' | FunctionComponentDefinition0;

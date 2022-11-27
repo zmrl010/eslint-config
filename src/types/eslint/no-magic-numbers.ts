@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -21,4 +21,8 @@ type NoMagicNumbers0 =
       }
     ];
 
+/**
+ * Disallow magic numbers
+ * @see https://eslint.org/docs/rules/no-magic-numbers
+ */
 export type NoMagicNumbers = 'off' | NoMagicNumbers0;

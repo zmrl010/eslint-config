@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoUnneededTernary0 =
       }
     ];
 
+/**
+ * Disallow ternary operators when simpler alternatives exist
+ * @see https://eslint.org/docs/rules/no-unneeded-ternary
+ */
 export type NoUnneededTernary = 'off' | NoUnneededTernary0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type DestructuringAssignment0 =
       }
     ];
 
+/**
+ * Enforce consistent usage of destructuring assignment of props, state, and context
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/destructuring-assignment.md
+ */
 export type DestructuringAssignment = 'off' | DestructuringAssignment0;

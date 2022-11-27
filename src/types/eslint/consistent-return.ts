@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type ConsistentReturn0 =
       }
     ];
 
+/**
+ * Require `return` statements to either always or never specify values
+ * @see https://eslint.org/docs/rules/consistent-return
+ */
 export type ConsistentReturn = 'off' | ConsistentReturn0;

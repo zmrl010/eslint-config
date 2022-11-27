@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoInlineComments0 =
       }
     ];
 
+/**
+ * Disallow inline comments after code
+ * @see https://eslint.org/docs/rules/no-inline-comments
+ */
 export type NoInlineComments = 'off' | NoInlineComments0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type Quotes0 =
       )
     ];
 
+/**
+ * Enforce the consistent use of either backticks, double, or single quotes
+ * @see https://eslint.org/docs/rules/quotes
+ */
 export type Quotes = 'off' | Quotes0;

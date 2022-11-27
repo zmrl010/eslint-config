@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type JsxTagSpacing0 =
       }
     ];
 
+/**
+ * Enforce whitespace in and around the JSX opening and closing brackets
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-tag-spacing.md
+ */
 export type JsxTagSpacing = 'off' | JsxTagSpacing0;

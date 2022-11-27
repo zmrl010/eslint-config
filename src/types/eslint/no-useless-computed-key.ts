@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoUselessComputedKey0 =
       }
     ];
 
+/**
+ * Disallow unnecessary computed property keys in objects and classes
+ * @see https://eslint.org/docs/rules/no-useless-computed-key
+ */
 export type NoUselessComputedKey = 'off' | NoUselessComputedKey0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type MaxLinesPerFunction0 =
       )
     ];
 
+/**
+ * Enforce a maximum number of lines of code in a function
+ * @see https://eslint.org/docs/rules/max-lines-per-function
+ */
 export type MaxLinesPerFunction = 'off' | MaxLinesPerFunction0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type MaxNestedCallbacks0 =
       )
     ];
 
+/**
+ * Enforce a maximum depth that callbacks can be nested
+ * @see https://eslint.org/docs/rules/max-nested-callbacks
+ */
 export type MaxNestedCallbacks = 'off' | MaxNestedCallbacks0;

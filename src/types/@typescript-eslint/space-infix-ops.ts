@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type SpaceInfixOps0 =
       }
     ];
 
+/**
+ * Require spacing around infix operators
+ * @see https://typescript-eslint.io/rules/space-infix-ops
+ */
 export type SpaceInfixOps = 'off' | SpaceInfixOps0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -25,4 +25,8 @@ type ConsistentTypeAssertions0 =
       )
     ];
 
+/**
+ * Enforce consistent usage of type assertions
+ * @see https://typescript-eslint.io/rules/consistent-type-assertions
+ */
 export type ConsistentTypeAssertions = 'off' | ConsistentTypeAssertions0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type BraceStyle0 =
       }
     ];
 
+/**
+ * Enforce consistent brace style for blocks
+ * @see https://eslint.org/docs/rules/brace-style
+ */
 export type BraceStyle = 'off' | BraceStyle0;

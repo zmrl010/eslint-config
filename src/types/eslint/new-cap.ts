@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type NewCap0 =
       }
     ];
 
+/**
+ * Require constructor names to begin with a capital letter
+ * @see https://eslint.org/docs/rules/new-cap
+ */
 export type NewCap = 'off' | NewCap0;

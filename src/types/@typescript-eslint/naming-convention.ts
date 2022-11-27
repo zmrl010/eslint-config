@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -1170,4 +1170,8 @@ type NamingConvention0 = [
   )[]
 ];
 
+/**
+ * Enforce naming conventions for everything across a codebase
+ * @see https://typescript-eslint.io/rules/naming-convention
+ */
 export type NamingConvention = 'off' | NamingConvention0;

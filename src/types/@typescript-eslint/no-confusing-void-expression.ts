@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type NoConfusingVoidExpression0 =
       }
     ];
 
+/**
+ * Require expressions of type void to appear in statement position
+ * @see https://typescript-eslint.io/rules/no-confusing-void-expression
+ */
 export type NoConfusingVoidExpression = 'off' | NoConfusingVoidExpression0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -43,4 +43,8 @@ type TypeAnnotationSpacing0 =
       }
     ];
 
+/**
+ * Require consistent spacing around type annotations
+ * @see https://typescript-eslint.io/rules/type-annotation-spacing
+ */
 export type TypeAnnotationSpacing = 'off' | TypeAnnotationSpacing0;

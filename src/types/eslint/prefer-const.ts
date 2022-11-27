@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type PreferConst0 =
       }
     ];
 
+/**
+ * Require `const` declarations for variables that are never reassigned after declared
+ * @see https://eslint.org/docs/rules/prefer-const
+ */
 export type PreferConst = 'off' | PreferConst0;

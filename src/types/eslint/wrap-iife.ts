@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type WrapIife0 =
       }
     ];
 
+/**
+ * Require parentheses around immediate `function` invocations
+ * @see https://eslint.org/docs/rules/wrap-iife
+ */
 export type WrapIife = 'off' | WrapIife0;

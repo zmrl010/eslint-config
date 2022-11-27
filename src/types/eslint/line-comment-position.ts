@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type LineCommentPosition0 =
       )
     ];
 
+/**
+ * Enforce position of line comments
+ * @see https://eslint.org/docs/rules/line-comment-position
+ */
 export type LineCommentPosition = 'off' | LineCommentPosition0;

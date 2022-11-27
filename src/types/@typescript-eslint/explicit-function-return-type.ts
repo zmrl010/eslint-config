@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -39,4 +39,8 @@ type ExplicitFunctionReturnType0 =
       }
     ];
 
+/**
+ * Require explicit return types on functions and class methods
+ * @see https://typescript-eslint.io/rules/explicit-function-return-type
+ */
 export type ExplicitFunctionReturnType = 'off' | ExplicitFunctionReturnType0;

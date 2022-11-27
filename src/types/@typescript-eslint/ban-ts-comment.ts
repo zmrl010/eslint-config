@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -27,4 +27,8 @@ type DirectiveConfigSchema =
       [k: string]: unknown;
     };
 
+/**
+ * Disallow `@ts-<directive>` comments or require descriptions after directives
+ * @see https://typescript-eslint.io/rules/ban-ts-comment
+ */
 export type BanTsComment = 'off' | BanTsComment0;

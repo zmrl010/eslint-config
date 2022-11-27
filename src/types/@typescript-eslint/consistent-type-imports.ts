@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type ConsistentTypeImports0 =
       }
     ];
 
+/**
+ * Enforce consistent usage of type imports
+ * @see https://typescript-eslint.io/rules/consistent-type-imports
+ */
 export type ConsistentTypeImports = 'off' | ConsistentTypeImports0;

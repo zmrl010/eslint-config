@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoEval0 =
       }
     ];
 
+/**
+ * Disallow the use of `eval()`
+ * @see https://eslint.org/docs/rules/no-eval
+ */
 export type NoEval = 'off' | NoEval0;

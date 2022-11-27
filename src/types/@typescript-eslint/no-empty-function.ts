@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -31,4 +31,8 @@ type NoEmptyFunction0 =
       }
     ];
 
+/**
+ * Disallow empty functions
+ * @see https://typescript-eslint.io/rules/no-empty-function
+ */
 export type NoEmptyFunction = 'off' | NoEmptyFunction0;

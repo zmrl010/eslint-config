@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -46,4 +46,8 @@ type MemberDelimiterStyle0 =
       }
     ];
 
+/**
+ * Require a specific member delimiter style for interfaces and type literals
+ * @see https://typescript-eslint.io/rules/member-delimiter-style
+ */
 export type MemberDelimiterStyle = 'off' | MemberDelimiterStyle0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -33,4 +33,8 @@ type MaxStatements0 =
       }
     ];
 
+/**
+ * Enforce a maximum number of statements allowed in function blocks
+ * @see https://eslint.org/docs/rules/max-statements
+ */
 export type MaxStatements = 'off' | MaxStatements0;

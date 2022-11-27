@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type JsxNoDuplicateProps0 =
       }
     ];
 
+/**
+ * Disallow duplicate properties in JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-duplicate-props.md
+ */
 export type JsxNoDuplicateProps = 'off' | JsxNoDuplicateProps0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -25,4 +25,8 @@ type LogicalAssignmentOperators0 =
         unknown[]
     ];
 
+/**
+ * Require or disallow logical assignment logical operator shorthand
+ * @see https://eslint.org/docs/rules/logical-assignment-operators
+ */
 export type LogicalAssignmentOperators = 'off' | LogicalAssignmentOperators0;

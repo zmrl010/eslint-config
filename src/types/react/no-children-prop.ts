@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoChildrenProp0 =
       }
     ];
 
+/**
+ * Disallow passing of children as props
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-children-prop.md
+ */
 export type NoChildrenProp = 'off' | NoChildrenProp0;

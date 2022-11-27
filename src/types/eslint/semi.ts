@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -38,4 +38,8 @@ type Semi0 =
       unknown
     ];
 
+/**
+ * Require or disallow semicolons instead of ASI
+ * @see https://eslint.org/docs/rules/semi
+ */
 export type Semi = 'off' | Semi0;

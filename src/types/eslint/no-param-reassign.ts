@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type NoParamReassign0 =
       )
     ];
 
+/**
+ * Disallow reassigning `function` parameters
+ * @see https://eslint.org/docs/rules/no-param-reassign
+ */
 export type NoParamReassign = 'off' | NoParamReassign0;

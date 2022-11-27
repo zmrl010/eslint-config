@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type HeadingHasContent0 =
       }
     ];
 
+/**
+ * Enforce heading (h1, h2, etc) elements contain accessible content.
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/heading-has-content.md
+ */
 export type HeadingHasContent = 'off' | HeadingHasContent0;

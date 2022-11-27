@@ -1,4 +1,4 @@
-import { format, Options } from 'prettier';
+import { format, Options, resolveConfig } from 'prettier';
 import prettierConfig from '../../../.prettierrc.json' assert { type: 'json' };
 
 export { prettierConfig };

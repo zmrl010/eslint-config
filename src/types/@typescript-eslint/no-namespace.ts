@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type NoNamespace0 =
       }
     ];
 
+/**
+ * Disallow TypeScript namespaces
+ * @see https://typescript-eslint.io/rules/no-namespace
+ */
 export type NoNamespace = 'off' | NoNamespace0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -34,4 +34,8 @@ type CapitalizedComments0 =
       )
     ];
 
+/**
+ * Enforce or disallow capitalization of the first letter of a comment
+ * @see https://eslint.org/docs/rules/capitalized-comments
+ */
 export type CapitalizedComments = 'off' | CapitalizedComments0;

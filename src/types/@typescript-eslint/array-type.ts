@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -24,4 +24,8 @@ type ArrayType0 =
       }
     ];
 
+/**
+ * Require consistently using either `T[]` or `Array<T>` for arrays
+ * @see https://typescript-eslint.io/rules/array-type
+ */
 export type ArrayType = 'off' | ArrayType0;

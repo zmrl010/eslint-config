@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type MaxClassesPerFile0 =
       )
     ];
 
+/**
+ * Enforce a maximum number of classes per file
+ * @see https://eslint.org/docs/rules/max-classes-per-file
+ */
 export type MaxClassesPerFile = 'off' | MaxClassesPerFile0;

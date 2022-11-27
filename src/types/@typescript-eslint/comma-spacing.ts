@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type CommaSpacing0 =
       }
     ];
 
+/**
+ * Enforce consistent spacing before and after commas
+ * @see https://typescript-eslint.io/rules/comma-spacing
+ */
 export type CommaSpacing = 'off' | CommaSpacing0;

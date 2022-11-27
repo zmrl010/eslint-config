@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -24,4 +24,8 @@ type AnchorIsValid0 =
       }
     ];
 
+/**
+ * anchor-is-valid
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/anchor-is-valid.md
+ */
 export type AnchorIsValid = 'off' | AnchorIsValid0;

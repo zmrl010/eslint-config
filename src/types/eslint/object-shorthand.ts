@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -39,4 +39,8 @@ type ObjectShorthand0 =
       }
     ];
 
+/**
+ * Require or disallow method and property shorthand syntax for object literals
+ * @see https://eslint.org/docs/rules/object-shorthand
+ */
 export type ObjectShorthand = 'off' | ObjectShorthand0;

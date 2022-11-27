@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -25,4 +25,8 @@ type NoUseBeforeDefine0 =
       )
     ];
 
+/**
+ * Disallow the use of variables before they are defined
+ * @see https://typescript-eslint.io/rules/no-use-before-define
+ */
 export type NoUseBeforeDefine = 'off' | NoUseBeforeDefine0;

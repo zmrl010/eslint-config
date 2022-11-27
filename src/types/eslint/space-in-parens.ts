@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type SpaceInParens0 =
       }
     ];
 
+/**
+ * Enforce consistent spacing inside parentheses
+ * @see https://eslint.org/docs/rules/space-in-parens
+ */
 export type SpaceInParens = 'off' | SpaceInParens0;

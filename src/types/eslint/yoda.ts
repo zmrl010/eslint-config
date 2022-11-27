@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type Yoda0 =
       }
     ];
 
+/**
+ * Require or disallow "Yoda" conditions
+ * @see https://eslint.org/docs/rules/yoda
+ */
 export type Yoda = 'off' | Yoda0;

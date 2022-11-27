@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -31,4 +31,8 @@ type NoExtraneousClass0 =
       }
     ];
 
+/**
+ * Disallow classes used as namespaces
+ * @see https://typescript-eslint.io/rules/no-extraneous-class
+ */
 export type NoExtraneousClass = 'off' | NoExtraneousClass0;

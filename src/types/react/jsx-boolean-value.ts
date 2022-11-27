@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -26,4 +26,8 @@ type JsxBooleanValue0 =
       }
     ];
 
+/**
+ * Enforce boolean attributes notation in JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-boolean-value.md
+ */
 export type JsxBooleanValue = 'off' | JsxBooleanValue0;

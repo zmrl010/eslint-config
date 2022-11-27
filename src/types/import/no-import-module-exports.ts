@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,7 @@ type NoImportModuleExports0 =
       }
     ];
 
+/**
+ * Disallow import statements with module.exports
+ */
 export type NoImportModuleExports = 'off' | NoImportModuleExports0;

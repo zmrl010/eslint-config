@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type JsxFilenameExtension0 =
       }
     ];
 
+/**
+ * Disallow file extensions that may contain JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-filename-extension.md
+ */
 export type JsxFilenameExtension = 'off' | JsxFilenameExtension0;

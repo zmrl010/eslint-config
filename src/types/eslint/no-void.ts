@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoVoid0 =
       }
     ];
 
+/**
+ * Disallow `void` operators
+ * @see https://eslint.org/docs/rules/no-void
+ */
 export type NoVoid = 'off' | NoVoid0;

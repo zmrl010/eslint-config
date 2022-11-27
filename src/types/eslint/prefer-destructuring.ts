@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -51,4 +51,8 @@ type PreferDestructuring0 =
       }
     ];
 
+/**
+ * Require destructuring from arrays and/or objects
+ * @see https://eslint.org/docs/rules/prefer-destructuring
+ */
 export type PreferDestructuring = 'off' | PreferDestructuring0;

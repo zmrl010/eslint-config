@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type UseIsnan0 =
       }
     ];
 
+/**
+ * Require calls to `isNaN()` when checking for `NaN`
+ * @see https://eslint.org/docs/rules/use-isnan
+ */
 export type UseIsnan = 'off' | UseIsnan0;

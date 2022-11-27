@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoSequences0 =
       }
     ];
 
+/**
+ * Disallow comma operators
+ * @see https://eslint.org/docs/rules/no-sequences
+ */
 export type NoSequences = 'off' | NoSequences0;

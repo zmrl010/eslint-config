@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type SemiSpacing0 =
       }
     ];
 
+/**
+ * Enforce consistent spacing before and after semicolons
+ * @see https://eslint.org/docs/rules/semi-spacing
+ */
 export type SemiSpacing = 'off' | SemiSpacing0;

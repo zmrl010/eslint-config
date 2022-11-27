@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -24,4 +24,8 @@ type Typedef0 =
       }
     ];
 
+/**
+ * Require type annotations in certain places
+ * @see https://typescript-eslint.io/rules/typedef
+ */
 export type Typedef = 'off' | Typedef0;

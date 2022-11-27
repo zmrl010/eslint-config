@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type DefaultCase0 =
       }
     ];
 
+/**
+ * Require `default` cases in `switch` statements
+ * @see https://eslint.org/docs/rules/default-case
+ */
 export type DefaultCase = 'off' | DefaultCase0;

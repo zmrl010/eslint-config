@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -26,4 +26,8 @@ type OneVar0 =
       )
     ];
 
+/**
+ * Enforce variables to be declared either together or separately in functions
+ * @see https://eslint.org/docs/rules/one-var
+ */
 export type OneVar = 'off' | OneVar0;

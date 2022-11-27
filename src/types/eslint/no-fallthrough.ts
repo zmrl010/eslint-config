@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type NoFallthrough0 =
       }
     ];
 
+/**
+ * Disallow fallthrough of `case` statements
+ * @see https://eslint.org/docs/rules/no-fallthrough
+ */
 export type NoFallthrough = 'off' | NoFallthrough0;

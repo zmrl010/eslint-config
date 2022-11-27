@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type LinesBetweenClassMembers0 =
       }
     ];
 
+/**
+ * Require or disallow an empty line between class members
+ * @see https://eslint.org/docs/rules/lines-between-class-members
+ */
 export type LinesBetweenClassMembers = 'off' | LinesBetweenClassMembers0;

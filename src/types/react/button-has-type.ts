@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type ButtonHasType0 =
       }
     ];
 
+/**
+ * Disallow usage of `button` elements without an explicit `type` attribute
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/button-has-type.md
+ */
 export type ButtonHasType = 'off' | ButtonHasType0;

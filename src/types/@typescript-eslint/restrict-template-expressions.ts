@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -36,4 +36,8 @@ type RestrictTemplateExpressions0 =
       }
     ];
 
+/**
+ * Enforce template literal expressions to be of `string` type
+ * @see https://typescript-eslint.io/rules/restrict-template-expressions
+ */
 export type RestrictTemplateExpressions = 'off' | RestrictTemplateExpressions0;

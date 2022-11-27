@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type NoExplicitAny0 =
       }
     ];
 
+/**
+ * Disallow the `any` type
+ * @see https://typescript-eslint.io/rules/no-explicit-any
+ */
 export type NoExplicitAny = 'off' | NoExplicitAny0;

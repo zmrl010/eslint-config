@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoDuplicateImports0 =
       }
     ];
 
+/**
+ * Disallow duplicate module imports
+ * @see https://eslint.org/docs/rules/no-duplicate-imports
+ */
 export type NoDuplicateImports = 'off' | NoDuplicateImports0;

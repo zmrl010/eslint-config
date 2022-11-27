@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type TripleSlashReference0 =
       }
     ];
 
+/**
+ * Disallow certain triple slash directives in favor of ES6-style import declarations
+ * @see https://typescript-eslint.io/rules/triple-slash-reference
+ */
 export type TripleSlashReference = 'off' | TripleSlashReference0;

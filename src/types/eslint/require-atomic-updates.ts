@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type RequireAtomicUpdates0 =
       }
     ];
 
+/**
+ * Disallow assignments that can lead to race conditions due to usage of `await` or `yield`
+ * @see https://eslint.org/docs/rules/require-atomic-updates
+ */
 export type RequireAtomicUpdates = 'off' | RequireAtomicUpdates0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -291,4 +291,8 @@ type KeywordSpacing0 =
       }
     ];
 
+/**
+ * Enforce consistent spacing before and after keywords
+ * @see https://typescript-eslint.io/rules/keyword-spacing
+ */
 export type KeywordSpacing = 'off' | KeywordSpacing0;

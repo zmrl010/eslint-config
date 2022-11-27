@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -142,6 +142,10 @@ type StatementType =
       )[]
     ];
 
+/**
+ * Require or disallow padding lines between statements
+ * @see https://eslint.org/docs/rules/padding-line-between-statements
+ */
 export type PaddingLineBetweenStatements =
   | 'off'
   | PaddingLineBetweenStatements0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,6 +23,10 @@ type NoUnnecessaryBooleanLiteralCompare0 =
       }
     ];
 
+/**
+ * Disallow unnecessary equality comparisons against boolean literals
+ * @see https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
+ */
 export type NoUnnecessaryBooleanLiteralCompare =
   | 'off'
   | NoUnnecessaryBooleanLiteralCompare0;

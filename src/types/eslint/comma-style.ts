@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type CommaStyle0 =
       }
     ];
 
+/**
+ * Enforce consistent comma style
+ * @see https://eslint.org/docs/rules/comma-style
+ */
 export type CommaStyle = 'off' | CommaStyle0;

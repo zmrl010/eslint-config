@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,8 @@ type NoUnderscoreDangle0 =
       }
     ];
 
+/**
+ * Disallow dangling underscores in identifiers
+ * @see https://eslint.org/docs/rules/no-underscore-dangle
+ */
 export type NoUnderscoreDangle = 'off' | NoUnderscoreDangle0;

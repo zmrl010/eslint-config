@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type StrictBooleanExpressions0 =
       }
     ];
 
+/**
+ * Disallow certain types in boolean expressions
+ * @see https://typescript-eslint.io/rules/strict-boolean-expressions
+ */
 export type StrictBooleanExpressions = 'off' | StrictBooleanExpressions0;

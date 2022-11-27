@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -28,4 +28,8 @@ type SpacedComment0 =
       }
     ];
 
+/**
+ * Enforce consistent spacing after the `//` or `/*` in a comment
+ * @see https://eslint.org/docs/rules/spaced-comment
+ */
 export type SpacedComment = 'off' | SpacedComment0;

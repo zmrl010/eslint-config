@@ -29,6 +29,10 @@ function getPkgDeps() {
   return readPackageUpSync()?.packageJson?.dependencies ?? {};
 }
 
+function loadPlugin(pluginName: string): Promise<TSESLint.Linter.Plugin> {
+  return import(pluginName);
+}
+
 /**
  * @returns list of all the eslint plugins installed including eslint core
  */
@@ -40,13 +44,12 @@ export function getAllPlugins(): Array<Promise<PendingPlugin>> {
         d.endsWith('/eslint-plugin') ||
         d.includes('/eslint-plugin-')
     )
-    .map<Promise<PendingPlugin>>(async (d) => {
-      // eslint-disable-next-line @typescript-eslint/consistent-type-assertions -- dynamic import is untyped
-      const plugin = (await import(d)) as TSESLint.Linter.Plugin;
+    .map<Promise<PendingPlugin>>(async (pluginName) => {
+      const plugin = await loadPlugin(pluginName);
       return {
         rules: plugin.rules ? { ...plugin.rules } : null,
-        name: d,
-        shortName: d
+        name: pluginName,
+        shortName: pluginName
           .replace(/^eslint-plugin-/u, '')
           .replace(/\/eslint-plugin$/u, '')
           .replace(/\/eslint-plugin-/u, '/'),

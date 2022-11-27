@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -19,4 +19,8 @@ type ForbidPropTypes0 =
       }
     ];
 
+/**
+ * Disallow certain propTypes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-prop-types.md
+ */
 export type ForbidPropTypes = 'off' | ForbidPropTypes0;

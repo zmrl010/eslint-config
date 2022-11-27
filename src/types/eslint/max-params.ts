@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type MaxParams0 =
       )
     ];
 
+/**
+ * Enforce a maximum number of parameters in function definitions
+ * @see https://eslint.org/docs/rules/max-params
+ */
 export type MaxParams = 'off' | MaxParams0;

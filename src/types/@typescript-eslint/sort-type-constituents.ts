@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -41,4 +41,8 @@ type SortTypeConstituents0 =
       }
     ];
 
+/**
+ * Enforce constituents of a type union/intersection to be sorted alphabetically
+ * @see https://typescript-eslint.io/rules/sort-type-constituents
+ */
 export type SortTypeConstituents = 'off' | SortTypeConstituents0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type JsxNewline0 =
       }
     ];
 
+/**
+ * Require or prevent a new line after jsx elements and expressions.
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-newline.md
+ */
 export type JsxNewline = 'off' | JsxNewline0;

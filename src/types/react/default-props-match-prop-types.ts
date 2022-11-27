@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type DefaultPropsMatchPropTypes0 =
       }
     ];
 
+/**
+ * Enforce all defaultProps have a corresponding non-required PropType
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/default-props-match-prop-types.md
+ */
 export type DefaultPropsMatchPropTypes = 'off' | DefaultPropsMatchPropTypes0;

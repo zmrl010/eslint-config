@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type NoUnescapedEntities0 =
       }
     ];
 
+/**
+ * Disallow unescaped HTML entities from appearing in markup
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unescaped-entities.md
+ */
 export type NoUnescapedEntities = 'off' | NoUnescapedEntities0;

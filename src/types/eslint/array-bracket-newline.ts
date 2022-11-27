@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type ArrayBracketNewline0 =
       )
     ];
 
+/**
+ * Enforce linebreaks after opening and before closing array brackets
+ * @see https://eslint.org/docs/rules/array-bracket-newline
+ */
 export type ArrayBracketNewline = 'off' | ArrayBracketNewline0;

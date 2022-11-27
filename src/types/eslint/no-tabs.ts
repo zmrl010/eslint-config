@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoTabs0 =
       }
     ];
 
+/**
+ * Disallow all tabs
+ * @see https://eslint.org/docs/rules/no-tabs
+ */
 export type NoTabs = 'off' | NoTabs0;

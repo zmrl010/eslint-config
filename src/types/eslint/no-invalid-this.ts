@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type NoInvalidThis0 =
       }
     ];
 
+/**
+ * Disallow use of `this` in contexts where the value of `this` is `undefined`
+ * @see https://eslint.org/docs/rules/no-invalid-this
+ */
 export type NoInvalidThis = 'off' | NoInvalidThis0;

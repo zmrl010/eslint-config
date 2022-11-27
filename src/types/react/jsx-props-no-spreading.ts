@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -21,4 +21,8 @@ type JsxPropsNoSpreading0 =
       }
     ];
 
+/**
+ * Disallow JSX prop spreading
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-props-no-spreading.md
+ */
 export type JsxPropsNoSpreading = 'off' | JsxPropsNoSpreading0;

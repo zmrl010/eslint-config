@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -14,4 +14,8 @@ type MultilineCommentStyle0 =
       'starred-block' | 'separate-lines' | 'bare-block'
     ];
 
+/**
+ * Enforce a particular style for multiline comments
+ * @see https://eslint.org/docs/rules/multiline-comment-style
+ */
 export type MultilineCommentStyle = 'off' | MultilineCommentStyle0;

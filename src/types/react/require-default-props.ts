@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type RequireDefaultProps0 =
       }
     ];
 
+/**
+ * Enforce a defaultProps definition for every prop that is not a required prop
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/require-default-props.md
+ */
 export type RequireDefaultProps = 'off' | RequireDefaultProps0;

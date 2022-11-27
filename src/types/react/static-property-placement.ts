@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -44,4 +44,8 @@ type StaticPropertyPlacement0 =
       }
     ];
 
+/**
+ * Enforces where React component static properties should be positioned.
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/static-property-placement.md
+ */
 export type StaticPropertyPlacement = 'off' | StaticPropertyPlacement0;

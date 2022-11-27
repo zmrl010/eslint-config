@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type JsxNoTargetBlank0 =
       }
     ];
 
+/**
+ * Disallow `target="_blank"` attribute without `rel="noreferrer"`
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-target-blank.md
+ */
 export type JsxNoTargetBlank = 'off' | JsxNoTargetBlank0;

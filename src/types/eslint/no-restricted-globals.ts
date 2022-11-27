@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type NoRestrictedGlobals0 = [
   )[]
 ];
 
+/**
+ * Disallow specified global variables
+ * @see https://eslint.org/docs/rules/no-restricted-globals
+ */
 export type NoRestrictedGlobals = 'off' | NoRestrictedGlobals0;

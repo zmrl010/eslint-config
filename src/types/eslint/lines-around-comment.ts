@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -29,4 +29,8 @@ type LinesAroundComment0 =
       }
     ];
 
+/**
+ * Require empty lines around comments
+ * @see https://eslint.org/docs/rules/lines-around-comment
+ */
 export type LinesAroundComment = 'off' | LinesAroundComment0;

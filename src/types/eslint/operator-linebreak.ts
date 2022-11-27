@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type OperatorLinebreak0 =
       }
     ];
 
+/**
+ * Enforce consistent linebreak style for operators
+ * @see https://eslint.org/docs/rules/operator-linebreak
+ */
 export type OperatorLinebreak = 'off' | OperatorLinebreak0;

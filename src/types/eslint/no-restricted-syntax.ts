@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -18,4 +18,8 @@ type NoRestrictedSyntax0 = [
   )[]
 ];
 
+/**
+ * Disallow specified syntax
+ * @see https://eslint.org/docs/rules/no-restricted-syntax
+ */
 export type NoRestrictedSyntax = 'off' | NoRestrictedSyntax0;

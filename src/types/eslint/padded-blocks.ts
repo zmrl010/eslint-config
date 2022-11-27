@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -35,4 +35,8 @@ type PaddedBlocks0 =
       }
     ];
 
+/**
+ * Require or disallow padding within blocks
+ * @see https://eslint.org/docs/rules/padded-blocks
+ */
 export type PaddedBlocks = 'off' | PaddedBlocks0;

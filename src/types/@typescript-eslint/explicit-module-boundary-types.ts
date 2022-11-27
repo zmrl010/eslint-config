@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -38,4 +38,8 @@ type ExplicitModuleBoundaryTypes0 =
       }
     ];
 
+/**
+ * Require explicit return and argument types on exported functions' and classes' public class methods
+ * @see https://typescript-eslint.io/rules/explicit-module-boundary-types
+ */
 export type ExplicitModuleBoundaryTypes = 'off' | ExplicitModuleBoundaryTypes0;

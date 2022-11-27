@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type NoMultiSpaces0 =
       }
     ];
 
+/**
+ * Disallow multiple spaces
+ * @see https://eslint.org/docs/rules/no-multi-spaces
+ */
 export type NoMultiSpaces = 'off' | NoMultiSpaces0;

@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -20,4 +20,8 @@ type MaxDepth0 =
       )
     ];
 
+/**
+ * Enforce a maximum depth that blocks can be nested
+ * @see https://eslint.org/docs/rules/max-depth
+ */
 export type MaxDepth = 'off' | MaxDepth0;

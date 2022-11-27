@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type ObjectPropertyNewline0 =
       }
     ];
 
+/**
+ * Enforce placing object properties on separate lines
+ * @see https://eslint.org/docs/rules/object-property-newline
+ */
 export type ObjectPropertyNewline = 'off' | ObjectPropertyNewline0;

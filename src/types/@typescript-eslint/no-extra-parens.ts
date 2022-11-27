@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -24,4 +24,8 @@ type NoExtraParens0 =
       }
     ];
 
+/**
+ * Disallow unnecessary parentheses
+ * @see https://typescript-eslint.io/rules/no-extra-parens
+ */
 export type NoExtraParens = 'off' | NoExtraParens0;

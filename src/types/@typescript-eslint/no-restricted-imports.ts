@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -42,4 +42,8 @@ type NoRestrictedImports0 =
       }
     ];
 
+/**
+ * Disallow specified modules when loaded by `import`
+ * @see https://typescript-eslint.io/rules/no-restricted-imports
+ */
 export type NoRestrictedImports = 'off' | NoRestrictedImports0;

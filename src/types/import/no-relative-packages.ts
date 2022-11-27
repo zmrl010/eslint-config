@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -22,4 +22,7 @@ type NoRelativePackages0 =
       }
     ];
 
+/**
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-packages.md
+ */
 export type NoRelativePackages = 'off' | NoRelativePackages0;

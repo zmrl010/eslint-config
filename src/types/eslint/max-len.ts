@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -106,4 +106,8 @@ type MaxLen0 =
       }
     ];
 
+/**
+ * Enforce a maximum line length
+ * @see https://eslint.org/docs/rules/max-len
+ */
 export type MaxLen = 'off' | MaxLen0;

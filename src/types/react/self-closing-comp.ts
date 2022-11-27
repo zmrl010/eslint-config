@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type SelfClosingComp0 =
       }
     ];
 
+/**
+ * Disallow extra closing tags for components without children
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/self-closing-comp.md
+ */
 export type SelfClosingComp = 'off' | SelfClosingComp0;

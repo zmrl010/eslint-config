@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -17,4 +17,8 @@ type NoInvalidVoidType0 =
       }
     ];
 
+/**
+ * Disallow `void` type outside of generic or return types
+ * @see https://typescript-eslint.io/rules/no-invalid-void-type
+ */
 export type NoInvalidVoidType = 'off' | NoInvalidVoidType0;

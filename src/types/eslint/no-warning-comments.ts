@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -21,4 +21,8 @@ type NoWarningComments0 =
       }
     ];
 
+/**
+ * Disallow specified warning terms in comments
+ * @see https://eslint.org/docs/rules/no-warning-comments
+ */
 export type NoWarningComments = 'off' | NoWarningComments0;

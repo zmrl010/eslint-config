@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -1495,4 +1495,8 @@ type MemberOrdering0 =
       }
     ];
 
+/**
+ * Require a consistent member declaration order
+ * @see https://typescript-eslint.io/rules/member-ordering
+ */
 export type MemberOrdering = 'off' | MemberOrdering0;

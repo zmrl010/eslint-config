@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -24,6 +24,10 @@ type NonblockStatementBodyPosition0 =
       }
     ];
 
+/**
+ * Enforce the location of single-line statements
+ * @see https://eslint.org/docs/rules/nonblock-statement-body-position
+ */
 export type NonblockStatementBodyPosition =
   | 'off'
   | NonblockStatementBodyPosition0;

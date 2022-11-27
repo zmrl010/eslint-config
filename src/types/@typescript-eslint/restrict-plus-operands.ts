@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -23,4 +23,8 @@ type RestrictPlusOperands0 =
       }
     ];
 
+/**
+ * Require both operands of addition to be the same type and be `bigint`, `number`, or `string`
+ * @see https://typescript-eslint.io/rules/restrict-plus-operands
+ */
 export type RestrictPlusOperands = 'off' | RestrictPlusOperands0;

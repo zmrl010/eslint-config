@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -66,4 +66,8 @@ type KeySpacing0 =
       )
     ];
 
+/**
+ * Enforce consistent spacing between keys and values in object literal properties
+ * @see https://eslint.org/docs/rules/key-spacing
+ */
 export type KeySpacing = 'off' | KeySpacing0;

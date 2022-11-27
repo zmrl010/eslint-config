@@ -1,6 +1,6 @@
-
 /**
  * THIS FILE IS AUTO-GENERATED.
+ * DO NOT MODIFY IT MANUALLY
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
@@ -16,4 +16,8 @@ type MouseEventsHaveKeyEvents0 =
       }
     ];
 
+/**
+ * mouse-events-have-key-events
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/mouse-events-have-key-events.md
+ */
 export type MouseEventsHaveKeyEvents = 'off' | MouseEventsHaveKeyEvents0;
