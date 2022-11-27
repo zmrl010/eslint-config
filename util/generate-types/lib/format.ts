@@ -1,6 +1,13 @@
 import { format, Options } from 'prettier';
 import prettierConfig from '../../../.prettierrc.json' assert { type: 'json' };
 
+export { prettierConfig };
+
+const DEFAULT_OPTIONS = {
+  ...prettierConfig,
+  parser: 'typescript',
+};
+
 /**
  * format text with prettier
  * @param source - text to transform
@@ -10,8 +17,7 @@ import prettierConfig from '../../../.prettierrc.json' assert { type: 'json' };
 export function formatText(source: string, options?: Options) {
   return format(source, {
     ...options,
-    ...prettierConfig,
-    parser: 'typescript',
+    ...DEFAULT_OPTIONS,
   });
 }
 

@@ -9,5 +9,5 @@
     "emit": true
   },
   "extends": "../../tsconfig.json",
-  "include": ["../../types/*", "./src/*.ts"]
+  "include": ["../../types/*", "lib/*.ts"]
 }

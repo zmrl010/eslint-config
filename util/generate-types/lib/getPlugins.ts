@@ -1,5 +1,5 @@
 import type { TSESLint } from '@typescript-eslint/utils';
-import packageJson from '../../../package.json' assert { type: 'json' };
+import { readPackageUpSync } from 'read-pkg-up';
 
 export type Plugin = {
   name: string;
@@ -13,32 +13,27 @@ export type PendingPlugin = {
   shortName: string;
 };
 
-export async function getESLintCoreAsPlugin(): Promise<PendingPlugin> {
+async function getESLintCoreAsPlugin(): Promise<PendingPlugin> {
   const { builtinRules: eslintRules } = await import(
     'eslint/use-at-your-own-risk'
   );
-  const plugin: Plugin = {
+
+  return {
     name: 'eslint',
-    rules: {},
+    rules: Object.fromEntries(eslintRules.entries()),
     shortName: 'eslint',
   };
-  for (const [ruleId, rule] of eslintRules) {
-    // we need to explicitly iterate over each rule to ensure it gets loaded
-    plugin.rules[ruleId] = rule;
-  }
+}
 
-  return plugin;
+function getPkgDeps() {
+  return readPackageUpSync()?.packageJson?.dependencies ?? {};
 }
 
 /**
  * @returns list of all the eslint plugins installed including eslint core
  */
 export function getAllPlugins(): Array<Promise<PendingPlugin>> {
-  const deps = {
-    ...packageJson.peerDependencies,
-    ...packageJson.dependencies,
-  };
-  return Object.keys(deps)
+  return Object.keys(getPkgDeps())
     .filter(
       (d) =>
         d.startsWith('eslint-plugin-') ||
