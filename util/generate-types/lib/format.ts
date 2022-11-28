@@ -1,4 +1,4 @@
-import { format, Options, resolveConfig } from 'prettier';
+import { format, Options } from 'prettier';
 import prettierConfig from '../../../.prettierrc.json' assert { type: 'json' };
 
 export { prettierConfig };
@@ -16,8 +16,8 @@ const DEFAULT_OPTIONS = {
  */
 export function formatText(source: string, options?: Options) {
   return format(source, {
-    ...options,
     ...DEFAULT_OPTIONS,
+    ...options,
   });
 }
 

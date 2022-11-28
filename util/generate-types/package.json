@@ -1,6 +1,7 @@
 {
   "bin": "./bin/main.ts",
   "dependencies": {
+    "@swc/core": "^1.3.20",
     "@typescript-eslint/parser": "^5.44.0",
     "@typescript-eslint/utils": "^5.44.0",
     "json-schema-to-typescript": "^11.0.2",

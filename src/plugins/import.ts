@@ -1,7 +1,5 @@
 import importPlugin from 'eslint-plugin-import';
-import { defineConfig } from '../lib/config.js';
 import { Import } from '../types/import/index.js';
-import typescriptConfig from './typescript.js';
 
 const importRules: Import = {
   'import/default': ['error'],
@@ -58,25 +56,24 @@ const importRules: Import = {
   'import/unambiguous': 'off', // not sure I understand this rule well enough right now...
 };
 
-export default defineConfig(
-  ...typescriptConfig,
-  {
-    plugins: {
-      import: importPlugin,
+const importTsRules: Partial<Import> = {
+  'import/default': 'off',
+  'import/named': 'off',
+  'import/namespace': 'off',
+  'import/no-named-as-default-member': 'off',
+  'import/no-unresolved': 'off',
+};
+
+const plugin = {
+  name: 'import',
+  module: importPlugin,
+  rules: importRules,
+  configs: {
+    typescript: {
+      files: ['**/*.ts?(x)'],
+      rules: importTsRules,
     },
-    settings: {
-      'import/ignore': ['node_modules', '.json$', '.(scss|less|css)$'],
-    },
-    rules: importRules,
   },
-  {
-    files: ['**/*.ts?(x)'],
-    rules: {
-      'import/default': 'off',
-      'import/named': 'off',
-      'import/namespace': 'off',
-      'import/no-named-as-default-member': 'off',
-      'import/no-unresolved': 'off',
-    },
-  }
-);
+};
+
+export default plugin;

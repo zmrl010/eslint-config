@@ -6,7 +6,8 @@
   "ts-node": {
     "esm": true,
     "transpileOnly": true,
-    "emit": true
+    "emit": true,
+    "swc": true
   },
   "extends": "../../tsconfig.json",
   "include": ["../../types/*", "lib/*.ts"]

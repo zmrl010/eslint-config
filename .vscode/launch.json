@@ -4,16 +4,16 @@
 
     {
       "type": "node-terminal",
-      "name": "Run Script: generate:types",
+      "name": "Run Script: generate-types",
       "request": "launch",
-      "command": "pnpm generate:types",
+      "command": "pnpm generate-types",
       "cwd": "${workspaceFolder}"
     },
     {
       "type": "node-terminal",
-      "name": "Debug Script: generate:types",
+      "name": "Debug Script: generate-types",
       "request": "launch",
-      "command": "pnpm generate:types",
+      "command": "pnpm generate-types",
       "cwd": "${workspaceFolder}",
       "env": {
         "NODE_DEBUG": "generate-types"

@@ -29,8 +29,9 @@ function getPkgDeps() {
   return readPackageUpSync()?.packageJson?.dependencies ?? {};
 }
 
-function loadPlugin(pluginName: string): Promise<TSESLint.Linter.Plugin> {
-  return import(pluginName);
+async function loadPlugin(pluginName: string): Promise<TSESLint.Linter.Plugin> {
+  const module = await import(pluginName);
+  return module?.default ?? module;
 }
 
 /**

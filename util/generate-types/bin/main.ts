@@ -2,4 +2,10 @@
 
 import { generateTypes } from '../lib/generateTypes.js';
 
-void generateTypes();
+function main() {
+  generateTypes({
+    target: process.argv[2],
+  });
+}
+
+void main();

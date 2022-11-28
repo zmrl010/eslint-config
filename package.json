@@ -49,7 +49,7 @@
     "test": "run-p lint find-new-rules",
     "build": "tsc -b",
     "build-test": "run-s build test",
-    "generate-types": "generate-rule-types"
+    "generate-types": "generate-rule-types src/types/"
   },
   "packageManager": "pnpm@7.15.0",
   "peerDependencies": {
