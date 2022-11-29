@@ -43,10 +43,9 @@
   "homepage": "https://github.com/zmrl010/eslint-config#readme",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "find-new-rules": "pnpm -r --parallel find-new-rules",
     "lint": "ESLINT_USE_FLAT_CONFIG=true eslint src --fix",
     "prepare": "pnpm build && (is-ci || husky install)",
-    "test": "run-p lint find-new-rules",
+    "test": "run-p lint",
     "build": "tsc -b",
     "build-test": "run-s build test",
     "generate-types": "generate-rule-types src/types/"

@@ -64,6 +64,28 @@ export interface LanguageOptions {
   parserOptions?: TSESLint.ParserOptions;
 }
 
+type RuleEntry = TSESLint.Linter.RuleEntry;
+type RulesRecord = Record<string, RuleEntry>;
+type Plugin = {
+  /**
+   * The definition of plugin configs.
+   */
+  configs?: Record<string, TSESLint.Linter.Config>;
+  /**
+   * The definition of plugin environments.
+   */
+  environments?: Record<string, TSESLint.Linter.Environment>;
+  /**
+   * The definition of plugin processors.
+   */
+  processors?: Record<string, TSESLint.Linter.Processor>;
+  /**
+   * The definition of plugin rules.
+   */
+  rules?: TSESLint.RuleModule<string, unknown[]>;
+};
+type PluginMap = Record<string, TSESLint.Linter.Plugin>;
+
 /**
  * Flat ESLint Configuration.
  */
@@ -100,13 +122,13 @@ export interface FlatConfigItem {
    * An object containing a name-value mapping of plugin names to plugin objects. When `files` is
    * specified, these plugins are only available to the matching files.
    */
-  plugins?: Partial<Record<string, TSESLint.Linter.Plugin>>;
+  plugins?: Record<string, unknown>;
 
   /**
    * An object containing the configured rules. When `files` or `ignores` are specified, these rule
    * configurations are only available to the matching files.
    */
-  rules?: Partial<Record<string, TSESLint.Linter.RuleEntry>>;
+  rules?: Record<string, unknown>;
 
   /**
    * An object containing name-value pairs of information that should be available to all rules.
@@ -115,6 +137,6 @@ export interface FlatConfigItem {
 }
 
 /**
- * Cascading eslint config array like those found in `eslint.config.js`
+ * Cascading eslint config array as found in `eslint.config.js`
  */
 export type FlatConfig = readonly FlatConfigItem[];

@@ -1,7 +1,7 @@
 import mainConfig from '@zmrl/eslint-config';
 
 /**
- * @type {import('./types/flat-eslint-config').FlatConfigArray}
+ * @type {import('./types/flat-eslint-config').FlatConfig}
  */
 export default [
   {

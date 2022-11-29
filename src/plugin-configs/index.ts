@@ -1,0 +1,12 @@
+export * as ESLintConfig from './eslint.js';
+export * as ImportConfig from './import.js';
+export * as JestDomConfig from './jest-dom.js';
+export * as JestConfig from './jest.js';
+export * as JsxA11yConfig from './jsx-a11y.js';
+export * as LitA11yConfig from './lit-a11y.js';
+export * as LitConfig from './lit.js';
+export * as ReactHooksConfig from './react-hooks.js';
+export * as ReactConfig from './react.js';
+export * as TestingLibraryConfig from './testing-library.js';
+export * as TypeScriptConfig from './typescript.js';
+export * as WebComponentsConfig from './wc.js';

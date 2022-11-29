@@ -90,10 +90,9 @@ export async function generateTypes(
       '}',
     ].join('\n');
 
-    const formatted = formatText(typesFile);
     config.writeFile(
       path.resolve(config.target, plugin.shortName, 'index.ts'),
-      formatted
+      formatText(typesFile)
     );
 
     console.info('Wrote types for', plugin.name, '\n');

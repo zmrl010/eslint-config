@@ -1,22 +1,13 @@
-import tsPlugin from '@typescript-eslint/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
-import { defineConfig } from '../lib/config.js';
-import { resolveFirstExisting } from '../lib/path.js';
+import type { FlatConfig } from '../../types/flat-eslint-config.js';
+import { TypeScriptConfig } from '../plugin-configs/index.js';
 
-const projectTsConfig = resolveFirstExisting(
-  'tsconfig.json',
-  'types/tsconfig.json'
-);
+const config: FlatConfig = [
+  {
+    files: TypeScriptConfig.files,
+    languageOptions: TypeScriptConfig.languageOptions,
+    plugins: TypeScriptConfig.plugins,
+    rules: TypeScriptConfig.rules,
+  },
+];
 
-export default defineConfig({
-  files: ['**/*.ts?(x)'],
-  languageOptions: {
-    parser: tsParser,
-    parserOptions: {
-      project: projectTsConfig,
-    },
-  },
-  plugins: {
-    '@typescript-eslint': tsPlugin,
-  },
-});
+export default config;

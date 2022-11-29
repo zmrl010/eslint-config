@@ -21,6 +21,7 @@ async function compileSchema(
   const code = await compile(schema, `${typeName}${index}`, {
     bannerComment: '',
     style: prettierConfig,
+    format: false,
   });
 
   return {
@@ -152,8 +153,8 @@ export async function convertRuleOptionsToTypes(
 
         const compiledCode = await compileSchema(typeName, fixedSchema);
 
-        code = formatText(
-          [compiledCode.defs, docComment, compiledCode.typeExport].join('\n')
+        code = [compiledCode.defs, docComment, compiledCode.typeExport].join(
+          '\n'
         );
       }
 
@@ -163,7 +164,10 @@ export async function convertRuleOptionsToTypes(
       }
 
       const filename = path.resolve(folderName, `${ruleName}.ts`);
-      config.writeFile(filename, [AUTO_GENERATED_NOTE, code].join('\n\n'));
+      config.writeFile(
+        filename,
+        formatText([AUTO_GENERATED_NOTE, code].join('\n\n'))
+      );
 
       console.info('Wrote', path.relative(config.cwd, filename));
     })
