@@ -12,7 +12,7 @@ type NoRestrictedMatchers0 =
   | [
       'off' | 'error' | 'warn',
       {
-        [k: string]: string | null;
+        [k: string]: (string | null) | undefined;
       }
     ];
 

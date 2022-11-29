@@ -21,7 +21,7 @@ type AnchorIsValid0 =
           'noHref' | 'invalidHref' | 'preferButton',
           ...('noHref' | 'invalidHref' | 'preferButton')[]
         ];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

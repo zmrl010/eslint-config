@@ -20,7 +20,7 @@ type Typedef0 =
         propertyDeclaration?: boolean;
         variableDeclaration?: boolean;
         variableDeclarationIgnoreFunction?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

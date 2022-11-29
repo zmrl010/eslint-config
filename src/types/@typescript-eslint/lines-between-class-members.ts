@@ -12,7 +12,7 @@ type LinesBetweenClassMembers0 =
   | [
       'off' | 'error' | 'warn',
       {
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

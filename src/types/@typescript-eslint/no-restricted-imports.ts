@@ -11,7 +11,7 @@ type NoRestrictedImports0 =
         | unknown
         | {
             allowTypeImports?: boolean;
-            [k: string]: unknown;
+            [k: string]: unknown | undefined;
           }
       )[]
     ]
@@ -28,7 +28,7 @@ type NoRestrictedImports0 =
             | unknown
             | {
                 allowTypeImports?: boolean;
-                [k: string]: unknown;
+                [k: string]: unknown | undefined;
               }
           )[]
         ];
@@ -36,9 +36,9 @@ type NoRestrictedImports0 =
           | unknown
           | {
               allowTypeImports?: boolean;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             }[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

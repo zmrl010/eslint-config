@@ -15,7 +15,7 @@ type MediaHasCaption0 =
         audio?: string[];
         video?: string[];
         track?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

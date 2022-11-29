@@ -13,7 +13,7 @@ type NoNamespace0 =
       'off' | 'error' | 'warn',
       {
         ignore?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

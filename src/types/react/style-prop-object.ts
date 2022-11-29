@@ -13,7 +13,7 @@ type StylePropObject0 =
       'off' | 'error' | 'warn',
       {
         allow?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

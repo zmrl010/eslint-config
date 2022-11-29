@@ -13,18 +13,18 @@ type NoUnusedModules0 =
       'off' | 'error' | 'warn',
       (
         | {
-            [k: string]: unknown;
+            [k: string]: unknown | undefined;
           }
         | {
-            [k: string]: unknown;
+            [k: string]: unknown | undefined;
           }
         | {
             unusedExports: true;
-            [k: string]: unknown;
+            [k: string]: unknown | undefined;
           }
         | {
             missingExports: true;
-            [k: string]: unknown;
+            [k: string]: unknown | undefined;
           }
       )
     ];

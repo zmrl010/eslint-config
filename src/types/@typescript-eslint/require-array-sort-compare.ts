@@ -16,7 +16,7 @@ type RequireArraySortCompare0 =
          * Whether to ignore arrays in which all elements are strings.
          */
         ignoreStringArrays?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

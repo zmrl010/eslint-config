@@ -23,7 +23,7 @@ type NoMisusedPromises0 =
               variables?: boolean;
             };
         checksSpreads?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

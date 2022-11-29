@@ -15,7 +15,7 @@ type SpaceUnaryOps0 =
         words?: boolean;
         nonwords?: boolean;
         overrides?: {
-          [k: string]: boolean;
+          [k: string]: boolean | undefined;
         };
       }
     ];

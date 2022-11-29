@@ -18,10 +18,10 @@ type ForbidComponentProps0 =
               propName?: string;
               allowedFor?: string[];
               message?: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             }
         )[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

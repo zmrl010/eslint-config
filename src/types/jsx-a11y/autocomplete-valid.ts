@@ -13,7 +13,7 @@ type AutocompleteValid0 =
       'off' | 'error' | 'warn',
       {
         inputComponents?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

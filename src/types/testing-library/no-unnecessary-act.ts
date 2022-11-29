@@ -13,7 +13,7 @@ type NoUnnecessaryAct0 =
       'off' | 'error' | 'warn',
       {
         isStrict?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

@@ -20,7 +20,7 @@ type AnchorIsValid0 =
           ...('noHref' | 'invalidHref' | 'preferButton')[]
         ];
         allowHash?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

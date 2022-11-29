@@ -18,7 +18,7 @@ type ForbidDomProps0 =
               propName?: string;
               disallowedFor?: string[];
               message?: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             }
         )[];
       }

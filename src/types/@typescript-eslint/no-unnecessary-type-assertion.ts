@@ -16,7 +16,7 @@ type NoUnnecessaryTypeAssertion0 =
          * A list of type names to ignore.
          */
         typesToIgnore?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

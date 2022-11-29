@@ -14,7 +14,7 @@ type AriaRole0 =
       {
         allowedInvalidRoles?: string[];
         ignoreNonDOM?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

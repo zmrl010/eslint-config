@@ -15,7 +15,7 @@ type NoLargeSnapshots0 =
         maxSize?: number;
         inlineMaxSize?: number;
         allowedSnapshots?: {
-          [k: string]: unknown[];
+          [k: string]: unknown[] | undefined;
         };
       }
     ];

@@ -14,13 +14,16 @@ type BanTypes0 =
       {
         types?: {
           [k: string]:
-            | null
-            | boolean
-            | string
-            | {
-                message?: string;
-                fixWith?: string;
-              };
+            | (
+                | null
+                | boolean
+                | string
+                | {
+                    message?: string;
+                    fixWith?: string;
+                  }
+              )
+            | undefined;
         };
         extendDefaults?: boolean;
       }

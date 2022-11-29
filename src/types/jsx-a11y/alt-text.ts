@@ -17,7 +17,7 @@ type AltText0 =
         object?: string[];
         area?: string[];
         'input[type="image"]'?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

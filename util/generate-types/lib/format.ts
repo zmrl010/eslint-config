@@ -13,6 +13,8 @@ const DEFAULT_OPTIONS = {
  * @param source - text to transform
  * @param options - additional options to be merged with
  * default config before formatting text
+ *
+ * default parser is `typescript`
  */
 export function formatText(source: string, options?: Options) {
   return format(source, {

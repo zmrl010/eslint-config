@@ -12,7 +12,7 @@ type NoNoninteractiveElementToInteractiveRole0 =
   | [
       'off' | 'error' | 'warn',
       {
-        [k: string]: string[];
+        [k: string]: string[] | undefined;
       }
     ];
 

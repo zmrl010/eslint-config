@@ -17,7 +17,7 @@ type JsxIndentProps0 =
         | {
             indentMode?: ('tab' | 'first') | number;
             ignoreTernaryOperator?: boolean;
-            [k: string]: unknown;
+            [k: string]: unknown | undefined;
           }
       )
     ];

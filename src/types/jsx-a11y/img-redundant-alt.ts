@@ -14,7 +14,7 @@ type ImgRedundantAlt0 =
       {
         components?: string[];
         words?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

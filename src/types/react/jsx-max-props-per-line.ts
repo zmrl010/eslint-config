@@ -16,7 +16,7 @@ type JsxMaxPropsPerLine0 =
             maximum?: {
               single?: number;
               multi?: number;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
           }
         | {

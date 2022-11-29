@@ -23,7 +23,7 @@ type LabelHasAssociatedControl0 =
          * JSX tree depth limit to check for accessible label
          */
         depth?: number;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

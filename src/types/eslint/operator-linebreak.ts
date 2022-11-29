@@ -15,7 +15,7 @@ type OperatorLinebreak0 =
       'after' | 'before' | 'none' | null,
       {
         overrides?: {
-          [k: string]: 'after' | 'before' | 'none' | 'ignore';
+          [k: string]: ('after' | 'before' | 'none' | 'ignore') | undefined;
         };
       }
     ];

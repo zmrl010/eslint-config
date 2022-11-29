@@ -13,7 +13,7 @@ type PreferReadonly0 =
       'off' | 'error' | 'warn',
       {
         onlyInlineLambdas?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

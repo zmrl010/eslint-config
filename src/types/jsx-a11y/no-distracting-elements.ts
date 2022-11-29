@@ -16,7 +16,7 @@ type NoDistractingElements0 =
          * @minItems 0
          */
         elements?: ('marquee' | 'blink')[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

@@ -13,7 +13,7 @@ type NoNoninteractiveElementInteractions0 =
       'off' | 'error' | 'warn',
       {
         handlers?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

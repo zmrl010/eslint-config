@@ -13,7 +13,7 @@ type NoAutofocus0 =
       'off' | 'error' | 'warn',
       {
         ignoreNonDOM?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

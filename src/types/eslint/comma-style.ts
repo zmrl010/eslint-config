@@ -15,7 +15,7 @@ type CommaStyle0 =
       'first' | 'last',
       {
         exceptions?: {
-          [k: string]: boolean;
+          [k: string]: boolean | undefined;
         };
       }
     ];

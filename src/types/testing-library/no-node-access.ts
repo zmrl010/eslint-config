@@ -13,7 +13,7 @@ type NoNodeAccess0 =
       'off' | 'error' | 'warn',
       {
         allowContainerFirstChild?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

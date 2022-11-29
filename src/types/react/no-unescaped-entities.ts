@@ -17,7 +17,7 @@ type NoUnescapedEntities0 =
           | {
               char?: string;
               alternatives?: string[];
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             }
         )[];
       }

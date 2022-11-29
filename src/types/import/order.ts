@@ -17,7 +17,7 @@ type Order0 =
         pathGroups?: {
           pattern: string;
           patternOptions?: {
-            [k: string]: unknown;
+            [k: string]: unknown | undefined;
           };
           group:
             | 'builtin'
@@ -30,7 +30,7 @@ type Order0 =
             | 'object'
             | 'type';
           position?: 'after' | 'before';
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         }[];
         'newlines-between'?:
           | 'ignore'

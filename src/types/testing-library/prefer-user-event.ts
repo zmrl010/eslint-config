@@ -13,7 +13,7 @@ type PreferUserEvent0 =
       'off' | 'error' | 'warn',
       {
         allowedMethods?: unknown[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

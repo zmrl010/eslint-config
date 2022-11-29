@@ -13,7 +13,7 @@ type AnchorHasContent0 =
       'off' | 'error' | 'warn',
       {
         components?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

@@ -32,7 +32,7 @@ type RestrictTemplateExpressions0 =
          * Whether to allow `regexp` typed values in template expressions.
          */
         allowRegExp?: boolean;
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

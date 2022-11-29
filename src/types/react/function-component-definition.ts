@@ -22,7 +22,7 @@ type FunctionComponentDefinition0 =
         unnamedComponents?:
           | ('arrow-function' | 'function-expression')
           | ('arrow-function' | 'function-expression')[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

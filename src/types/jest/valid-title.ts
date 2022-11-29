@@ -19,14 +19,12 @@ type ValidTitle0 =
          * via the `patternProperty` "^must(?:Not)?Match$".
          */
         [k: string]:
-          | undefined
-          | boolean
-          | string[]
+          | unknown
           | string
           | [string]
           | [string, string]
           | {
-              [k: string]: string | [string] | [string, string];
+              [k: string]: (string | [string] | [string, string]) | undefined;
             };
       }
     ];

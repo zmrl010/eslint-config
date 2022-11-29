@@ -5,7 +5,7 @@
  */
 
 /**
- * prefer toHaveAttribute over checking  getAttribute/hasAttribute 
+ * prefer toHaveAttribute over checking  getAttribute/hasAttribute
  * @see prefer-to-have-attribute
  */
 export type PreferToHaveAttribute = 'off' | ['warn' | 'error'];

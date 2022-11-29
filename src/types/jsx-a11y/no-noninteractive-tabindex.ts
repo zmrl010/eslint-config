@@ -20,7 +20,7 @@ type NoNoninteractiveTabindex0 =
          * An array of HTML tag names
          */
         tags?: string[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

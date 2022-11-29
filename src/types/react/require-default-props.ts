@@ -14,10 +14,10 @@ type RequireDefaultProps0 =
       {
         forbidDefaultForRequired?: boolean;
         classes?: {
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         functions?: {
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         ignoreFunctionalComponents?: boolean;
       }

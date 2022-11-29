@@ -13,7 +13,7 @@ type NoRenderInSetup0 =
       'off' | 'error' | 'warn',
       {
         allowTestingFrameworkSetupHook?: 'beforeEach' | 'beforeAll';
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

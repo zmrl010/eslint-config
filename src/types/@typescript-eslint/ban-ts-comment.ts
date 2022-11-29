@@ -24,7 +24,7 @@ type DirectiveConfigSchema =
   | 'allow-with-description'
   | {
       descriptionFormat?: string;
-      [k: string]: unknown;
+      [k: string]: unknown | undefined;
     };
 
 /**

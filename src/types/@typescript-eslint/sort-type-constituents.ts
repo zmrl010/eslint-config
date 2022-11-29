@@ -37,7 +37,7 @@ type SortTypeConstituents0 =
           | 'tuple'
           | 'union'
         )[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 

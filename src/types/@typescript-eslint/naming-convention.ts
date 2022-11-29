@@ -24,7 +24,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -48,7 +48,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: (
           | 'default'
@@ -107,7 +107,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -131,7 +131,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'default';
         modifiers?: (
@@ -165,7 +165,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -189,7 +189,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'variableLike';
         modifiers?: ('unused' | 'async')[];
@@ -208,7 +208,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -232,7 +232,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'variable';
         modifiers?: (
@@ -259,7 +259,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -283,7 +283,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'function';
         modifiers?: ('exported' | 'global' | 'unused' | 'async')[];
@@ -302,7 +302,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -326,7 +326,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'parameter';
         modifiers?: ('destructured' | 'unused')[];
@@ -346,7 +346,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -370,7 +370,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'memberLike';
         modifiers?: (
@@ -399,7 +399,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -423,7 +423,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'classProperty';
         modifiers?: (
@@ -452,7 +452,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -476,7 +476,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'objectLiteralProperty';
         modifiers?: ('public' | 'requiresQuotes')[];
@@ -496,7 +496,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -520,7 +520,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'typeProperty';
         modifiers?: ('public' | 'readonly' | 'requiresQuotes')[];
@@ -540,7 +540,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -564,7 +564,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'parameterProperty';
         modifiers?: ('private' | 'protected' | 'public' | 'readonly')[];
@@ -584,7 +584,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -608,7 +608,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'property';
         modifiers?: (
@@ -638,7 +638,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -662,7 +662,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'classMethod';
         modifiers?: (
@@ -690,7 +690,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -714,7 +714,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'objectLiteralMethod';
         modifiers?: ('public' | 'requiresQuotes' | 'async')[];
@@ -733,7 +733,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -757,7 +757,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'typeMethod';
         modifiers?: ('public' | 'requiresQuotes')[];
@@ -776,7 +776,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -800,7 +800,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'method';
         modifiers?: (
@@ -828,7 +828,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -852,7 +852,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'accessor';
         modifiers?: (
@@ -880,7 +880,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -904,7 +904,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'enumMember';
         modifiers?: 'requiresQuotes'[];
@@ -923,7 +923,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -947,7 +947,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'typeLike';
         modifiers?: ('abstract' | 'exported' | 'unused')[];
@@ -966,7 +966,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -990,7 +990,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'class';
         modifiers?: ('abstract' | 'exported' | 'unused')[];
@@ -1009,7 +1009,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -1033,7 +1033,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'interface';
         modifiers?: ('exported' | 'unused')[];
@@ -1052,7 +1052,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -1076,7 +1076,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'typeAlias';
         modifiers?: ('exported' | 'unused')[];
@@ -1095,7 +1095,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -1119,7 +1119,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'enum';
         modifiers?: ('exported' | 'unused')[];
@@ -1138,7 +1138,7 @@ type NamingConvention0 = [
         custom?: {
           match: boolean;
           regex: string;
-          [k: string]: unknown;
+          [k: string]: unknown | undefined;
         };
         leadingUnderscore?:
           | 'forbid'
@@ -1162,7 +1162,7 @@ type NamingConvention0 = [
           | {
               match: boolean;
               regex: string;
-              [k: string]: unknown;
+              [k: string]: unknown | undefined;
             };
         selector: 'typeParameter';
         modifiers?: 'unused'[];

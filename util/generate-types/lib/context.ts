@@ -10,7 +10,10 @@ function writeFile(path: string, data: string): void {
   fs.writeFileSync(path, data, 'utf8');
 }
 
-export interface GeneratorConfig {
+/**
+ * Context holding references to resolved configuration and functions
+ */
+export interface GeneratorContext {
   /**
    * Target directory to write type files
    *
@@ -31,9 +34,12 @@ export interface GeneratorConfig {
   writeFile: (filepath: string, data: string) => void;
 }
 
-export type GeneratorOptions = Partial<GeneratorConfig>;
+export type GeneratorOptions = Partial<GeneratorContext>;
 
-export function initConfig(options: GeneratorOptions = {}): GeneratorConfig {
+/**
+ * Resolve options into a complete context
+ */
+export function setupContext(options: GeneratorOptions = {}): GeneratorContext {
   return {
     target: path.resolve(options.target ?? 'types/'),
     cwd: options.cwd ?? process.cwd(),

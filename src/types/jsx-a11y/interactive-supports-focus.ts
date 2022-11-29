@@ -51,7 +51,7 @@ type InteractiveSupportsFocus0 =
           | 'doc-glossref'
           | 'doc-noteref'
         )[];
-        [k: string]: unknown;
+        [k: string]: unknown | undefined;
       }
     ];
 
