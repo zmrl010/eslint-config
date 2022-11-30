@@ -1,3 +1,18 @@
+# [4.0.0](https://github.com/zmrl010/eslint-config/compare/v3.4.0...v4.0.0) (2022-11-30)
+
+
+### Bug Fixes
+
+* generate types for all eslint plugins ([fbcf226](https://github.com/zmrl010/eslint-config/commit/fbcf226a9f27870c26193ff008b0a4e39ec874d2))
+* library changes to testing library module ([31830bc](https://github.com/zmrl010/eslint-config/commit/31830bc8df5e4d2ad8bcaf05244e20c3babd0e6d))
+* node depth setting causing tsc to break ([efc5cd3](https://github.com/zmrl010/eslint-config/commit/efc5cd32c221d552a1b9bcd001599aee4b8fb5b4))
+
+
+### Features
+
+* generate types from rule schemas ([144d45e](https://github.com/zmrl010/eslint-config/commit/144d45e22ec6e6b0802240d659ff90bcaef6ccbc))
+* use generated rule types in shared configs ([a49484b](https://github.com/zmrl010/eslint-config/commit/a49484b75a870fc5ba31f45ca236c7e3b4ba8d11))
+
 # [3.4.0](https://github.com/zmrl010/eslint-config/compare/v3.3.0...v3.4.0) (2022-09-15)
 
 
