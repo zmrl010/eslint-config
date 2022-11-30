@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "outDir": "./dist"
+  },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true,
+    "emit": true,
+    "swc": true
+  },
+  "extends": "../../tsconfig.json",
+  "include": ["../../types/*", "lib/*.ts", "bin/cli.ts"]
+}

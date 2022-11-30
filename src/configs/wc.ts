@@ -1,22 +1,11 @@
-import { Linter } from 'eslint';
-import '../eslint-patch/modern-module-resolution';
+import type { FlatConfig } from '../../types/flat-eslint-config.js';
+import { WebComponentsConfig } from '../plugin-configs/index.js';
 
-const config: Linter.Config = {
-  plugins: ['wc'],
-  parserOptions: {
-    sourceType: 'module',
+const config: FlatConfig = [
+  {
+    plugins: WebComponentsConfig.plugins,
+    rules: WebComponentsConfig.rules,
   },
-  rules: {
-    'wc/no-constructor-attributes': 'error',
-    'wc/no-invalid-element-name': 'error',
-    'wc/no-self-class': 'error',
-    'wc/attach-shadow-constructor': 'error',
-    'wc/guard-super-call': 'error',
-    'wc/no-closed-shadow-root': 'error',
-    'wc/no-constructor-params': 'error',
-    'wc/no-typos': 'error',
-    'wc/require-listener-teardown': 'error',
-  },
-};
+];
 
-export = config;
+export default config;

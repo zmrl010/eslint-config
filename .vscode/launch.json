@@ -3,10 +3,27 @@
   "configurations": [
     {
       "type": "node-terminal",
-      "name": "Run Script: find-new-rules",
+      "name": "Run Script: generate-types",
       "request": "launch",
-      "command": "yarn run find-new-rules",
+      "command": "pnpm generate-types",
       "cwd": "${workspaceFolder}"
-    }
+    },
+    {
+      "type": "node-terminal",
+      "name": "Debug Script: generate-types",
+      "request": "launch",
+      "command": "pnpm generate-types",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_DEBUG": "generate-types"
+      }
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run ESLint",
+      "request": "launch",
+      "command": "pnpm eslint",
+      "cwd": "${workspaceFolder}"
+    },
   ]
 }

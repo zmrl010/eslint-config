@@ -1,61 +1,33 @@
-import readPackageUp, {
-  type Options,
-  type NormalizedPackageJson,
-} from 'read-pkg-up';
-
-export type Dependencies = Pick<
-  NormalizedPackageJson,
-  'peerDependencies' | 'devDependencies' | 'dependencies'
->;
+import type { Dependencies } from './read-package.js';
 
 /**
- * Create a Map object that maps dependency names
- * as keys to their corresponding version as values.
- *
- * Fields (in reversed order of precedence):
- *
- * - peerDependencies
- * - devDependencies
- * - dependencies
+ * Get a dependency's version range from package dependency mappings
+ * @param pkg package manifest data from `package.json`
+ * @param depName dependency name as listed in `package.json`
+ * @returns found version range as string or an empty string if none found
  */
-function createDependencyVersionMap(pkg: Dependencies): Map<string, string> {
-  return new Map(
-    Object.entries({
-      ...pkg.peerDependencies,
-      ...pkg.devDependencies,
-      ...pkg.dependencies,
-    })
+export function getDependencyVersion(
+  pkg: Dependencies,
+  depName: string
+): string {
+  return (
+    pkg.optionalDependencies?.[depName] ??
+    pkg.dependencies?.[depName] ??
+    pkg.devDependencies?.[depName] ??
+    pkg.peerDependencies?.[depName] ??
+    ''
   );
 }
 
 /**
- * read project dependencies
- *
- * *fails silently by returning empty object*
+ * Check if a dependency is listed in `package.json`
+ * @param pkg package manifest data from `package.json`
+ * @param depName dependency name as listed in `package.json`
+ * @returns true if dependency is listed in any dependency fields
  */
-function readDependencies(opts: Options = {}): Dependencies {
-  try {
-    return readPackageUp.sync(opts)?.packageJson ?? {};
-  } catch {
-    return {};
-  }
+export function isDependencyListed(
+  pkg: Dependencies,
+  depName: string
+): boolean {
+  return Boolean(getDependencyVersion(pkg, depName));
 }
-
-function createDependencyRegistry(deps: Dependencies) {
-  const dependencyMap = createDependencyVersionMap(deps);
-
-  return {
-    /**
-     * @returns true when dependency listed in package.json
-     */
-    hasDependency: dependencyMap.has.bind(dependencyMap),
-    /**
-     * @returns version of dependency as it is listed in package.json
-     */
-    getVersionRange: dependencyMap.get.bind(dependencyMap),
-  };
-}
-
-export const { hasDependency, getVersionRange } = createDependencyRegistry(
-  readDependencies()
-);

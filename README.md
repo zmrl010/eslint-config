@@ -6,7 +6,7 @@ _Inspired by [eslint-config-kentcdodds](https://github.com/kentcdodds/eslint-con
 
 ## Install
 
-This package can be installed with npm
+Install with your favorite package manager
 
 ```shell
 npm add -D @zmrl/eslint-config

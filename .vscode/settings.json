@@ -3,11 +3,12 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "prettier.prettierPath": "",
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.nodePath": ".yarn/sdks",
   "cSpell.words": [
-    "rushstack"
+    "rushstack",
+    "TSES"
   ]
 }
