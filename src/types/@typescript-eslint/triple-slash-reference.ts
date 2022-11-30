@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow certain triple slash directives in favor of ES6-style import declarations
+ * @see https://typescript-eslint.io/rules/triple-slash-reference
+ *
  * @minItems 1
  */
 export type TripleSlashReference =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow multiple spaces
+ * @see https://eslint.org/docs/rules/no-multi-spaces
+ *
  * @minItems 1
  */
 export type NoMultiSpaces =

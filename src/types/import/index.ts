@@ -51,214 +51,46 @@ import type { NoDeprecated } from '../import/no-deprecated.js';
  * `eslint-plugin-import` Rules
  */
 export interface Import {
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unresolved.md
-   */
   'import/no-unresolved': NoUnresolved;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/named.md
-   */
   'import/named': Named;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/default.md
-   */
   'import/default': Default;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/namespace.md
-   */
   'import/namespace': Namespace;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md
-   */
   'import/no-namespace': NoNamespace;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/export.md
-   */
   'import/export': Export;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-mutable-exports.md
-   */
   'import/no-mutable-exports': NoMutableExports;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/extensions.md
-   */
   'import/extensions': Extensions;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-restricted-paths.md
-   */
   'import/no-restricted-paths': NoRestrictedPaths;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-internal-modules.md
-   */
   'import/no-internal-modules': NoInternalModules;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/group-exports.md
-   */
   'import/group-exports': GroupExports;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-packages.md
-   */
   'import/no-relative-packages': NoRelativePackages;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-parent-imports.md
-   */
   'import/no-relative-parent-imports': NoRelativeParentImports;
-
-  /**
-   * Forbid a module from importing itself
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-self-import.md
-   */
   'import/no-self-import': NoSelfImport;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-cycle.md
-   */
   'import/no-cycle': NoCycle;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-named-default.md
-   */
   'import/no-named-default': NoNamedDefault;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-named-as-default.md
-   */
   'import/no-named-as-default': NoNamedAsDefault;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-named-as-default-member.md
-   */
   'import/no-named-as-default-member': NoNamedAsDefaultMember;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-anonymous-default-export.md
-   */
   'import/no-anonymous-default-export': NoAnonymousDefaultExport;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md
-   */
   'import/no-unused-modules': NoUnusedModules;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-commonjs.md
-   */
   'import/no-commonjs': NoCommonjs;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-amd.md
-   */
   'import/no-amd': NoAmd;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-duplicates.md
-   */
   'import/no-duplicates': NoDuplicates;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/first.md
-   */
   'import/first': First;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/max-dependencies.md
-   */
   'import/max-dependencies': MaxDependencies;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-extraneous-dependencies.md
-   */
   'import/no-extraneous-dependencies': NoExtraneousDependencies;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-absolute-path.md
-   */
   'import/no-absolute-path': NoAbsolutePath;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-nodejs-modules.md
-   */
   'import/no-nodejs-modules': NoNodejsModules;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-webpack-loader-syntax.md
-   */
   'import/no-webpack-loader-syntax': NoWebpackLoaderSyntax;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/order.md
-   */
   'import/order': Order;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/newline-after-import.md
-   */
   'import/newline-after-import': NewlineAfterImport;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/prefer-default-export.md
-   */
   'import/prefer-default-export': PreferDefaultExport;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-default-export.md
-   */
   'import/no-default-export': NoDefaultExport;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-named-export.md
-   */
   'import/no-named-export': NoNamedExport;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-dynamic-require.md
-   */
   'import/no-dynamic-require': NoDynamicRequire;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/unambiguous.md
-   */
   'import/unambiguous': Unambiguous;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unassigned-import.md
-   */
   'import/no-unassigned-import': NoUnassignedImport;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-useless-path-segments.md
-   */
   'import/no-useless-path-segments': NoUselessPathSegments;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/dynamic-import-chunkname.md
-   */
   'import/dynamic-import-chunkname': DynamicImportChunkname;
-
-  /**
-   * Disallow import statements with module.exports
-   */
   'import/no-import-module-exports': NoImportModuleExports;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/exports-last.md
-   */
   'import/exports-last': ExportsLast;
-
-  /**
-   * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-deprecated.md
-   */
   'import/no-deprecated': NoDeprecated;
 }

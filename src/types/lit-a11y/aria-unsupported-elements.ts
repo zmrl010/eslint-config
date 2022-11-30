@@ -5,6 +5,9 @@
  */
 
 /**
+ * Certain reserved DOM elements do not support ARIA roles, states and properties.
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/aria-unsupported-elements.md
+ *
  * @minItems 1
  */
 export type AriaUnsupportedElements = 'off' | ['off' | 'error' | 'warn'];

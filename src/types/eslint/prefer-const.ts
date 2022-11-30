@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require `const` declarations for variables that are never reassigned after declared
+ * @see https://eslint.org/docs/rules/prefer-const
+ *
  * @minItems 1
  */
 export type PreferConst =

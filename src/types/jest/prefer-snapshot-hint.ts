@@ -5,6 +5,9 @@
  */
 
 /**
+ * Prefer including a hint with external snapshots
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-snapshot-hint.md
+ *
  * @minItems 1
  */
 export type PreferSnapshotHint =

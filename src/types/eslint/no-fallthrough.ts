@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow fallthrough of `case` statements
+ * @see https://eslint.org/docs/rules/no-fallthrough
+ *
  * @minItems 1
  */
 export type NoFallthrough =

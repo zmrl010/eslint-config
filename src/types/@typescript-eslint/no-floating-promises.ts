@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require Promise-like statements to be handled appropriately
+ * @see https://typescript-eslint.io/rules/no-floating-promises
+ *
  * @minItems 1
  */
 export type NoFloatingPromises =

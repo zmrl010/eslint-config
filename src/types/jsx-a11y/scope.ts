@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce `scope` prop is only used on `<th>` elements.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/scope.md
+ *
  * @minItems 1
  */
 export type Scope =

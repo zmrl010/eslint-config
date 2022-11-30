@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow or enforce spaces inside of blocks after opening block and before closing block
+ * @see https://eslint.org/docs/rules/block-spacing
+ *
  * @minItems 1
  */
 export type BlockSpacing =

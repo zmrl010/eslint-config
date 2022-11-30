@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce all `aria-*` props are valid.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-props.md
+ *
  * @minItems 1
  */
 export type AriaProps =

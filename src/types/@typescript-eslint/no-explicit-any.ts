@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the `any` type
+ * @see https://typescript-eslint.io/rules/no-explicit-any
+ *
  * @minItems 1
  */
 export type NoExplicitAny =

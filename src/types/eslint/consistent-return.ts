@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require `return` statements to either always or never specify values
+ * @see https://eslint.org/docs/rules/consistent-return
+ *
  * @minItems 1
  */
 export type ConsistentReturn =

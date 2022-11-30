@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require private members to be marked as `readonly` if they're never modified outside of the constructor
+ * @see https://typescript-eslint.io/rules/prefer-readonly
+ *
  * @minItems 1
  */
 export type PreferReadonly =

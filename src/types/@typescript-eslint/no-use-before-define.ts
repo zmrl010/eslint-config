@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the use of variables before they are defined
+ * @see https://typescript-eslint.io/rules/no-use-before-define
+ *
  * @minItems 1
  */
 export type NoUseBeforeDefine =

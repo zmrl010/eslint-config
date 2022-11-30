@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce getter and setter pairs in objects and classes
+ * @see https://eslint.org/docs/rules/accessor-pairs
+ *
  * @minItems 1
  */
 export type AccessorPairs =

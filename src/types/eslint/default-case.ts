@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require `default` cases in `switch` statements
+ * @see https://eslint.org/docs/rules/default-case
+ *
  * @minItems 1
  */
 export type DefaultCase =

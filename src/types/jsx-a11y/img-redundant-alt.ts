@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce `<img>` alt prop does not contain the word "image", "picture", or "photo".
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/img-redundant-alt.md
+ *
  * @minItems 1
  */
 export type ImgRedundantAlt =

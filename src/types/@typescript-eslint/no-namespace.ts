@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow TypeScript namespaces
+ * @see https://typescript-eslint.io/rules/no-namespace
+ *
  * @minItems 1
  */
 export type NoNamespace =

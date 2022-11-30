@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow trailing commas
+ * @see https://typescript-eslint.io/rules/comma-dangle
+ *
  * @minItems 1
  */
 export type CommaDangle =

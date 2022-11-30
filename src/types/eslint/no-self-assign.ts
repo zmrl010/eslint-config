@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow assignments where both sides are exactly the same
+ * @see https://eslint.org/docs/rules/no-self-assign
+ *
  * @minItems 1
  */
 export type NoSelfAssign =

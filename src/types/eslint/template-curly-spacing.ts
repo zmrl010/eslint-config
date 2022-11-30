@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow spacing around embedded expressions of template strings
+ * @see https://eslint.org/docs/rules/template-curly-spacing
+ *
  * @minItems 1
  */
 export type TemplateCurlySpacing =

@@ -123,6 +123,17 @@ function normalizeSchema(schema: RuleSchema): JSONSchema.JSONSchema4 {
 }
 
 /**
+ * Find and filter doc comment strings out of rule meta data.
+ */
+function getMetaDocStrings(docs?: TSESLint.RuleMetaDataDocs): string[] {
+  if (!docs) {
+    return [];
+  }
+
+  return [docs.description, docs.url ? `@see ${docs.url}` : ''].filter(Boolean);
+}
+
+/**
  * Generate rule type definitions as a string
  */
 async function generateRuleTypeDef(
@@ -132,10 +143,12 @@ async function generateRuleTypeDef(
   const typeName = toPascalCase(ruleName);
   const schema = normalizeSchema(rule.meta?.schema ?? []);
 
+  schema.description = joinLines(...getMetaDocStrings(rule.meta.docs));
+
   return compileSchema(typeName, schema);
 }
 
-export async function generatePluginTypes(
+export async function generatePluginRuleTypes(
   context: GeneratorContext,
   plugin: Plugin
 ): Promise<void> {

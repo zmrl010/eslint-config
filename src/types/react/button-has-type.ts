@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow usage of `button` elements without an explicit `type` attribute
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/button-has-type.md
+ *
  * @minItems 1
  */
 export type ButtonHasType =

@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Enforce consistent brace style for all control statements
+ * @see https://eslint.org/docs/rules/curly
+ */
 export type Curly =
   | 'off'
   | (

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce autoFocus prop is not used.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-autofocus.md
+ *
  * @minItems 1
  */
 export type NoAutofocus =

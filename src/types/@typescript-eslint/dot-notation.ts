@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce dot notation whenever possible
+ * @see https://typescript-eslint.io/rules/dot-notation
+ *
  * @minItems 1
  */
 export type DotNotation =

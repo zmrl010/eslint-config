@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow creating unstable components inside components
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unstable-nested-components.md
+ *
  * @minItems 1
  */
 export type NoUnstableNestedComponents =

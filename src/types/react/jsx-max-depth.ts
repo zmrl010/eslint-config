@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce JSX maximum depth
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-max-depth.md
+ *
  * @minItems 1
  */
 export type JsxMaxDepth =

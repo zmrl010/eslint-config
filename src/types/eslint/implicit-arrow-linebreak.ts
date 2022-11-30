@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce the location of arrow function bodies
+ * @see https://eslint.org/docs/rules/implicit-arrow-linebreak
+ *
  * @minItems 1
  */
 export type ImplicitArrowLinebreak =

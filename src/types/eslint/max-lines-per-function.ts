@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum number of lines of code in a function
+ * @see https://eslint.org/docs/rules/max-lines-per-function
+ *
  * @minItems 1
  */
 export type MaxLinesPerFunction =

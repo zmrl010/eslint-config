@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require quotes around object literal property names
+ * @see https://eslint.org/docs/rules/quote-props
+ */
 export type QuoteProps =
   | 'off'
   | (

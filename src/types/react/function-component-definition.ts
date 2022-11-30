@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a specific function type for function components
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/function-component-definition.md
+ *
  * @minItems 1
  */
 export type FunctionComponentDefinition =

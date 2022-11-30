@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require using arrow functions for callbacks
+ * @see https://eslint.org/docs/rules/prefer-arrow-callback
+ *
  * @minItems 1
  */
 export type PreferArrowCallback =

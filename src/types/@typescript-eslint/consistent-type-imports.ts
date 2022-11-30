@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent usage of type imports
+ * @see https://typescript-eslint.io/rules/consistent-type-imports
+ *
  * @minItems 1
  */
 export type ConsistentTypeImports =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent comma style
+ * @see https://eslint.org/docs/rules/comma-style
+ *
  * @minItems 1
  */
 export type CommaStyle =

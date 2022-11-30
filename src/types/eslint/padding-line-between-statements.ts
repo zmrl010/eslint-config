@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow padding lines between statements
+ * @see https://eslint.org/docs/rules/padding-line-between-statements
+ *
  * @minItems 1
  */
 export type PaddingLineBetweenStatements =

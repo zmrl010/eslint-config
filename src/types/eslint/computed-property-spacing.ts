@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing inside computed property brackets
+ * @see https://eslint.org/docs/rules/computed-property-spacing
+ *
  * @minItems 1
  */
 export type ComputedPropertySpacing =

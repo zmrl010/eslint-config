@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce or disallow capitalization of the first letter of a comment
+ * @see https://eslint.org/docs/rules/capitalized-comments
+ *
  * @minItems 1
  */
 export type CapitalizedComments =

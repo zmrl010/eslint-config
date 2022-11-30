@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before and after commas
+ * @see https://eslint.org/docs/rules/comma-spacing
+ *
  * @minItems 1
  */
 export type CommaSpacing =

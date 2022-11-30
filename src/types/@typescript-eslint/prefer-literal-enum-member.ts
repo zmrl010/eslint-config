@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require all enum members to be literal values
+ * @see https://typescript-eslint.io/rules/prefer-literal-enum-member
+ *
  * @minItems 1
  */
 export type PreferLiteralEnumMember =

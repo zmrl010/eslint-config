@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow spacing around the `*` in `yield*` expressions
+ * @see https://eslint.org/docs/rules/yield-star-spacing
+ *
  * @minItems 1
  */
 export type YieldStarSpacing =

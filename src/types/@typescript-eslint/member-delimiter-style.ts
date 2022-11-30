@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require a specific member delimiter style for interfaces and type literals
+ * @see https://typescript-eslint.io/rules/member-delimiter-style
+ *
  * @minItems 1
  */
 export type MemberDelimiterStyle =

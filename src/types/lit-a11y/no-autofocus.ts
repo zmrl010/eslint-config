@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that autofocus attribute or property are not used on elements.
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/no-autofocus.md
+ *
  * @minItems 1
  */
 export type NoAutofocus = 'off' | ['off' | 'error' | 'warn'];

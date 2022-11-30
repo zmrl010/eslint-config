@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow `target="_blank"` attribute without `rel="noreferrer"`
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-target-blank.md
+ *
  * @minItems 1
  */
 export type JsxNoTargetBlank =

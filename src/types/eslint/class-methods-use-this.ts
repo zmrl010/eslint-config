@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that class methods utilize `this`
+ * @see https://eslint.org/docs/rules/class-methods-use-this
+ *
  * @minItems 1
  */
 export type ClassMethodsUseThis =

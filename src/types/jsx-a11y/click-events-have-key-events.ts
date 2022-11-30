@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a clickable non-interactive element has at least one keyboard event listener.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/click-events-have-key-events.md
+ *
  * @minItems 1
  */
 export type ClickEventsHaveKeyEvents =

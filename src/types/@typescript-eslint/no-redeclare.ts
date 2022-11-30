@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow variable redeclaration
+ * @see https://typescript-eslint.io/rules/no-redeclare
+ *
  * @minItems 1
  */
 export type NoRedeclare =

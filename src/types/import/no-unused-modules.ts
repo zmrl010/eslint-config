@@ -5,6 +5,8 @@
  */
 
 /**
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md
+ *
  * @minItems 1
  */
 export type NoUnusedModules =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent linebreak style for operators
+ * @see https://eslint.org/docs/rules/operator-linebreak
+ *
  * @minItems 1
  */
 export type OperatorLinebreak =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent usage of type assertions
+ * @see https://typescript-eslint.io/rules/consistent-type-assertions
+ *
  * @minItems 1
  */
 export type ConsistentTypeAssertions =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow empty block statements
+ * @see https://eslint.org/docs/rules/no-empty
+ *
  * @minItems 1
  */
 export type NoEmpty =

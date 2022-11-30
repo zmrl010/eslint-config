@@ -5,6 +5,9 @@
  */
 
 /**
+ * Ensures consistent usage of `data-testid`
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/consistent-data-testid.md
+ *
  * @minItems 1
  */
 export type ConsistentDataTestid =

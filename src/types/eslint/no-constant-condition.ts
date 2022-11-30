@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow constant expressions in conditions
+ * @see https://eslint.org/docs/rules/no-constant-condition
+ *
  * @minItems 1
  */
 export type NoConstantCondition =

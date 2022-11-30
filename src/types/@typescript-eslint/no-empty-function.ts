@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow empty functions
+ * @see https://typescript-eslint.io/rules/no-empty-function
+ *
  * @minItems 1
  */
 export type NoEmptyFunction =

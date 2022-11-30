@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent linebreaks in curly braces in JSX attributes and expressions
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-curly-newline.md
+ *
  * @minItems 1
  */
 export type JsxCurlyNewline =

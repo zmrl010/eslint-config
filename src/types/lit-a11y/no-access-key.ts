@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce no accesskey attribute on element.
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/no-access-key.md
+ *
  * @minItems 1
  */
 export type NoAccessKey = 'off' | ['off' | 'error' | 'warn'];

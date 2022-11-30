@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow the `Record` type
+ * @see https://typescript-eslint.io/rules/consistent-indexed-object-style
+ *
  * @minItems 1
  */
 export type ConsistentIndexedObjectStyle =

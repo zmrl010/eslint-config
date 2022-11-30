@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum number of statements allowed in function blocks
+ * @see https://eslint.org/docs/rules/max-statements
+ *
  * @minItems 1
  */
 export type MaxStatements =

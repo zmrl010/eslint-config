@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow importing from DOM Testing Library
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-dom-import.md
+ *
  * @minItems 1
  */
 export type NoDomImport =

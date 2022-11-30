@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require or disallow initialization in variable declarations
+ * @see https://typescript-eslint.io/rules/init-declarations
+ */
 export type InitDeclarations =
   | 'off'
   | (

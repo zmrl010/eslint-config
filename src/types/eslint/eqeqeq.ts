@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require the use of `===` and `!==`
+ * @see https://eslint.org/docs/rules/eqeqeq
+ */
 export type Eqeqeq =
   | 'off'
   | (

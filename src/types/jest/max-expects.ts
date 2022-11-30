@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforces a maximum number assertion calls in a test body
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/max-expects.md
+ *
  * @minItems 1
  */
 export type MaxExpects =

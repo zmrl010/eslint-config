@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow extending native types
+ * @see https://eslint.org/docs/rules/no-extend-native
+ *
  * @minItems 1
  */
 export type NoExtendNative =

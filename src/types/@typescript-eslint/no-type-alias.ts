@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow type aliases
+ * @see https://typescript-eslint.io/rules/no-type-alias
+ *
  * @minItems 1
  */
 export type NoTypeAlias =

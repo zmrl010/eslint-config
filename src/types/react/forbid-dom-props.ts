@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow certain props on DOM Nodes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-dom-props.md
+ *
  * @minItems 1
  */
 export type ForbidDomProps =

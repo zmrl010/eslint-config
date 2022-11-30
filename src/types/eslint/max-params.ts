@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum number of parameters in function definitions
+ * @see https://eslint.org/docs/rules/max-params
+ *
  * @minItems 1
  */
 export type MaxParams =

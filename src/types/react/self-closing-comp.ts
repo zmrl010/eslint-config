@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow extra closing tags for components without children
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/self-closing-comp.md
+ *
  * @minItems 1
  */
 export type SelfClosingComp =

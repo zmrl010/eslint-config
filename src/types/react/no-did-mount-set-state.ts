@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow usage of setState in componentDidMount
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-did-mount-set-state.md
+ *
  * @minItems 1
  */
 export type NoDidMountSetState =

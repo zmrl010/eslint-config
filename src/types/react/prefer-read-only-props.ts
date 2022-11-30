@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that props are read-only
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/prefer-read-only-props.md
+ *
  * @minItems 1
  */
 export type PreferReadOnlyProps = 'off' | ['off' | 'error' | 'warn'];

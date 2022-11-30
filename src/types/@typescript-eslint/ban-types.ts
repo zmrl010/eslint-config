@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow certain types
+ * @see https://typescript-eslint.io/rules/ban-types
+ *
  * @minItems 1
  */
 export type BanTypes =

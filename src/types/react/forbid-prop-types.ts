@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow certain propTypes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-prop-types.md
+ *
  * @minItems 1
  */
 export type ForbidPropTypes =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow comma operators
+ * @see https://eslint.org/docs/rules/no-sequences
+ *
  * @minItems 1
  */
 export type NoSequences =

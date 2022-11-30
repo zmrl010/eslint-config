@@ -43,7 +43,7 @@
   "homepage": "https://github.com/zmrl010/eslint-config#readme",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint src --fix",
+    "lint": "eslint src --fix",
     "prepare": "pnpm build && (is-ci || husky install)",
     "test": "run-p lint",
     "build": "tsc -b",

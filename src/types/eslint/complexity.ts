@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum cyclomatic complexity allowed in a program
+ * @see https://eslint.org/docs/rules/complexity
+ *
  * @minItems 1
  */
 export type Complexity =

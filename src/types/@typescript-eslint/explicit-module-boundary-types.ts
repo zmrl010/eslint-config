@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require explicit return and argument types on exported functions' and classes' public class methods
+ * @see https://typescript-eslint.io/rules/explicit-module-boundary-types
+ *
  * @minItems 1
  */
 export type ExplicitModuleBoundaryTypes =

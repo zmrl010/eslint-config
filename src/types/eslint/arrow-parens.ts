@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require parentheses around arrow function arguments
+ * @see https://eslint.org/docs/rules/arrow-parens
+ *
  * @minItems 1
  */
 export type ArrowParens =

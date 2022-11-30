@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent indentation
+ * @see https://eslint.org/docs/rules/indent
+ *
  * @minItems 1
  */
 export type Indent =

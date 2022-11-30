@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require explicit return types on functions and class methods
+ * @see https://typescript-eslint.io/rules/explicit-function-return-type
+ *
  * @minItems 1
  */
 export type ExplicitFunctionReturnType =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce assertion to be made in a test body
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/expect-expect.md
+ *
  * @minItems 1
  */
 export type ExpectExpect =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unused variables
+ * @see https://eslint.org/docs/rules/no-unused-vars
+ *
  * @minItems 1
  */
 export type NoUnusedVars =

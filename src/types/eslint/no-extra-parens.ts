@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Disallow unnecessary parentheses
+ * @see https://eslint.org/docs/rules/no-extra-parens
+ */
 export type NoExtraParens =
   | 'off'
   | (

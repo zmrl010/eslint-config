@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce newlines between operands of ternary expressions
+ * @see https://eslint.org/docs/rules/multiline-ternary
+ *
  * @minItems 1
  */
 export type MultilineTernary =

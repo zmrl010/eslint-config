@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent line breaks after opening and before closing braces
+ * @see https://eslint.org/docs/rules/object-curly-newline
+ *
  * @minItems 1
  */
 export type ObjectCurlyNewline =

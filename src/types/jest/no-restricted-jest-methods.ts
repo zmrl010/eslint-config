@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow specific `jest.` methods
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-restricted-jest-methods.md
+ *
  * @minItems 1
  */
 export type NoRestrictedJestMethods =

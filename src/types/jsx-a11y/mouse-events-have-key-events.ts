@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that `onMouseOver`/`onMouseOut` are accompanied by `onFocus`/`onBlur` for keyboard-only users.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/mouse-events-have-key-events.md
+ *
  * @minItems 1
  */
 export type MouseEventsHaveKeyEvents =

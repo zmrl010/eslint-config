@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow loops with a body that allows only one iteration
+ * @see https://eslint.org/docs/rules/no-unreachable-loop
+ *
  * @minItems 1
  */
 export type NoUnreachableLoop =

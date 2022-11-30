@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unused expressions
+ * @see https://typescript-eslint.io/rules/no-unused-expressions
+ *
  * @minItems 1
  */
 export type NoUnusedExpressions =

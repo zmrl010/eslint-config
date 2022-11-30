@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce placing object properties on separate lines
+ * @see https://eslint.org/docs/rules/object-property-newline
+ *
  * @minItems 1
  */
 export type ObjectPropertyNewline =

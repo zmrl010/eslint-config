@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before function parenthesis
+ * @see https://typescript-eslint.io/rules/space-before-function-paren
+ *
  * @minItems 1
  */
 export type SpaceBeforeFunctionParen =

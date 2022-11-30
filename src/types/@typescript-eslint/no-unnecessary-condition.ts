@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow conditionals where the type is always truthy or always falsy
+ * @see https://typescript-eslint.io/rules/no-unnecessary-condition
+ *
  * @minItems 1
  */
 export type NoUnnecessaryCondition =

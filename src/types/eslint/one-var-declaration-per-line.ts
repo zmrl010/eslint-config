@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow newlines around variable declarations
+ * @see https://eslint.org/docs/rules/one-var-declaration-per-line
+ *
  * @minItems 1
  */
 export type OneVarDeclarationPerLine =

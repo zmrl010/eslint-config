@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that autocomplete attributes are used correctly.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/autocomplete-valid.md
+ *
  * @minItems 1
  */
 export type AutocompleteValid =

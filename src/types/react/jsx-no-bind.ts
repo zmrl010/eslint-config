@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow `.bind()` or arrow functions in JSX props
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-bind.md
+ *
  * @minItems 1
  */
 export type JsxNoBind =

@@ -2,14 +2,13 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "maxNodeModuleJsDepth": 10,
+    "maxNodeModuleJsDepth": 1,
     "declaration": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "module": "NodeNext",
     "outDir": "./dist",
-    // "rootDir": "./src",
     "resolveJsonModule": true,
     "strict": true,
     "target": "ES2022"

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require spacing around infix operators
+ * @see https://eslint.org/docs/rules/space-infix-ops
+ *
  * @minItems 1
  */
 export type SpaceInfixOps =

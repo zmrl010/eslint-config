@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow all tabs
+ * @see https://eslint.org/docs/rules/no-tabs
+ *
  * @minItems 1
  */
 export type NoTabs =

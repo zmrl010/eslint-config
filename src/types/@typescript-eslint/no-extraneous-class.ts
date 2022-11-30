@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow classes used as namespaces
+ * @see https://typescript-eslint.io/rules/no-extraneous-class
+ *
  * @minItems 1
  */
 export type NoExtraneousClass =

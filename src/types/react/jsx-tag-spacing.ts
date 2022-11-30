@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce whitespace in and around the JSX opening and closing brackets
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-tag-spacing.md
+ *
  * @minItems 1
  */
 export type JsxTagSpacing =

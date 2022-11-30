@@ -5,6 +5,9 @@
  */
 
 /**
+ * Detects usages of the `value` attribute where the equivalent property should be used instead
+ * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/no-value-attribute.md
+ *
  * @minItems 1
  */
 export type NoValueAttribute = 'off' | ['off' | 'error' | 'warn'];

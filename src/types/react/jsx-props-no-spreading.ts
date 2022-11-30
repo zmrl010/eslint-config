@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow JSX prop spreading
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-props-no-spreading.md
+ *
  * @minItems 1
  */
 export type JsxPropsNoSpreading =

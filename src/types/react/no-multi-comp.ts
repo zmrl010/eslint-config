@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow multiple component definition per file
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-multi-comp.md
+ *
  * @minItems 1
  */
 export type NoMultiComp =

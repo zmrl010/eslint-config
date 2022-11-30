@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that elements with interactive handlers like `onClick` must be focusable.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/interactive-supports-focus.md
+ *
  * @minItems 1
  */
 export type InteractiveSupportsFocus =

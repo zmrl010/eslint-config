@@ -5,6 +5,9 @@
  */
 
 /**
+ * enforces the Rules of Hooks
+ * @see https://reactjs.org/docs/hooks-rules.html
+ *
  * @minItems 1
  */
 export type RulesOfHooks = 'off' | ['off' | 'error' | 'warn'];

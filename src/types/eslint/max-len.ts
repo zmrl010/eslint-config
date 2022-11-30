@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum line length
+ * @see https://eslint.org/docs/rules/max-len
+ *
  * @minItems 1
  */
 export type MaxLen =

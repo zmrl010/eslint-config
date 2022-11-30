@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unescaped HTML entities from appearing in markup
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unescaped-entities.md
+ *
  * @minItems 1
  */
 export type NoUnescapedEntities =

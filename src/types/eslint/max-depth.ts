@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum depth that blocks can be nested
+ * @see https://eslint.org/docs/rules/max-depth
+ *
  * @minItems 1
  */
 export type MaxDepth =

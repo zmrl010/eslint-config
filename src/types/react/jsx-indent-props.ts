@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce props indentation in JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-indent-props.md
+ *
  * @minItems 1
  */
 export type JsxIndentProps =

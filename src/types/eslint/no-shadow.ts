@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow variable declarations from shadowing variables declared in the outer scope
+ * @see https://eslint.org/docs/rules/no-shadow
+ *
  * @minItems 1
  */
 export type NoShadow =

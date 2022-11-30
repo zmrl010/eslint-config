@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before `function` definition opening parenthesis
+ * @see https://eslint.org/docs/rules/space-before-function-paren
+ *
  * @minItems 1
  */
 export type SpaceBeforeFunctionParen =

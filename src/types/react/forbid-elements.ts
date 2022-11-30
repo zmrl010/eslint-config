@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow certain elements
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-elements.md
+ *
  * @minItems 1
  */
 export type ForbidElements =

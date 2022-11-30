@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforces the use of static styles in elements
+ * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/prefer-static-styles.md
+ *
  * @minItems 1
  */
 export type PreferStaticStyles =

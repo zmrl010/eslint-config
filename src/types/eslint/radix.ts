@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce the consistent use of the radix argument when using `parseInt()`
+ * @see https://eslint.org/docs/rules/radix
+ *
  * @minItems 1
  */
 export type Radix =

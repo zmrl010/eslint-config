@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent usage of destructuring assignment of props, state, and context
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/destructuring-assignment.md
+ *
  * @minItems 1
  */
 export type DestructuringAssignment =

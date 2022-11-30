@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require consistently using either `T[]` or `Array<T>` for arrays
+ * @see https://typescript-eslint.io/rules/array-type
+ *
  * @minItems 1
  */
 export type ArrayType =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce the location of single-line statements
+ * @see https://eslint.org/docs/rules/nonblock-statement-body-position
+ *
  * @minItems 1
  */
 export type NonblockStatementBodyPosition =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent returning of awaited values
+ * @see https://typescript-eslint.io/rules/return-await
+ *
  * @minItems 1
  */
 export type ReturnAwait =

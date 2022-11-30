@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow variable or `function` declarations in nested blocks
+ * @see https://eslint.org/docs/rules/no-inner-declarations
+ *
  * @minItems 1
  */
 export type NoInnerDeclarations =

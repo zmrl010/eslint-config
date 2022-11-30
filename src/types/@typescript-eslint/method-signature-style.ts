@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce using a particular method signature syntax
+ * @see https://typescript-eslint.io/rules/method-signature-style
+ *
  * @minItems 1
  */
 export type MethodSignatureStyle =

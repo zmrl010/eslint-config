@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before and after semicolons
+ * @see https://eslint.org/docs/rules/semi-spacing
+ *
  * @minItems 1
  */
 export type SemiSpacing =

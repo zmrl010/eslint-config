@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow missing props validation in a React component definition
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/prop-types.md
+ *
  * @minItems 1
  */
 export type PropTypes =

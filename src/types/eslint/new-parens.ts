@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Enforce or disallow parentheses when invoking a constructor with no arguments
+ * @see https://eslint.org/docs/rules/new-parens
+ */
 export type NewParens =
   | 'off'
   | ['off' | 'error' | 'warn']

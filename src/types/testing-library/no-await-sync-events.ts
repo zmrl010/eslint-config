@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unnecessary `await` for sync events
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-await-sync-events.md
+ *
  * @minItems 1
  */
 export type NoAwaitSyncEvents =

@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require or disallow spacing between function identifiers and their invocations
+ * @see https://eslint.org/docs/rules/func-call-spacing
+ */
 export type FuncCallSpacing =
   | 'off'
   | (

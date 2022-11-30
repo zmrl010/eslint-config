@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the declaration of empty interfaces
+ * @see https://typescript-eslint.io/rules/no-empty-interface
+ *
  * @minItems 1
  */
 export type NoEmptyInterface =

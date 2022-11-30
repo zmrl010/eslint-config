@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unused expressions
+ * @see https://eslint.org/docs/rules/no-unused-expressions
+ *
  * @minItems 1
  */
 export type NoUnusedExpressions =

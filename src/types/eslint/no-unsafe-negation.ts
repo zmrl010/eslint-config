@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow negating the left operand of relational operators
+ * @see https://eslint.org/docs/rules/no-unsafe-negation
+ *
  * @minItems 1
  */
 export type NoUnsafeNegation =

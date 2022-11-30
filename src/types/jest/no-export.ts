@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow using `exports` in files containing tests
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-export.md
+ *
  * @minItems 1
  */
 export type NoExport = 'off' | ['off' | 'error' | 'warn'];

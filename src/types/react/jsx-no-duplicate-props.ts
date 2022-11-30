@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow duplicate properties in JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-duplicate-props.md
+ *
  * @minItems 1
  */
 export type JsxNoDuplicateProps =

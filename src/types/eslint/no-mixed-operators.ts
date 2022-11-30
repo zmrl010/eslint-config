@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow mixed binary operators
+ * @see https://eslint.org/docs/rules/no-mixed-operators
+ *
  * @minItems 1
  */
 export type NoMixedOperators =

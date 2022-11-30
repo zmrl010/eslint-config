@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow specified warning terms in comments
+ * @see https://eslint.org/docs/rules/no-warning-comments
+ *
  * @minItems 1
  */
 export type NoWarningComments =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require a newline after each call in a method chain
+ * @see https://eslint.org/docs/rules/newline-per-chained-call
+ *
  * @minItems 1
  */
 export type NewlinePerChainedCall =

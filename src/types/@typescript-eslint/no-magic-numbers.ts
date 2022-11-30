@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow magic numbers
+ * @see https://typescript-eslint.io/rules/no-magic-numbers
+ *
  * @minItems 1
  */
 export type NoMagicNumbers =

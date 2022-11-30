@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require any function or method that returns a Promise to be marked async
+ * @see https://typescript-eslint.io/rules/promise-function-async
+ *
  * @minItems 1
  */
 export type PromiseFunctionAsync =

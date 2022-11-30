@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow problematic leaked values from being rendered
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-leaked-render.md
+ *
  * @minItems 1
  */
 export type JsxNoLeakedRender =

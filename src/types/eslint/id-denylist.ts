@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow specified identifiers
+ * @see https://eslint.org/docs/rules/id-denylist
+ *
  * @minItems 1
  */
 export type IdDenylist =

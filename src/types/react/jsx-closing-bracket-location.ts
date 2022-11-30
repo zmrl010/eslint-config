@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce closing bracket location in JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-closing-bracket-location.md
+ *
  * @minItems 1
  */
 export type JsxClosingBracketLocation =

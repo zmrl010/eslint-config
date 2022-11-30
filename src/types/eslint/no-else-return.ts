@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow `else` blocks after `return` statements in `if` statements
+ * @see https://eslint.org/docs/rules/no-else-return
+ *
  * @minItems 1
  */
 export type NoElseReturn =

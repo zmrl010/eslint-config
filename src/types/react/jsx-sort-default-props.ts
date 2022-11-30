@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce defaultProps declarations alphabetical sorting
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-sort-default-props.md
+ *
  * @minItems 1
  */
 export type JsxSortDefaultProps =

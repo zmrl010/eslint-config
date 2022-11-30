@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing after the `//` or `/*` in a comment
+ * @see https://eslint.org/docs/rules/spaced-comment
+ *
  * @minItems 1
  */
 export type SpacedComment =

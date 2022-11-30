@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the use of `console`
+ * @see https://eslint.org/docs/rules/no-console
+ *
  * @minItems 1
  */
 export type NoConsole =

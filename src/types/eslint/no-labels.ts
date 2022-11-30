@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow labeled statements
+ * @see https://eslint.org/docs/rules/no-labels
+ *
  * @minItems 1
  */
 export type NoLabels =

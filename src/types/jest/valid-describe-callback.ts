@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce valid `describe()` callback
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/valid-describe-callback.md
+ *
  * @minItems 1
  */
 export type ValidDescribeCallback = 'off' | ['off' | 'error' | 'warn'];

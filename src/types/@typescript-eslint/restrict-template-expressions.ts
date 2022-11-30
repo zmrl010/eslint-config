@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce template literal expressions to be of `string` type
+ * @see https://typescript-eslint.io/rules/restrict-template-expressions
+ *
  * @minItems 1
  */
 export type RestrictTemplateExpressions =

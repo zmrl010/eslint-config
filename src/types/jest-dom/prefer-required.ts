@@ -5,6 +5,9 @@
  */
 
 /**
+ * prefer toBeRequired over checking properties
+ * @see prefer-required
+ *
  * @minItems 1
  */
 export type PreferRequired = 'off' | ['off' | 'error' | 'warn'];

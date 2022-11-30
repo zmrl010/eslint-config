@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow assignment operator shorthand where possible
+ * @see https://eslint.org/docs/rules/operator-assignment
+ *
  * @minItems 1
  */
 export type OperatorAssignment =

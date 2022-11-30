@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-
     {
       "type": "node-terminal",
       "name": "Run Script: generate-types",
@@ -18,6 +17,13 @@
       "env": {
         "NODE_DEBUG": "generate-types"
       }
-    }
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run ESLint",
+      "request": "launch",
+      "command": "pnpm eslint",
+      "cwd": "${workspaceFolder}"
+    },
   ]
 }

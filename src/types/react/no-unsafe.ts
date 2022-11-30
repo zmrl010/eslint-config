@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow usage of unsafe lifecycle methods
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unsafe.md
+ *
  * @minItems 1
  */
 export type NoUnsafe =

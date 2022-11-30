@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow an empty line between class members
+ * @see https://eslint.org/docs/rules/lines-between-class-members
+ *
  * @minItems 1
  */
 export type LinesBetweenClassMembers =

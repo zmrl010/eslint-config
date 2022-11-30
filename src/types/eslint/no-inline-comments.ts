@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow inline comments after code
+ * @see https://eslint.org/docs/rules/no-inline-comments
+ *
  * @minItems 1
  */
 export type NoInlineComments =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce the consistent use of either double or single quotes in JSX attributes
+ * @see https://eslint.org/docs/rules/jsx-quotes
+ *
  * @minItems 1
  */
 export type JsxQuotes =

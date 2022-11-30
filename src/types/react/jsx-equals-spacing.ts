@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce or disallow spaces around equal signs in JSX attributes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-equals-spacing.md
+ *
  * @minItems 1
  */
 export type JsxEqualsSpacing =

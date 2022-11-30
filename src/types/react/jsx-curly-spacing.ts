@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-curly-spacing.md
+ *
  * @minItems 1
  */
 export type JsxCurlySpacing =

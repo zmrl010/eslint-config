@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow usage of invalid attributes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-invalid-html-attribute.md
+ *
  * @minItems 1
  */
 export type NoInvalidHtmlAttribute =

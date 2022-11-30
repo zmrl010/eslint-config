@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow trailing whitespace at the end of lines
+ * @see https://eslint.org/docs/rules/no-trailing-spaces
+ *
  * @minItems 1
  */
 export type NoTrailingSpaces =

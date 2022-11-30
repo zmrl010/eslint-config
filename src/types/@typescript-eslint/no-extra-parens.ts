@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Disallow unnecessary parentheses
+ * @see https://typescript-eslint.io/rules/no-extra-parens
+ */
 export type NoExtraParens =
   | 'off'
   | (

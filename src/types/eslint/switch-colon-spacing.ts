@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce spacing around colons of switch statements
+ * @see https://eslint.org/docs/rules/switch-colon-spacing
+ *
  * @minItems 1
  */
 export type SwitchColonSpacing =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce PascalCase for user-defined JSX components
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-pascal-case.md
+ *
  * @minItems 1
  */
 export type JsxPascalCase =

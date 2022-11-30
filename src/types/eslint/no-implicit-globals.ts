@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow declarations in the global scope
+ * @see https://eslint.org/docs/rules/no-implicit-globals
+ *
  * @minItems 1
  */
 export type NoImplicitGlobals =

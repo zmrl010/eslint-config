@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce maximum of props on a single line in JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-max-props-per-line.md
+ *
  * @minItems 1
  */
 export type JsxMaxPropsPerLine =

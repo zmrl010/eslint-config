@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing around `*` operators in generator functions
+ * @see https://eslint.org/docs/rules/generator-star-spacing
+ *
  * @minItems 1
  */
 export type GeneratorStarSpacing =

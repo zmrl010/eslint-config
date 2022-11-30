@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce all defaultProps have a corresponding non-required PropType
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/default-props-match-prop-types.md
+ *
  * @minItems 1
  */
 export type DefaultPropsMatchPropTypes =

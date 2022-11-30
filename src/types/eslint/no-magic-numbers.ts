@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow magic numbers
+ * @see https://eslint.org/docs/rules/no-magic-numbers
+ *
  * @minItems 1
  */
 export type NoMagicNumbers =

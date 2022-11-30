@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce constituents of a type union/intersection to be sorted alphabetically
+ * @see https://typescript-eslint.io/rules/sort-type-constituents
+ *
  * @minItems 1
  */
 export type SortTypeConstituents =

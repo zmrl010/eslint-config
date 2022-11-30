@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or prevent a new line after jsx elements and expressions.
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-newline.md
+ *
  * @minItems 1
  */
 export type JsxNewline =

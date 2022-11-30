@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow certain properties on certain objects
+ * @see https://eslint.org/docs/rules/no-restricted-properties
+ *
  * @minItems 1
  */
 export type NoRestrictedProperties =

@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require or disallow semicolons instead of ASI
+ * @see https://eslint.org/docs/rules/semi
+ */
 export type Semi =
   | 'off'
   | (

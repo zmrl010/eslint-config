@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require `Array#sort` calls to always provide a `compareFunction`
+ * @see https://typescript-eslint.io/rules/require-array-sort-compare
+ *
  * @minItems 1
  */
 export type RequireArraySortCompare =

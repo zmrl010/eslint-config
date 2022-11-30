@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a defaultProps definition for every prop that is not a required prop
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/require-default-props.md
+ *
  * @minItems 1
  */
 export type RequireDefaultProps =

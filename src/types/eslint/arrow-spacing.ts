@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before and after the arrow in arrow functions
+ * @see https://eslint.org/docs/rules/arrow-spacing
+ *
  * @minItems 1
  */
 export type ArrowSpacing =

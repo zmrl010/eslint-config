@@ -5,6 +5,8 @@
  */
 
 /**
+ * Disallow import statements with module.exports
+ *
  * @minItems 1
  */
 export type NoImportModuleExports =

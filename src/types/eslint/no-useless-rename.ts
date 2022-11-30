@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow renaming import, export, and destructured assignments to the same name
+ * @see https://eslint.org/docs/rules/no-useless-rename
+ *
  * @minItems 1
  */
 export type NoUselessRename =

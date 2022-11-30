@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce the consistent use of either `function` declarations or expressions
+ * @see https://eslint.org/docs/rules/func-style
+ *
  * @minItems 1
  */
 export type FuncStyle =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before and after commas
+ * @see https://typescript-eslint.io/rules/comma-spacing
+ *
  * @minItems 1
  */
 export type CommaSpacing =

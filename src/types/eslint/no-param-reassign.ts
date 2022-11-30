@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow reassigning `function` parameters
+ * @see https://eslint.org/docs/rules/no-param-reassign
+ *
  * @minItems 1
  */
 export type NoParamReassign =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the use of debugging utilities like `debug`
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-debugging-utils.md
+ *
  * @minItems 1
  */
 export type NoDebuggingUtils =

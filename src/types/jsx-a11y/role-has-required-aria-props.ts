@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that elements with ARIA roles must have all required attributes for that role.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/role-has-required-aria-props.md
+ *
  * @minItems 1
  */
 export type RoleHasRequiredAriaProps =

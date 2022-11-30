@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow ternary operators when simpler alternatives exist
+ * @see https://eslint.org/docs/rules/no-unneeded-ternary
+ *
  * @minItems 1
  */
 export type NoUnneededTernary =

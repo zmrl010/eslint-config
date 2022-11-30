@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce `return` statements in getters
+ * @see https://eslint.org/docs/rules/getter-return
+ *
  * @minItems 1
  */
 export type GetterReturn =

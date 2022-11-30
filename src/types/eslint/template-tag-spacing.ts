@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow spacing between template tags and their literals
+ * @see https://eslint.org/docs/rules/template-tag-spacing
+ *
  * @minItems 1
  */
 export type TemplateTagSpacing =

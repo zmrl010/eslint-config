@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require using Error objects as Promise rejection reasons
+ * @see https://eslint.org/docs/rules/prefer-promise-reject-errors
+ *
  * @minItems 1
  */
 export type PreferPromiseRejectErrors =

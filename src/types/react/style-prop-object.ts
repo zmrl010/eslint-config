@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce style prop value is an object
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/style-prop-object.md
+ *
  * @minItems 1
  */
 export type StylePropObject =

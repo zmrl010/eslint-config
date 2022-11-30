@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce React components to have a shouldComponentUpdate method
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/require-optimization.md
+ *
  * @minItems 1
  */
 export type RequireOptimization =

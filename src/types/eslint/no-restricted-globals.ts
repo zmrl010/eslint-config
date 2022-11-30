@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow specified global variables
+ * @see https://eslint.org/docs/rules/no-restricted-globals
+ *
  * @minItems 1
  */
 export type NoRestrictedGlobals =

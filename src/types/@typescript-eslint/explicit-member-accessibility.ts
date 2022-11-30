@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require explicit accessibility modifiers on class properties and methods
+ * @see https://typescript-eslint.io/rules/explicit-member-accessibility
+ *
  * @minItems 1
  */
 export type ExplicitMemberAccessibility =

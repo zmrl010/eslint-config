@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow parameter properties in class constructors
+ * @see https://typescript-eslint.io/rules/parameter-properties
+ *
  * @minItems 1
  */
 export type ParameterProperties =

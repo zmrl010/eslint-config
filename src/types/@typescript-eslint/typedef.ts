@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require type annotations in certain places
+ * @see https://typescript-eslint.io/rules/typedef
+ *
  * @minItems 1
  */
 export type Typedef =

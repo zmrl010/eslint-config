@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow missing `key` props in iterators/collection literals
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-key.md
+ *
  * @minItems 1
  */
 export type JsxKey =

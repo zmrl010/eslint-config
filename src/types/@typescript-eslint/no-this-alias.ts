@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow aliasing `this`
+ * @see https://typescript-eslint.io/rules/no-this-alias
+ *
  * @minItems 1
  */
 export type NoThisAlias =

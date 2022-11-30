@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce JSX indentation
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-indent.md
+ *
  * @minItems 1
  */
 export type JsxIndent =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow use of chained assignment expressions
+ * @see https://eslint.org/docs/rules/no-multi-assign
+ *
  * @minItems 1
  */
 export type NoMultiAssign =

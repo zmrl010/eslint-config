@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce iframe elements have a title attribute.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/iframe-has-title.md
+ *
  * @minItems 1
  */
 export type IframeHasTitle =

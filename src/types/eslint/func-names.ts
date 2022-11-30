@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow named `function` expressions
+ * @see https://eslint.org/docs/rules/func-names
+ *
  * @minItems 1
  */
 export type FuncNames =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require a consistent member declaration order
+ * @see https://typescript-eslint.io/rules/member-ordering
+ *
  * @minItems 1
  */
 export type MemberOrdering =

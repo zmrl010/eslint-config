@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow certain types in boolean expressions
+ * @see https://typescript-eslint.io/rules/strict-boolean-expressions
+ *
  * @minItems 1
  */
 export type StrictBooleanExpressions =

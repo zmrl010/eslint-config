@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require identifiers to match a specified regular expression
+ * @see https://eslint.org/docs/rules/id-match
+ *
  * @minItems 1
  */
 export type IdMatch =

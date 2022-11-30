@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require spacing around infix operators
+ * @see https://typescript-eslint.io/rules/space-infix-ops
+ *
  * @minItems 1
  */
 export type SpaceInfixOps =

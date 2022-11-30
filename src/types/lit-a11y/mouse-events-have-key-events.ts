@@ -5,6 +5,9 @@
  */
 
 /**
+ * mouse-events-have-key-events
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/mouse-events-have-key-events.md
+ *
  * @minItems 1
  */
 export type MouseEventsHaveKeyEvents =

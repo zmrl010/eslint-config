@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow variables used in JSX to be incorrectly marked as unused
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-uses-vars.md
+ *
  * @minItems 1
  */
 export type JsxUsesVars = 'off' | ['off' | 'error' | 'warn'];

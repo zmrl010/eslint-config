@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the `void` operator except when used to discard a value
+ * @see https://typescript-eslint.io/rules/no-meaningless-void-operator
+ *
  * @minItems 1
  */
 export type NoMeaninglessVoidOperator =

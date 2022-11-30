@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce img alt attribute does not contain the word image, picture, or photo.
+ * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/img-redundant-alt.md
+ *
  * @minItems 1
  */
 export type ImgRedundantAlt =

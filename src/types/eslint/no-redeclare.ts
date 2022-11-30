@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow variable redeclaration
+ * @see https://eslint.org/docs/rules/no-redeclare
+ *
  * @minItems 1
  */
 export type NoRedeclare =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce stateless components to be written as a pure function
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/prefer-stateless-function.md
+ *
  * @minItems 1
  */
 export type PreferStatelessFunction =

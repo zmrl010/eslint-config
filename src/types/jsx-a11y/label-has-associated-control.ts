@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that a `label` tag has a text label and an associated control.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md
+ *
  * @minItems 1
  */
 export type LabelHasAssociatedControl =

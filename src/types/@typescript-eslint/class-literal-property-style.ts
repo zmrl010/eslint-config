@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that literals on classes are exposed in a consistent style
+ * @see https://typescript-eslint.io/rules/class-literal-property-style
+ *
  * @minItems 1
  */
 export type ClassLiteralPropertyStyle =

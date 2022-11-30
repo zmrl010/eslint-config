@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce `return` statements in callbacks of array methods
+ * @see https://eslint.org/docs/rules/array-callback-return
+ *
  * @minItems 1
  */
 export type ArrayCallbackReturn =

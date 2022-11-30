@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the use of `eval()`
+ * @see https://eslint.org/docs/rules/no-eval
+ *
  * @minItems 1
  */
 export type NoEval =

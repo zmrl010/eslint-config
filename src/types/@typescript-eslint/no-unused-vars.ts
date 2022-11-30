@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unused variables
+ * @see https://typescript-eslint.io/rules/no-unused-vars
+ *
  * @minItems 1
  */
 export type NoUnusedVars =

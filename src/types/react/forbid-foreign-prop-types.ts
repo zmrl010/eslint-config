@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow using another component's propTypes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-foreign-prop-types.md
+ *
  * @minItems 1
  */
 export type ForbidForeignPropTypes =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * `tabIndex` should only be declared on interactive elements.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-noninteractive-tabindex.md
+ *
  * @minItems 1
  */
 export type NoNoninteractiveTabindex =

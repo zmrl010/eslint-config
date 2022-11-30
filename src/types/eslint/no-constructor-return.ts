@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow returning value from constructor
+ * @see https://eslint.org/docs/rules/no-constructor-return
+ *
  * @minItems 1
  */
 export type NoConstructorReturn =

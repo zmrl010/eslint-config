@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow empty functions
+ * @see https://eslint.org/docs/rules/no-empty-function
+ *
  * @minItems 1
  */
 export type NoEmptyFunction =

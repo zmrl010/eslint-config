@@ -5,6 +5,9 @@
  */
 
 /**
+ * Suggest using explicit assertions rather than standalone queries
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-explicit-assert.md
+ *
  * @minItems 1
  */
 export type PreferExplicitAssert =

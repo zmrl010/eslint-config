@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require object keys to be sorted
+ * @see https://eslint.org/docs/rules/sort-keys
+ *
  * @minItems 1
  */
 export type SortKeys =

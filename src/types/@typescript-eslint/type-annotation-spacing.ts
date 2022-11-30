@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require consistent spacing around type annotations
+ * @see https://typescript-eslint.io/rules/type-annotation-spacing
+ *
  * @minItems 1
  */
 export type TypeAnnotationSpacing =

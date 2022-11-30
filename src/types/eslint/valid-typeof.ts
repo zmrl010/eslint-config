@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce comparing `typeof` expressions against valid strings
+ * @see https://eslint.org/docs/rules/valid-typeof
+ *
  * @minItems 1
  */
 export type ValidTypeof =

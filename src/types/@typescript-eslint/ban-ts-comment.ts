@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow `@ts-<directive>` comments or require descriptions after directives
+ * @see https://typescript-eslint.io/rules/ban-ts-comment
+ *
  * @minItems 1
  */
 export type BanTsComment =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce dot notation whenever possible
+ * @see https://eslint.org/docs/rules/dot-notation
+ *
  * @minItems 1
  */
 export type DotNotation =

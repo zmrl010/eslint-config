@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require parentheses around immediate `function` invocations
+ * @see https://eslint.org/docs/rules/wrap-iife
+ *
  * @minItems 1
  */
 export type WrapIife =

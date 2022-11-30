@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow usage of unknown DOM property
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unknown-property.md
+ *
  * @minItems 1
  */
 export type NoUnknownProperty =

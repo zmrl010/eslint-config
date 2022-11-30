@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require or disallow spacing between function identifiers and their invocations
+ * @see https://typescript-eslint.io/rules/func-call-spacing
+ */
 export type FuncCallSpacing =
   | 'off'
   | (

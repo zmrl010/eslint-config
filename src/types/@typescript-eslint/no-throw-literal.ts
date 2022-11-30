@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow throwing literals as exceptions
+ * @see https://typescript-eslint.io/rules/no-throw-literal
+ *
  * @minItems 1
  */
 export type NoThrowLiteral =

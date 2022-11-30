@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow direct Node access
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-node-access.md
+ *
  * @minItems 1
  */
 export type NoNodeAccess =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Suggest using `userEvent` over `fireEvent` for simulating user interactions
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-user-event.md
+ *
  * @minItems 1
  */
 export type PreferUserEvent =

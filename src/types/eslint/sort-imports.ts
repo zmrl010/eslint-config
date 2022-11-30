@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce sorted import declarations within modules
+ * @see https://eslint.org/docs/rules/sort-imports
+ *
  * @minItems 1
  */
 export type SortImports =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before blocks
+ * @see https://typescript-eslint.io/rules/space-before-blocks
+ *
  * @minItems 1
  */
 export type SpaceBeforeBlocks =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow padding within blocks
+ * @see https://eslint.org/docs/rules/padded-blocks
+ *
  * @minItems 1
  */
 export type PaddedBlocks =

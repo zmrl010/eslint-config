@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow logical assignment logical operator shorthand
+ * @see https://eslint.org/docs/rules/logical-assignment-operators
+ *
  * @minItems 1
  */
 export type LogicalAssignmentOperators =

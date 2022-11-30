@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow definitions of unused propTypes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unused-prop-types.md
+ *
  * @minItems 1
  */
 export type NoUnusedPropTypes =

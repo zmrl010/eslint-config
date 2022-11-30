@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a particular style for multiline comments
+ * @see https://eslint.org/docs/rules/multiline-comment-style
+ *
  * @minItems 1
  */
 export type MultilineCommentStyle =

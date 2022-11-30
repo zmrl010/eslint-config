@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow when this.state is accessed within setState
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-access-state-in-setstate.md
+ *
  * @minItems 1
  */
 export type NoAccessStateInSetstate = 'off' | ['off' | 'error' | 'warn'];

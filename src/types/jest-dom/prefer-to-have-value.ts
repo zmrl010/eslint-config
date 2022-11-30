@@ -5,6 +5,9 @@
  */
 
 /**
+ * prefer toHaveValue over checking element.value
+ * @see prefer-to-have-value
+ *
  * @minItems 1
  */
 export type PreferToHaveValue = 'off' | ['off' | 'error' | 'warn'];

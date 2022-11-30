@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unnecessary equality comparisons against boolean literals
+ * @see https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
+ *
  * @minItems 1
  */
 export type NoUnnecessaryBooleanLiteralCompare =

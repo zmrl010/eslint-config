@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce class component state initialization style
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/state-in-constructor.md
+ *
  * @minItems 1
  */
 export type StateInConstructor =

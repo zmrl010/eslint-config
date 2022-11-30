@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow invalid regular expression strings in `RegExp` constructors
+ * @see https://eslint.org/docs/rules/no-invalid-regexp
+ *
  * @minItems 1
  */
 export type NoInvalidRegexp =

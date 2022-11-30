@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce component methods order
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/sort-comp.md
+ *
  * @minItems 1
  */
 export type SortComp =

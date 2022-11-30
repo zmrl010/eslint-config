@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce position of line comments
+ * @see https://eslint.org/docs/rules/line-comment-position
+ *
  * @minItems 1
  */
 export type LineCommentPosition =

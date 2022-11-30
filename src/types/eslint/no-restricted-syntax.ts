@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow specified syntax
+ * @see https://eslint.org/docs/rules/no-restricted-syntax
+ *
  * @minItems 1
  */
 export type NoRestrictedSyntax =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce ARIA state and property values are valid.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-proptypes.md
+ *
  * @minItems 1
  */
 export type AriaProptypes =

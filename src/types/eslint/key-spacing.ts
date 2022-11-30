@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing between keys and values in object literal properties
+ * @see https://eslint.org/docs/rules/key-spacing
+ *
  * @minItems 1
  */
 export type KeySpacing =

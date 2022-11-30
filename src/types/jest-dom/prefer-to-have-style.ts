@@ -5,6 +5,9 @@
  */
 
 /**
+ * prefer toHaveStyle over checking element style
+ * @see prefer-to-have-style
+ *
  * @minItems 1
  */
 export type PreferToHaveStyle = 'off' | ['off' | 'error' | 'warn'];

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow use of `this` in contexts where the value of `this` is `undefined`
+ * @see https://eslint.org/docs/rules/no-invalid-this
+ *
  * @minItems 1
  */
 export type NoInvalidThis =

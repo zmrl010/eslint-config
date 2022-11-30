@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce all anchors are valid, navigable elements.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/anchor-is-valid.md
+ *
  * @minItems 1
  */
 export type AnchorIsValid =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unnecessary boolean casts
+ * @see https://eslint.org/docs/rules/no-extra-boolean-cast
+ *
  * @minItems 1
  */
 export type NoExtraBooleanCast =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Detects usages of legacy lit imports
+ * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/no-legacy-imports.md
+ *
  * @minItems 1
  */
 export type NoLegacyImports = 'off' | ['off' | 'error' | 'warn'];

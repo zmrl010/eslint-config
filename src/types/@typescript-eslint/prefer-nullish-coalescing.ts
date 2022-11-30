@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce using the nullish coalescing operator instead of logical chaining
+ * @see https://typescript-eslint.io/rules/prefer-nullish-coalescing
+ *
  * @minItems 1
  */
 export type PreferNullishCoalescing =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require function parameters to be typed as `readonly` to prevent accidental mutation of inputs
+ * @see https://typescript-eslint.io/rules/prefer-readonly-parameter-types
+ *
  * @minItems 1
  */
 export type PreferReadonlyParameterTypes =

@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require or disallow method and property shorthand syntax for object literals
+ * @see https://eslint.org/docs/rules/object-shorthand
+ */
 export type ObjectShorthand =
   | 'off'
   | (

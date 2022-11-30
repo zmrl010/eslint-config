@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce the consistent use of either backticks, double, or single quotes
+ * @see https://typescript-eslint.io/rules/quotes
+ *
  * @minItems 1
  */
 export type Quotes =

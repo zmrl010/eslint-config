@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before and after keywords
+ * @see https://typescript-eslint.io/rules/keyword-spacing
+ *
  * @minItems 1
  */
 export type KeywordSpacing =

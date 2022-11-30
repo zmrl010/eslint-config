@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum number of statements allowed per line
+ * @see https://eslint.org/docs/rules/max-statements-per-line
+ *
  * @minItems 1
  */
 export type MaxStatementsPerLine =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce line breaks after each array element
+ * @see https://eslint.org/docs/rules/array-element-newline
+ *
  * @minItems 1
  */
 export type ArrayElementNewline =

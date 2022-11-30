@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require destructuring from arrays and/or objects
+ * @see https://eslint.org/docs/rules/prefer-destructuring
+ *
  * @minItems 1
  */
 export type PreferDestructuring =

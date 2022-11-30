@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow Promises in places not designed to handle them
+ * @see https://typescript-eslint.io/rules/no-misused-promises
+ *
  * @minItems 1
  */
 export type NoMisusedPromises =

@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Disallow specified modules when loaded by `import`
+ * @see https://typescript-eslint.io/rules/no-restricted-imports
+ */
 export type NoRestrictedImports =
   | 'off'
   | (

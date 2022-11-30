@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce proper position of the first property in JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-first-prop-new-line.md
+ *
  * @minItems 1
  */
 export type JsxFirstPropNewLine =

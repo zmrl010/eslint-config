@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require both operands of addition to be the same type and be `bigint`, `number`, or `string`
+ * @see https://typescript-eslint.io/rules/restrict-plus-operands
+ *
  * @minItems 1
  */
 export type RestrictPlusOperands =

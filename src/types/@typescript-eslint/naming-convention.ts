@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce naming conventions for everything across a codebase
+ * @see https://typescript-eslint.io/rules/naming-convention
+ *
  * @minItems 1
  */
 export type NamingConvention =

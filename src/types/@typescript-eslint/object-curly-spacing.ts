@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing inside braces
+ * @see https://typescript-eslint.io/rules/object-curly-spacing
+ *
  * @minItems 1
  */
 export type ObjectCurlySpacing =

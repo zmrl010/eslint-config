@@ -5,6 +5,9 @@
  */
 
 /**
+ * Suggest using `find(All)By*` query instead of `waitFor` + `get(All)By*` to wait for elements
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-find-by.md
+ *
  * @minItems 1
  */
 export type PreferFindBy = 'off' | ['off' | 'error' | 'warn'];

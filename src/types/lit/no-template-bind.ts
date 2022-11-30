@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallows `.bind` in templates
+ * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/no-template-bind.md
+ *
  * @minItems 1
  */
 export type NoTemplateBind = 'off' | ['off' | 'error' | 'warn'];

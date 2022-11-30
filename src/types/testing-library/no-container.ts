@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the use of `container` methods
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-container.md
+ *
  * @minItems 1
  */
 export type NoContainer = 'off' | ['off' | 'error' | 'warn'];

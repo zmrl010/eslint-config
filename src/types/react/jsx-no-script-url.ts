@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow usage of `javascript:` URLs
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-script-url.md
+ *
  * @minItems 1
  */
 export type JsxNoScriptUrl =

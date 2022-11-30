@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow use of the `RegExp` constructor in favor of regular expression literals
+ * @see https://eslint.org/docs/rules/prefer-regex-literals
+ *
  * @minItems 1
  */
 export type PreferRegexLiterals =

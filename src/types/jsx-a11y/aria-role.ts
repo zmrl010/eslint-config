@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that elements with ARIA roles must use a valid, non-abstract ARIA role.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-role.md
+ *
  * @minItems 1
  */
 export type AriaRole =

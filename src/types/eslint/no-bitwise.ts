@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow bitwise operators
+ * @see https://eslint.org/docs/rules/no-bitwise
+ *
  * @minItems 1
  */
 export type NoBitwise =

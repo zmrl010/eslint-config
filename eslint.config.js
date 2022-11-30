@@ -8,5 +8,5 @@ export default [
     files: ['types', 'src'],
     ignores: ['node_modules', 'coverage', 'dist', 'pnpm-lock.yaml'],
   },
-  mainConfig,
+  ...mainConfig,
 ];

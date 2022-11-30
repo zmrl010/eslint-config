@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing before or after unary operators
+ * @see https://eslint.org/docs/rules/space-unary-ops
+ *
  * @minItems 1
  */
 export type SpaceUnaryOps =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce line breaks between arguments of a function call
+ * @see https://eslint.org/docs/rules/function-call-argument-newline
+ *
  * @minItems 1
  */
 export type FunctionCallArgumentNewline =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow `void` operators
+ * @see https://eslint.org/docs/rules/no-void
+ *
  * @minItems 1
  */
 export type NoVoid =

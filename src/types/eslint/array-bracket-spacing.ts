@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent spacing inside array brackets
+ * @see https://eslint.org/docs/rules/array-bracket-spacing
+ *
  * @minItems 1
  */
 export type ArrayBracketSpacing =

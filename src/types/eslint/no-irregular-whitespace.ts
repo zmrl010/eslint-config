@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow irregular whitespace
+ * @see https://eslint.org/docs/rules/no-irregular-whitespace
+ *
  * @minItems 1
  */
 export type NoIrregularWhitespace =

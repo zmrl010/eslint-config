@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require grouped accessor pairs in object literals and classes
+ * @see https://eslint.org/docs/rules/grouped-accessor-pairs
+ *
  * @minItems 1
  */
 export type GroupedAccessorPairs =

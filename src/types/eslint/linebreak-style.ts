@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent linebreak style
+ * @see https://eslint.org/docs/rules/linebreak-style
+ *
  * @minItems 1
  */
 export type LinebreakStyle =

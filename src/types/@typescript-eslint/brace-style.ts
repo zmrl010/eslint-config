@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent brace style for blocks
+ * @see https://typescript-eslint.io/rules/brace-style
+ *
  * @minItems 1
  */
 export type BraceStyle =

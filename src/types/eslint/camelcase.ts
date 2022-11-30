@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce camelcase naming convention
+ * @see https://eslint.org/docs/rules/camelcase
+ *
  * @minItems 1
  */
 export type Camelcase =

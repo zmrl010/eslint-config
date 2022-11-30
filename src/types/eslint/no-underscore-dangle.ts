@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow dangling underscores in identifiers
+ * @see https://eslint.org/docs/rules/no-underscore-dangle
+ *
  * @minItems 1
  */
 export type NoUnderscoreDangle =

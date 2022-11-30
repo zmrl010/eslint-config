@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallows invalid custom element names
+ * @see https://github.com/43081j/eslint-plugin-wc/blob/master/docs/rules/no-invalid-element-name.md
+ *
  * @minItems 1
  */
 export type NoInvalidElementName =

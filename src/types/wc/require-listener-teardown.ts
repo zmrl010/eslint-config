@@ -5,6 +5,9 @@
  */
 
 /**
+ * Requires that listeners be cleaned up on DOM disconnect.
+ * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/require-listener-teardown.md
+ *
  * @minItems 1
  */
 export type RequireListenerTeardown = 'off' | ['off' | 'error' | 'warn'];

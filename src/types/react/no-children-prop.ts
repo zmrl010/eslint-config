@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow passing of children as props
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-children-prop.md
+ *
  * @minItems 1
  */
 export type NoChildrenProp =

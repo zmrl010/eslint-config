@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require constructor names to begin with a capital letter
+ * @see https://eslint.org/docs/rules/new-cap
+ *
  * @minItems 1
  */
 export type NewCap =

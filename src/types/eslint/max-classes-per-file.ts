@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce a maximum number of classes per file
+ * @see https://eslint.org/docs/rules/max-classes-per-file
+ *
  * @minItems 1
  */
 export type MaxClassesPerFile =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent line breaks inside function parentheses
+ * @see https://eslint.org/docs/rules/function-paren-newline
+ *
  * @minItems 1
  */
 export type FunctionParenNewline =

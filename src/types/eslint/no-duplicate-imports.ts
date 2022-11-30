@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow duplicate module imports
+ * @see https://eslint.org/docs/rules/no-duplicate-imports
+ *
  * @minItems 1
  */
 export type NoDuplicateImports =

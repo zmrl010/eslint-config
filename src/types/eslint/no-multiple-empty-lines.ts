@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow multiple empty lines
+ * @see https://eslint.org/docs/rules/no-multiple-empty-lines
+ *
  * @minItems 1
  */
 export type NoMultipleEmptyLines =

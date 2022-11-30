@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow "Yoda" conditions
+ * @see https://eslint.org/docs/rules/yoda
+ *
  * @minItems 1
  */
 export type Yoda =

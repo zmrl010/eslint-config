@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce variables to be declared either together or separately in functions
+ * @see https://eslint.org/docs/rules/one-var
+ *
  * @minItems 1
  */
 export type OneVar =

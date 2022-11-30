@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce unbound methods are called with their expected scope
+ * @see https://typescript-eslint.io/rules/unbound-method
+ *
  * @minItems 1
  */
 export type UnboundMethod =

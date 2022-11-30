@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow strict mode directives
+ * @see https://eslint.org/docs/rules/strict
+ *
  * @minItems 1
  */
 export type Strict =

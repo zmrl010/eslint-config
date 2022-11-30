@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow trailing commas
+ * @see https://eslint.org/docs/rules/comma-dangle
+ *
  * @minItems 1
  */
 export type CommaDangle =

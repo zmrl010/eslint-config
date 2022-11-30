@@ -4,6 +4,10 @@
  * RUN `pnpm generate:types` TO REGENERATE IT.
  */
 
+/**
+ * Require braces around arrow function bodies
+ * @see https://eslint.org/docs/rules/arrow-body-style
+ */
 export type ArrowBodyStyle =
   | 'off'
   | (

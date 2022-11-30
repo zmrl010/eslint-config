@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow the unary operators `++` and `--`
+ * @see https://eslint.org/docs/rules/no-plusplus
+ *
  * @minItems 1
  */
 export type NoPlusplus =

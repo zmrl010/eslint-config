@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow specified names in exports
+ * @see https://eslint.org/docs/rules/no-restricted-exports
+ *
  * @minItems 1
  */
 export type NoRestrictedExports =

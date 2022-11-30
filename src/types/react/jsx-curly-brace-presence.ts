@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals in JSX children or attributes
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-curly-brace-presence.md
+ *
  * @minItems 1
  */
 export type JsxCurlyBracePresence =

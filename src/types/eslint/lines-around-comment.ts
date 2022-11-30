@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require empty lines around comments
+ * @see https://eslint.org/docs/rules/lines-around-comment
+ *
  * @minItems 1
  */
 export type LinesAroundComment =

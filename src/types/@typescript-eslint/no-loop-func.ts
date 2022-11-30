@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow function declarations that contain unsafe references inside loop statements
+ * @see https://typescript-eslint.io/rules/no-loop-func
+ *
  * @minItems 1
  */
 export type NoLoopFunc = 'off' | ['off' | 'error' | 'warn'];

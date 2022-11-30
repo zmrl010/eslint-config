@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforces a maximum depth to nested describe calls
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/max-nested-describe.md
+ *
  * @minItems 1
  */
 export type MaxNestedDescribe =

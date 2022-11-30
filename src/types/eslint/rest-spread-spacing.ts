@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce spacing between rest and spread operators and their expressions
+ * @see https://eslint.org/docs/rules/rest-spread-spacing
+ *
  * @minItems 1
  */
 export type RestSpreadSpacing =

@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce linebreaks after opening and before closing array brackets
+ * @see https://eslint.org/docs/rules/array-bracket-newline
+ *
  * @minItems 1
  */
 export type ArrayBracketNewline =

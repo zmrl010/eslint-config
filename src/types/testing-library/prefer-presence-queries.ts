@@ -5,6 +5,9 @@
  */
 
 /**
+ * Ensure appropriate `get*`/`query*` queries are used with their respective matchers
+ * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-presence-queries.md
+ *
  * @minItems 1
  */
 export type PreferPresenceQueries =

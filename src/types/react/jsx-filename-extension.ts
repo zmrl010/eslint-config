@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow file extensions that may contain JSX
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-filename-extension.md
+ *
  * @minItems 1
  */
 export type JsxFilenameExtension =

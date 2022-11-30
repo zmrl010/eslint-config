@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce location of semicolons
+ * @see https://eslint.org/docs/rules/semi-style
+ *
  * @minItems 1
  */
 export type SemiStyle =

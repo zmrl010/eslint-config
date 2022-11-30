@@ -5,6 +5,9 @@
  */
 
 /**
+ * Suggest using `expect.assertions()` OR `expect.hasAssertions()`
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-expect-assertions.md
+ *
  * @minItems 1
  */
 export type PreferExpectAssertions =

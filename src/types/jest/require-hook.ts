@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require setup and teardown code to be within a hook
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/require-hook.md
+ *
  * @minItems 1
  */
 export type RequireHook =

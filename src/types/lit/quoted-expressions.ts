@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforces the presence or absence of quotes around expressions
+ * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/quoted-expressions.md
+ *
  * @minItems 1
  */
 export type QuotedExpressions =

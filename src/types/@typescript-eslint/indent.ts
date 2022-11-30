@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce consistent indentation
+ * @see https://typescript-eslint.io/rules/indent
+ *
  * @minItems 1
  */
 export type Indent =

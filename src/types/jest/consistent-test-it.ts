@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce `test` and `it` usage conventions
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/consistent-test-it.md
+ *
  * @minItems 1
  */
 export type ConsistentTestIt =

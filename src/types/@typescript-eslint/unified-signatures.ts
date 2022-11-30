@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow two overloads that could be unified into one with a union or an optional/rest parameter
+ * @see https://typescript-eslint.io/rules/unified-signatures
+ *
  * @minItems 1
  */
 export type UnifiedSignatures =

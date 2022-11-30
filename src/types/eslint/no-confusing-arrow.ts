@@ -5,6 +5,9 @@
  */
 
 /**
+ * Disallow arrow functions where they could be confused with comparisons
+ * @see https://eslint.org/docs/rules/no-confusing-arrow
+ *
  * @minItems 1
  */
 export type NoConfusingArrow =

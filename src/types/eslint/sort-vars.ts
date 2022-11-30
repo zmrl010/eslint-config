@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require variables within the same declaration block to be sorted
+ * @see https://eslint.org/docs/rules/sort-vars
+ *
  * @minItems 1
  */
 export type SortVars =

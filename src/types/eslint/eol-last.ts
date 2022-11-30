@@ -5,6 +5,9 @@
  */
 
 /**
+ * Require or disallow newline at the end of files
+ * @see https://eslint.org/docs/rules/eol-last
+ *
  * @minItems 1
  */
 export type EolLast =
