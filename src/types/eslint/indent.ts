@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Indent0 =
+export type Indent =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'tab' | number]
   | [
@@ -47,9 +48,3 @@ type Indent0 =
         ignoreComments?: boolean;
       }
     ];
-
-/**
- * Enforce consistent indentation
- * @see https://eslint.org/docs/rules/indent
- */
-export type Indent = 'off' | Indent0;

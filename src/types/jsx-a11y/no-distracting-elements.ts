@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoDistractingElements0 =
+export type NoDistractingElements =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type NoDistractingElements0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce distracting elements are not used.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-distracting-elements.md
- */
-export type NoDistractingElements = 'off' | NoDistractingElements0;

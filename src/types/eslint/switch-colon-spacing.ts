@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SwitchColonSpacing0 =
+export type SwitchColonSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type SwitchColonSpacing0 =
         after?: boolean;
       }
     ];
-
-/**
- * Enforce spacing around colons of switch statements
- * @see https://eslint.org/docs/rules/switch-colon-spacing
- */
-export type SwitchColonSpacing = 'off' | SwitchColonSpacing0;

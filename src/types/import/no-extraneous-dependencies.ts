@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoExtraneousDependencies0 =
+export type NoExtraneousDependencies =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,8 +20,3 @@ type NoExtraneousDependencies0 =
         packageDir?: string | unknown[];
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-extraneous-dependencies.md
- */
-export type NoExtraneousDependencies = 'off' | NoExtraneousDependencies0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RequireArraySortCompare0 =
+export type RequireArraySortCompare =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type RequireArraySortCompare0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Require `Array#sort` calls to always provide a `compareFunction`
- * @see https://typescript-eslint.io/rules/require-array-sort-compare
- */
-export type RequireArraySortCompare = 'off' | RequireArraySortCompare0;

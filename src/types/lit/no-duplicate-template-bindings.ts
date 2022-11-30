@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallows duplicate names in template bindings
- * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/no-duplicate-template-bindings.md
+ * @minItems 1
  */
-export type NoDuplicateTemplateBindings = 'off' | ['warn' | 'error'];
+export type NoDuplicateTemplateBindings = 'off' | ['off' | 'error' | 'warn'];

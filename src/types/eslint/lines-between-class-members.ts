@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type LinesBetweenClassMembers0 =
+export type LinesBetweenClassMembers =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never']
   | [
@@ -17,9 +18,3 @@ type LinesBetweenClassMembers0 =
         exceptAfterSingleLine?: boolean;
       }
     ];
-
-/**
- * Require or disallow an empty line between class members
- * @see https://eslint.org/docs/rules/lines-between-class-members
- */
-export type LinesBetweenClassMembers = 'off' | LinesBetweenClassMembers0;

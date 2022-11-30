@@ -5,7 +5,6 @@
  */
 
 /**
- * prefer toHaveClass over checking element className
- * @see prefer-to-have-class
+ * @minItems 1
  */
-export type PreferToHaveClass = 'off' | ['warn' | 'error'];
+export type PreferToHaveClass = 'off' | ['off' | 'error' | 'warn'];

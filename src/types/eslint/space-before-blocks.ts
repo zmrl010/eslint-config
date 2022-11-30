@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SpaceBeforeBlocks0 =
+export type SpaceBeforeBlocks =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,9 +21,3 @@ type SpaceBeforeBlocks0 =
           }
       )
     ];
-
-/**
- * Enforce consistent spacing before blocks
- * @see https://eslint.org/docs/rules/space-before-blocks
- */
-export type SpaceBeforeBlocks = 'off' | SpaceBeforeBlocks0;

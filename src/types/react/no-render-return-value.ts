@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow usage of the return value of ReactDOM.render
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-render-return-value.md
+ * @minItems 1
  */
-export type NoRenderReturnValue = 'off' | ['warn' | 'error'];
+export type NoRenderReturnValue = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxIndentProps0 =
+export type JsxIndentProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,9 +22,3 @@ type JsxIndentProps0 =
           }
       )
     ];
-
-/**
- * Enforce props indentation in JSX
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-indent-props.md
- */
-export type JsxIndentProps = 'off' | JsxIndentProps0;

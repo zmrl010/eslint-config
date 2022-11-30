@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoTypeAlias0 =
+export type NoTypeAlias =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -66,9 +67,3 @@ type NoTypeAlias0 =
         allowGenerics?: 'always' | 'never';
       }
     ];
-
-/**
- * Disallow type aliases
- * @see https://typescript-eslint.io/rules/no-type-alias
- */
-export type NoTypeAlias = 'off' | NoTypeAlias0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PaddedBlocks0 =
+export type PaddedBlocks =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -34,9 +35,3 @@ type PaddedBlocks0 =
         allowSingleLineBlocks?: boolean;
       }
     ];
-
-/**
- * Require or disallow padding within blocks
- * @see https://eslint.org/docs/rules/padded-blocks
- */
-export type PaddedBlocks = 'off' | PaddedBlocks0;

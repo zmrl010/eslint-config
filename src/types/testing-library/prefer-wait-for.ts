@@ -5,7 +5,6 @@
  */
 
 /**
- * Use `waitFor` instead of deprecated wait methods
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-wait-for.md
+ * @minItems 1
  */
-export type PreferWaitFor = 'off' | ['warn' | 'error'];
+export type PreferWaitFor = 'off' | ['off' | 'error' | 'warn'];

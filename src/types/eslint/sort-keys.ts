@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SortKeys0 =
+export type SortKeys =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'asc' | 'desc']
   | [
@@ -20,9 +21,3 @@ type SortKeys0 =
         allowLineSeparatedGroups?: boolean;
       }
     ];
-
-/**
- * Require object keys to be sorted
- * @see https://eslint.org/docs/rules/sort-keys
- */
-export type SortKeys = 'off' | SortKeys0;

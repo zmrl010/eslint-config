@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoDuplicateImports0 =
+export type NoDuplicateImports =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoDuplicateImports0 =
         includeExports?: boolean;
       }
     ];
-
-/**
- * Disallow duplicate module imports
- * @see https://eslint.org/docs/rules/no-duplicate-imports
- */
-export type NoDuplicateImports = 'off' | NoDuplicateImports0;

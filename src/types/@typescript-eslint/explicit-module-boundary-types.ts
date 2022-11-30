@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ExplicitModuleBoundaryTypes0 =
+export type ExplicitModuleBoundaryTypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -37,9 +38,3 @@ type ExplicitModuleBoundaryTypes0 =
         shouldTrackReferences?: boolean;
       }
     ];
-
-/**
- * Require explicit return and argument types on exported functions' and classes' public class methods
- * @see https://typescript-eslint.io/rules/explicit-module-boundary-types
- */
-export type ExplicitModuleBoundaryTypes = 'off' | ExplicitModuleBoundaryTypes0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Quotes0 =
+export type Quotes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'single' | 'double' | 'backtick']
   | [
@@ -21,9 +22,3 @@ type Quotes0 =
           }
       )
     ];
-
-/**
- * Enforce the consistent use of either backticks, double, or single quotes
- * @see https://typescript-eslint.io/rules/quotes
- */
-export type Quotes = 'off' | Quotes0;

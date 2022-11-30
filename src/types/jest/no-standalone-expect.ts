@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoStandaloneExpect0 =
+export type NoStandaloneExpect =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoStandaloneExpect0 =
         additionalTestBlockFunctions?: string[];
       }
     ];
-
-/**
- * Disallow using `expect` outside of `it` or `test` blocks
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-standalone-expect.md
- */
-export type NoStandaloneExpect = 'off' | NoStandaloneExpect0;

@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow duplicate conditions in if-else-if chains
- * @see https://eslint.org/docs/rules/no-dupe-else-if
+ * @minItems 1
  */
-export type NoDupeElseIf = 'off' | ['warn' | 'error'];
+export type NoDupeElseIf = 'off' | ['off' | 'error' | 'warn'];

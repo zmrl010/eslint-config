@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Order0 =
+export type Order =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -44,8 +45,3 @@ type Order0 =
         warnOnUnassignedImports?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/order.md
- */
-export type Order = 'off' | Order0;

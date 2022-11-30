@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ArrowSpacing0 =
+export type ArrowSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ArrowSpacing0 =
         after?: boolean;
       }
     ];
-
-/**
- * Enforce consistent spacing before and after the arrow in arrow functions
- * @see https://eslint.org/docs/rules/arrow-spacing
- */
-export type ArrowSpacing = 'off' | ArrowSpacing0;

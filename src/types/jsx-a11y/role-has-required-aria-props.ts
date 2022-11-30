@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RoleHasRequiredAriaProps0 =
+export type RoleHasRequiredAriaProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type RoleHasRequiredAriaProps0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce that elements with ARIA roles must have all required attributes for that role.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/role-has-required-aria-props.md
- */
-export type RoleHasRequiredAriaProps = 'off' | RoleHasRequiredAriaProps0;

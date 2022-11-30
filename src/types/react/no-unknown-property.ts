@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnknownProperty0 =
+export type NoUnknownProperty =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoUnknownProperty0 =
         ignore?: string[];
       }
     ];
-
-/**
- * Disallow usage of unknown DOM property
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unknown-property.md
- */
-export type NoUnknownProperty = 'off' | NoUnknownProperty0;

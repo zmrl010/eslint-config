@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type DisplayName0 =
+export type DisplayName =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type DisplayName0 =
         ignoreTranspilerName?: boolean;
       }
     ];
-
-/**
- * Disallow missing displayName in a React component definition
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/display-name.md
- */
-export type DisplayName = 'off' | DisplayName0;

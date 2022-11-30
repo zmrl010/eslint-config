@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRestrictedJestMethods0 =
+export type NoRestrictedJestMethods =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoRestrictedJestMethods0 =
         [k: string]: (string | null) | undefined;
       }
     ];
-
-/**
- * Disallow specific `jest.` methods
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-restricted-jest-methods.md
- */
-export type NoRestrictedJestMethods = 'off' | NoRestrictedJestMethods0;

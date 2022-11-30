@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRedundantRoles0 =
+export type NoRedundantRoles =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoRedundantRoles0 =
         [k: string]: string[] | undefined;
       }
     ];
-
-/**
- * Enforce explicit role property is not the same as implicit/default role property on element.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-redundant-roles.md
- */
-export type NoRedundantRoles = 'off' | NoRedundantRoles0;

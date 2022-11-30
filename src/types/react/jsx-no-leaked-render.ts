@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxNoLeakedRender0 =
+export type JsxNoLeakedRender =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type JsxNoLeakedRender0 =
         validStrategies?: ('ternary' | 'coerce')[];
       }
     ];
-
-/**
- * Disallow problematic leaked values from being rendered
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-leaked-render.md
- */
-export type JsxNoLeakedRender = 'off' | JsxNoLeakedRender0;

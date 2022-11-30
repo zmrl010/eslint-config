@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxNestedDescribe0 =
+export type MaxNestedDescribe =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type MaxNestedDescribe0 =
         max?: number;
       }
     ];
-
-/**
- * Enforces a maximum depth to nested describe calls
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/max-nested-describe.md
- */
-export type MaxNestedDescribe = 'off' | MaxNestedDescribe0;

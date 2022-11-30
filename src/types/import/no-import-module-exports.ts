@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoImportModuleExports0 =
+export type NoImportModuleExports =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,8 +16,3 @@ type NoImportModuleExports0 =
         exceptions?: unknown[];
       }
     ];
-
-/**
- * Disallow import statements with module.exports
- */
-export type NoImportModuleExports = 'off' | NoImportModuleExports0;

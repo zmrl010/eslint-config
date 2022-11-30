@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnnecessaryBooleanLiteralCompare0 =
+export type NoUnnecessaryBooleanLiteralCompare =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,11 +23,3 @@ type NoUnnecessaryBooleanLiteralCompare0 =
         allowComparingNullableBooleansToFalse?: boolean;
       }
     ];
-
-/**
- * Disallow unnecessary equality comparisons against boolean literals
- * @see https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
- */
-export type NoUnnecessaryBooleanLiteralCompare =
-  | 'off'
-  | NoUnnecessaryBooleanLiteralCompare0;

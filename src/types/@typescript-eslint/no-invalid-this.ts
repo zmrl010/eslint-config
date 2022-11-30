@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoInvalidThis0 =
+export type NoInvalidThis =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoInvalidThis0 =
         capIsConstructor?: boolean;
       }
     ];
-
-/**
- * Disallow `this` keywords outside of classes or class-like objects
- * @see https://typescript-eslint.io/rules/no-invalid-this
- */
-export type NoInvalidThis = 'off' | NoInvalidThis0;

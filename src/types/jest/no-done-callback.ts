@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow using a callback in asynchronous tests and hooks
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-done-callback.md
+ * @minItems 1
  */
-export type NoDoneCallback = 'off' | ['warn' | 'error'];
+export type NoDoneCallback = 'off' | ['off' | 'error' | 'warn'];

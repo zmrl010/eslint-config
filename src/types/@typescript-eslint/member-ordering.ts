@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MemberOrdering0 =
+export type MemberOrdering =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -1494,9 +1495,3 @@ type MemberOrdering0 =
             };
       }
     ];
-
-/**
- * Require a consistent member declaration order
- * @see https://typescript-eslint.io/rules/member-ordering
- */
-export type MemberOrdering = 'off' | MemberOrdering0;

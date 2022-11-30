@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ConsistentTypeAssertions0 =
+export type ConsistentTypeAssertions =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -24,9 +25,3 @@ type ConsistentTypeAssertions0 =
           }
       )
     ];
-
-/**
- * Enforce consistent usage of type assertions
- * @see https://typescript-eslint.io/rules/consistent-type-assertions
- */
-export type ConsistentTypeAssertions = 'off' | ConsistentTypeAssertions0;

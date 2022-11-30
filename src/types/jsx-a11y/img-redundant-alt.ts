@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ImgRedundantAlt0 =
+export type ImgRedundantAlt =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type ImgRedundantAlt0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce `<img>` alt prop does not contain the word "image", "picture", or "photo".
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/img-redundant-alt.md
- */
-export type ImgRedundantAlt = 'off' | ImgRedundantAlt0;

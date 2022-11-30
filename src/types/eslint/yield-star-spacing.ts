@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type YieldStarSpacing0 =
+export type YieldStarSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type YieldStarSpacing0 =
           }
       )
     ];
-
-/**
- * Require or disallow spacing around the `*` in `yield*` expressions
- * @see https://eslint.org/docs/rules/yield-star-spacing
- */
-export type YieldStarSpacing = 'off' | YieldStarSpacing0;

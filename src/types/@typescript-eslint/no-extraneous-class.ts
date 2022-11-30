@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoExtraneousClass0 =
+export type NoExtraneousClass =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -30,9 +31,3 @@ type NoExtraneousClass0 =
         allowWithDecorator?: boolean;
       }
     ];
-
-/**
- * Disallow classes used as namespaces
- * @see https://typescript-eslint.io/rules/no-extraneous-class
- */
-export type NoExtraneousClass = 'off' | NoExtraneousClass0;

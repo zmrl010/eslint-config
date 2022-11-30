@@ -5,7 +5,6 @@
  */
 
 /**
- * Enforce tabIndex value is not greater than zero.
- * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/tabindex-no-positive.md
+ * @minItems 1
  */
-export type TabindexNoPositive = 'off' | ['warn' | 'error'];
+export type TabindexNoPositive = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type LabelHasAssociatedControl0 =
+export type LabelHasAssociatedControl =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -26,9 +27,3 @@ type LabelHasAssociatedControl0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce that a `label` tag has a text label and an associated control.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md
- */
-export type LabelHasAssociatedControl = 'off' | LabelHasAssociatedControl0;

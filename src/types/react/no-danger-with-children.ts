@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow when a DOM element is using both children and dangerouslySetInnerHTML
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-danger-with-children.md
+ * @minItems 1
  */
-export type NoDangerWithChildren = 'off' | ['warn' | 'error'];
+export type NoDangerWithChildren = 'off' | ['off' | 'error' | 'warn'];

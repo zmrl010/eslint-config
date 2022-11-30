@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoEmptyFunction0 =
+export type NoEmptyFunction =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -26,9 +27,3 @@ type NoEmptyFunction0 =
         )[];
       }
     ];
-
-/**
- * Disallow empty functions
- * @see https://eslint.org/docs/rules/no-empty-function
- */
-export type NoEmptyFunction = 'off' | NoEmptyFunction0;

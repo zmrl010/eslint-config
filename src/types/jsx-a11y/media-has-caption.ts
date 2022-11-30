@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MediaHasCaption0 =
+export type MediaHasCaption =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type MediaHasCaption0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforces that `<audio>` and `<video>` elements must have a `<track>` for captions.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/media-has-caption.md
- */
-export type MediaHasCaption = 'off' | MediaHasCaption0;

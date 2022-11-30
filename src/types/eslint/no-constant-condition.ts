@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoConstantCondition0 =
+export type NoConstantCondition =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoConstantCondition0 =
         checkLoops?: boolean;
       }
     ];
-
-/**
- * Disallow constant expressions in conditions
- * @see https://eslint.org/docs/rules/no-constant-condition
- */
-export type NoConstantCondition = 'off' | NoConstantCondition0;

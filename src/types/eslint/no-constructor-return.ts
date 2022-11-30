@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type NoConstructorReturn0 =
+export type NoConstructorReturn =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', unknown];
-
-/**
- * Disallow returning value from constructor
- * @see https://eslint.org/docs/rules/no-constructor-return
- */
-export type NoConstructorReturn = 'off' | NoConstructorReturn0;

@@ -5,6 +5,6 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/group-exports.md
+ * @minItems 1
  */
-export type GroupExports = 'off' | ['warn' | 'error'];
+export type GroupExports = 'off' | ['off' | 'error' | 'warn'];

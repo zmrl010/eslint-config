@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoConfusingVoidExpression0 =
+export type NoConfusingVoidExpression =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoConfusingVoidExpression0 =
         ignoreVoidOperator?: boolean;
       }
     ];
-
-/**
- * Require expressions of type void to appear in statement position
- * @see https://typescript-eslint.io/rules/no-confusing-void-expression
- */
-export type NoConfusingVoidExpression = 'off' | NoConfusingVoidExpression0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SpaceBeforeFunctionParen0 =
+export type SpaceBeforeFunctionParen =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,9 +21,3 @@ type SpaceBeforeFunctionParen0 =
           }
       )
     ];
-
-/**
- * Enforce consistent spacing before function parenthesis
- * @see https://typescript-eslint.io/rules/space-before-function-paren
- */
-export type SpaceBeforeFunctionParen = 'off' | SpaceBeforeFunctionParen0;

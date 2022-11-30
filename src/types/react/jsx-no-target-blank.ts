@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxNoTargetBlank0 =
+export type JsxNoTargetBlank =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type JsxNoTargetBlank0 =
         forms?: boolean;
       }
     ];
-
-/**
- * Disallow `target="_blank"` attribute without `rel="noreferrer"`
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-target-blank.md
- */
-export type JsxNoTargetBlank = 'off' | JsxNoTargetBlank0;

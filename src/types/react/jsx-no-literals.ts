@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxNoLiterals0 =
+export type JsxNoLiterals =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type JsxNoLiterals0 =
         noAttributeStrings?: boolean;
       }
     ];
-
-/**
- * Disallow usage of string literals in JSX
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-literals.md
- */
-export type JsxNoLiterals = 'off' | JsxNoLiterals0;

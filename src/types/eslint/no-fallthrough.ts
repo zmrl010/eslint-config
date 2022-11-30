@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoFallthrough0 =
+export type NoFallthrough =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoFallthrough0 =
         allowEmptyCase?: boolean;
       }
     ];
-
-/**
- * Disallow fallthrough of `case` statements
- * @see https://eslint.org/docs/rules/no-fallthrough
- */
-export type NoFallthrough = 'off' | NoFallthrough0;

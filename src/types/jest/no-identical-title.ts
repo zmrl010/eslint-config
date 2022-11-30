@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow identical titles
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-identical-title.md
+ * @minItems 1
  */
-export type NoIdenticalTitle = 'off' | ['warn' | 'error'];
+export type NoIdenticalTitle = 'off' | ['off' | 'error' | 'warn'];

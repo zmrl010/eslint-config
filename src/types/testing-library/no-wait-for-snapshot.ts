@@ -5,7 +5,6 @@
  */
 
 /**
- * Ensures no snapshot is generated inside of a `waitFor` call
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-wait-for-snapshot.md
+ * @minItems 1
  */
-export type NoWaitForSnapshot = 'off' | ['warn' | 'error'];
+export type NoWaitForSnapshot = 'off' | ['off' | 'error' | 'warn'];

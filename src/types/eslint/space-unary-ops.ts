@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SpaceUnaryOps0 =
+export type SpaceUnaryOps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type SpaceUnaryOps0 =
         };
       }
     ];
-
-/**
- * Enforce consistent spacing before or after unary operators
- * @see https://eslint.org/docs/rules/space-unary-ops
- */
-export type SpaceUnaryOps = 'off' | SpaceUnaryOps0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoTabs0 =
+export type NoTabs =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoTabs0 =
         allowIndentationTabs?: boolean;
       }
     ];
-
-/**
- * Disallow all tabs
- * @see https://eslint.org/docs/rules/no-tabs
- */
-export type NoTabs = 'off' | NoTabs0;

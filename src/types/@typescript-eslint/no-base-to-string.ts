@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoBaseToString0 =
+export type NoBaseToString =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoBaseToString0 =
         ignoredTypeNames?: string[];
       }
     ];
-
-/**
- * Require `.toString()` to only be called on objects which provide useful information when stringified
- * @see https://typescript-eslint.io/rules/no-base-to-string
- */
-export type NoBaseToString = 'off' | NoBaseToString0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxDepth0 =
+export type MaxDepth =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type MaxDepth0 =
           }
       )
     ];
-
-/**
- * Enforce a maximum depth that blocks can be nested
- * @see https://eslint.org/docs/rules/max-depth
- */
-export type MaxDepth = 'off' | MaxDepth0;

@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type RestSpreadSpacing0 =
+export type RestSpreadSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never'];
-
-/**
- * Enforce spacing between rest and spread operators and their expressions
- * @see https://eslint.org/docs/rules/rest-spread-spacing
- */
-export type RestSpreadSpacing = 'off' | RestSpreadSpacing0;

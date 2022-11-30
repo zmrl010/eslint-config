@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnneededTernary0 =
+export type NoUnneededTernary =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoUnneededTernary0 =
         defaultAssignment?: boolean;
       }
     ];
-
-/**
- * Disallow ternary operators when simpler alternatives exist
- * @see https://eslint.org/docs/rules/no-unneeded-ternary
- */
-export type NoUnneededTernary = 'off' | NoUnneededTernary0;

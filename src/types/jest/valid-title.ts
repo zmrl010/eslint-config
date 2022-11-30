@@ -7,30 +7,27 @@
 /**
  * @minItems 1
  */
-type ValidTitle0 =
+export type ValidTitle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
       {
         ignoreTypeOfDescribeName?: boolean;
         disallowedWords?: string[];
-        /**
-         * This interface was referenced by `undefined`'s JSON-Schema definition
-         * via the `patternProperty` "^must(?:Not)?Match$".
-         */
-        [k: string]:
-          | unknown
+        mustMatch?:
           | string
           | [string]
           | [string, string]
           | {
-              [k: string]: (string | [string] | [string, string]) | undefined;
+              [k: string]: string | [string] | [string, string];
+            };
+        mustNotMatch?:
+          | string
+          | [string]
+          | [string, string]
+          | {
+              [k: string]: string | [string] | [string, string];
             };
       }
     ];
-
-/**
- * Enforce valid titles
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/valid-title.md
- */
-export type ValidTitle = 'off' | ValidTitle0;

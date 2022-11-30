@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type IdDenylist0 =
+export type IdDenylist =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', string];
-
-/**
- * Disallow specified identifiers
- * @see https://eslint.org/docs/rules/id-denylist
- */
-export type IdDenylist = 'off' | IdDenylist0;

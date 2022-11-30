@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMagicNumbers0 =
+export type NoMagicNumbers =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -24,9 +25,3 @@ type NoMagicNumbers0 =
         ignoreTypeIndexes?: boolean;
       }
     ];
-
-/**
- * Disallow magic numbers
- * @see https://typescript-eslint.io/rules/no-magic-numbers
- */
-export type NoMagicNumbers = 'off' | NoMagicNumbers0;

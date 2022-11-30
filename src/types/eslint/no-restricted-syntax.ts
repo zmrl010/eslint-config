@@ -7,19 +7,15 @@
 /**
  * @minItems 1
  */
-type NoRestrictedSyntax0 = [
-  'off' | 'error' | 'warn',
-  ...(
-    | string
-    | {
-        selector: string;
-        message?: string;
-      }
-  )[]
-];
-
-/**
- * Disallow specified syntax
- * @see https://eslint.org/docs/rules/no-restricted-syntax
- */
-export type NoRestrictedSyntax = 'off' | NoRestrictedSyntax0;
+export type NoRestrictedSyntax =
+  | 'off'
+  | [
+      'off' | 'error' | 'warn',
+      ...(
+        | string
+        | {
+            selector: string;
+            message?: string;
+          }
+      )[]
+    ];

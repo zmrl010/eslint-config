@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnnecessaryCondition0 =
+export type NoUnnecessaryCondition =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoUnnecessaryCondition0 =
         allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
       }
     ];
-
-/**
- * Disallow conditionals where the type is always truthy or always falsy
- * @see https://typescript-eslint.io/rules/no-unnecessary-condition
- */
-export type NoUnnecessaryCondition = 'off' | NoUnnecessaryCondition0;

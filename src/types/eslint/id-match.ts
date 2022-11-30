@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type IdMatch0 =
+export type IdMatch =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', string]
   | [
@@ -20,9 +21,3 @@ type IdMatch0 =
         ignoreDestructuring?: boolean;
       }
     ];
-
-/**
- * Require identifiers to match a specified regular expression
- * @see https://eslint.org/docs/rules/id-match
- */
-export type IdMatch = 'off' | IdMatch0;

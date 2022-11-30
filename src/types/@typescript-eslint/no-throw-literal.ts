@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoThrowLiteral0 =
+export type NoThrowLiteral =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoThrowLiteral0 =
         allowThrowingUnknown?: boolean;
       }
     ];
-
-/**
- * Disallow throwing literals as exceptions
- * @see https://typescript-eslint.io/rules/no-throw-literal
- */
-export type NoThrowLiteral = 'off' | NoThrowLiteral0;

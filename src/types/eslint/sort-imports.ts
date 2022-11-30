@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SortImports0 =
+export type SortImports =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -28,9 +29,3 @@ type SortImports0 =
         allowSeparatedGroups?: boolean;
       }
     ];
-
-/**
- * Enforce sorted import declarations within modules
- * @see https://eslint.org/docs/rules/sort-imports
- */
-export type SortImports = 'off' | SortImports0;

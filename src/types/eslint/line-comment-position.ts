@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type LineCommentPosition0 =
+export type LineCommentPosition =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,9 +22,3 @@ type LineCommentPosition0 =
           }
       )
     ];
-
-/**
- * Enforce position of line comments
- * @see https://eslint.org/docs/rules/line-comment-position
- */
-export type LineCommentPosition = 'off' | LineCommentPosition0;

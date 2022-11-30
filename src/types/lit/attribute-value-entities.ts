@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallows unencoded HTML entities in attribute values
- * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/attribute-value-entities.md
+ * @minItems 1
  */
-export type AttributeValueEntities = 'off' | ['warn' | 'error'];
+export type AttributeValueEntities = 'off' | ['off' | 'error' | 'warn'];

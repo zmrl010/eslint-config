@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRelativePackages0 =
+export type NoRelativePackages =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,8 +22,3 @@ type NoRelativePackages0 =
         ignore?: [string, ...string[]];
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-packages.md
- */
-export type NoRelativePackages = 'off' | NoRelativePackages0;

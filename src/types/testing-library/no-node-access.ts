@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoNodeAccess0 =
+export type NoNodeAccess =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoNodeAccess0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Disallow direct Node access
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-node-access.md
- */
-export type NoNodeAccess = 'off' | NoNodeAccess0;

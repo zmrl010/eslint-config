@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type BooleanPropNaming0 =
+export type BooleanPropNaming =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,9 +22,3 @@ type BooleanPropNaming0 =
         validateNested?: boolean;
       }
     ];
-
-/**
- * Enforces consistent naming for boolean props
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/boolean-prop-naming.md
- */
-export type BooleanPropNaming = 'off' | BooleanPropNaming0;

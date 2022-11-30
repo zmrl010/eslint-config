@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMultiSpaces0 =
+export type NoMultiSpaces =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoMultiSpaces0 =
         ignoreEOLComments?: boolean;
       }
     ];
-
-/**
- * Disallow multiple spaces
- * @see https://eslint.org/docs/rules/no-multi-spaces
- */
-export type NoMultiSpaces = 'off' | NoMultiSpaces0;

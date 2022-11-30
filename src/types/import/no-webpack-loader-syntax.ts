@@ -5,6 +5,6 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-webpack-loader-syntax.md
+ * @minItems 1
  */
-export type NoWebpackLoaderSyntax = 'off' | ['warn' | 'error'];
+export type NoWebpackLoaderSyntax = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PropTypes0 =
+export type PropTypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type PropTypes0 =
         skipUndeclared?: boolean;
       }
     ];
-
-/**
- * Disallow missing props validation in a React component definition
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/prop-types.md
- */
-export type PropTypes = 'off' | PropTypes0;

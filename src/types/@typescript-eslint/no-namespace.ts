@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoNamespace0 =
+export type NoNamespace =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoNamespace0 =
         allowDefinitionFiles?: boolean;
       }
     ];
-
-/**
- * Disallow TypeScript namespaces
- * @see https://typescript-eslint.io/rules/no-namespace
- */
-export type NoNamespace = 'off' | NoNamespace0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AltText0 =
+export type AltText =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,9 +21,3 @@ type AltText0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce all elements that require alternative text have meaningful information to relay back to end user.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/alt-text.md
- */
-export type AltText = 'off' | AltText0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ArrowParens0 =
+export type ArrowParens =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'as-needed']
   | [
@@ -17,9 +18,3 @@ type ArrowParens0 =
         requireForBlockBody?: boolean;
       }
     ];
-
-/**
- * Require parentheses around arrow function arguments
- * @see https://eslint.org/docs/rules/arrow-parens
- */
-export type ArrowParens = 'off' | ArrowParens0;

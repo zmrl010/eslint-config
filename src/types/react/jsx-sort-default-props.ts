@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxSortDefaultProps0 =
+export type JsxSortDefaultProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type JsxSortDefaultProps0 =
         ignoreCase?: boolean;
       }
     ];
-
-/**
- * Enforce defaultProps declarations alphabetical sorting
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-sort-default-props.md
- */
-export type JsxSortDefaultProps = 'off' | JsxSortDefaultProps0;

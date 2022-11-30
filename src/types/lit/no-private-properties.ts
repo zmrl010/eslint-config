@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoPrivateProperties0 =
+export type NoPrivateProperties =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoPrivateProperties0 =
         protected?: string;
       }
     ];
-
-/**
- * Disallows usages of "non-public" property bindings
- * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/no-private-properties.md
- */
-export type NoPrivateProperties = 'off' | NoPrivateProperties0;

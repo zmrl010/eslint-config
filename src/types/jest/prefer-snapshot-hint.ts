@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type PreferSnapshotHint0 =
+export type PreferSnapshotHint =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'multi'];
-
-/**
- * Prefer including a hint with external snapshots
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-snapshot-hint.md
- */
-export type PreferSnapshotHint = 'off' | PreferSnapshotHint0;

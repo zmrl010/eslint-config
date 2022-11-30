@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type BraceStyle0 =
+export type BraceStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', '1tbs' | 'stroustrup' | 'allman']
   | [
@@ -17,9 +18,3 @@ type BraceStyle0 =
         allowSingleLine?: boolean;
       }
     ];
-
-/**
- * Enforce consistent brace style for blocks
- * @see https://eslint.org/docs/rules/brace-style
- */
-export type BraceStyle = 'off' | BraceStyle0;

@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow usage of findDOMNode
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-find-dom-node.md
+ * @minItems 1
  */
-export type NoFindDomNode = 'off' | ['warn' | 'error'];
+export type NoFindDomNode = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoNamespace0 =
+export type NoNamespace =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,8 +17,3 @@ type NoNamespace0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md
- */
-export type NoNamespace = 'off' | NoNamespace0;

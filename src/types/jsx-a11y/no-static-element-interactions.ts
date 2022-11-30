@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoStaticElementInteractions0 =
+export type NoStaticElementInteractions =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoStaticElementInteractions0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce that non-interactive, visible elements (such as `<div>`) that have click handlers use the role attribute.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-static-element-interactions.md
- */
-export type NoStaticElementInteractions = 'off' | NoStaticElementInteractions0;

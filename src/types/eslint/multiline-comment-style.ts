@@ -7,15 +7,10 @@
 /**
  * @minItems 1
  */
-type MultilineCommentStyle0 =
+export type MultilineCommentStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
       'starred-block' | 'separate-lines' | 'bare-block'
     ];
-
-/**
- * Enforce a particular style for multiline comments
- * @see https://eslint.org/docs/rules/multiline-comment-style
- */
-export type MultilineCommentStyle = 'off' | MultilineCommentStyle0;

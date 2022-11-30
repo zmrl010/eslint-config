@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxMaxDepth0 =
+export type JsxMaxDepth =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type JsxMaxDepth0 =
         max?: number;
       }
     ];
-
-/**
- * Enforce JSX maximum depth
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-max-depth.md
- */
-export type JsxMaxDepth = 'off' | JsxMaxDepth0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ForbidPropTypes0 =
+export type ForbidPropTypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type ForbidPropTypes0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Disallow certain propTypes
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-prop-types.md
- */
-export type ForbidPropTypes = 'off' | ForbidPropTypes0;

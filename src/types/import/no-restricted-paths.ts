@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRestrictedPaths0 =
+export type NoRestrictedPaths =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -32,8 +33,3 @@ type NoRestrictedPaths0 =
         basePath?: string;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-restricted-paths.md
- */
-export type NoRestrictedPaths = 'off' | NoRestrictedPaths0;

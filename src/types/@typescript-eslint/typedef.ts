@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Typedef0 =
+export type Typedef =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,9 +24,3 @@ type Typedef0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Require type annotations in certain places
- * @see https://typescript-eslint.io/rules/typedef
- */
-export type Typedef = 'off' | Typedef0;

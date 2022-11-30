@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type LinebreakStyle0 =
+export type LinebreakStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'unix' | 'windows'];
-
-/**
- * Enforce consistent linebreak style
- * @see https://eslint.org/docs/rules/linebreak-style
- */
-export type LinebreakStyle = 'off' | LinebreakStyle0;

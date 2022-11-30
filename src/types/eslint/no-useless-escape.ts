@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow unnecessary escape characters
- * @see https://eslint.org/docs/rules/no-useless-escape
+ * @minItems 1
  */
-export type NoUselessEscape = 'off' | ['warn' | 'error'];
+export type NoUselessEscape = 'off' | ['off' | 'error' | 'warn'];

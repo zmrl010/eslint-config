@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoImplicitGlobals0 =
+export type NoImplicitGlobals =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoImplicitGlobals0 =
         lexicalBindings?: boolean;
       }
     ];
-
-/**
- * Disallow declarations in the global scope
- * @see https://eslint.org/docs/rules/no-implicit-globals
- */
-export type NoImplicitGlobals = 'off' | NoImplicitGlobals0;

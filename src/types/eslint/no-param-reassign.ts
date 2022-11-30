@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoParamReassign0 =
+export type NoParamReassign =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoParamReassign0 =
           }
       )
     ];
-
-/**
- * Disallow reassigning `function` parameters
- * @see https://eslint.org/docs/rules/no-param-reassign
- */
-export type NoParamReassign = 'off' | NoParamReassign0;

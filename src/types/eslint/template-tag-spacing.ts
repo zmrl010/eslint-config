@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type TemplateTagSpacing0 =
+export type TemplateTagSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never'];
-
-/**
- * Require or disallow spacing between template tags and their literals
- * @see https://eslint.org/docs/rules/template-tag-spacing
- */
-export type TemplateTagSpacing = 'off' | TemplateTagSpacing0;

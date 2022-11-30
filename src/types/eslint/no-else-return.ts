@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoElseReturn0 =
+export type NoElseReturn =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoElseReturn0 =
         allowElseIf?: boolean;
       }
     ];
-
-/**
- * Disallow `else` blocks after `return` statements in `if` statements
- * @see https://eslint.org/docs/rules/no-else-return
- */
-export type NoElseReturn = 'off' | NoElseReturn0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AccessorPairs0 =
+export type AccessorPairs =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type AccessorPairs0 =
         enforceForClassMembers?: boolean;
       }
     ];
-
-/**
- * Enforce getter and setter pairs in objects and classes
- * @see https://eslint.org/docs/rules/accessor-pairs
- */
-export type AccessorPairs = 'off' | AccessorPairs0;

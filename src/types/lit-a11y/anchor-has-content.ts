@@ -5,7 +5,6 @@
  */
 
 /**
- * Enforce anchor elements to contain accessible content.
- * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/anchor-has-content.md
+ * @minItems 1
  */
-export type AnchorHasContent = 'off' | ['warn' | 'error'];
+export type AnchorHasContent = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ParameterProperties0 =
+export type ParameterProperties =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,7 +20,7 @@ type ParameterProperties0 =
         prefer?: 'class-property' | 'parameter-property';
       }
     ];
-type Modifier =
+export type Modifier =
   | 'readonly'
   | 'private'
   | 'protected'
@@ -27,9 +28,3 @@ type Modifier =
   | 'private readonly'
   | 'protected readonly'
   | 'public readonly';
-
-/**
- * Require or disallow parameter properties in class constructors
- * @see https://typescript-eslint.io/rules/parameter-properties
- */
-export type ParameterProperties = 'off' | ParameterProperties0;

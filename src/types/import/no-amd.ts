@@ -5,6 +5,6 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-amd.md
+ * @minItems 1
  */
-export type NoAmd = 'off' | ['warn' | 'error'];
+export type NoAmd = 'off' | ['off' | 'error' | 'warn'];

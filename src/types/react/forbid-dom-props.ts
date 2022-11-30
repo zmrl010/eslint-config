@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ForbidDomProps0 =
+export type ForbidDomProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,9 +24,3 @@ type ForbidDomProps0 =
         )[];
       }
     ];
-
-/**
- * Disallow certain props on DOM Nodes
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-dom-props.md
- */
-export type ForbidDomProps = 'off' | ForbidDomProps0;

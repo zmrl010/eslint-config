@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AriaProptypes0 =
+export type AriaProptypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type AriaProptypes0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce ARIA state and property values are valid.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-proptypes.md
- */
-export type AriaProptypes = 'off' | AriaProptypes0;

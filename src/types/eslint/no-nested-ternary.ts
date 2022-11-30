@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow nested ternary expressions
- * @see https://eslint.org/docs/rules/no-nested-ternary
+ * @minItems 1
  */
-export type NoNestedTernary = 'off' | ['warn' | 'error'];
+export type NoNestedTernary = 'off' | ['off' | 'error' | 'warn'];

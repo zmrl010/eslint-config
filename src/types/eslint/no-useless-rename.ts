@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUselessRename0 =
+export type NoUselessRename =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type NoUselessRename0 =
         ignoreExport?: boolean;
       }
     ];
-
-/**
- * Disallow renaming import, export, and destructured assignments to the same name
- * @see https://eslint.org/docs/rules/no-useless-rename
- */
-export type NoUselessRename = 'off' | NoUselessRename0;

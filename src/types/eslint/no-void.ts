@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoVoid0 =
+export type NoVoid =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoVoid0 =
         allowAsStatement?: boolean;
       }
     ];
-
-/**
- * Disallow `void` operators
- * @see https://eslint.org/docs/rules/no-void
- */
-export type NoVoid = 'off' | NoVoid0;

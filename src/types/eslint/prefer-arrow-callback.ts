@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferArrowCallback0 =
+export type PreferArrowCallback =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type PreferArrowCallback0 =
         allowUnboundThis?: boolean;
       }
     ];
-
-/**
- * Require using arrow functions for callbacks
- * @see https://eslint.org/docs/rules/prefer-arrow-callback
- */
-export type PreferArrowCallback = 'off' | PreferArrowCallback0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MemberDelimiterStyle0 =
+export type MemberDelimiterStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -45,9 +46,3 @@ type MemberDelimiterStyle0 =
         multilineDetection?: 'brackets' | 'last-member';
       }
     ];
-
-/**
- * Require a specific member delimiter style for interfaces and type literals
- * @see https://typescript-eslint.io/rules/member-delimiter-style
- */
-export type MemberDelimiterStyle = 'off' | MemberDelimiterStyle0;

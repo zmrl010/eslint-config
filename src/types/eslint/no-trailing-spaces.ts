@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoTrailingSpaces0 =
+export type NoTrailingSpaces =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoTrailingSpaces0 =
         ignoreComments?: boolean;
       }
     ];
-
-/**
- * Disallow trailing whitespace at the end of lines
- * @see https://eslint.org/docs/rules/no-trailing-spaces
- */
-export type NoTrailingSpaces = 'off' | NoTrailingSpaces0;

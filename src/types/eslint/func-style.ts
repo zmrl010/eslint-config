@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type FuncStyle0 =
+export type FuncStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'declaration' | 'expression']
   | [
@@ -17,9 +18,3 @@ type FuncStyle0 =
         allowArrowFunctions?: boolean;
       }
     ];
-
-/**
- * Enforce the consistent use of either `function` declarations or expressions
- * @see https://eslint.org/docs/rules/func-style
- */
-export type FuncStyle = 'off' | FuncStyle0;

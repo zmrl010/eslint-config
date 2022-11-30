@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ObjectCurlySpacing0 =
+export type ObjectCurlySpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never']
   | [
@@ -18,9 +19,3 @@ type ObjectCurlySpacing0 =
         objectsInObjects?: boolean;
       }
     ];
-
-/**
- * Enforce consistent spacing inside braces
- * @see https://eslint.org/docs/rules/object-curly-spacing
- */
-export type ObjectCurlySpacing = 'off' | ObjectCurlySpacing0;

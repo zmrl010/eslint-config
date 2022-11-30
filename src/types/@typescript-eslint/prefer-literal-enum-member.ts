@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferLiteralEnumMember0 =
+export type PreferLiteralEnumMember =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type PreferLiteralEnumMember0 =
         allowBitwiseExpressions?: boolean;
       }
     ];
-
-/**
- * Require all enum members to be literal values
- * @see https://typescript-eslint.io/rules/prefer-literal-enum-member
- */
-export type PreferLiteralEnumMember = 'off' | PreferLiteralEnumMember0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Scope0 =
+export type Scope =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type Scope0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce `scope` prop is only used on `<th>` elements.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/scope.md
- */
-export type Scope = 'off' | Scope0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ObjectPropertyNewline0 =
+export type ObjectPropertyNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ObjectPropertyNewline0 =
         allowMultiplePropertiesPerLine?: boolean;
       }
     ];
-
-/**
- * Enforce placing object properties on separate lines
- * @see https://eslint.org/docs/rules/object-property-newline
- */
-export type ObjectPropertyNewline = 'off' | ObjectPropertyNewline0;

@@ -1,4 +1,5 @@
 import type { TSESLint } from '@typescript-eslint/utils';
+import { joinLines } from './text.js';
 
 function escapeDocComment(val: string): string {
   return val.replace('*/', '*\\/');
@@ -12,11 +13,13 @@ export function createDoc(...lines: string[]): string {
     return '';
   }
 
-  return [
+  // prettier-ignore
+  return joinLines(
     `/**`,
-    ...lines.map((line) => ` * ${escapeDocComment(line)}`),
-    ` */`,
-  ].join('\n');
+    ...lines.map((line) => 
+    ` * ${escapeDocComment(line)}`),
+    ` */`
+  );
 }
 
 /**

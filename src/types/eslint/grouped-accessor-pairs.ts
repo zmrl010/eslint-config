@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type GroupedAccessorPairs0 =
+export type GroupedAccessorPairs =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'anyOrder' | 'getBeforeSet' | 'setBeforeGet'];
-
-/**
- * Require grouped accessor pairs in object literals and classes
- * @see https://eslint.org/docs/rules/grouped-accessor-pairs
- */
-export type GroupedAccessorPairs = 'off' | GroupedAccessorPairs0;

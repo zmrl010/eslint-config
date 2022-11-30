@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxClassesPerFile0 =
+export type MaxClassesPerFile =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type MaxClassesPerFile0 =
           }
       )
     ];
-
-/**
- * Enforce a maximum number of classes per file
- * @see https://eslint.org/docs/rules/max-classes-per-file
- */
-export type MaxClassesPerFile = 'off' | MaxClassesPerFile0;

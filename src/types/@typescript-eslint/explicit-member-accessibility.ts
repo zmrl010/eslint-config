@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ExplicitMemberAccessibility0 =
+export type ExplicitMemberAccessibility =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,10 +24,4 @@ type ExplicitMemberAccessibility0 =
         ignoredMethodNames?: string[];
       }
     ];
-type AccessibilityLevel = 'explicit' | 'no-public' | 'off';
-
-/**
- * Require explicit accessibility modifiers on class properties and methods
- * @see https://typescript-eslint.io/rules/explicit-member-accessibility
- */
-export type ExplicitMemberAccessibility = 'off' | ExplicitMemberAccessibility0;
+export type AccessibilityLevel = 'explicit' | 'no-public' | 'off';

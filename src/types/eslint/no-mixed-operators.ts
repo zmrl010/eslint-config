@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMixedOperators0 =
+export type NoMixedOperators =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -104,9 +105,3 @@ type NoMixedOperators0 =
         allowSamePrecedence?: boolean;
       }
     ];
-
-/**
- * Disallow mixed binary operators
- * @see https://eslint.org/docs/rules/no-mixed-operators
- */
-export type NoMixedOperators = 'off' | NoMixedOperators0;

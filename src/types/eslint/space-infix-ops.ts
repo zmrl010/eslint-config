@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SpaceInfixOps0 =
+export type SpaceInfixOps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type SpaceInfixOps0 =
         int32Hint?: boolean;
       }
     ];
-
-/**
- * Require spacing around infix operators
- * @see https://eslint.org/docs/rules/space-infix-ops
- */
-export type SpaceInfixOps = 'off' | SpaceInfixOps0;

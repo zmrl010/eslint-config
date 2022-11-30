@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ClickEventsHaveKeyEvents0 =
+export type ClickEventsHaveKeyEvents =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type ClickEventsHaveKeyEvents0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce a clickable non-interactive element has at least one keyboard event listener.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/click-events-have-key-events.md
- */
-export type ClickEventsHaveKeyEvents = 'off' | ClickEventsHaveKeyEvents0;

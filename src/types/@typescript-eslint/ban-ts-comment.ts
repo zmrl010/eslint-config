@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type BanTsComment0 =
+export type BanTsComment =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,16 +20,10 @@ type BanTsComment0 =
         minimumDescriptionLength?: number;
       }
     ];
-type DirectiveConfigSchema =
+export type DirectiveConfigSchema =
   | boolean
   | 'allow-with-description'
   | {
       descriptionFormat?: string;
       [k: string]: unknown | undefined;
     };
-
-/**
- * Disallow `@ts-<directive>` comments or require descriptions after directives
- * @see https://typescript-eslint.io/rules/ban-ts-comment
- */
-export type BanTsComment = 'off' | BanTsComment0;

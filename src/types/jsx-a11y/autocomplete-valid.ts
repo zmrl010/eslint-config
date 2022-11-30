@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AutocompleteValid0 =
+export type AutocompleteValid =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type AutocompleteValid0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce that autocomplete attributes are used correctly.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/autocomplete-valid.md
- */
-export type AutocompleteValid = 'off' | AutocompleteValid0;

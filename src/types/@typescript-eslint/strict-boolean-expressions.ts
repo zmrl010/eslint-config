@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type StrictBooleanExpressions0 =
+export type StrictBooleanExpressions =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type StrictBooleanExpressions0 =
         allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
       }
     ];
-
-/**
- * Disallow certain types in boolean expressions
- * @see https://typescript-eslint.io/rules/strict-boolean-expressions
- */
-export type StrictBooleanExpressions = 'off' | StrictBooleanExpressions0;

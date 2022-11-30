@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxWrapMultilines0 =
+export type JsxWrapMultilines =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,9 +22,3 @@ type JsxWrapMultilines0 =
         prop?: true | false | 'ignore' | 'parens' | 'parens-new-line';
       }
     ];
-
-/**
- * Disallow missing parentheses around multiline JSX
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-wrap-multilines.md
- */
-export type JsxWrapMultilines = 'off' | JsxWrapMultilines0;

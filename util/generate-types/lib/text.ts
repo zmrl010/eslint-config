@@ -23,6 +23,10 @@ export function formatText(source: string, options?: Options) {
   });
 }
 
+export function joinLines(...lines: string[]) {
+  return lines.join('\n');
+}
+
 /**
  * transform casing of text to PascalCase
  */

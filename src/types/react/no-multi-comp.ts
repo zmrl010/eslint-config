@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMultiComp0 =
+export type NoMultiComp =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoMultiComp0 =
         ignoreStateless?: boolean;
       }
     ];
-
-/**
- * Disallow multiple component definition per file
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-multi-comp.md
- */
-export type NoMultiComp = 'off' | NoMultiComp0;

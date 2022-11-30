@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type PreferStaticStyles0 =
+export type PreferStaticStyles =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never'];
-
-/**
- * Enforces the use of static styles in elements
- * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/prefer-static-styles.md
- */
-export type PreferStaticStyles = 'off' | PreferStaticStyles0;

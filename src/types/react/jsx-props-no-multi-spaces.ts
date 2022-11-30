@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow multiple spaces between inline JSX props
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-props-no-multi-spaces.md
+ * @minItems 1
  */
-export type JsxPropsNoMultiSpaces = 'off' | ['warn' | 'error'];
+export type JsxPropsNoMultiSpaces = 'off' | ['off' | 'error' | 'warn'];

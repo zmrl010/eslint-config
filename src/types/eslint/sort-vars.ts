@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SortVars0 =
+export type SortVars =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type SortVars0 =
         ignoreCase?: boolean;
       }
     ];
-
-/**
- * Require variables within the same declaration block to be sorted
- * @see https://eslint.org/docs/rules/sort-vars
- */
-export type SortVars = 'off' | SortVars0;

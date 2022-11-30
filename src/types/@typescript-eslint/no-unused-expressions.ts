@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnusedExpressions0 =
+export type NoUnusedExpressions =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type NoUnusedExpressions0 =
         enforceForJSX?: boolean;
       }
     ];
-
-/**
- * Disallow unused expressions
- * @see https://typescript-eslint.io/rules/no-unused-expressions
- */
-export type NoUnusedExpressions = 'off' | NoUnusedExpressions0;

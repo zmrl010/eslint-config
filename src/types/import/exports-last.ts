@@ -5,6 +5,6 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/exports-last.md
+ * @minItems 1
  */
-export type ExportsLast = 'off' | ['warn' | 'error'];
+export type ExportsLast = 'off' | ['off' | 'error' | 'warn'];

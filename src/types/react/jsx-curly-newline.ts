@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxCurlyNewline0 =
+export type JsxCurlyNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type JsxCurlyNewline0 =
           }
       )
     ];
-
-/**
- * Enforce consistent linebreaks in curly braces in JSX attributes and expressions
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-curly-newline.md
- */
-export type JsxCurlyNewline = 'off' | JsxCurlyNewline0;

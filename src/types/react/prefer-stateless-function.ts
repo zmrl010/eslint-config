@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferStatelessFunction0 =
+export type PreferStatelessFunction =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type PreferStatelessFunction0 =
         ignorePureComponents?: boolean;
       }
     ];
-
-/**
- * Enforce stateless components to be written as a pure function
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/prefer-stateless-function.md
- */
-export type PreferStatelessFunction = 'off' | PreferStatelessFunction0;

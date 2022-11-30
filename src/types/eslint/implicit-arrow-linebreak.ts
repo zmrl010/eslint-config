@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type ImplicitArrowLinebreak0 =
+export type ImplicitArrowLinebreak =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'beside' | 'below'];
-
-/**
- * Enforce the location of arrow function bodies
- * @see https://eslint.org/docs/rules/implicit-arrow-linebreak
- */
-export type ImplicitArrowLinebreak = 'off' | ImplicitArrowLinebreak0;

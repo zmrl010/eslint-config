@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoEval0 =
+export type NoEval =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoEval0 =
         allowIndirect?: boolean;
       }
     ];
-
-/**
- * Disallow the use of `eval()`
- * @see https://eslint.org/docs/rules/no-eval
- */
-export type NoEval = 'off' | NoEval0;

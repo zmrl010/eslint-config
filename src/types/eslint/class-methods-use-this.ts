@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ClassMethodsUseThis0 =
+export type ClassMethodsUseThis =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ClassMethodsUseThis0 =
         enforceForClassFields?: boolean;
       }
     ];
-
-/**
- * Enforce that class methods utilize `this`
- * @see https://eslint.org/docs/rules/class-methods-use-this
- */
-export type ClassMethodsUseThis = 'off' | ClassMethodsUseThis0;

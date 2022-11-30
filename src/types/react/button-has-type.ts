@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ButtonHasType0 =
+export type ButtonHasType =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type ButtonHasType0 =
         reset?: boolean;
       }
     ];
-
-/**
- * Disallow usage of `button` elements without an explicit `type` attribute
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/button-has-type.md
- */
-export type ButtonHasType = 'off' | ButtonHasType0;

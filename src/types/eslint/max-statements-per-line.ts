@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxStatementsPerLine0 =
+export type MaxStatementsPerLine =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type MaxStatementsPerLine0 =
         max?: number;
       }
     ];
-
-/**
- * Enforce a maximum number of statements allowed per line
- * @see https://eslint.org/docs/rules/max-statements-per-line
- */
-export type MaxStatementsPerLine = 'off' | MaxStatementsPerLine0;

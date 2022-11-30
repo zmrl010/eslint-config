@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxCurlySpacing0 =
+export type JsxCurlySpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -38,9 +39,9 @@ type JsxCurlySpacing0 =
         };
       }
     ];
-type BasicConfigOrBoolean = BasicConfig | boolean;
+export type BasicConfigOrBoolean = BasicConfig | boolean;
 
-interface BasicConfig {
+export interface BasicConfig {
   when?: 'always' | 'never';
   allowMultiline?: boolean;
   spacing?: {
@@ -49,9 +50,3 @@ interface BasicConfig {
   };
   [k: string]: unknown | undefined;
 }
-
-/**
- * Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-curly-spacing.md
- */
-export type JsxCurlySpacing = 'off' | JsxCurlySpacing0;

@@ -5,7 +5,6 @@
  */
 
 /**
- * Ensure destructuring and symmetric naming of useState hook value and setter variables
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/hook-use-state.md
+ * @minItems 1
  */
-export type HookUseState = 'off' | ['warn' | 'error'];
+export type HookUseState = 'off' | ['off' | 'error' | 'warn'];

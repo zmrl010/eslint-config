@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferUserEvent0 =
+export type PreferUserEvent =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type PreferUserEvent0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Suggest using `userEvent` over `fireEvent` for simulating user interactions
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-user-event.md
- */
-export type PreferUserEvent = 'off' | PreferUserEvent0;

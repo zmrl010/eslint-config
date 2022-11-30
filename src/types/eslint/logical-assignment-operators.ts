@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type LogicalAssignmentOperators0 =
+export type LogicalAssignmentOperators =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -24,9 +25,3 @@ type LogicalAssignmentOperators0 =
       ) &
         unknown[]
     ];
-
-/**
- * Require or disallow logical assignment logical operator shorthand
- * @see https://eslint.org/docs/rules/logical-assignment-operators
- */
-export type LogicalAssignmentOperators = 'off' | LogicalAssignmentOperators0;

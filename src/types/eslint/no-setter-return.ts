@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow returning values from setters
- * @see https://eslint.org/docs/rules/no-setter-return
+ * @minItems 1
  */
-export type NoSetterReturn = 'off' | ['warn' | 'error'];
+export type NoSetterReturn = 'off' | ['off' | 'error' | 'warn'];

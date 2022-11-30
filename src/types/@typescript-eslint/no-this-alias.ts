@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoThisAlias0 =
+export type NoThisAlias =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoThisAlias0 =
         allowedNames?: string[];
       }
     ];
-
-/**
- * Disallow aliasing `this`
- * @see https://typescript-eslint.io/rules/no-this-alias
- */
-export type NoThisAlias = 'off' | NoThisAlias0;

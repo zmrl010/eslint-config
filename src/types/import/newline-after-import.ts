@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NewlineAfterImport0 =
+export type NewlineAfterImport =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,8 +16,3 @@ type NewlineAfterImport0 =
         count?: number;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/newline-after-import.md
- */
-export type NewlineAfterImport = 'off' | NewlineAfterImport0;

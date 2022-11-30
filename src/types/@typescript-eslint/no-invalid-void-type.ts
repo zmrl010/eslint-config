@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoInvalidVoidType0 =
+export type NoInvalidVoidType =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoInvalidVoidType0 =
         allowAsThisParameter?: boolean;
       }
     ];
-
-/**
- * Disallow `void` type outside of generic or return types
- * @see https://typescript-eslint.io/rules/no-invalid-void-type
- */
-export type NoInvalidVoidType = 'off' | NoInvalidVoidType0;

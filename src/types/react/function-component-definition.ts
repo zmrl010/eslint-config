@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type FunctionComponentDefinition0 =
+export type FunctionComponentDefinition =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -25,9 +26,3 @@ type FunctionComponentDefinition0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce a specific function type for function components
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/function-component-definition.md
- */
-export type FunctionComponentDefinition = 'off' | FunctionComponentDefinition0;

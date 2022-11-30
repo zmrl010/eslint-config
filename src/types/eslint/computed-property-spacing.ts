@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ComputedPropertySpacing0 =
+export type ComputedPropertySpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never']
   | [
@@ -17,9 +18,3 @@ type ComputedPropertySpacing0 =
         enforceForClassMembers?: boolean;
       }
     ];
-
-/**
- * Enforce consistent spacing inside computed property brackets
- * @see https://eslint.org/docs/rules/computed-property-spacing
- */
-export type ComputedPropertySpacing = 'off' | ComputedPropertySpacing0;

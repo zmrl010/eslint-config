@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ArrayElementNewline0 =
+export type ArrayElementNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,15 +20,9 @@ type ArrayElementNewline0 =
           }
       )
     ];
-type BasicConfig =
+export type BasicConfig =
   | ('always' | 'never' | 'consistent')
   | {
       multiline?: boolean;
       minItems?: number | null;
     };
-
-/**
- * Enforce line breaks after each array element
- * @see https://eslint.org/docs/rules/array-element-newline
- */
-export type ArrayElementNewline = 'off' | ArrayElementNewline0;

@@ -5,7 +5,6 @@
  */
 
 /**
- * Prefer toHaveTextContent over checking element.textContent
- * @see prefer-to-have-text-content
+ * @minItems 1
  */
-export type PreferToHaveTextContent = 'off' | ['warn' | 'error'];
+export type PreferToHaveTextContent = 'off' | ['off' | 'error' | 'warn'];

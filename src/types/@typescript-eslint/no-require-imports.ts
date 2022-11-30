@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow invocation of `require()`
- * @see https://typescript-eslint.io/rules/no-require-imports
+ * @minItems 1
  */
-export type NoRequireImports = 'off' | ['warn' | 'error'];
+export type NoRequireImports = 'off' | ['off' | 'error' | 'warn'];

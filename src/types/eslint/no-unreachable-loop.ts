@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnreachableLoop0 =
+export type NoUnreachableLoop =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,9 +22,3 @@ type NoUnreachableLoop0 =
         )[];
       }
     ];
-
-/**
- * Disallow loops with a body that allows only one iteration
- * @see https://eslint.org/docs/rules/no-unreachable-loop
- */
-export type NoUnreachableLoop = 'off' | NoUnreachableLoop0;

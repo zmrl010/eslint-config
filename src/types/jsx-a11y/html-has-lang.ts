@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type HtmlHasLang0 =
+export type HtmlHasLang =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type HtmlHasLang0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce `<html>` element has `lang` prop.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/html-has-lang.md
- */
-export type HtmlHasLang = 'off' | HtmlHasLang0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type KeySpacing0 =
+export type KeySpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -65,9 +66,3 @@ type KeySpacing0 =
           }
       )
     ];
-
-/**
- * Enforce consistent spacing between keys and values in object literal properties
- * @see https://eslint.org/docs/rules/key-spacing
- */
-export type KeySpacing = 'off' | KeySpacing0;

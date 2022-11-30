@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type TripleSlashReference0 =
+export type TripleSlashReference =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type TripleSlashReference0 =
         types?: 'always' | 'never' | 'prefer-import';
       }
     ];
-
-/**
- * Disallow certain triple slash directives in favor of ES6-style import declarations
- * @see https://typescript-eslint.io/rules/triple-slash-reference
- */
-export type TripleSlashReference = 'off' | TripleSlashReference0;

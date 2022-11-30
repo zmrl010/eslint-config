@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoWarningComments0 =
+export type NoWarningComments =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,9 +21,3 @@ type NoWarningComments0 =
         decoration?: [string, ...string[]];
       }
     ];
-
-/**
- * Disallow specified warning terms in comments
- * @see https://eslint.org/docs/rules/no-warning-comments
- */
-export type NoWarningComments = 'off' | NoWarningComments0;

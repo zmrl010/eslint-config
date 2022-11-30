@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMagicNumbers0 =
+export type NoMagicNumbers =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,9 +21,3 @@ type NoMagicNumbers0 =
         ignoreClassFieldInitialValues?: boolean;
       }
     ];
-
-/**
- * Disallow magic numbers
- * @see https://eslint.org/docs/rules/no-magic-numbers
- */
-export type NoMagicNumbers = 'off' | NoMagicNumbers0;

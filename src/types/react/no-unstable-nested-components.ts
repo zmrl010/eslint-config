@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnstableNestedComponents0 =
+export type NoUnstableNestedComponents =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoUnstableNestedComponents0 =
         allowAsProps?: boolean;
       }
     ];
-
-/**
- * Disallow creating unstable components inside components
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unstable-nested-components.md
- */
-export type NoUnstableNestedComponents = 'off' | NoUnstableNestedComponents0;

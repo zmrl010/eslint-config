@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferReadonly0 =
+export type PreferReadonly =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type PreferReadonly0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Require private members to be marked as `readonly` if they're never modified outside of the constructor
- * @see https://typescript-eslint.io/rules/prefer-readonly
- */
-export type PreferReadonly = 'off' | PreferReadonly0;

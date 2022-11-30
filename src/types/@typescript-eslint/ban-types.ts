@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type BanTypes0 =
+export type BanTypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -28,9 +29,3 @@ type BanTypes0 =
         extendDefaults?: boolean;
       }
     ];
-
-/**
- * Disallow certain types
- * @see https://typescript-eslint.io/rules/ban-types
- */
-export type BanTypes = 'off' | BanTypes0;

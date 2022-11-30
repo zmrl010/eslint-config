@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type NoDidMountSetState0 =
+export type NoDidMountSetState =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'disallow-in-func'];
-
-/**
- * Disallow usage of setState in componentDidMount
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-did-mount-set-state.md
- */
-export type NoDidMountSetState = 'off' | NoDidMountSetState0;

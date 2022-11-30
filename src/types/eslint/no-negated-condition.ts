@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow negated conditions
- * @see https://eslint.org/docs/rules/no-negated-condition
+ * @minItems 1
  */
-export type NoNegatedCondition = 'off' | ['warn' | 'error'];
+export type NoNegatedCondition = 'off' | ['off' | 'error' | 'warn'];

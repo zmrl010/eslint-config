@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoExplicitAny0 =
+export type NoExplicitAny =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoExplicitAny0 =
         ignoreRestArgs?: boolean;
       }
     ];
-
-/**
- * Disallow the `any` type
- * @see https://typescript-eslint.io/rules/no-explicit-any
- */
-export type NoExplicitAny = 'off' | NoExplicitAny0;

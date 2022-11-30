@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type SemiStyle0 =
+export type SemiStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'last' | 'first'];
-
-/**
- * Enforce location of semicolons
- * @see https://eslint.org/docs/rules/semi-style
- */
-export type SemiStyle = 'off' | SemiStyle0;

@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type MethodSignatureStyle0 =
+export type MethodSignatureStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'property' | 'method'];
-
-/**
- * Enforce using a particular method signature syntax
- * @see https://typescript-eslint.io/rules/method-signature-style
- */
-export type MethodSignatureStyle = 'off' | MethodSignatureStyle0;

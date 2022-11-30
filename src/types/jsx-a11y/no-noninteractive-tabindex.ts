@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoNoninteractiveTabindex0 =
+export type NoNoninteractiveTabindex =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,9 +24,3 @@ type NoNoninteractiveTabindex0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * `tabIndex` should only be declared on interactive elements.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-noninteractive-tabindex.md
- */
-export type NoNoninteractiveTabindex = 'off' | NoNoninteractiveTabindex0;

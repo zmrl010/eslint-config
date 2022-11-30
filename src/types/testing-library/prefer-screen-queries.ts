@@ -5,7 +5,6 @@
  */
 
 /**
- * Suggest using `screen` while querying
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-screen-queries.md
+ * @minItems 1
  */
-export type PreferScreenQueries = 'off' | ['warn' | 'error'];
+export type PreferScreenQueries = 'off' | ['off' | 'error' | 'warn'];

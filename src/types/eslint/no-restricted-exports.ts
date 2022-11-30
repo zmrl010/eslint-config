@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRestrictedExports0 =
+export type NoRestrictedExports =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoRestrictedExports0 =
         restrictedNamedExports?: string[];
       }
     ];
-
-/**
- * Disallow specified names in exports
- * @see https://eslint.org/docs/rules/no-restricted-exports
- */
-export type NoRestrictedExports = 'off' | NoRestrictedExports0;

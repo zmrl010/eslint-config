@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoStringRefs0 =
+export type NoStringRefs =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoStringRefs0 =
         noTemplateLiterals?: boolean;
       }
     ];
-
-/**
- * Disallow using string references
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-string-refs.md
- */
-export type NoStringRefs = 'off' | NoStringRefs0;

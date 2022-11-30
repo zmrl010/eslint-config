@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type OneVar0 =
+export type OneVar =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -25,9 +26,3 @@ type OneVar0 =
           }
       )
     ];
-
-/**
- * Enforce variables to be declared either together or separately in functions
- * @see https://eslint.org/docs/rules/one-var
- */
-export type OneVar = 'off' | OneVar0;

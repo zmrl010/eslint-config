@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Lang0 =
+export type Lang =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type Lang0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce lang attribute has a valid value.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/lang.md
- */
-export type Lang = 'off' | Lang0;

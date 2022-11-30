@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type GetterReturn0 =
+export type GetterReturn =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type GetterReturn0 =
         allowImplicit?: boolean;
       }
     ];
-
-/**
- * Enforce `return` statements in getters
- * @see https://eslint.org/docs/rules/getter-return
- */
-export type GetterReturn = 'off' | GetterReturn0;

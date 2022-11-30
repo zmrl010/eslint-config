@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxKey0 =
+export type JsxKey =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type JsxKey0 =
         warnOnDuplicates?: boolean;
       }
     ];
-
-/**
- * Disallow missing `key` props in iterators/collection literals
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-key.md
- */
-export type JsxKey = 'off' | JsxKey0;

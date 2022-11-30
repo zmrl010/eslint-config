@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnescapedEntities0 =
+export type NoUnescapedEntities =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoUnescapedEntities0 =
         )[];
       }
     ];
-
-/**
- * Disallow unescaped HTML entities from appearing in markup
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unescaped-entities.md
- */
-export type NoUnescapedEntities = 'off' | NoUnescapedEntities0;

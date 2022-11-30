@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow duplicate setup and teardown hooks
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-duplicate-hooks.md
+ * @minItems 1
  */
-export type NoDuplicateHooks = 'off' | ['warn' | 'error'];
+export type NoDuplicateHooks = 'off' | ['off' | 'error' | 'warn'];

@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow direct mutation of this.state
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-direct-mutation-state.md
+ * @minItems 1
  */
-export type NoDirectMutationState = 'off' | ['warn' | 'error'];
+export type NoDirectMutationState = 'off' | ['off' | 'error' | 'warn'];

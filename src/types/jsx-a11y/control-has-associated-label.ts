@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ControlHasAssociatedLabel0 =
+export type ControlHasAssociatedLabel =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,5 +24,3 @@ type ControlHasAssociatedLabel0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-export type ControlHasAssociatedLabel = 'off' | ControlHasAssociatedLabel0;

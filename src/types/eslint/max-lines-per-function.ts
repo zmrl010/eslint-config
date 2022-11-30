@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxLinesPerFunction0 =
+export type MaxLinesPerFunction =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,9 +22,3 @@ type MaxLinesPerFunction0 =
         | number
       )
     ];
-
-/**
- * Enforce a maximum number of lines of code in a function
- * @see https://eslint.org/docs/rules/max-lines-per-function
- */
-export type MaxLinesPerFunction = 'off' | MaxLinesPerFunction0;

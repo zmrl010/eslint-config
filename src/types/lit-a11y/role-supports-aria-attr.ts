@@ -5,7 +5,6 @@
  */
 
 /**
- * Enforce that elements with a defined role contain only supported ARIA attributes for that role.
- * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/role-supports-aria-attrs.md
+ * @minItems 1
  */
-export type RoleSupportsAriaAttr = 'off' | ['warn' | 'error'];
+export type RoleSupportsAriaAttr = 'off' | ['off' | 'error' | 'warn'];

@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow unmodified loop conditions
- * @see https://eslint.org/docs/rules/no-unmodified-loop-condition
+ * @minItems 1
  */
-export type NoUnmodifiedLoopCondition = 'off' | ['warn' | 'error'];
+export type NoUnmodifiedLoopCondition = 'off' | ['off' | 'error' | 'warn'];

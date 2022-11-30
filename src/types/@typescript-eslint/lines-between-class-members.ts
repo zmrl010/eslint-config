@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type LinesBetweenClassMembers0 =
+export type LinesBetweenClassMembers =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type LinesBetweenClassMembers0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Require or disallow an empty line between class members
- * @see https://typescript-eslint.io/rules/lines-between-class-members
- */
-export type LinesBetweenClassMembers = 'off' | LinesBetweenClassMembers0;

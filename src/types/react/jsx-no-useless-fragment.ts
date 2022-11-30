@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow unnecessary fragments
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-useless-fragment.md
+ * @minItems 1
  */
-export type JsxNoUselessFragment = 'off' | ['warn' | 'error'];
+export type JsxNoUselessFragment = 'off' | ['off' | 'error' | 'warn'];

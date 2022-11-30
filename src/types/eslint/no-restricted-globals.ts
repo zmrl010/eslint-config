@@ -7,19 +7,15 @@
 /**
  * @minItems 1
  */
-type NoRestrictedGlobals0 = [
-  'off' | 'error' | 'warn',
-  ...(
-    | string
-    | {
-        name: string;
-        message?: string;
-      }
-  )[]
-];
-
-/**
- * Disallow specified global variables
- * @see https://eslint.org/docs/rules/no-restricted-globals
- */
-export type NoRestrictedGlobals = 'off' | NoRestrictedGlobals0;
+export type NoRestrictedGlobals =
+  | 'off'
+  | [
+      'off' | 'error' | 'warn',
+      ...(
+        | string
+        | {
+            name: string;
+            message?: string;
+          }
+      )[]
+    ];

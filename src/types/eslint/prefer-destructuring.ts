@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferDestructuring0 =
+export type PreferDestructuring =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -50,9 +51,3 @@ type PreferDestructuring0 =
         enforceForRenamedProperties?: boolean;
       }
     ];
-
-/**
- * Require destructuring from arrays and/or objects
- * @see https://eslint.org/docs/rules/prefer-destructuring
- */
-export type PreferDestructuring = 'off' | PreferDestructuring0;

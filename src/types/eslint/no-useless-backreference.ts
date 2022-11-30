@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow useless backreferences in regular expressions
- * @see https://eslint.org/docs/rules/no-useless-backreference
+ * @minItems 1
  */
-export type NoUselessBackreference = 'off' | ['warn' | 'error'];
+export type NoUselessBackreference = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoConfusingArrow0 =
+export type NoConfusingArrow =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoConfusingArrow0 =
         onlyOneSimpleParam?: boolean;
       }
     ];
-
-/**
- * Disallow arrow functions where they could be confused with comparisons
- * @see https://eslint.org/docs/rules/no-confusing-arrow
- */
-export type NoConfusingArrow = 'off' | NoConfusingArrow0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AnchorIsValid0 =
+export type AnchorIsValid =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -24,9 +25,3 @@ type AnchorIsValid0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce all anchors are valid, navigable elements.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/anchor-is-valid.md
- */
-export type AnchorIsValid = 'off' | AnchorIsValid0;

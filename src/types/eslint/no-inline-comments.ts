@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoInlineComments0 =
+export type NoInlineComments =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoInlineComments0 =
         ignorePattern?: string;
       }
     ];
-
-/**
- * Disallow inline comments after code
- * @see https://eslint.org/docs/rules/no-inline-comments
- */
-export type NoInlineComments = 'off' | NoInlineComments0;

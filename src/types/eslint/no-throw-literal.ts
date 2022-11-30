@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow throwing literals as exceptions
- * @see https://eslint.org/docs/rules/no-throw-literal
+ * @minItems 1
  */
-export type NoThrowLiteral = 'off' | ['warn' | 'error'];
+export type NoThrowLiteral = 'off' | ['off' | 'error' | 'warn'];

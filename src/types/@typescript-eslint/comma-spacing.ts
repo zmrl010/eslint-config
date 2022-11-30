@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type CommaSpacing0 =
+export type CommaSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type CommaSpacing0 =
         after?: boolean;
       }
     ];
-
-/**
- * Enforce consistent spacing before and after commas
- * @see https://typescript-eslint.io/rules/comma-spacing
- */
-export type CommaSpacing = 'off' | CommaSpacing0;

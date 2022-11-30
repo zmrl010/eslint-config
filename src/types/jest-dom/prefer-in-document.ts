@@ -5,7 +5,6 @@
  */
 
 /**
- * Prefer .toBeInTheDocument() for asserting the existence of a DOM node
- * @see prefer-in-document
+ * @minItems 1
  */
-export type PreferInDocument = 'off' | ['warn' | 'error'];
+export type PreferInDocument = 'off' | ['off' | 'error' | 'warn'];

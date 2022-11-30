@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ObjectCurlyNewline0 =
+export type ObjectCurlyNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -52,9 +53,3 @@ type ObjectCurlyNewline0 =
           }
       )
     ];
-
-/**
- * Enforce consistent line breaks after opening and before closing braces
- * @see https://eslint.org/docs/rules/object-curly-newline
- */
-export type ObjectCurlyNewline = 'off' | ObjectCurlyNewline0;

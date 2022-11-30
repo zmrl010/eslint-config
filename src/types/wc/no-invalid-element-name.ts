@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoInvalidElementName0 =
+export type NoInvalidElementName =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoInvalidElementName0 =
         loose?: boolean;
       }
     ];
-
-/**
- * Disallows invalid custom element names
- * @see https://github.com/43081j/eslint-plugin-wc/blob/master/docs/rules/no-invalid-element-name.md
- */
-export type NoInvalidElementName = 'off' | NoInvalidElementName0;

@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type NoDomImport0 =
+export type NoDomImport =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', string];
-
-/**
- * Disallow importing from DOM Testing Library
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-dom-import.md
- */
-export type NoDomImport = 'off' | NoDomImport0;

@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow members of unions and intersections that do nothing or override type information
- * @see https://typescript-eslint.io/rules/no-redundant-type-constituents
+ * @minItems 1
  */
-export type NoRedundantTypeConstituents = 'off' | ['warn' | 'error'];
+export type NoRedundantTypeConstituents = 'off' | ['off' | 'error' | 'warn'];

@@ -5,7 +5,6 @@
  */
 
 /**
- * Detects usages of legacy binding syntax
- * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/no-legacy-template-syntax.md
+ * @minItems 1
  */
-export type NoLegacyTemplateSyntax = 'off' | ['warn' | 'error'];
+export type NoLegacyTemplateSyntax = 'off' | ['off' | 'error' | 'warn'];

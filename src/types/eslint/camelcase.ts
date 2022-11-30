@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Camelcase0 =
+export type Camelcase =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type Camelcase0 =
         allow?: [] | [string];
       }
     ];
-
-/**
- * Enforce camelcase naming convention
- * @see https://eslint.org/docs/rules/camelcase
- */
-export type Camelcase = 'off' | Camelcase0;

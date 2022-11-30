@@ -5,6 +5,6 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-deprecated.md
+ * @minItems 1
  */
-export type NoDeprecated = 'off' | ['warn' | 'error'];
+export type NoDeprecated = 'off' | ['off' | 'error' | 'warn'];

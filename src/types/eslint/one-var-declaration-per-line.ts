@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type OneVarDeclarationPerLine0 =
+export type OneVarDeclarationPerLine =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'initializations'];
-
-/**
- * Require or disallow newlines around variable declarations
- * @see https://eslint.org/docs/rules/one-var-declaration-per-line
- */
-export type OneVarDeclarationPerLine = 'off' | OneVarDeclarationPerLine0;

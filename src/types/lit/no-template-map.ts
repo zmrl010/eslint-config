@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallows array `.map` in templates
- * @see https://github.com/43081j/eslint-plugin-lit/blob/master/docs/rules/no-template-map.md
+ * @minItems 1
  */
-export type NoTemplateMap = 'off' | ['warn' | 'error'];
+export type NoTemplateMap = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoLargeSnapshots0 =
+export type NoLargeSnapshots =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type NoLargeSnapshots0 =
         };
       }
     ];
-
-/**
- * Disallow large snapshots
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-large-snapshots.md
- */
-export type NoLargeSnapshots = 'off' | NoLargeSnapshots0;

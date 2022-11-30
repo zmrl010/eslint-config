@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ArrayBracketNewline0 =
+export type ArrayBracketNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type ArrayBracketNewline0 =
           }
       )
     ];
-
-/**
- * Enforce linebreaks after opening and before closing array brackets
- * @see https://eslint.org/docs/rules/array-bracket-newline
- */
-export type ArrayBracketNewline = 'off' | ArrayBracketNewline0;

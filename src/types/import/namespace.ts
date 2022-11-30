@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Namespace0 =
+export type Namespace =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,8 +19,3 @@ type Namespace0 =
         allowComputed?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/namespace.md
- */
-export type Namespace = 'off' | Namespace0;

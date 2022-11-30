@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type NoReturnAssign0 =
+export type NoReturnAssign =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'except-parens' | 'always'];
-
-/**
- * Disallow assignment operators in `return` statements
- * @see https://eslint.org/docs/rules/no-return-assign
- */
-export type NoReturnAssign = 'off' | NoReturnAssign0;

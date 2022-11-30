@@ -5,7 +5,6 @@
  */
 
 /**
- * prefer toBeChecked over checking attributes
- * @see prefer-checked
+ * @minItems 1
  */
-export type PreferChecked = 'off' | ['warn' | 'error'];
+export type PreferChecked = 'off' | ['off' | 'error' | 'warn'];

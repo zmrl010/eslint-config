@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxCurlyBracePresence0 =
+export type JsxCurlyBracePresence =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,9 +21,3 @@ type JsxCurlyBracePresence0 =
         | ('always' | 'never' | 'ignore')
       )
     ];
-
-/**
- * Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals in JSX children or attributes
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-curly-brace-presence.md
- */
-export type JsxCurlyBracePresence = 'off' | JsxCurlyBracePresence0;

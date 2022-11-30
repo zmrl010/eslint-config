@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnusedVars0 =
+export type NoUnusedVars =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -25,9 +26,3 @@ type NoUnusedVars0 =
           }
       )
     ];
-
-/**
- * Disallow unused variables
- * @see https://eslint.org/docs/rules/no-unused-vars
- */
-export type NoUnusedVars = 'off' | NoUnusedVars0;

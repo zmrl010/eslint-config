@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type CommaStyle0 =
+export type CommaStyle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'first' | 'last']
   | [
@@ -19,9 +20,3 @@ type CommaStyle0 =
         };
       }
     ];
-
-/**
- * Enforce consistent comma style
- * @see https://eslint.org/docs/rules/comma-style
- */
-export type CommaStyle = 'off' | CommaStyle0;

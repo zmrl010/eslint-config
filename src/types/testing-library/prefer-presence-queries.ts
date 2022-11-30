@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferPresenceQueries0 =
+export type PreferPresenceQueries =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type PreferPresenceQueries0 =
         absence?: boolean;
       }
     ];
-
-/**
- * Ensure appropriate `get*`/`query*` queries are used with their respective matchers
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/prefer-presence-queries.md
- */
-export type PreferPresenceQueries = 'off' | PreferPresenceQueries0;

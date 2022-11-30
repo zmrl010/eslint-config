@@ -7,11 +7,7 @@
 /**
  * @minItems 1
  */
-type First0 =
+export type First =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'absolute-first' | 'disable-absolute-first'];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/first.md
- */
-export type First = 'off' | First0;

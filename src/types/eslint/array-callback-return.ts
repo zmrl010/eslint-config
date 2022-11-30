@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ArrayCallbackReturn0 =
+export type ArrayCallbackReturn =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ArrayCallbackReturn0 =
         checkForEach?: boolean;
       }
     ];
-
-/**
- * Enforce `return` statements in callbacks of array methods
- * @see https://eslint.org/docs/rules/array-callback-return
- */
-export type ArrayCallbackReturn = 'off' | ArrayCallbackReturn0;

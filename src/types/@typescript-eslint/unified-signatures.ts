@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type UnifiedSignatures0 =
+export type UnifiedSignatures =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type UnifiedSignatures0 =
         ignoreDifferentlyNamedParameters?: boolean;
       }
     ];
-
-/**
- * Disallow two overloads that could be unified into one with a union or an optional/rest parameter
- * @see https://typescript-eslint.io/rules/unified-signatures
- */
-export type UnifiedSignatures = 'off' | UnifiedSignatures0;

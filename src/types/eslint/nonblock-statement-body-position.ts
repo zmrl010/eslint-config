@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NonblockStatementBodyPosition0 =
+export type NonblockStatementBodyPosition =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'beside' | 'below' | 'any']
   | [
@@ -23,11 +24,3 @@ type NonblockStatementBodyPosition0 =
         };
       }
     ];
-
-/**
- * Enforce the location of single-line statements
- * @see https://eslint.org/docs/rules/nonblock-statement-body-position
- */
-export type NonblockStatementBodyPosition =
-  | 'off'
-  | NonblockStatementBodyPosition0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RequireOptimization0 =
+export type RequireOptimization =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type RequireOptimization0 =
         allowDecorators?: string[];
       }
     ];
-
-/**
- * Enforce React components to have a shouldComponentUpdate method
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/require-optimization.md
- */
-export type RequireOptimization = 'off' | RequireOptimization0;

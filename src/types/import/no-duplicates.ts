@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoDuplicates0 =
+export type NoDuplicates =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,8 +16,3 @@ type NoDuplicates0 =
         considerQueryString?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-duplicates.md
- */
-export type NoDuplicates = 'off' | NoDuplicates0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ForbidComponentProps0 =
+export type ForbidComponentProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -24,9 +25,3 @@ type ForbidComponentProps0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Disallow certain props on components
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/forbid-component-props.md
- */
-export type ForbidComponentProps = 'off' | ForbidComponentProps0;

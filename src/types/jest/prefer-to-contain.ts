@@ -5,7 +5,6 @@
  */
 
 /**
- * Suggest using `toContain()`
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-to-contain.md
+ * @minItems 1
  */
-export type PreferToContain = 'off' | ['warn' | 'error'];
+export type PreferToContain = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnsafeOptionalChaining0 =
+export type NoUnsafeOptionalChaining =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoUnsafeOptionalChaining0 =
         disallowArithmeticOperators?: boolean;
       }
     ];
-
-/**
- * Disallow use of optional chaining in contexts where the `undefined` value is not allowed
- * @see https://eslint.org/docs/rules/no-unsafe-optional-chaining
- */
-export type NoUnsafeOptionalChaining = 'off' | NoUnsafeOptionalChaining0;

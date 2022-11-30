@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUselessPathSegments0 =
+export type NoUselessPathSegments =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,8 +17,3 @@ type NoUselessPathSegments0 =
         noUselessIndex?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-useless-path-segments.md
- */
-export type NoUselessPathSegments = 'off' | NoUselessPathSegments0;

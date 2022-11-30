@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow octal literals
- * @see https://eslint.org/docs/rules/no-octal
+ * @minItems 1
  */
-export type NoOctal = 'off' | ['warn' | 'error'];
+export type NoOctal = 'off' | ['off' | 'error' | 'warn'];

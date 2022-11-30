@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type Yoda0 =
+export type Yoda =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never']
   | [
@@ -18,9 +19,3 @@ type Yoda0 =
         onlyEquality?: boolean;
       }
     ];
-
-/**
- * Require or disallow "Yoda" conditions
- * @see https://eslint.org/docs/rules/yoda
- */
-export type Yoda = 'off' | Yoda0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoEmptyInterface0 =
+export type NoEmptyInterface =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoEmptyInterface0 =
         allowSingleExtends?: boolean;
       }
     ];
-
-/**
- * Disallow the declaration of empty interfaces
- * @see https://typescript-eslint.io/rules/no-empty-interface
- */
-export type NoEmptyInterface = 'off' | NoEmptyInterface0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type IframeHasTitle0 =
+export type IframeHasTitle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type IframeHasTitle0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce iframe elements have a title attribute.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/iframe-has-title.md
- */
-export type IframeHasTitle = 'off' | IframeHasTitle0;

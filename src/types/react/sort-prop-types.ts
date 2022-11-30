@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SortPropTypes0 =
+export type SortPropTypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type SortPropTypes0 =
         sortShapeProp?: boolean;
       }
     ];
-
-/**
- * Enforce propTypes declarations alphabetical sorting
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/sort-prop-types.md
- */
-export type SortPropTypes = 'off' | SortPropTypes0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMultiAssign0 =
+export type NoMultiAssign =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoMultiAssign0 =
         ignoreNonDeclaration?: boolean;
       }
     ];
-
-/**
- * Disallow use of chained assignment expressions
- * @see https://eslint.org/docs/rules/no-multi-assign
- */
-export type NoMultiAssign = 'off' | NoMultiAssign0;

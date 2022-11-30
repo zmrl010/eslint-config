@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow control flow statements in `finally` blocks
- * @see https://eslint.org/docs/rules/no-unsafe-finally
+ * @minItems 1
  */
-export type NoUnsafeFinally = 'off' | ['warn' | 'error'];
+export type NoUnsafeFinally = 'off' | ['off' | 'error' | 'warn'];

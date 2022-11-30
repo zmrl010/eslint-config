@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoCycle0 =
+export type NoCycle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -26,8 +27,3 @@ type NoCycle0 =
         ignoreExternal?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-cycle.md
- */
-export type NoCycle = 'off' | NoCycle0;

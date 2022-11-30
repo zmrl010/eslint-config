@@ -5,7 +5,6 @@
  */
 
 /**
- * prefer toHaveFocus over checking document.activeElement
- * @see prefer-focus
+ * @minItems 1
  */
-export type PreferFocus = 'off' | ['warn' | 'error'];
+export type PreferFocus = 'off' | ['off' | 'error' | 'warn'];

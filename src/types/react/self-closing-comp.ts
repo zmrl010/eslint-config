@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SelfClosingComp0 =
+export type SelfClosingComp =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type SelfClosingComp0 =
         html?: boolean;
       }
     ];
-
-/**
- * Disallow extra closing tags for components without children
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/self-closing-comp.md
- */
-export type SelfClosingComp = 'off' | SelfClosingComp0;

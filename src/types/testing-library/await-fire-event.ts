@@ -5,7 +5,6 @@
  */
 
 /**
- * Enforce promises from `fireEvent` methods to be handled
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/await-fire-event.md
+ * @minItems 1
  */
-export type AwaitFireEvent = 'off' | ['warn' | 'error'];
+export type AwaitFireEvent = 'off' | ['off' | 'error' | 'warn'];

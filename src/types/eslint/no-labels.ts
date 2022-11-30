@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoLabels0 =
+export type NoLabels =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoLabels0 =
         allowSwitch?: boolean;
       }
     ];
-
-/**
- * Disallow labeled statements
- * @see https://eslint.org/docs/rules/no-labels
- */
-export type NoLabels = 'off' | NoLabels0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RequireAtomicUpdates0 =
+export type RequireAtomicUpdates =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type RequireAtomicUpdates0 =
         allowProperties?: boolean;
       }
     ];
-
-/**
- * Disallow assignments that can lead to race conditions due to usage of `await` or `yield`
- * @see https://eslint.org/docs/rules/require-atomic-updates
- */
-export type RequireAtomicUpdates = 'off' | RequireAtomicUpdates0;

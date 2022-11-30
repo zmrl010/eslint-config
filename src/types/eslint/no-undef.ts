@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUndef0 =
+export type NoUndef =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoUndef0 =
         typeof?: boolean;
       }
     ];
-
-/**
- * Disallow the use of undeclared variables unless mentioned in `/*global *\/` comments
- * @see https://eslint.org/docs/rules/no-undef
- */
-export type NoUndef = 'off' | NoUndef0;

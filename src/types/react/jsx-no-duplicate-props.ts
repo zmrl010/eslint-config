@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxNoDuplicateProps0 =
+export type JsxNoDuplicateProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type JsxNoDuplicateProps0 =
         ignoreCase?: boolean;
       }
     ];
-
-/**
- * Disallow duplicate properties in JSX
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-duplicate-props.md
- */
-export type JsxNoDuplicateProps = 'off' | JsxNoDuplicateProps0;

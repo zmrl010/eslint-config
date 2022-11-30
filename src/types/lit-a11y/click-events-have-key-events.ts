@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ClickEventsHaveKeyEvents0 =
+export type ClickEventsHaveKeyEvents =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type ClickEventsHaveKeyEvents0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * click-events-have-key-events
- * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/click-events-have-key-events.md
- */
-export type ClickEventsHaveKeyEvents = 'off' | ClickEventsHaveKeyEvents0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoImplicitCoercion0 =
+export type NoImplicitCoercion =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type NoImplicitCoercion0 =
         allow?: ('~' | '!!' | '+' | '*')[];
       }
     ];
-
-/**
- * Disallow shorthand type conversions
- * @see https://eslint.org/docs/rules/no-implicit-coercion
- */
-export type NoImplicitCoercion = 'off' | NoImplicitCoercion0;

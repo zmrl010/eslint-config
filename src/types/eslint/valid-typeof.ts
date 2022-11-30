@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ValidTypeof0 =
+export type ValidTypeof =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type ValidTypeof0 =
         requireStringLiterals?: boolean;
       }
     ];
-
-/**
- * Enforce comparing `typeof` expressions against valid strings
- * @see https://eslint.org/docs/rules/valid-typeof
- */
-export type ValidTypeof = 'off' | ValidTypeof0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoAutofocus0 =
+export type NoAutofocus =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoAutofocus0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce autoFocus prop is not used.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-autofocus.md
- */
-export type NoAutofocus = 'off' | NoAutofocus0;

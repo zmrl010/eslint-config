@@ -5,7 +5,6 @@
  */
 
 /**
- * Enforce default clauses in switch statements to be last
- * @see https://eslint.org/docs/rules/default-case-last
+ * @minItems 1
  */
-export type DefaultCaseLast = 'off' | ['warn' | 'error'];
+export type DefaultCaseLast = 'off' | ['off' | 'error' | 'warn'];

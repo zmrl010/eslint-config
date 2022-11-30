@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxTagSpacing0 =
+export type JsxTagSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type JsxTagSpacing0 =
         beforeClosing?: 'always' | 'proportional-always' | 'never' | 'allow';
       }
     ];
-
-/**
- * Enforce whitespace in and around the JSX opening and closing brackets
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-tag-spacing.md
- */
-export type JsxTagSpacing = 'off' | JsxTagSpacing0;

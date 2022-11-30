@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SpaceInParens0 =
+export type SpaceInParens =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never']
   | [
@@ -17,9 +18,3 @@ type SpaceInParens0 =
         exceptions?: ('{}' | '[]' | '()' | 'empty')[];
       }
     ];
-
-/**
- * Enforce consistent spacing inside parentheses
- * @see https://eslint.org/docs/rules/space-in-parens
- */
-export type SpaceInParens = 'off' | SpaceInParens0;

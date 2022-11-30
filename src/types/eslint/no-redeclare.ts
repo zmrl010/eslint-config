@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRedeclare0 =
+export type NoRedeclare =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoRedeclare0 =
         builtinGlobals?: boolean;
       }
     ];
-
-/**
- * Disallow variable redeclaration
- * @see https://eslint.org/docs/rules/no-redeclare
- */
-export type NoRedeclare = 'off' | NoRedeclare0;

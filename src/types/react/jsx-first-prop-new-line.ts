@@ -7,15 +7,10 @@
 /**
  * @minItems 1
  */
-type JsxFirstPropNewLine0 =
+export type JsxFirstPropNewLine =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
       'always' | 'never' | 'multiline' | 'multiline-multiprop'
     ];
-
-/**
- * Enforce proper position of the first property in JSX
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-first-prop-new-line.md
- */
-export type JsxFirstPropNewLine = 'off' | JsxFirstPropNewLine0;

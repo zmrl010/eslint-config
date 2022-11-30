@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferExpectAssertions0 =
+export type PreferExpectAssertions =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type PreferExpectAssertions0 =
         onlyFunctionsWithExpectInCallback?: boolean;
       }
     ];
-
-/**
- * Suggest using `expect.assertions()` OR `expect.hasAssertions()`
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-expect-assertions.md
- */
-export type PreferExpectAssertions = 'off' | PreferExpectAssertions0;

@@ -29,7 +29,9 @@ function getPkgDeps() {
   return readPackageUpSync()?.packageJson?.dependencies ?? {};
 }
 
-async function loadPlugin(pluginName: string): Promise<TSESLint.Linter.Plugin> {
+async function loadPluginModule(
+  pluginName: string
+): Promise<TSESLint.Linter.Plugin> {
   const module = await import(pluginName);
   return module?.default ?? module;
 }
@@ -46,7 +48,7 @@ export function getAllPlugins(): Array<Promise<PendingPlugin>> {
         d.includes('/eslint-plugin-')
     )
     .map<Promise<PendingPlugin>>(async (pluginName) => {
-      const plugin = await loadPlugin(pluginName);
+      const plugin = await loadPluginModule(pluginName);
       return {
         rules: plugin.rules ? { ...plugin.rules } : null,
         name: pluginName,

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoNoninteractiveElementToInteractiveRole0 =
+export type NoNoninteractiveElementToInteractiveRole =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,11 +16,3 @@ type NoNoninteractiveElementToInteractiveRole0 =
         [k: string]: string[] | undefined;
       }
     ];
-
-/**
- * Non-interactive elements should not be assigned interactive roles.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-noninteractive-element-to-interactive-role.md
- */
-export type NoNoninteractiveElementToInteractiveRole =
-  | 'off'
-  | NoNoninteractiveElementToInteractiveRole0;

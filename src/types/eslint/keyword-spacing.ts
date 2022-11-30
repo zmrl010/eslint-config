@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type KeywordSpacing0 =
+export type KeywordSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -290,9 +291,3 @@ type KeywordSpacing0 =
         };
       }
     ];
-
-/**
- * Enforce consistent spacing before and after keywords
- * @see https://eslint.org/docs/rules/keyword-spacing
- */
-export type KeywordSpacing = 'off' | KeywordSpacing0;

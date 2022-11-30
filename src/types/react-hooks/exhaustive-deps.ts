@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ExhaustiveDeps0 =
+export type ExhaustiveDeps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ExhaustiveDeps0 =
         enableDangerousAutofixThisMayCauseInfiniteLoops?: boolean;
       }
     ];
-
-/**
- * verifies the list of dependencies for Hooks like useEffect and similar
- * @see https://github.com/facebook/react/issues/14920
- */
-export type ExhaustiveDeps = 'off' | ExhaustiveDeps0;

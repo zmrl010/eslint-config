@@ -7,43 +7,39 @@
 /**
  * @minItems 1
  */
-type NoAnonymousDefaultExport0 =
+export type NoAnonymousDefaultExport =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
       {
         /**
-         * If `false`, will report default of an array
+         * If `false`, will report default export of an array
          */
         allowArray?: boolean;
         /**
-         * If `false`, will report default of an arrow function
+         * If `false`, will report default export of an arrow function
          */
         allowArrowFunction?: boolean;
         /**
-         * If `false`, will report default of a function call
+         * If `false`, will report default export of a function call
          */
         allowCallExpression?: boolean;
         /**
-         * If `false`, will report default of an anonymous class
+         * If `false`, will report default export of an anonymous class
          */
         allowAnonymousClass?: boolean;
         /**
-         * If `false`, will report default of an anonymous function
+         * If `false`, will report default export of an anonymous function
          */
         allowAnonymousFunction?: boolean;
         /**
-         * If `false`, will report default of a literal
+         * If `false`, will report default export of a literal
          */
         allowLiteral?: boolean;
         /**
-         * If `false`, will report default of an object expression
+         * If `false`, will report default export of an object expression
          */
         allowObject?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-anonymous-default-export.md
- */
-export type NoAnonymousDefaultExport = 'off' | NoAnonymousDefaultExport0;

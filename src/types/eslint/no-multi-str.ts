@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow multiline strings
- * @see https://eslint.org/docs/rules/no-multi-str
+ * @minItems 1
  */
-export type NoMultiStr = 'off' | ['warn' | 'error'];
+export type NoMultiStr = 'off' | ['off' | 'error' | 'warn'];

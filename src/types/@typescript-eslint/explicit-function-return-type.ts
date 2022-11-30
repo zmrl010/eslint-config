@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ExplicitFunctionReturnType0 =
+export type ExplicitFunctionReturnType =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -38,9 +39,3 @@ type ExplicitFunctionReturnType0 =
         allowedNames?: string[];
       }
     ];
-
-/**
- * Require explicit return types on functions and class methods
- * @see https://typescript-eslint.io/rules/explicit-function-return-type
- */
-export type ExplicitFunctionReturnType = 'off' | ExplicitFunctionReturnType0;

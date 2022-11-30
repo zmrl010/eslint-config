@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxLen0 =
+export type MaxLen =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -105,9 +106,3 @@ type MaxLen0 =
         ignoreTrailingComments?: boolean;
       }
     ];
-
-/**
- * Enforce a maximum line length
- * @see https://eslint.org/docs/rules/max-len
- */
-export type MaxLen = 'off' | MaxLen0;

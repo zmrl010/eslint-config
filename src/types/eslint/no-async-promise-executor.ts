@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow using an async function as a Promise executor
- * @see https://eslint.org/docs/rules/no-async-promise-executor
+ * @minItems 1
  */
-export type NoAsyncPromiseExecutor = 'off' | ['warn' | 'error'];
+export type NoAsyncPromiseExecutor = 'off' | ['off' | 'error' | 'warn'];

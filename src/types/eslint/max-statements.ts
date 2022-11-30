@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxStatements0 =
+export type MaxStatements =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -32,9 +33,3 @@ type MaxStatements0 =
         ignoreTopLevelFunctions?: boolean;
       }
     ];
-
-/**
- * Enforce a maximum number of statements allowed in function blocks
- * @see https://eslint.org/docs/rules/max-statements
- */
-export type MaxStatements = 'off' | MaxStatements0;

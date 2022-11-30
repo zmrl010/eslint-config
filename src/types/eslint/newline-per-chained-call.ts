@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NewlinePerChainedCall0 =
+export type NewlinePerChainedCall =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NewlinePerChainedCall0 =
         ignoreChainWithDepth?: number;
       }
     ];
-
-/**
- * Require a newline after each call in a method chain
- * @see https://eslint.org/docs/rules/newline-per-chained-call
- */
-export type NewlinePerChainedCall = 'off' | NewlinePerChainedCall0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type CommaDangle0 =
+export type CommaDangle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,16 +23,10 @@ type CommaDangle0 =
           }
       )
     ];
-type Value = 'always-multiline' | 'always' | 'never' | 'only-multiline';
-type ValueWithIgnore =
+export type Value = 'always-multiline' | 'always' | 'never' | 'only-multiline';
+export type ValueWithIgnore =
   | 'always-multiline'
   | 'always'
   | 'ignore'
   | 'never'
   | 'only-multiline';
-
-/**
- * Require or disallow trailing commas
- * @see https://eslint.org/docs/rules/comma-dangle
- */
-export type CommaDangle = 'off' | CommaDangle0;

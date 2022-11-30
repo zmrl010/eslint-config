@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoDynamicRequire0 =
+export type NoDynamicRequire =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,8 +16,3 @@ type NoDynamicRequire0 =
         esmodule?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-dynamic-require.md
- */
-export type NoDynamicRequire = 'off' | NoDynamicRequire0;

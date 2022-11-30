@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AriaUnsupportedElements0 =
+export type AriaUnsupportedElements =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type AriaUnsupportedElements0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-unsupported-elements.md
- */
-export type AriaUnsupportedElements = 'off' | AriaUnsupportedElements0;

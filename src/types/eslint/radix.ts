@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type Radix0 =
+export type Radix =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'as-needed'];
-
-/**
- * Enforce the consistent use of the radix argument when using `parseInt()`
- * @see https://eslint.org/docs/rules/radix
- */
-export type Radix = 'off' | Radix0;

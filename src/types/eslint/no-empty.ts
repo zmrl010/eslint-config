@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoEmpty0 =
+export type NoEmpty =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoEmpty0 =
         allowEmptyCatch?: boolean;
       }
     ];
-
-/**
- * Disallow empty block statements
- * @see https://eslint.org/docs/rules/no-empty
- */
-export type NoEmpty = 'off' | NoEmpty0;

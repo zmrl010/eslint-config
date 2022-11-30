@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferNullishCoalescing0 =
+export type PreferNullishCoalescing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type PreferNullishCoalescing0 =
         ignoreMixedLogicalExpressions?: boolean;
       }
     ];
-
-/**
- * Enforce using the nullish coalescing operator instead of logical chaining
- * @see https://typescript-eslint.io/rules/prefer-nullish-coalescing
- */
-export type PreferNullishCoalescing = 'off' | PreferNullishCoalescing0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RestrictPlusOperands0 =
+export type RestrictPlusOperands =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type RestrictPlusOperands0 =
         allowAny?: boolean;
       }
     ];
-
-/**
- * Require both operands of addition to be the same type and be `bigint`, `number`, or `string`
- * @see https://typescript-eslint.io/rules/restrict-plus-operands
- */
-export type RestrictPlusOperands = 'off' | RestrictPlusOperands0;

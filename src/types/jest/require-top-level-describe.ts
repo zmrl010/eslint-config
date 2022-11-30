@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RequireTopLevelDescribe0 =
+export type RequireTopLevelDescribe =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type RequireTopLevelDescribe0 =
         maxNumberOfTopLevelDescribes?: number;
       }
     ];
-
-/**
- * Require test cases and hooks to be inside a `describe` block
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/require-top-level-describe.md
- */
-export type RequireTopLevelDescribe = 'off' | RequireTopLevelDescribe0;

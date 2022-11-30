@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoShadow0 =
+export type NoShadow =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type NoShadow0 =
         ignoreOnInitialization?: boolean;
       }
     ];
-
-/**
- * Disallow variable declarations from shadowing variables declared in the outer scope
- * @see https://eslint.org/docs/rules/no-shadow
- */
-export type NoShadow = 'off' | NoShadow0;

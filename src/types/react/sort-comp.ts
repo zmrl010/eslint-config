@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SortComp0 =
+export type SortComp =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type SortComp0 =
         };
       }
     ];
-
-/**
- * Enforce component methods order
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/sort-comp.md
- */
-export type SortComp = 'off' | SortComp0;

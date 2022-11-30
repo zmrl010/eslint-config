@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AriaRole0 =
+export type AriaRole =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type AriaRole0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce that elements with ARIA roles must use a valid, non-abstract ARIA role.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-role.md
- */
-export type AriaRole = 'off' | AriaRole0;

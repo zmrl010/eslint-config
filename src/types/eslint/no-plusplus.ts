@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoPlusplus0 =
+export type NoPlusplus =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoPlusplus0 =
         allowForLoopAfterthoughts?: boolean;
       }
     ];
-
-/**
- * Disallow the unary operators `++` and `--`
- * @see https://eslint.org/docs/rules/no-plusplus
- */
-export type NoPlusplus = 'off' | NoPlusplus0;

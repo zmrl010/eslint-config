@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type UnboundMethod0 =
+export type UnboundMethod =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type UnboundMethod0 =
         ignoreStatic?: boolean;
       }
     ];
-
-/**
- * Enforce unbound methods are called with their expected scope
- * @see https://typescript-eslint.io/rules/unbound-method
- */
-export type UnboundMethod = 'off' | UnboundMethod0;

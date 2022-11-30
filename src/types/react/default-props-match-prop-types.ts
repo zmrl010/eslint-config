@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type DefaultPropsMatchPropTypes0 =
+export type DefaultPropsMatchPropTypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type DefaultPropsMatchPropTypes0 =
         allowRequiredDefaults?: boolean;
       }
     ];
-
-/**
- * Enforce all defaultProps have a corresponding non-required PropType
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/default-props-match-prop-types.md
- */
-export type DefaultPropsMatchPropTypes = 'off' | DefaultPropsMatchPropTypes0;

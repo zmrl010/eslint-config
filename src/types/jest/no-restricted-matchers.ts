@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRestrictedMatchers0 =
+export type NoRestrictedMatchers =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoRestrictedMatchers0 =
         [k: string]: (string | null) | undefined;
       }
     ];
-
-/**
- * Disallow specific matchers & modifiers
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-restricted-matchers.md
- */
-export type NoRestrictedMatchers = 'off' | NoRestrictedMatchers0;

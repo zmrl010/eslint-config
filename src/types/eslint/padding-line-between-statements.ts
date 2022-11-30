@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PaddingLineBetweenStatements0 =
+export type PaddingLineBetweenStatements =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,8 +18,8 @@ type PaddingLineBetweenStatements0 =
         next: StatementType;
       }
     ];
-type PaddingType = 'any' | 'never' | 'always';
-type StatementType =
+export type PaddingType = 'any' | 'never' | 'always';
+export type StatementType =
   | (
       | '*'
       | 'block-like'
@@ -141,11 +142,3 @@ type StatementType =
         | 'with'
       )[]
     ];
-
-/**
- * Require or disallow padding lines between statements
- * @see https://eslint.org/docs/rules/padding-line-between-statements
- */
-export type PaddingLineBetweenStatements =
-  | 'off'
-  | PaddingLineBetweenStatements0;

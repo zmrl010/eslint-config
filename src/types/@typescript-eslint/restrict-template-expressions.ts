@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RestrictTemplateExpressions0 =
+export type RestrictTemplateExpressions =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -35,9 +36,3 @@ type RestrictTemplateExpressions0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce template literal expressions to be of `string` type
- * @see https://typescript-eslint.io/rules/restrict-template-expressions
- */
-export type RestrictTemplateExpressions = 'off' | RestrictTemplateExpressions0;

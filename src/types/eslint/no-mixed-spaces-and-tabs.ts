@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type NoMixedSpacesAndTabs0 =
+export type NoMixedSpacesAndTabs =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'smart-tabs' | true | false];
-
-/**
- * Disallow mixed spaces and tabs for indentation
- * @see https://eslint.org/docs/rules/no-mixed-spaces-and-tabs
- */
-export type NoMixedSpacesAndTabs = 'off' | NoMixedSpacesAndTabs0;

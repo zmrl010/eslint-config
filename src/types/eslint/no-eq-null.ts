@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow `null` comparisons without type-checking operators
- * @see https://eslint.org/docs/rules/no-eq-null
+ * @minItems 1
  */
-export type NoEqNull = 'off' | ['warn' | 'error'];
+export type NoEqNull = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoInferrableTypes0 =
+export type NoInferrableTypes =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoInferrableTypes0 =
         ignoreProperties?: boolean;
       }
     ];
-
-/**
- * Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean
- * @see https://typescript-eslint.io/rules/no-inferrable-types
- */
-export type NoInferrableTypes = 'off' | NoInferrableTypes0;

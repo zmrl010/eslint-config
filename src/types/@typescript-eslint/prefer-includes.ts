@@ -5,7 +5,6 @@
  */
 
 /**
- * Enforce `includes` method over `indexOf` method
- * @see https://typescript-eslint.io/rules/prefer-includes
+ * @minItems 1
  */
-export type PreferIncludes = 'off' | ['warn' | 'error'];
+export type PreferIncludes = 'off' | ['off' | 'error' | 'warn'];

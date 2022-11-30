@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PromiseFunctionAsync0 =
+export type PromiseFunctionAsync =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -26,9 +27,3 @@ type PromiseFunctionAsync0 =
         checkMethodDeclarations?: boolean;
       }
     ];
-
-/**
- * Require any function or method that returns a Promise to be marked async
- * @see https://typescript-eslint.io/rules/promise-function-async
- */
-export type PromiseFunctionAsync = 'off' | PromiseFunctionAsync0;

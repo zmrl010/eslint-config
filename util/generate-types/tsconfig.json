@@ -10,5 +10,5 @@
     "swc": true
   },
   "extends": "../../tsconfig.json",
-  "include": ["../../types/*", "lib/*.ts"]
+  "include": ["../../types/*", "lib/*.ts", "bin/cli.ts"]
 }

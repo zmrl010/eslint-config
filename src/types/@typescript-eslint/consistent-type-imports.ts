@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ConsistentTypeImports0 =
+export type ConsistentTypeImports =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type ConsistentTypeImports0 =
         fixStyle?: 'separate-type-imports' | 'inline-type-imports';
       }
     ];
-
-/**
- * Enforce consistent usage of type imports
- * @see https://typescript-eslint.io/rules/consistent-type-imports
- */
-export type ConsistentTypeImports = 'off' | ConsistentTypeImports0;

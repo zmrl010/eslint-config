@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoExtraBooleanCast0 =
+export type NoExtraBooleanCast =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoExtraBooleanCast0 =
         enforceForLogicalOperands?: boolean;
       }
     ];
-
-/**
- * Disallow unnecessary boolean casts
- * @see https://eslint.org/docs/rules/no-extra-boolean-cast
- */
-export type NoExtraBooleanCast = 'off' | NoExtraBooleanCast0;

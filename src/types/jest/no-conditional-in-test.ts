@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow conditional logic in tests
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-conditional-in-test.md
+ * @minItems 1
  */
-export type NoConditionalInTest = 'off' | ['warn' | 'error'];
+export type NoConditionalInTest = 'off' | ['off' | 'error' | 'warn'];

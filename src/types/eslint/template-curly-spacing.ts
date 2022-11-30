@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type TemplateCurlySpacing0 =
+export type TemplateCurlySpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never'];
-
-/**
- * Require or disallow spacing around embedded expressions of template strings
- * @see https://eslint.org/docs/rules/template-curly-spacing
- */
-export type TemplateCurlySpacing = 'off' | TemplateCurlySpacing0;

@@ -15,7 +15,6 @@ importers:
       '@typescript-eslint/utils': ^5.44.0
       eslint: ^8.28.0
       eslint-config-prettier: ^8.5.0
-      eslint-find-rules: ^4.1.0
       eslint-plugin-import: ^2.26.0
       eslint-plugin-jest: ^27.1.6
       eslint-plugin-jest-dom: ^4.0.3
@@ -65,7 +64,6 @@ importers:
       '@types/react': 18.0.25
       '@types/semver': 7.3.13
       eslint: 8.28.0
-      eslint-find-rules: 4.1.0_eslint@8.28.0
       generate-rule-types: link:util/generate-types
       husky: 8.0.2
       is-ci: 3.0.1
@@ -1949,22 +1947,6 @@ packages:
     dependencies:
       cliui: 3.2.0
       eslint: 8.27.0
-      eslint-rule-documentation: 1.0.23
-      glob: 7.2.3
-      which: 1.3.1
-      window-size: 0.3.0
-      yargs: 16.2.0
-    dev: true
-
-  /eslint-find-rules/4.1.0_eslint@8.28.0:
-    resolution: {integrity: sha512-2nLJ0UrQRUGbOX8ksSxTgDNWGBW0RidIEIMlwNe1YR4RkjYksFDPYWf3WO9QFWM2NqkuHlTTeyOM94vaNwaFVw==}
-    engines: {node: ^10.12.0 || >=12.0.0 || ^14.17.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      eslint: ^7 || ^8.2.0
-    dependencies:
-      cliui: 3.2.0
-      eslint: 8.28.0
       eslint-rule-documentation: 1.0.23
       glob: 7.2.3
       which: 1.3.1

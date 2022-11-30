@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxNoScriptUrl0 =
+export type JsxNoScriptUrl =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type JsxNoScriptUrl0 =
         props: string[];
       }[]
     ];
-
-/**
- * Disallow usage of `javascript:` URLs
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-script-url.md
- */
-export type JsxNoScriptUrl = 'off' | JsxNoScriptUrl0;

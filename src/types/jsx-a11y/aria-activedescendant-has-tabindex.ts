@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AriaActivedescendantHasTabindex0 =
+export type AriaActivedescendantHasTabindex =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,11 +16,3 @@ type AriaActivedescendantHasTabindex0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce elements with aria-activedescendant are tabbable.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-activedescendant-has-tabindex.md
- */
-export type AriaActivedescendantHasTabindex =
-  | 'off'
-  | AriaActivedescendantHasTabindex0;

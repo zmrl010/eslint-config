@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NewCap0 =
+export type NewCap =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,9 +22,3 @@ type NewCap0 =
         properties?: boolean;
       }
     ];
-
-/**
- * Require constructor names to begin with a capital letter
- * @see https://eslint.org/docs/rules/new-cap
- */
-export type NewCap = 'off' | NewCap0;

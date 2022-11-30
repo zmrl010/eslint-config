@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type LinesAroundComment0 =
+export type LinesAroundComment =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -28,9 +29,3 @@ type LinesAroundComment0 =
         applyDefaultIgnorePatterns?: boolean;
       }
     ];
-
-/**
- * Require empty lines around comments
- * @see https://eslint.org/docs/rules/lines-around-comment
- */
-export type LinesAroundComment = 'off' | LinesAroundComment0;

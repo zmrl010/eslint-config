@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow manually importing from `__mocks__`
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-mocks-import.md
+ * @minItems 1
  */
-export type NoMocksImport = 'off' | ['warn' | 'error'];
+export type NoMocksImport = 'off' | ['off' | 'error' | 'warn'];

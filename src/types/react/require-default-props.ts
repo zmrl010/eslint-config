@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type RequireDefaultProps0 =
+export type RequireDefaultProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type RequireDefaultProps0 =
         ignoreFunctionalComponents?: boolean;
       }
     ];
-
-/**
- * Enforce a defaultProps definition for every prop that is not a required prop
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/require-default-props.md
- */
-export type RequireDefaultProps = 'off' | RequireDefaultProps0;

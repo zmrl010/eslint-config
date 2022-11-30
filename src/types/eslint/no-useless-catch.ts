@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow unnecessary `catch` clauses
- * @see https://eslint.org/docs/rules/no-useless-catch
+ * @minItems 1
  */
-export type NoUselessCatch = 'off' | ['warn' | 'error'];
+export type NoUselessCatch = 'off' | ['off' | 'error' | 'warn'];

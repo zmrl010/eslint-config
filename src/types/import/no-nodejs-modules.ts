@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoNodejsModules0 =
+export type NoNodejsModules =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,8 +16,3 @@ type NoNodejsModules0 =
         allow?: string[];
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-nodejs-modules.md
- */
-export type NoNodejsModules = 'off' | NoNodejsModules0;

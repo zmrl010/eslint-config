@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ConsistentReturn0 =
+export type ConsistentReturn =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type ConsistentReturn0 =
         treatUndefinedAsUnspecified?: boolean;
       }
     ];
-
-/**
- * Require `return` statements to either always or never specify values
- * @see https://eslint.org/docs/rules/consistent-return
- */
-export type ConsistentReturn = 'off' | ConsistentReturn0;

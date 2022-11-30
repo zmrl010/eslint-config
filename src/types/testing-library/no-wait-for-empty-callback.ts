@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow empty callbacks for `waitFor` and `waitForElementToBeRemoved`
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-wait-for-empty-callback.md
+ * @minItems 1
  */
-export type NoWaitForEmptyCallback = 'off' | ['warn' | 'error'];
+export type NoWaitForEmptyCallback = 'off' | ['off' | 'error' | 'warn'];

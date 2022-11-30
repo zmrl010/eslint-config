@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow unused private class members
- * @see https://eslint.org/docs/rules/no-unused-private-class-members
+ * @minItems 1
  */
-export type NoUnusedPrivateClassMembers = 'off' | ['warn' | 'error'];
+export type NoUnusedPrivateClassMembers = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxFilenameExtension0 =
+export type JsxFilenameExtension =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type JsxFilenameExtension0 =
         extensions?: string[];
       }
     ];
-
-/**
- * Disallow file extensions that may contain JSX
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-filename-extension.md
- */
-export type JsxFilenameExtension = 'off' | JsxFilenameExtension0;

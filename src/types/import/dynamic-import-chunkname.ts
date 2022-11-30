@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type DynamicImportChunkname0 =
+export type DynamicImportChunkname =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,8 +18,3 @@ type DynamicImportChunkname0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/dynamic-import-chunkname.md
- */
-export type DynamicImportChunkname = 'off' | DynamicImportChunkname0;

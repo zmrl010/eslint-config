@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type StylePropObject0 =
+export type StylePropObject =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type StylePropObject0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce style prop value is an object
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/style-prop-object.md
- */
-export type StylePropObject = 'off' | StylePropObject0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ArrayBracketSpacing0 =
+export type ArrayBracketSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never']
   | [
@@ -19,9 +20,3 @@ type ArrayBracketSpacing0 =
         arraysInArrays?: boolean;
       }
     ];
-
-/**
- * Enforce consistent spacing inside array brackets
- * @see https://eslint.org/docs/rules/array-bracket-spacing
- */
-export type ArrayBracketSpacing = 'off' | ArrayBracketSpacing0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ArrayType0 =
+export type ArrayType =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,9 +24,3 @@ type ArrayType0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Require consistently using either `T[]` or `Array<T>` for arrays
- * @see https://typescript-eslint.io/rules/array-type
- */
-export type ArrayType = 'off' | ArrayType0;

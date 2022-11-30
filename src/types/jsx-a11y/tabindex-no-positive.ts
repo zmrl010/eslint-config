@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type TabindexNoPositive0 =
+export type TabindexNoPositive =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type TabindexNoPositive0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce `tabIndex` value is not greater than zero.
- * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/tabindex-no-positive.md
- */
-export type TabindexNoPositive = 'off' | TabindexNoPositive0;

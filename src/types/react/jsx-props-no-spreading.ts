@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxPropsNoSpreading0 =
+export type JsxPropsNoSpreading =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,9 +21,3 @@ type JsxPropsNoSpreading0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Disallow JSX prop spreading
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-props-no-spreading.md
- */
-export type JsxPropsNoSpreading = 'off' | JsxPropsNoSpreading0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferLowercaseTitle0 =
+export type PreferLowercaseTitle =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type PreferLowercaseTitle0 =
         ignoreTopLevelDescribe?: boolean;
       }
     ];
-
-/**
- * Enforce lowercase test names
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-lowercase-title.md
- */
-export type PreferLowercaseTitle = 'off' | PreferLowercaseTitle0;

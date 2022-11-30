@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoAbsolutePath0 =
+export type NoAbsolutePath =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,8 +22,3 @@ type NoAbsolutePath0 =
         ignore?: [string, ...string[]];
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-absolute-path.md
- */
-export type NoAbsolutePath = 'off' | NoAbsolutePath0;

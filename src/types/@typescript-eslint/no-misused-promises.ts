@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMisusedPromises0 =
+export type NoMisusedPromises =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -26,9 +27,3 @@ type NoMisusedPromises0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Disallow Promises in places not designed to handle them
- * @see https://typescript-eslint.io/rules/no-misused-promises
- */
-export type NoMisusedPromises = 'off' | NoMisusedPromises0;

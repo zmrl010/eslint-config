@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type JsxEqualsSpacing0 =
+export type JsxEqualsSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never'];
-
-/**
- * Enforce or disallow spaces around equal signs in JSX attributes
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-equals-spacing.md
- */
-export type JsxEqualsSpacing = 'off' | JsxEqualsSpacing0;

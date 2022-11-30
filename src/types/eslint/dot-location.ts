@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type DotLocation0 =
+export type DotLocation =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'object' | 'property'];
-
-/**
- * Enforce consistent newlines before and after dots
- * @see https://eslint.org/docs/rules/dot-location
- */
-export type DotLocation = 'off' | DotLocation0;

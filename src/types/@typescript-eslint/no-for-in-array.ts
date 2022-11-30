@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow iterating over an array with a for-in loop
- * @see https://typescript-eslint.io/rules/no-for-in-array
+ * @minItems 1
  */
-export type NoForInArray = 'off' | ['warn' | 'error'];
+export type NoForInArray = 'off' | ['off' | 'error' | 'warn'];

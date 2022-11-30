@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnusedModules0 =
+export type NoUnusedModules =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -28,8 +29,3 @@ type NoUnusedModules0 =
           }
       )
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md
- */
-export type NoUnusedModules = 'off' | NoUnusedModules0;

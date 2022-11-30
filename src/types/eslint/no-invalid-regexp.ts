@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoInvalidRegexp0 =
+export type NoInvalidRegexp =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoInvalidRegexp0 =
         allowConstructorFlags?: string[];
       }
     ];
-
-/**
- * Disallow invalid regular expression strings in `RegExp` constructors
- * @see https://eslint.org/docs/rules/no-invalid-regexp
- */
-export type NoInvalidRegexp = 'off' | NoInvalidRegexp0;

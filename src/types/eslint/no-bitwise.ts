@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoBitwise0 =
+export type NoBitwise =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -30,9 +31,3 @@ type NoBitwise0 =
         int32Hint?: boolean;
       }
     ];
-
-/**
- * Disallow bitwise operators
- * @see https://eslint.org/docs/rules/no-bitwise
- */
-export type NoBitwise = 'off' | NoBitwise0;

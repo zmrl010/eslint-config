@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnnecessaryTypeAssertion0 =
+export type NoUnnecessaryTypeAssertion =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type NoUnnecessaryTypeAssertion0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Disallow type assertions that do not change the type of an expression
- * @see https://typescript-eslint.io/rules/no-unnecessary-type-assertion
- */
-export type NoUnnecessaryTypeAssertion = 'off' | NoUnnecessaryTypeAssertion0;

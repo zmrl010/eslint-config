@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ConsistentTestIt0 =
+export type ConsistentTestIt =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ConsistentTestIt0 =
         withinDescribe?: 'it' | 'test';
       }
     ];
-
-/**
- * Enforce `test` and `it` usage conventions
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/consistent-test-it.md
- */
-export type ConsistentTestIt = 'off' | ConsistentTestIt0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxNestedCallbacks0 =
+export type MaxNestedCallbacks =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type MaxNestedCallbacks0 =
           }
       )
     ];
-
-/**
- * Enforce a maximum depth that callbacks can be nested
- * @see https://eslint.org/docs/rules/max-nested-callbacks
- */
-export type MaxNestedCallbacks = 'off' | MaxNestedCallbacks0;

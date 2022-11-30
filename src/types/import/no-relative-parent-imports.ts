@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRelativeParentImports0 =
+export type NoRelativeParentImports =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -21,8 +22,3 @@ type NoRelativeParentImports0 =
         ignore?: [string, ...string[]];
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-parent-imports.md
- */
-export type NoRelativeParentImports = 'off' | NoRelativeParentImports0;

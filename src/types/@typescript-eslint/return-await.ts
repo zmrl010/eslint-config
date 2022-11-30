@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type ReturnAwait0 =
+export type ReturnAwait =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'in-try-catch' | 'always' | 'never'];
-
-/**
- * Enforce consistent returning of awaited values
- * @see https://typescript-eslint.io/rules/return-await
- */
-export type ReturnAwait = 'off' | ReturnAwait0;

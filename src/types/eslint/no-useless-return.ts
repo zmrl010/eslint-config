@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow redundant return statements
- * @see https://eslint.org/docs/rules/no-useless-return
+ * @minItems 1
  */
-export type NoUselessReturn = 'off' | ['warn' | 'error'];
+export type NoUselessReturn = 'off' | ['off' | 'error' | 'warn'];

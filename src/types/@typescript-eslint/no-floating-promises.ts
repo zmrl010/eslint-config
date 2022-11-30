@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoFloatingPromises0 =
+export type NoFloatingPromises =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type NoFloatingPromises0 =
         ignoreIIFE?: boolean;
       }
     ];
-
-/**
- * Require Promise-like statements to be handled appropriately
- * @see https://typescript-eslint.io/rules/no-floating-promises
- */
-export type NoFloatingPromises = 'off' | NoFloatingPromises0;

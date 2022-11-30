@@ -5,7 +5,6 @@
  */
 
 /**
- * Enforce the use of `u` flag on RegExp
- * @see https://eslint.org/docs/rules/require-unicode-regexp
+ * @minItems 1
  */
-export type RequireUnicodeRegexp = 'off' | ['warn' | 'error'];
+export type RequireUnicodeRegexp = 'off' | ['off' | 'error' | 'warn'];

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type PreferPromiseRejectErrors0 =
+export type PreferPromiseRejectErrors =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type PreferPromiseRejectErrors0 =
         allowEmptyReject?: boolean;
       }
     ];
-
-/**
- * Require using Error objects as Promise rejection reasons
- * @see https://eslint.org/docs/rules/prefer-promise-reject-errors
- */
-export type PreferPromiseRejectErrors = 'off' | PreferPromiseRejectErrors0;

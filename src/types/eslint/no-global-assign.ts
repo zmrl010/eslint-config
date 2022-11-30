@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoGlobalAssign0 =
+export type NoGlobalAssign =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoGlobalAssign0 =
         exceptions?: string[];
       }
     ];
-
-/**
- * Disallow assignments to native objects or read-only global variables
- * @see https://eslint.org/docs/rules/no-global-assign
- */
-export type NoGlobalAssign = 'off' | NoGlobalAssign0;

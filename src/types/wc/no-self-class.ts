@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallows class mutations on self
- * @see https://github.com/43081j/eslint-plugin-wc/blob/master/docs/rules/no-self-class.md
+ * @minItems 1
  */
-export type NoSelfClass = 'off' | ['warn' | 'error'];
+export type NoSelfClass = 'off' | ['off' | 'error' | 'warn'];

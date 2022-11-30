@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoConsole0 =
+export type NoConsole =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type NoConsole0 =
         allow?: [string, ...string[]];
       }
     ];
-
-/**
- * Disallow the use of `console`
- * @see https://eslint.org/docs/rules/no-console
- */
-export type NoConsole = 'off' | NoConsole0;

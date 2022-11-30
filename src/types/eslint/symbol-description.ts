@@ -5,7 +5,6 @@
  */
 
 /**
- * Require symbol descriptions
- * @see https://eslint.org/docs/rules/symbol-description
+ * @minItems 1
  */
-export type SymbolDescription = 'off' | ['warn' | 'error'];
+export type SymbolDescription = 'off' | ['off' | 'error' | 'warn'];

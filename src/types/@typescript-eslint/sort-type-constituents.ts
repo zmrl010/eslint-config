@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SortTypeConstituents0 =
+export type SortTypeConstituents =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -40,9 +41,3 @@ type SortTypeConstituents0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * Enforce constituents of a type union/intersection to be sorted alphabetically
- * @see https://typescript-eslint.io/rules/sort-type-constituents
- */
-export type SortTypeConstituents = 'off' | SortTypeConstituents0;

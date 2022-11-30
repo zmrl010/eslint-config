@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxNewline0 =
+export type JsxNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type JsxNewline0 =
         allowMultilines?: boolean;
       }
     ];
-
-/**
- * Require or prevent a new line after jsx elements and expressions.
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-newline.md
- */
-export type JsxNewline = 'off' | JsxNewline0;

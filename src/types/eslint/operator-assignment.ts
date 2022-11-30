@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type OperatorAssignment0 =
+export type OperatorAssignment =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never'];
-
-/**
- * Require or disallow assignment operator shorthand where possible
- * @see https://eslint.org/docs/rules/operator-assignment
- */
-export type OperatorAssignment = 'off' | OperatorAssignment0;

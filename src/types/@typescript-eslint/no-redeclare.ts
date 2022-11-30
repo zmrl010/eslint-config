@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoRedeclare0 =
+export type NoRedeclare =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type NoRedeclare0 =
         ignoreDeclarationMerge?: boolean;
       }
     ];
-
-/**
- * Disallow variable redeclaration
- * @see https://typescript-eslint.io/rules/no-redeclare
- */
-export type NoRedeclare = 'off' | NoRedeclare0;

@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type ConsistentTypeDefinitions0 =
+export type ConsistentTypeDefinitions =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'interface' | 'type'];
-
-/**
- * Enforce type definitions to consistently use either `interface` or `type`
- * @see https://typescript-eslint.io/rules/consistent-type-definitions
- */
-export type ConsistentTypeDefinitions = 'off' | ConsistentTypeDefinitions0;

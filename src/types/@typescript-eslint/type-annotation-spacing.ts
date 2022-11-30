@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type TypeAnnotationSpacing0 =
+export type TypeAnnotationSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -42,9 +43,3 @@ type TypeAnnotationSpacing0 =
         };
       }
     ];
-
-/**
- * Require consistent spacing around type annotations
- * @see https://typescript-eslint.io/rules/type-annotation-spacing
- */
-export type TypeAnnotationSpacing = 'off' | TypeAnnotationSpacing0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SpacedComment0 =
+export type SpacedComment =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never']
   | [
@@ -27,9 +28,3 @@ type SpacedComment0 =
         };
       }
     ];
-
-/**
- * Enforce consistent spacing after the `//` or `/*` in a comment
- * @see https://eslint.org/docs/rules/spaced-comment
- */
-export type SpacedComment = 'off' | SpacedComment0;

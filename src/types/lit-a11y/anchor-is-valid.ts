@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type AnchorIsValid0 =
+export type AnchorIsValid =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,9 +24,3 @@ type AnchorIsValid0 =
         [k: string]: unknown | undefined;
       }
     ];
-
-/**
- * anchor-is-valid
- * @see https://github.com/open-wc/open-wc/blob/master/packages/eslint-plugin-lit-a11y/docs/rules/anchor-is-valid.md
- */
-export type AnchorIsValid = 'off' | AnchorIsValid0;

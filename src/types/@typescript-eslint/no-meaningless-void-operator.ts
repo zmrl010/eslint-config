@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMeaninglessVoidOperator0 =
+export type NoMeaninglessVoidOperator =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoMeaninglessVoidOperator0 =
         checkNever?: boolean;
       }
     ];
-
-/**
- * Disallow the `void` operator except when used to discard a value
- * @see https://typescript-eslint.io/rules/no-meaningless-void-operator
- */
-export type NoMeaninglessVoidOperator = 'off' | NoMeaninglessVoidOperator0;

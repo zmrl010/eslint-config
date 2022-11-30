@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxOneExpressionPerLine0 =
+export type JsxOneExpressionPerLine =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type JsxOneExpressionPerLine0 =
         allow?: 'none' | 'literal' | 'single-child';
       }
     ];
-
-/**
- * Require one JSX element per line
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-one-expression-per-line.md
- */
-export type JsxOneExpressionPerLine = 'off' | JsxOneExpressionPerLine0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type SemiSpacing0 =
+export type SemiSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type SemiSpacing0 =
         after?: boolean;
       }
     ];
-
-/**
- * Enforce consistent spacing before and after semicolons
- * @see https://eslint.org/docs/rules/semi-spacing
- */
-export type SemiSpacing = 'off' | SemiSpacing0;

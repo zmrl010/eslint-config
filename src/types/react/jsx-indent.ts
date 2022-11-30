@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxIndent0 =
+export type JsxIndent =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'tab' | number]
   | [
@@ -18,9 +19,3 @@ type JsxIndent0 =
         indentLogicalExpressions?: boolean;
       }
     ];
-
-/**
- * Enforce JSX indentation
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-indent.md
- */
-export type JsxIndent = 'off' | JsxIndent0;

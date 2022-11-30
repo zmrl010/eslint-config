@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type GeneratorStarSpacing0 =
+export type GeneratorStarSpacing =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -37,9 +38,3 @@ type GeneratorStarSpacing0 =
           }
       )
     ];
-
-/**
- * Enforce consistent spacing around `*` operators in generator functions
- * @see https://eslint.org/docs/rules/generator-star-spacing
- */
-export type GeneratorStarSpacing = 'off' | GeneratorStarSpacing0;

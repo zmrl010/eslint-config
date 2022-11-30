@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow the use of `debugger`
- * @see https://eslint.org/docs/rules/no-debugger
+ * @minItems 1
  */
-export type NoDebugger = 'off' | ['warn' | 'error'];
+export type NoDebugger = 'off' | ['off' | 'error' | 'warn'];

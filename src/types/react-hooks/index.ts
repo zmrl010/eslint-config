@@ -16,6 +16,7 @@ export interface ReactHooks {
    * @see https://reactjs.org/docs/hooks-rules.html
    */
   'react-hooks/rules-of-hooks': RulesOfHooks;
+
   /**
    * verifies the list of dependencies for Hooks like useEffect and similar
    * @see https://github.com/facebook/react/issues/14920

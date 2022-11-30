@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoInternalModules0 =
+export type NoInternalModules =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -20,8 +21,3 @@ type NoInternalModules0 =
           }
       )
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-internal-modules.md
- */
-export type NoInternalModules = 'off' | NoInternalModules0;

@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements
- * @see https://eslint.org/docs/rules/no-unreachable
+ * @minItems 1
  */
-export type NoUnreachable = 'off' | ['warn' | 'error'];
+export type NoUnreachable = 'off' | ['off' | 'error' | 'warn'];

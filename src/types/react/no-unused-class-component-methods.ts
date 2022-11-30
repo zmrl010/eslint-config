@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow declaring unused methods of component class
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/no-unused-class-component-methods.md
+ * @minItems 1
  */
-export type NoUnusedClassComponentMethods = 'off' | ['warn' | 'error'];
+export type NoUnusedClassComponentMethods = 'off' | ['off' | 'error' | 'warn'];

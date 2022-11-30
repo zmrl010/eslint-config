@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoMultipleEmptyLines0 =
+export type NoMultipleEmptyLines =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -17,9 +18,3 @@ type NoMultipleEmptyLines0 =
         maxBOF?: number;
       }
     ];
-
-/**
- * Disallow multiple empty lines
- * @see https://eslint.org/docs/rules/no-multiple-empty-lines
- */
-export type NoMultipleEmptyLines = 'off' | NoMultipleEmptyLines0;

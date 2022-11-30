@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow `new` operators outside of assignments or comparisons
- * @see https://eslint.org/docs/rules/no-new
+ * @minItems 1
  */
-export type NoNew = 'off' | ['warn' | 'error'];
+export type NoNew = 'off' | ['off' | 'error' | 'warn'];

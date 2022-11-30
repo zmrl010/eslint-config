@@ -7,12 +7,7 @@
 /**
  * @minItems 1
  */
-type FunctionCallArgumentNewline0 =
+export type FunctionCallArgumentNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'always' | 'never' | 'consistent'];
-
-/**
- * Enforce line breaks between arguments of a function call
- * @see https://eslint.org/docs/rules/function-call-argument-newline
- */
-export type FunctionCallArgumentNewline = 'off' | FunctionCallArgumentNewline0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ValidExpect0 =
+export type ValidExpect =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -18,9 +19,3 @@ type ValidExpect0 =
         maxArgs?: number;
       }
     ];
-
-/**
- * Enforce valid `expect()` usage
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/valid-expect.md
- */
-export type ValidExpect = 'off' | ValidExpect0;

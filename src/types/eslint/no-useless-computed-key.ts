@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUselessComputedKey0 =
+export type NoUselessComputedKey =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoUselessComputedKey0 =
         enforceForClassMembers?: boolean;
       }
     ];
-
-/**
- * Disallow unnecessary computed property keys in objects and classes
- * @see https://eslint.org/docs/rules/no-useless-computed-key
- */
-export type NoUselessComputedKey = 'off' | NoUselessComputedKey0;

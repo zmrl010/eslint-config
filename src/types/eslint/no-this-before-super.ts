@@ -5,7 +5,6 @@
  */
 
 /**
- * Disallow `this`/`super` before calling `super()` in constructors
- * @see https://eslint.org/docs/rules/no-this-before-super
+ * @minItems 1
  */
-export type NoThisBeforeSuper = 'off' | ['warn' | 'error'];
+export type NoThisBeforeSuper = 'off' | ['off' | 'error' | 'warn'];

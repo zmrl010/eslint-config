@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoSequences0 =
+export type NoSequences =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoSequences0 =
         allowInParentheses?: boolean;
       }
     ];
-
-/**
- * Disallow comma operators
- * @see https://eslint.org/docs/rules/no-sequences
- */
-export type NoSequences = 'off' | NoSequences0;

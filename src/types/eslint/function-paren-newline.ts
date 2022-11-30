@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type FunctionParenNewline0 =
+export type FunctionParenNewline =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -24,9 +25,3 @@ type FunctionParenNewline0 =
           }
       )
     ];
-
-/**
- * Enforce consistent line breaks inside function parentheses
- * @see https://eslint.org/docs/rules/function-paren-newline
- */
-export type FunctionParenNewline = 'off' | FunctionParenNewline0;

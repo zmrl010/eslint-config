@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type MaxExpects0 =
+export type MaxExpects =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type MaxExpects0 =
         max?: number;
       }
     ];
-
-/**
- * Enforces a maximum number assertion calls in a test body
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/max-expects.md
- */
-export type MaxExpects = 'off' | MaxExpects0;

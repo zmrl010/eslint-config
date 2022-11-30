@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxClosingBracketLocation0 =
+export type JsxClosingBracketLocation =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -36,9 +37,3 @@ type JsxClosingBracketLocation0 =
           }
       )
     ];
-
-/**
- * Enforce closing bracket location in JSX
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-closing-bracket-location.md
- */
-export type JsxClosingBracketLocation = 'off' | JsxClosingBracketLocation0;

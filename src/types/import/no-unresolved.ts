@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoUnresolved0 =
+export type NoUnresolved =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -23,8 +24,3 @@ type NoUnresolved0 =
         caseSensitiveStrict?: boolean;
       }
     ];
-
-/**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unresolved.md
- */
-export type NoUnresolved = 'off' | NoUnresolved0;

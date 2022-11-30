@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type NoExtendNative0 =
+export type NoExtendNative =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type NoExtendNative0 =
         exceptions?: string[];
       }
     ];
-
-/**
- * Disallow extending native types
- * @see https://eslint.org/docs/rules/no-extend-native
- */
-export type NoExtendNative = 'off' | NoExtendNative0;

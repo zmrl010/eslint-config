@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxNoBind0 =
+export type JsxNoBind =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -19,9 +20,3 @@ type JsxNoBind0 =
         ignoreDOMComponents?: boolean;
       }
     ];
-
-/**
- * Disallow `.bind()` or arrow functions in JSX props
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-no-bind.md
- */
-export type JsxNoBind = 'off' | JsxNoBind0;

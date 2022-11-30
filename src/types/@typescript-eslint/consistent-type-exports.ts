@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ConsistentTypeExports0 =
+export type ConsistentTypeExports =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type ConsistentTypeExports0 =
         fixMixedExportsWithInlineTypeSpecifier?: boolean;
       }
     ];
-
-/**
- * Enforce consistent usage of type exports
- * @see https://typescript-eslint.io/rules/consistent-type-exports
- */
-export type ConsistentTypeExports = 'off' | ConsistentTypeExports0;

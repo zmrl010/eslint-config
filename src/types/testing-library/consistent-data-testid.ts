@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ConsistentDataTestid0 =
+export type ConsistentDataTestid =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ConsistentDataTestid0 =
         testIdAttribute?: string | string[];
       }
     ];
-
-/**
- * Ensures consistent usage of `data-testid`
- * @see https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/consistent-data-testid.md
- */
-export type ConsistentDataTestid = 'off' | ConsistentDataTestid0;

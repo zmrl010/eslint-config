@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type ExpectExpect0 =
+export type ExpectExpect =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -16,9 +17,3 @@ type ExpectExpect0 =
         additionalTestBlockFunctions?: string[];
       }
     ];
-
-/**
- * Enforce assertion to be made in a test body
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/expect-expect.md
- */
-export type ExpectExpect = 'off' | ExpectExpect0;

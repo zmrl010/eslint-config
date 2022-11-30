@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type DefaultCase0 =
+export type DefaultCase =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -15,9 +16,3 @@ type DefaultCase0 =
         commentPattern?: string;
       }
     ];
-
-/**
- * Require `default` cases in `switch` statements
- * @see https://eslint.org/docs/rules/default-case
- */
-export type DefaultCase = 'off' | DefaultCase0;

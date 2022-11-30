@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type WrapIife0 =
+export type WrapIife =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | ['off' | 'error' | 'warn', 'outside' | 'inside' | 'any']
   | [
@@ -17,9 +18,3 @@ type WrapIife0 =
         functionPrototypeMethods?: boolean;
       }
     ];
-
-/**
- * Require parentheses around immediate `function` invocations
- * @see https://eslint.org/docs/rules/wrap-iife
- */
-export type WrapIife = 'off' | WrapIife0;

@@ -7,7 +7,8 @@
 /**
  * @minItems 1
  */
-type JsxSortProps0 =
+export type JsxSortProps =
+  | 'off'
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
@@ -22,9 +23,3 @@ type JsxSortProps0 =
         locale?: string;
       }
     ];
-
-/**
- * Enforce props alphabetical sorting
- * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules/jsx-sort-props.md
- */
-export type JsxSortProps = 'off' | JsxSortProps0;
