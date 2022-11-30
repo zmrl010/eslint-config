@@ -1,5 +1,6 @@
 import testingLibraryPlugin from 'eslint-plugin-testing-library';
 import semver, { minVersion } from 'semver';
+import type { FlatConfigItem } from '../../types/flat-eslint-config.js';
 import { getDependencyVersion } from '../lib/dependency.js';
 import { readPackage } from '../lib/read-package.js';
 import type { TestingLibrary } from '../types/testing-library/index.js';
@@ -19,14 +20,7 @@ const isAsyncUserEvent = userEventVersion
   ? semver.gte(userEventVersion, VERSION_USER_EVENTS_WENT_ASYNC)
   : true;
 
-export const files = [
-  '**/__tests__/**/*.+(js|ts)?(x)',
-  '**/*.{spec,test}.+(js|ts)?(x)',
-];
-
-export const plugins = { 'testing-library': testingLibraryPlugin };
-
-export const rules = {
+const rules = {
   'testing-library/await-async-query': ['error'],
   'testing-library/await-async-utils': ['error'],
   'testing-library/await-fire-event': 'off',
@@ -62,3 +56,9 @@ export const rules = {
   'testing-library/prefer-wait-for': ['error'],
   'testing-library/render-result-naming-convention': ['error'],
 } satisfies TestingLibrary;
+
+export const config = {
+  files: ['**/__tests__/**/*.+(js|ts)?(x)', '**/*.{spec,test}.+(js|ts)?(x)'],
+  plugins: { 'testing-library': testingLibraryPlugin },
+  rules,
+} satisfies FlatConfigItem;

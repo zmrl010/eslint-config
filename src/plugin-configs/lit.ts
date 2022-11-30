@@ -1,9 +1,10 @@
 import litPlugin from 'eslint-plugin-lit';
+import type { FlatConfigItem } from '../../types/flat-eslint-config.js';
 import type { Lit } from '../types/lit/index.js';
 
-export const plugins = { lit: litPlugin };
+const plugins = { lit: litPlugin };
 
-export const rules = {
+const rules = {
   'lit/attribute-value-entities': ['error'],
   'lit/binding-positions': ['error'],
   'lit/no-duplicate-template-bindings': ['error'],
@@ -22,3 +23,8 @@ export const rules = {
   'lit/prefer-static-styles': 'off',
   'lit/quoted-expressions': 'off',
 } satisfies Lit;
+
+export const config = {
+  plugins,
+  rules,
+} satisfies FlatConfigItem;

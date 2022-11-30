@@ -20,6 +20,5 @@ export type Dependencies = Pick<PackageJson, DependencyFields>;
  * *fails silently by returning empty object*
  */
 export function readPackage(options?: NormalizeOptions): PackageJson {
-  const result = readPackageUpSync(options);
-  return result?.packageJson ?? {};
+  return readPackageUpSync(options)?.packageJson ?? {};
 }

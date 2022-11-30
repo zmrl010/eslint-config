@@ -1,3 +1,11 @@
+declare module 'eslint' {
+  import type { TSESLint } from '@typescript-eslint/utils';
+
+  export namespace Rule {
+    export type RuleModule = TSESLint.RuleModule<string, unknown[]>;
+  }
+}
+
 declare module 'eslint/use-at-your-own-risk' {
   import type { TSESLint } from '@typescript-eslint/utils';
 
@@ -8,12 +16,4 @@ declare module 'eslint/use-at-your-own-risk' {
   }
 
   export const builtinRules: LazyLoadingRuleMap;
-}
-
-declare module 'eslint' {
-  import type { TSESLint } from '@typescript-eslint/utils';
-
-  export namespace Rule {
-    export type RuleModule = TSESLint.RuleModule<string, unknown[]>;
-  }
 }

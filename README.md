@@ -33,4 +33,5 @@ export default [config];
 
 This package also exports a number of useful ESLint configurations
 for different types of projects. Check `exports` in `package.json`
-for a complete list.
+for a complete list. They are also available as a named import from the
+root package.

@@ -1,6 +1,5 @@
+import type { FlatConfigItem } from '../../types/flat-eslint-config.js';
 import type { Eslint } from '../types/eslint/index.js';
-
-export const name = 'eslint';
 
 export const rules = {
   'accessor-pairs': ['error'],
@@ -289,3 +288,7 @@ export const rules = {
   'wrap-regex': 'off',
   'yield-star-spacing': 'off',
 } satisfies Eslint;
+
+export const config = {
+  rules,
+} satisfies FlatConfigItem;

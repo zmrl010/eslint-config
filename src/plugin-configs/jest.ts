@@ -1,9 +1,21 @@
 import jestPlugin from 'eslint-plugin-jest';
+import { minVersion } from 'semver';
+import type { FlatConfigItem } from '../../types/flat-eslint-config.js';
+import { getDependencyVersion } from '../lib/dependency.js';
+import { readPackage } from '../lib/read-package.js';
 import type { Jest } from '../types/jest/index.js';
 
-export const plugins = { jest: jestPlugin };
+const packageJson = readPackage();
+/**
+ * We don't necessarily care if jest is installed.
+ * We need to provide a version so rules work correctly.
+ */
+const jestVersion =
+  minVersion(getDependencyVersion(packageJson, 'jest'))?.version ?? '28.0.0';
 
-export const rules = {
+const plugins = { jest: jestPlugin };
+
+const rules = {
   'jest/consistent-test-it': 'off',
   'jest/expect-expect': 'off',
   'jest/max-expects': ['error'],
@@ -56,7 +68,19 @@ export const rules = {
   'jest/no-restricted-jest-methods': 'off',
 } satisfies Jest;
 
-export const typescriptRules = {
-  '@typescript-eslint/unbound-method': 'off',
-  'jest/unbound-method': ['error'],
-} as const;
+export const config = {
+  files: ['**/__tests__/**/*.+(js|ts)?(x)', '**/*.{spec,test}.+(js|ts)?(x)'],
+  plugins,
+  settings: {
+    jest: { version: jestVersion },
+  },
+  rules,
+} satisfies FlatConfigItem;
+
+export const typescriptConfig = {
+  files: ['**/__tests__/**/*.ts?(x)', '**/*.{spec,test}.ts?(x)'],
+  rules: {
+    '@typescript-eslint/unbound-method': 'off',
+    'jest/unbound-method': ['error'],
+  },
+} satisfies FlatConfigItem;

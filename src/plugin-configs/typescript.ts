@@ -1,6 +1,9 @@
 import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
-import type { LanguageOptions } from '../../types/flat-eslint-config.js';
+import type {
+  FlatConfigItem,
+  LanguageOptions,
+} from '../../types/flat-eslint-config.js';
 import { resolveFirstExisting } from '../lib/path.js';
 import type { TypescriptEslint } from '../types/@typescript-eslint/index.js';
 import type { Eslint } from '../types/eslint/index.js';
@@ -9,10 +12,6 @@ const projectTsConfig = resolveFirstExisting(
   'tsconfig.json',
   'types/tsconfig.json'
 );
-
-export const files = ['**/*.ts?(x)'];
-
-export const plugins = { '@typescript-eslint': typescriptPlugin }
 
 const coreTSRuleSwitches = {
   'constructor-super': 'off', // ts(2335) & ts(2377)
@@ -104,9 +103,9 @@ const coreTSRuleSwitches = {
 
   'no-useless-constructor': 'off',
   '@typescript-eslint/no-useless-constructor': ['error'],
-} satisfies Partial<TypescriptEslint> & Partial<Eslint>
+} satisfies Partial<TypescriptEslint> & Partial<Eslint>;
 
-export const rules = {
+const rules = {
   ...coreTSRuleSwitches,
   '@typescript-eslint/adjacent-overload-signatures': ['error'],
   '@typescript-eslint/array-type': 'off',
@@ -221,9 +220,16 @@ export const rules = {
   '@typescript-eslint/type-annotation-spacing': 'off',
 } satisfies TypescriptEslint & Partial<Eslint>;
 
-export const languageOptions: LanguageOptions = {
+const languageOptions: LanguageOptions = {
   parser: tsParser,
   parserOptions: {
     project: projectTsConfig,
   },
 };
+
+export const config = {
+  plugins: { '@typescript-eslint': typescriptPlugin },
+  rules,
+  files: ['**/*.ts?(x)'],
+  languageOptions,
+} satisfies FlatConfigItem;

@@ -1,15 +1,14 @@
 import importPlugin from 'eslint-plugin-import';
+import { FlatConfigItem } from '../../types/flat-eslint-config.js';
 import type { Import } from '../types/import/index.js';
 
-export const plugins = { import: importPlugin };
+const plugins = { import: importPlugin };
 
-export const settings = {
+const settings = {
   'import/ignore': ['node_modules', '.json$', '.(scss|less|css)$'],
 };
 
-export type Rules = Import;
-
-export const rules = {
+const rules = {
   'import/default': ['error'],
   'import/named': ['error'],
   'import/namespace': ['error'],
@@ -64,10 +63,21 @@ export const rules = {
   'import/unambiguous': 'off', // not sure I understand this rule well enough right now...
 } satisfies Import;
 
-export const typescriptRules = {
+const typescriptRules = {
   'import/default': 'off',
   'import/named': 'off',
   'import/namespace': 'off',
   'import/no-named-as-default-member': 'off',
   'import/no-unresolved': 'off',
 } satisfies Partial<Import>;
+
+export const config = {
+  rules,
+  settings,
+  plugins,
+} satisfies FlatConfigItem;
+
+export const typescriptConfig = {
+  files: ['**/*.ts?(x)'],
+  rules: typescriptRules,
+} satisfies FlatConfigItem;

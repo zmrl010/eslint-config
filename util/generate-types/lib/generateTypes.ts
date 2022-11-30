@@ -3,7 +3,7 @@ import util from 'node:util';
 import path from 'path';
 import { GeneratorOptions, setupContext } from './context.js';
 import { createDoc } from './doc.js';
-import { generatePluginRuleTypes } from './generatePluginTypes.js';
+import { generatePluginRuleTypes } from './generatePluginRuleTypes.js';
 import { getAllPlugins, type Plugin } from './getPlugins.js';
 import { formatText, joinLines, toPascalCase } from './text.js';
 

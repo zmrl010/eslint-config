@@ -1,9 +1,8 @@
 import wcPlugin from 'eslint-plugin-wc';
+import type { FlatConfigItem } from '../../types/flat-eslint-config.js';
 import type { Wc } from '../types/wc/index.js';
 
-export const plugins = { wc: wcPlugin } 
-
-export const rules = {
+const rules = {
   'wc/no-constructor-attributes': ['error'],
   'wc/no-invalid-element-name': ['error'],
   'wc/no-self-class': ['error'],
@@ -14,3 +13,8 @@ export const rules = {
   'wc/no-typos': ['error'],
   'wc/require-listener-teardown': ['error'],
 } satisfies Wc;
+
+export const config = {
+  plugins: { wc: wcPlugin },
+  rules,
+} satisfies FlatConfigItem;

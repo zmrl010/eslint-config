@@ -1,4 +1,5 @@
 import reactPlugin from 'eslint-plugin-react';
+import { FlatConfigItem } from '../../types/flat-eslint-config.js';
 import { isDependencyListed } from '../lib/dependency.js';
 import { readPackage } from '../lib/read-package.js';
 import type { React } from '../types/react/index.js';
@@ -11,9 +12,9 @@ const propTypesValue: ['error'] | 'off' = isDependencyListed(
   ? ['error']
   : 'off';
 
-export const plugins = { react: reactPlugin };
+const plugins = { react: reactPlugin };
 
-export const rules = {
+const rules = {
   'react/boolean-prop-naming': 'off',
   'react/button-has-type': 'off',
   'react/destructuring-assignment': 'off',
@@ -121,10 +122,26 @@ export const rules = {
   'react/jsx-wrap-multilines': 'off',
 } satisfies React;
 
-export const typescriptRules: Partial<React> = {
+const typescriptRules: Partial<React> = {
   'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
 };
 
-export const testRules: Partial<React> = {
+const testRules: Partial<React> = {
   'react/display-name': 'off', // we don't need a display name in test files
 };
+
+export const config = {
+  plugins,
+  rules,
+} satisfies FlatConfigItem;
+
+export const typescriptConfig = {
+  plugins,
+  rules: typescriptRules,
+} satisfies FlatConfigItem;
+
+export const testConfig = {
+  files: ['**/__tests__/**/*.+(js|ts)?(x)', '**/*.{spec,test}.+(js|ts)?(x)'],
+  plugins,
+  rules: testRules,
+} satisfies FlatConfigItem;

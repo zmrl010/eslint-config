@@ -1,23 +1,13 @@
 import type { FlatConfig } from '../../types/flat-eslint-config.js';
-import { ReactConfig, ReactHooksConfig } from '../plugin-configs/index.js';
+import { React, ReactHooks } from '../plugin-configs/index.js';
+import testingLibraryConfig from './testing-library.js';
 
 const config: FlatConfig = [
-  {
-    plugins: ReactConfig.plugins,
-    rules: ReactConfig.rules,
-  },
-  {
-    plugins: ReactHooksConfig.plugins,
-    rules: ReactHooksConfig.rules,
-  },
-  {
-    files: ['**/*.ts?(x)'],
-    rules: ReactConfig.typescriptRules,
-  },
-  {
-    files: ['**/__tests__/**/*.+(js|ts)?(x)', '**/*.{spec,test}.+(js|ts)?(x)'],
-    rules: ReactConfig.testRules,
-  },
+  React.config,
+  React.typescriptConfig,
+  React.testConfig,
+  ReactHooks.config,
+  ...testingLibraryConfig,
 ];
 
 export default config;

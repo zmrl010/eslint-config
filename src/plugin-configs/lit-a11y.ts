@@ -1,9 +1,10 @@
 import litA11yPlugin from 'eslint-plugin-lit-a11y';
-import { LitA11y } from '../types/lit-a11y/index.js';
+import type { FlatConfigItem } from '../../types/flat-eslint-config.js';
+import type { LitA11y } from '../types/lit-a11y/index.js';
 
-export const plugins = { 'lit-a11y': litA11yPlugin };
+const plugins = { 'lit-a11y': litA11yPlugin };
 
-export const rules = {
+const rules = {
   'lit-a11y/alt-text': ['error'],
   'lit-a11y/anchor-has-content': ['error'],
   'lit-a11y/anchor-is-valid': ['error'],
@@ -28,3 +29,8 @@ export const rules = {
   'lit-a11y/tabindex-no-positive': ['error'],
   'lit-a11y/valid-lang': 'off',
 } satisfies LitA11y;
+
+export const config = {
+  plugins,
+  rules,
+} satisfies FlatConfigItem;

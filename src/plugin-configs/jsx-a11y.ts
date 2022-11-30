@@ -1,9 +1,10 @@
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import type { FlatConfigItem } from '../../types/flat-eslint-config.js';
 import type { JsxA11y } from '../types/jsx-a11y/index.js';
 
-export const plugins = { 'jsx-a11y': jsxA11yPlugin };
+const plugins = { 'jsx-a11y': jsxA11yPlugin };
 
-export const rules = {
+const rules = {
   'jsx-a11y/alt-text': ['warn'],
   'jsx-a11y/anchor-has-content': ['error'],
   'jsx-a11y/anchor-is-valid': ['error'],
@@ -38,3 +39,8 @@ export const rules = {
   'jsx-a11y/scope': ['error'],
   'jsx-a11y/tabindex-no-positive': ['warn'],
 } satisfies JsxA11y;
+
+export const config = {
+  plugins,
+  rules,
+} satisfies FlatConfigItem;

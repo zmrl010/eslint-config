@@ -1,11 +1,6 @@
 import type { FlatConfig } from '../../types/flat-eslint-config.js';
-import { WebComponentsConfig } from '../plugin-configs/index.js';
+import { WebComponents } from '../plugin-configs/index.js';
 
-const config: FlatConfig = [
-  {
-    plugins: WebComponentsConfig.plugins,
-    rules: WebComponentsConfig.rules,
-  },
-];
+const config: FlatConfig = [WebComponents.config];
 
 export default config;
