@@ -1,12 +1,13 @@
 import { format, Options } from 'prettier';
-import prettierConfig from '../../../.prettierrc.json' assert { type: 'json' };
 
-export { prettierConfig };
+export const prettierConfig = {
+  singleQuote: true,
+} satisfies Options;
 
 const DEFAULT_OPTIONS = {
   ...prettierConfig,
   parser: 'typescript',
-};
+} satisfies Options;
 
 /**
  * format text with prettier
@@ -38,4 +39,25 @@ export function toPascalCase(name: string): string {
   const pascal = camel[0].toUpperCase() + camel.slice(1);
 
   return pascal;
+}
+
+function escapeDocComment(val: string): string {
+  return val.replace('*/', '*\\/');
+}
+
+/**
+ * Generate a js doc comment string using input lines
+ */
+export function createDoc(...lines: string[]): string {
+  if (lines.length === 0) {
+    return '';
+  }
+
+  // prettier-ignore
+  return joinLines(
+    `/**`,
+    ...lines.map((line) => 
+    ` * ${escapeDocComment(line)}`),
+    ` */`
+  );
 }

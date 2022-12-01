@@ -1,6 +1,6 @@
 #!/usr/bin/env ts-node
 
-import { generateTypes } from '../lib/generateTypes.js';
+import { generateRuleTypes } from '../lib/generateRuleTypes.js';
 
 function parseArgs() {
   const [_execPath, _filePath, target] = process.argv;
@@ -12,7 +12,7 @@ export async function main() {
   const args = parseArgs();
 
   try {
-    await generateTypes(args);
+    await generateRuleTypes(args);
   } catch (e) {
     console.error(e);
     process.exit(1);

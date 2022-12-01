@@ -3,7 +3,7 @@ import { readPackageUpSync } from 'read-pkg-up';
 
 export type Plugin = {
   name: string;
-  rules: Record<string, TSESLint.RuleModule<string, Array<unknown>>>;
+  rules: Record<string, TSESLint.RuleModule<string, unknown[]>>;
   shortName: string;
 };
 
