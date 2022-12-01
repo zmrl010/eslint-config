@@ -146,7 +146,7 @@ async function generateRuleTypeDef(
   return compileSchema(typeName, schema);
 }
 
-export async function convertRulesToTypeDefs(
+export async function generateRuleTypeFiles(
   context: GeneratorContext,
   rules: Record<string, TSESLint.RuleModule<string, unknown[]>>,
   directory: string
