@@ -10,15 +10,11 @@
   ],
   "exports": {
     ".": "./dist/configs/main.js",
-    "./import": "./dist/configs/import.js",
     "./jest": "./dist/configs/jest.js",
-    "./jsx-a11y": "./dist/configs/jsx-a11y.js",
     "./lit": "./dist/configs/lit.js",
-    "./lit-a11y": "./dist/configs/lit-a11y.js",
     "./package.json": "./package.json",
     "./react": "./dist/configs/react.js",
-    "./testing-library": "./dist/configs/testing-library.js",
-    "./wc": "./dist/configs/wc.js"
+    "./testing-library": "./dist/configs/testing-library.js"
   },
   "engines": {
     "node": ">=18",

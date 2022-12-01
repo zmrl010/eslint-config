@@ -1,5 +1,5 @@
 import type { FlatConfig } from '../../types/flat-eslint-config.js';
-import { React, ReactHooks } from '../plugin-configs/index.js';
+import { JsxA11y, React, ReactHooks } from '../plugin-configs/index.js';
 import testingLibraryConfig from './testing-library.js';
 
 const config: FlatConfig = [
@@ -7,6 +7,7 @@ const config: FlatConfig = [
   React.typescriptConfig,
   React.testConfig,
   ReactHooks.config,
+  JsxA11y.config,
   ...testingLibraryConfig,
 ];
 
