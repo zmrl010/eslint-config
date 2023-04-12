@@ -1,3 +1,5 @@
+# [6.0.0](https://github.com/zmrl010/eslint-config/compare/v5.0.0...v6.0.0) (2023-04-12)
+
 # [5.0.0](https://github.com/zmrl010/eslint-config/compare/v4.0.0...v5.0.0) (2022-12-01)
 
 # [4.0.0](https://github.com/zmrl010/eslint-config/compare/v3.4.0...v4.0.0) (2022-11-30)

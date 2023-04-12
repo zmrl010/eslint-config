@@ -1,6 +1,6 @@
 {
   "name": "@zmrl/eslint-config",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "My evolving eslint configuration",
   "type": "module",
   "files": [
