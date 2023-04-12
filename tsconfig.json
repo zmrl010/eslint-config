@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "declaration": false,
     "esModuleInterop": true,
+    "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "maxNodeModuleJsDepth": 1,
     "module": "NodeNext",
-    "noEmit": true,
     "outDir": "./dist",
     "resolveJsonModule": true,
     "strict": true,
-    "target": "ES2022"
+    "target": "ESNext"
   },
   "include": ["src", "types"]
 }

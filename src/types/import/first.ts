@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/first.md
+ * Ensure all imports appear before other statements.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/first.md
  *
  * @minItems 1
  */

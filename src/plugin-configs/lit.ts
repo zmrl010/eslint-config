@@ -22,5 +22,12 @@ export const config = {
     'lit/no-value-attribute': 'off',
     'lit/prefer-static-styles': 'off',
     'lit/quoted-expressions': 'off',
+
+    // TODO research these more
+    'lit/ban-attributes': 'off',
+    'lit/no-native-attributes': 'off',
+    'lit/no-this-assign-in-render': 'off',
+    'lit/prefer-nothing': 'off',
+    'lit/value-after-constraints': 'off',
   } satisfies Lit,
 } satisfies FlatConfigItem;

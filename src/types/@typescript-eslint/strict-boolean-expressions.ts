@@ -22,6 +22,7 @@ export type StrictBooleanExpressions =
         allowNullableBoolean?: boolean;
         allowNullableString?: boolean;
         allowNullableNumber?: boolean;
+        allowNullableEnum?: boolean;
         allowAny?: boolean;
         allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
       }

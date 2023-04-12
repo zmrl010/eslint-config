@@ -6,7 +6,7 @@
 
 /**
  * Enforce valid `expect()` usage
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/valid-expect.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/valid-expect.md
  *
  * @minItems 1
  */

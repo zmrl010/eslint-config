@@ -15,7 +15,19 @@ export type NoRestrictedExports =
   | ['off' | 'error' | 'warn']
   | [
       'off' | 'error' | 'warn',
-      {
-        restrictedNamedExports?: string[];
-      }
+      (
+        | {
+            restrictedNamedExports?: string[];
+          }
+        | {
+            restrictedNamedExports?: string[];
+            restrictDefaultExports?: {
+              direct?: boolean;
+              named?: boolean;
+              defaultFrom?: boolean;
+              namedFrom?: boolean;
+              namespaceFrom?: boolean;
+            };
+          }
+      )
     ];

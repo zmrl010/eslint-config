@@ -1,14 +1,10 @@
 {
-  "search.exclude": {
-    "**/.yarn": true,
-    "**/.pnp.*": true
-  },
   "prettier.prettierPath": "",
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "eslint.nodePath": ".yarn/sdks",
   "cSpell.words": [
     "rushstack",
     "TSES"
   ]
 }
+ 

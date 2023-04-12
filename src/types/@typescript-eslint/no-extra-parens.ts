@@ -27,6 +27,7 @@ export type NoExtraParens =
             enforceForSequenceExpressions?: boolean;
             enforceForNewInMemberExpressions?: boolean;
             enforceForFunctionPrototypeMethods?: boolean;
+            allowParensAfterCommentPattern?: string;
           }
         ]
     );

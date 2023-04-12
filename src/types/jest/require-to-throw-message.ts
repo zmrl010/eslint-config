@@ -6,7 +6,7 @@
 
 /**
  * Require a message for `toThrow()`
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/require-to-throw-message.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/require-to-throw-message.md
  *
  * @minItems 1
  */

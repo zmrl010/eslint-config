@@ -10,4 +10,13 @@
  *
  * @minItems 1
  */
-export type JsxNoUselessFragment = 'off' | ['off' | 'error' | 'warn'];
+export type JsxNoUselessFragment =
+  | 'off'
+  | ['off' | 'error' | 'warn']
+  | [
+      'off' | 'error' | 'warn',
+      {
+        allowExpressions?: boolean;
+        [k: string]: unknown | undefined;
+      }
+    ];

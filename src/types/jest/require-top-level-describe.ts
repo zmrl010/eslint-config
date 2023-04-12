@@ -6,7 +6,7 @@
 
 /**
  * Require test cases and hooks to be inside a `describe` block
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/require-top-level-describe.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/require-top-level-describe.md
  *
  * @minItems 1
  */

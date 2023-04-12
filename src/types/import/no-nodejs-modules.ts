@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-nodejs-modules.md
+ * Forbid Node.js builtin modules.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-nodejs-modules.md
  *
  * @minItems 1
  */

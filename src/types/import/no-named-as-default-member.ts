@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-named-as-default-member.md
+ * Forbid use of exported name as property of default export.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-named-as-default-member.md
  *
  * @minItems 1
  */

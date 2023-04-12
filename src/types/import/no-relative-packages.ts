@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-packages.md
+ * Forbid importing packages through relative paths.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-relative-packages.md
  *
  * @minItems 1
  */

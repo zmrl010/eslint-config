@@ -17,6 +17,7 @@ import type { NoInternalModules } from '../import/no-internal-modules.js';
 import type { GroupExports } from '../import/group-exports.js';
 import type { NoRelativePackages } from '../import/no-relative-packages.js';
 import type { NoRelativeParentImports } from '../import/no-relative-parent-imports.js';
+import type { ConsistentTypeSpecifierStyle } from '../import/consistent-type-specifier-style.js';
 import type { NoSelfImport } from '../import/no-self-import.js';
 import type { NoCycle } from '../import/no-cycle.js';
 import type { NoNamedDefault } from '../import/no-named-default.js';
@@ -44,6 +45,7 @@ import type { NoUnassignedImport } from '../import/no-unassigned-import.js';
 import type { NoUselessPathSegments } from '../import/no-useless-path-segments.js';
 import type { DynamicImportChunkname } from '../import/dynamic-import-chunkname.js';
 import type { NoImportModuleExports } from '../import/no-import-module-exports.js';
+import type { NoEmptyNamedBlocks } from '../import/no-empty-named-blocks.js';
 import type { ExportsLast } from '../import/exports-last.js';
 import type { NoDeprecated } from '../import/no-deprecated.js';
 
@@ -64,6 +66,7 @@ export interface Import {
   'import/group-exports': GroupExports;
   'import/no-relative-packages': NoRelativePackages;
   'import/no-relative-parent-imports': NoRelativeParentImports;
+  'import/consistent-type-specifier-style': ConsistentTypeSpecifierStyle;
   'import/no-self-import': NoSelfImport;
   'import/no-cycle': NoCycle;
   'import/no-named-default': NoNamedDefault;
@@ -91,6 +94,7 @@ export interface Import {
   'import/no-useless-path-segments': NoUselessPathSegments;
   'import/dynamic-import-chunkname': DynamicImportChunkname;
   'import/no-import-module-exports': NoImportModuleExports;
+  'import/no-empty-named-blocks': NoEmptyNamedBlocks;
   'import/exports-last': ExportsLast;
   'import/no-deprecated': NoDeprecated;
 }

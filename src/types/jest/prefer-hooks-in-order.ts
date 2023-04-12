@@ -6,7 +6,7 @@
 
 /**
  * Prefer having hooks in a consistent order
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-hooks-in-order.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/prefer-hooks-in-order.md
  *
  * @minItems 1
  */

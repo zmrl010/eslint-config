@@ -30,5 +30,6 @@ export type LinesAroundComment =
         allowArrayEnd?: boolean;
         ignorePattern?: string;
         applyDefaultIgnorePatterns?: boolean;
+        afterHashbangComment?: boolean;
       }
     ];

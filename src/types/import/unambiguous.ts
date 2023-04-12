@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/unambiguous.md
+ * Forbid potentially ambiguous parse goal (`script` vs. `module`).
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/unambiguous.md
  *
  * @minItems 1
  */

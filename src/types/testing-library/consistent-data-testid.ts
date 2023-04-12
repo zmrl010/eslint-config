@@ -18,5 +18,6 @@ export type ConsistentDataTestid =
       {
         testIdPattern: string;
         testIdAttribute?: string | string[];
+        customMessage?: string;
       }
     ];

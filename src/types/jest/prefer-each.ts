@@ -6,7 +6,7 @@
 
 /**
  * Prefer using `.each` rather than manual loops
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-each.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/prefer-each.md
  *
  * @minItems 1
  */

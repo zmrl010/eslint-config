@@ -1,5 +1,5 @@
 import type { TSESLint } from '@typescript-eslint/utils';
-import mkdirp from 'mkdirp';
+import { mkdirp } from 'mkdirp';
 import path from 'path';
 import util from 'util';
 import { GeneratorOptions, setupContext } from './context.js';
@@ -69,20 +69,20 @@ export async function generateRuleTypes(
         `import type { ${rule.safeName} } from '../${plugin.shortName}/${rule.name}.js'`
     );
 
-    const interfaceDoc = createDoc(`\`${plugin.name}\` Rules`);
-
-    const interfaceName = toPascalCase(plugin.shortName);
-
-    const interfaceMembers = ruleNames.map(
-      (rule) => `'${rulePrefix}${rule.name}': ${rule.safeName};`
-    );
+    const interfaceItem = {
+      doc: createDoc(`\`${plugin.name}\` Rules`),
+      name: toPascalCase(plugin.shortName),
+      members: ruleNames.map(
+        (rule) => `'${rulePrefix}${rule.name}': ${rule.safeName};`
+      ),
+    };
 
     const indexFileText = joinLines(
       ...typeImports,
       '',
-      interfaceDoc,
-      `export interface ${interfaceName} {`,
-      ...interfaceMembers,
+      interfaceItem.doc,
+      `export interface ${interfaceItem.name} {`,
+      ...interfaceItem.members,
       '}'
     );
 

@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/max-dependencies.md
+ * Enforce the maximum number of dependencies a module can have.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/max-dependencies.md
  *
  * @minItems 1
  */

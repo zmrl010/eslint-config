@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-mutable-exports.md
+ * Forbid the use of mutable exports with `var` or `let`.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-mutable-exports.md
  *
  * @minItems 1
  */

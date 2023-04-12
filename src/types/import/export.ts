@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/export.md
+ * Forbid any invalid exports, i.e. re-export of the same name.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/export.md
  *
  * @minItems 1
  */

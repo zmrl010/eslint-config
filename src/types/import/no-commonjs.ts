@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-commonjs.md
+ * Forbid CommonJS `require` calls and `module.exports` or `exports.*`.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-commonjs.md
  */
 export type NoCommonjs =
   | 'off'

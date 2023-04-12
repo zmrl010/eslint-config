@@ -62,6 +62,8 @@ export const config = {
     ],
     'import/prefer-default-export': 'off',
     'import/unambiguous': 'off', // not sure I understand this rule well enough right now...
+    'import/consistent-type-specifier-style': ['error'],
+    'import/no-empty-named-blocks': ['error'],
   } satisfies Import,
   settings,
   plugins,

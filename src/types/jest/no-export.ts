@@ -6,7 +6,7 @@
 
 /**
  * Disallow using `exports` in files containing tests
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-export.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/no-export.md
  *
  * @minItems 1
  */

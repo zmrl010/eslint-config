@@ -220,6 +220,13 @@ export const config = {
     '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/space-infix-ops': 'off',
     '@typescript-eslint/type-annotation-spacing': 'off',
+    '@typescript-eslint/block-spacing': ['error'],
+    '@typescript-eslint/key-spacing': ['error'],
+    '@typescript-eslint/lines-around-comment': ['error'],
+    '@typescript-eslint/no-duplicate-type-constituents': ['error'],
+    '@typescript-eslint/no-import-type-side-effects': ['error'],
+    '@typescript-eslint/no-mixed-enums': ['error'],
+    '@typescript-eslint/no-unsafe-enum-comparison': ['error'],
   } satisfies TypescriptEslint & Partial<Eslint>,
   files: ['**/*.ts?(x)'],
   languageOptions: {

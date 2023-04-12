@@ -10,8 +10,9 @@ from from the community:
 
 ESLint offers a new
 [flat configuration format](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new).
-While this format isn't quite finished, the configs in this library are exported
-as that format.
+While this config format isn't fully polished by the eslint team, I haven't
+found any issues while using it in my projects. The configs in this library
+are exported as flat config.
 
 ## Install
 

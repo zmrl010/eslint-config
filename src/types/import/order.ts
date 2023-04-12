@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/order.md
+ * Enforce a convention in module import order.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/order.md
  *
  * @minItems 1
  */
@@ -17,6 +18,7 @@ export type Order =
       {
         groups?: unknown[];
         pathGroupsExcludedImportTypes?: unknown[];
+        distinctGroup?: boolean;
         pathGroups?: {
           pattern: string;
           patternOptions?: {
@@ -33,7 +35,6 @@ export type Order =
             | 'object'
             | 'type';
           position?: 'after' | 'before';
-          [k: string]: unknown | undefined;
         }[];
         'newlines-between'?:
           | 'ignore'
@@ -43,6 +44,7 @@ export type Order =
         alphabetize?: {
           caseInsensitive?: boolean;
           order?: 'ignore' | 'asc' | 'desc';
+          orderImportKind?: 'ignore' | 'asc' | 'desc';
         };
         warnOnUnassignedImports?: boolean;
       }

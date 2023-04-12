@@ -49,7 +49,6 @@ import type { JsxPascalCase } from '../react/jsx-pascal-case.js';
 import type { JsxFragments } from '../react/jsx-fragments.js';
 import type { JsxPropsNoMultiSpaces } from '../react/jsx-props-no-multi-spaces.js';
 import type { JsxPropsNoSpreading } from '../react/jsx-props-no-spreading.js';
-import type { JsxSortDefaultProps } from '../react/jsx-sort-default-props.js';
 import type { JsxSortProps } from '../react/jsx-sort-props.js';
 import type { JsxTagSpacing } from '../react/jsx-tag-spacing.js';
 import type { JsxUsesReact } from '../react/jsx-uses-react.js';
@@ -84,6 +83,7 @@ import type { NoUnstableNestedComponents } from '../react/no-unstable-nested-com
 import type { NoUnusedClassComponentMethods } from '../react/no-unused-class-component-methods.js';
 import type { NoUnusedPropTypes } from '../react/no-unused-prop-types.js';
 import type { NoUnusedState } from '../react/no-unused-state.js';
+import type { NoObjectTypeAsDefaultProp } from '../react/no-object-type-as-default-prop.js';
 import type { NoWillUpdateSetState } from '../react/no-will-update-set-state.js';
 import type { PreferEs6Class } from '../react/prefer-es6-class.js';
 import type { PreferExactProps } from '../react/prefer-exact-props.js';
@@ -96,6 +96,7 @@ import type { RequireOptimization } from '../react/require-optimization.js';
 import type { RequireRenderReturn } from '../react/require-render-return.js';
 import type { SelfClosingComp } from '../react/self-closing-comp.js';
 import type { SortComp } from '../react/sort-comp.js';
+import type { SortDefaultProps } from '../react/sort-default-props.js';
 import type { SortPropTypes } from '../react/sort-prop-types.js';
 import type { StateInConstructor } from '../react/state-in-constructor.js';
 import type { StaticPropertyPlacement } from '../react/static-property-placement.js';
@@ -151,7 +152,6 @@ export interface React {
   'react/jsx-fragments': JsxFragments;
   'react/jsx-props-no-multi-spaces': JsxPropsNoMultiSpaces;
   'react/jsx-props-no-spreading': JsxPropsNoSpreading;
-  'react/jsx-sort-default-props': JsxSortDefaultProps;
   'react/jsx-sort-props': JsxSortProps;
   'react/jsx-tag-spacing': JsxTagSpacing;
   'react/jsx-uses-react': JsxUsesReact;
@@ -186,6 +186,7 @@ export interface React {
   'react/no-unused-class-component-methods': NoUnusedClassComponentMethods;
   'react/no-unused-prop-types': NoUnusedPropTypes;
   'react/no-unused-state': NoUnusedState;
+  'react/no-object-type-as-default-prop': NoObjectTypeAsDefaultProp;
   'react/no-will-update-set-state': NoWillUpdateSetState;
   'react/prefer-es6-class': PreferEs6Class;
   'react/prefer-exact-props': PreferExactProps;
@@ -198,6 +199,7 @@ export interface React {
   'react/require-render-return': RequireRenderReturn;
   'react/self-closing-comp': SelfClosingComp;
   'react/sort-comp': SortComp;
+  'react/sort-default-props': SortDefaultProps;
   'react/sort-prop-types': SortPropTypes;
   'react/state-in-constructor': StateInConstructor;
   'react/static-property-placement': StaticPropertyPlacement;

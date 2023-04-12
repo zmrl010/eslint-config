@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-cycle.md
+ * Forbid a module from importing a module with a dependency path back to itself.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-cycle.md
  *
  * @minItems 1
  */
@@ -27,5 +28,9 @@ export type NoCycle =
          * ignore external modules
          */
         ignoreExternal?: boolean;
+        /**
+         * Allow cyclic dependency if there is at least one dynamic import in the chain
+         */
+        allowUnsafeDynamicCyclicDependency?: boolean;
       }
     ];

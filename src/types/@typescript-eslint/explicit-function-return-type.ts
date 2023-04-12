@@ -37,8 +37,16 @@ export type ExplicitFunctionReturnType =
          */
         allowDirectConstAssertionInArrowFunctions?: boolean;
         /**
+         * Whether to ignore functions that don't have generic type parameters.
+         */
+        allowFunctionsWithoutTypeParameters?: boolean;
+        /**
          * An array of function/method names that will not have their arguments or return values checked.
          */
         allowedNames?: string[];
+        /**
+         * Whether to ignore immediately invoked function expressions (IIFEs).
+         */
+        allowIIFEs?: boolean;
       }
     ];

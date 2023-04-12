@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { createDoc } from './doc.js';
+import { createDoc } from './text.js';
 
 const AUTO_GENERATED_NOTE = createDoc(
   'THIS FILE IS AUTO-GENERATED.',

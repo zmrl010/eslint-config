@@ -6,7 +6,7 @@
 
 /**
  * Disallow string interpolation inside snapshots
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-interpolation-in-snapshots.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/no-interpolation-in-snapshots.md
  *
  * @minItems 1
  */

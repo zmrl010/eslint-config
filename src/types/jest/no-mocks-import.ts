@@ -6,7 +6,7 @@
 
 /**
  * Disallow manually importing from `__mocks__`
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-mocks-import.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/no-mocks-import.md
  *
  * @minItems 1
  */

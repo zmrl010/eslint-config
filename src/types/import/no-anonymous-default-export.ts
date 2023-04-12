@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-anonymous-default-export.md
+ * Forbid anonymous values as default exports.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-anonymous-default-export.md
  *
  * @minItems 1
  */
@@ -43,5 +44,9 @@ export type NoAnonymousDefaultExport =
          * If `false`, will report default export of an object expression
          */
         allowObject?: boolean;
+        /**
+         * If `false`, will report default export of a class instantiation
+         */
+        allowNew?: boolean;
       }
     ];

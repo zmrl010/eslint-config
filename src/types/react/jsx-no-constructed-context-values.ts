@@ -10,4 +10,7 @@
  *
  * @minItems 1
  */
-export type JsxNoConstructedContextValues = 'off' | ['off' | 'error' | 'warn'];
+export type JsxNoConstructedContextValues =
+  | 'off'
+  | ['off' | 'error' | 'warn']
+  | ['off' | 'error' | 'warn', unknown];

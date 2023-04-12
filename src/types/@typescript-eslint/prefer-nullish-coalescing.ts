@@ -19,5 +19,6 @@ export type PreferNullishCoalescing =
         ignoreConditionalTests?: boolean;
         ignoreTernaryTests?: boolean;
         ignoreMixedLogicalExpressions?: boolean;
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
       }
     ];

@@ -5,15 +5,15 @@ type GenericPlugin = {
 
 declare module 'eslint-plugin-import' {
   const plugin: GenericPlugin;
-  export = plugin;
+  export default plugin;
 }
 
 declare module 'eslint-plugin-react-hooks' {
   const plugin: GenericPlugin;
-  export = plugin;
+  export default plugin;
 }
 
 declare module '@typescript-eslint/eslint-plugin' {
   const plugin: GenericPlugin;
-  export = plugin;
+  export default plugin;
 }

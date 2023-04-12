@@ -6,7 +6,7 @@
 
 /**
  * Disallow using `expect` outside of `it` or `test` blocks
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-standalone-expect.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/no-standalone-expect.md
  *
  * @minItems 1
  */

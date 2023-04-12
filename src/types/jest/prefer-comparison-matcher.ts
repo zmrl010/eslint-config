@@ -6,7 +6,7 @@
 
 /**
  * Suggest using the built-in comparison matchers
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-comparison-matcher.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/prefer-comparison-matcher.md
  *
  * @minItems 1
  */

@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/default.md
+ * Ensure a default export is present, given a default import.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/default.md
  *
  * @minItems 1
  */

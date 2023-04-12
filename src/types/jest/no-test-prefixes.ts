@@ -6,7 +6,7 @@
 
 /**
  * Require using `.only` and `.skip` over `f` and `x`
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-test-prefixes.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/no-test-prefixes.md
  *
  * @minItems 1
  */

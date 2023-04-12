@@ -23,5 +23,7 @@ export type NoUnderscoreDangle =
         enforceInMethodNames?: boolean;
         allowFunctionParams?: boolean;
         enforceInClassFields?: boolean;
+        allowInArrayDestructuring?: boolean;
+        allowInObjectDestructuring?: boolean;
       }
     ];

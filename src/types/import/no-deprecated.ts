@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-deprecated.md
+ * Forbid imported names marked with `@deprecated` documentation tag.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-deprecated.md
  *
  * @minItems 1
  */

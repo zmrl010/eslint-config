@@ -6,7 +6,7 @@
 
 /**
  * Disallow calling `expect` conditionally
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/no-conditional-expect.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/no-conditional-expect.md
  *
  * @minItems 1
  */

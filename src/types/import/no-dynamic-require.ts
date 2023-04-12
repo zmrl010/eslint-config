@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-dynamic-require.md
+ * Forbid `require()` calls with expressions.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-dynamic-require.md
  *
  * @minItems 1
  */

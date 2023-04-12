@@ -6,7 +6,7 @@
 
 /**
  * Prefer `await expect(...).resolves` over `expect(await ...)` syntax
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-expect-resolves.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/prefer-expect-resolves.md
  *
  * @minItems 1
  */

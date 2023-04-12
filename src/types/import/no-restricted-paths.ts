@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-restricted-paths.md
+ * Enforce which files can be imported in a given folder.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-restricted-paths.md
  *
  * @minItems 1
  */
@@ -20,14 +21,14 @@ export type NoRestrictedPaths =
          */
         zones?: [
           {
-            target?: string;
-            from?: string;
+            target?: string | string[];
+            from?: string | string[];
             except?: string[];
             message?: string;
           },
           ...{
-            target?: string;
-            from?: string;
+            target?: string | string[];
+            from?: string | string[];
             except?: string[];
             message?: string;
           }[]

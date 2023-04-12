@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md
+ * Forbid namespace (a.k.a. "wildcard" `*`) imports.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-namespace.md
  *
  * @minItems 1
  */

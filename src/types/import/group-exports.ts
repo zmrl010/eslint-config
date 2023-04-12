@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/group-exports.md
+ * Prefer named exports to be grouped together in a single export declaration
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/group-exports.md
  *
  * @minItems 1
  */

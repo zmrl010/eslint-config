@@ -10,6 +10,7 @@ import type { AwaitThenable } from '../@typescript-eslint/await-thenable.js';
 import type { BanTsComment } from '../@typescript-eslint/ban-ts-comment.js';
 import type { BanTslintComment } from '../@typescript-eslint/ban-tslint-comment.js';
 import type { BanTypes } from '../@typescript-eslint/ban-types.js';
+import type { BlockSpacing } from '../@typescript-eslint/block-spacing.js';
 import type { BraceStyle } from '../@typescript-eslint/brace-style.js';
 import type { ClassLiteralPropertyStyle } from '../@typescript-eslint/class-literal-property-style.js';
 import type { CommaDangle } from '../@typescript-eslint/comma-dangle.js';
@@ -28,7 +29,9 @@ import type { ExplicitModuleBoundaryTypes } from '../@typescript-eslint/explicit
 import type { FuncCallSpacing } from '../@typescript-eslint/func-call-spacing.js';
 import type { Indent } from '../@typescript-eslint/indent.js';
 import type { InitDeclarations } from '../@typescript-eslint/init-declarations.js';
+import type { KeySpacing } from '../@typescript-eslint/key-spacing.js';
 import type { KeywordSpacing } from '../@typescript-eslint/keyword-spacing.js';
+import type { LinesAroundComment } from '../@typescript-eslint/lines-around-comment.js';
 import type { LinesBetweenClassMembers } from '../@typescript-eslint/lines-between-class-members.js';
 import type { MemberDelimiterStyle } from '../@typescript-eslint/member-delimiter-style.js';
 import type { MemberOrdering } from '../@typescript-eslint/member-ordering.js';
@@ -40,6 +43,7 @@ import type { NoConfusingNonNullAssertion } from '../@typescript-eslint/no-confu
 import type { NoConfusingVoidExpression } from '../@typescript-eslint/no-confusing-void-expression.js';
 import type { NoDupeClassMembers } from '../@typescript-eslint/no-dupe-class-members.js';
 import type { NoDuplicateEnumValues } from '../@typescript-eslint/no-duplicate-enum-values.js';
+import type { NoDuplicateTypeConstituents } from '../@typescript-eslint/no-duplicate-type-constituents.js';
 import type { NoDynamicDelete } from '../@typescript-eslint/no-dynamic-delete.js';
 import type { NoEmptyFunction } from '../@typescript-eslint/no-empty-function.js';
 import type { NoEmptyInterface } from '../@typescript-eslint/no-empty-interface.js';
@@ -51,6 +55,7 @@ import type { NoExtraneousClass } from '../@typescript-eslint/no-extraneous-clas
 import type { NoFloatingPromises } from '../@typescript-eslint/no-floating-promises.js';
 import type { NoForInArray } from '../@typescript-eslint/no-for-in-array.js';
 import type { NoImpliedEval } from '../@typescript-eslint/no-implied-eval.js';
+import type { NoImportTypeSideEffects } from '../@typescript-eslint/no-import-type-side-effects.js';
 import type { NoInferrableTypes } from '../@typescript-eslint/no-inferrable-types.js';
 import type { NoInvalidThis } from '../@typescript-eslint/no-invalid-this.js';
 import type { NoInvalidVoidType } from '../@typescript-eslint/no-invalid-void-type.js';
@@ -60,6 +65,7 @@ import type { NoMagicNumbers } from '../@typescript-eslint/no-magic-numbers.js';
 import type { NoMeaninglessVoidOperator } from '../@typescript-eslint/no-meaningless-void-operator.js';
 import type { NoMisusedNew } from '../@typescript-eslint/no-misused-new.js';
 import type { NoMisusedPromises } from '../@typescript-eslint/no-misused-promises.js';
+import type { NoMixedEnums } from '../@typescript-eslint/no-mixed-enums.js';
 import type { NoNamespace } from '../@typescript-eslint/no-namespace.js';
 import type { NoNonNullAssertedNullishCoalescing } from '../@typescript-eslint/no-non-null-asserted-nullish-coalescing.js';
 import type { NoNonNullAssertedOptionalChain } from '../@typescript-eslint/no-non-null-asserted-optional-chain.js';
@@ -82,6 +88,7 @@ import type { NoUnsafeArgument } from '../@typescript-eslint/no-unsafe-argument.
 import type { NoUnsafeAssignment } from '../@typescript-eslint/no-unsafe-assignment.js';
 import type { NoUnsafeCall } from '../@typescript-eslint/no-unsafe-call.js';
 import type { NoUnsafeDeclarationMerging } from '../@typescript-eslint/no-unsafe-declaration-merging.js';
+import type { NoUnsafeEnumComparison } from '../@typescript-eslint/no-unsafe-enum-comparison.js';
 import type { NoUnsafeMemberAccess } from '../@typescript-eslint/no-unsafe-member-access.js';
 import type { NoUnsafeReturn } from '../@typescript-eslint/no-unsafe-return.js';
 import type { NoUnusedExpressions } from '../@typescript-eslint/no-unused-expressions.js';
@@ -140,6 +147,7 @@ export interface TypescriptEslint {
   '@typescript-eslint/ban-ts-comment': BanTsComment;
   '@typescript-eslint/ban-tslint-comment': BanTslintComment;
   '@typescript-eslint/ban-types': BanTypes;
+  '@typescript-eslint/block-spacing': BlockSpacing;
   '@typescript-eslint/brace-style': BraceStyle;
   '@typescript-eslint/class-literal-property-style': ClassLiteralPropertyStyle;
   '@typescript-eslint/comma-dangle': CommaDangle;
@@ -158,7 +166,9 @@ export interface TypescriptEslint {
   '@typescript-eslint/func-call-spacing': FuncCallSpacing;
   '@typescript-eslint/indent': Indent;
   '@typescript-eslint/init-declarations': InitDeclarations;
+  '@typescript-eslint/key-spacing': KeySpacing;
   '@typescript-eslint/keyword-spacing': KeywordSpacing;
+  '@typescript-eslint/lines-around-comment': LinesAroundComment;
   '@typescript-eslint/lines-between-class-members': LinesBetweenClassMembers;
   '@typescript-eslint/member-delimiter-style': MemberDelimiterStyle;
   '@typescript-eslint/member-ordering': MemberOrdering;
@@ -170,6 +180,7 @@ export interface TypescriptEslint {
   '@typescript-eslint/no-confusing-void-expression': NoConfusingVoidExpression;
   '@typescript-eslint/no-dupe-class-members': NoDupeClassMembers;
   '@typescript-eslint/no-duplicate-enum-values': NoDuplicateEnumValues;
+  '@typescript-eslint/no-duplicate-type-constituents': NoDuplicateTypeConstituents;
   '@typescript-eslint/no-dynamic-delete': NoDynamicDelete;
   '@typescript-eslint/no-empty-function': NoEmptyFunction;
   '@typescript-eslint/no-empty-interface': NoEmptyInterface;
@@ -181,6 +192,7 @@ export interface TypescriptEslint {
   '@typescript-eslint/no-floating-promises': NoFloatingPromises;
   '@typescript-eslint/no-for-in-array': NoForInArray;
   '@typescript-eslint/no-implied-eval': NoImpliedEval;
+  '@typescript-eslint/no-import-type-side-effects': NoImportTypeSideEffects;
   '@typescript-eslint/no-inferrable-types': NoInferrableTypes;
   '@typescript-eslint/no-invalid-this': NoInvalidThis;
   '@typescript-eslint/no-invalid-void-type': NoInvalidVoidType;
@@ -190,6 +202,7 @@ export interface TypescriptEslint {
   '@typescript-eslint/no-meaningless-void-operator': NoMeaninglessVoidOperator;
   '@typescript-eslint/no-misused-new': NoMisusedNew;
   '@typescript-eslint/no-misused-promises': NoMisusedPromises;
+  '@typescript-eslint/no-mixed-enums': NoMixedEnums;
   '@typescript-eslint/no-namespace': NoNamespace;
   '@typescript-eslint/no-non-null-asserted-nullish-coalescing': NoNonNullAssertedNullishCoalescing;
   '@typescript-eslint/no-non-null-asserted-optional-chain': NoNonNullAssertedOptionalChain;
@@ -212,6 +225,7 @@ export interface TypescriptEslint {
   '@typescript-eslint/no-unsafe-assignment': NoUnsafeAssignment;
   '@typescript-eslint/no-unsafe-call': NoUnsafeCall;
   '@typescript-eslint/no-unsafe-declaration-merging': NoUnsafeDeclarationMerging;
+  '@typescript-eslint/no-unsafe-enum-comparison': NoUnsafeEnumComparison;
   '@typescript-eslint/no-unsafe-member-access': NoUnsafeMemberAccess;
   '@typescript-eslint/no-unsafe-return': NoUnsafeReturn;
   '@typescript-eslint/no-unused-expressions': NoUnusedExpressions;

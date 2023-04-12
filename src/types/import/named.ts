@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/named.md
+ * Ensure named imports correspond to a named export in the remote file.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/named.md
  *
  * @minItems 1
  */

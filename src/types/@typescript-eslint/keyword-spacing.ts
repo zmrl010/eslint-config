@@ -291,6 +291,10 @@ export type KeywordSpacing =
             before?: boolean;
             after?: boolean;
           };
+          type?: {
+            before?: boolean;
+            after?: boolean;
+          };
         };
       }
     ];

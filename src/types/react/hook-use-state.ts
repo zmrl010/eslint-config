@@ -10,4 +10,12 @@
  *
  * @minItems 1
  */
-export type HookUseState = 'off' | ['off' | 'error' | 'warn'];
+export type HookUseState =
+  | 'off'
+  | ['off' | 'error' | 'warn']
+  | [
+      'off' | 'error' | 'warn',
+      {
+        allowDestructuredState?: boolean;
+      }
+    ];

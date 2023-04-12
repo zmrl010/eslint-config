@@ -29,6 +29,7 @@ import type { NoRestrictedMatchers } from '../jest/no-restricted-matchers.js';
 import type { NoStandaloneExpect } from '../jest/no-standalone-expect.js';
 import type { NoTestPrefixes } from '../jest/no-test-prefixes.js';
 import type { NoTestReturnStatement } from '../jest/no-test-return-statement.js';
+import type { NoUntypedMockFactory } from '../jest/no-untyped-mock-factory.js';
 import type { PreferCalledWith } from '../jest/prefer-called-with.js';
 import type { PreferComparisonMatcher } from '../jest/prefer-comparison-matcher.js';
 import type { PreferEach } from '../jest/prefer-each.js';
@@ -84,6 +85,7 @@ export interface Jest {
   'jest/no-standalone-expect': NoStandaloneExpect;
   'jest/no-test-prefixes': NoTestPrefixes;
   'jest/no-test-return-statement': NoTestReturnStatement;
+  'jest/no-untyped-mock-factory': NoUntypedMockFactory;
   'jest/prefer-called-with': PreferCalledWith;
   'jest/prefer-comparison-matcher': PreferComparisonMatcher;
   'jest/prefer-each': PreferEach;

@@ -36,6 +36,10 @@ export type RestrictTemplateExpressions =
          * Whether to allow `regexp` typed values in template expressions.
          */
         allowRegExp?: boolean;
+        /**
+         * Whether to allow `never` typed values in template expressions.
+         */
+        allowNever?: boolean;
         [k: string]: unknown | undefined;
       }
     ];

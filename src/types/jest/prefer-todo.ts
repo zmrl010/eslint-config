@@ -6,7 +6,7 @@
 
 /**
  * Suggest using `test.todo`
- * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.1.6/docs/rules/prefer-todo.md
+ * @see https://github.com/jest-community/eslint-plugin-jest/blob/v27.2.1/docs/rules/prefer-todo.md
  *
  * @minItems 1
  */

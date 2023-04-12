@@ -5,7 +5,7 @@
  */
 
 /**
- * Disallow division operators explicitly at the beginning of regular expressions
+ * Disallow equal signs explicitly at the beginning of regular expressions
  * @see https://eslint.org/docs/rules/no-div-regex
  *
  * @minItems 1

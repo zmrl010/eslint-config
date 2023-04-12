@@ -70,6 +70,7 @@ export const config = {
     'jest/valid-expect-in-promise': ['error'],
     'jest/valid-title': ['warn'],
     'jest/no-restricted-jest-methods': 'off',
+    'jest/no-untyped-mock-factory': ['error'],
   } satisfies Jest,
 } satisfies FlatConfigItem;
 

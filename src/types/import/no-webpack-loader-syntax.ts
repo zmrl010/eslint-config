@@ -5,7 +5,8 @@
  */
 
 /**
- * @see https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-webpack-loader-syntax.md
+ * Forbid webpack loader syntax in imports.
+ * @see https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-webpack-loader-syntax.md
  *
  * @minItems 1
  */

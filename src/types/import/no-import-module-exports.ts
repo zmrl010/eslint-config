@@ -5,7 +5,7 @@
  */
 
 /**
- * Disallow import statements with module.exports
+ * Forbid import statements with CommonJS module.exports.
  *
  * @minItems 1
  */

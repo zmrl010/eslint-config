@@ -5,6 +5,9 @@
  */
 
 /**
+ * Enforce that a control (an interactive element) has a text label.
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/control-has-associated-label.md
+ *
  * @minItems 1
  */
 export type ControlHasAssociatedLabel =

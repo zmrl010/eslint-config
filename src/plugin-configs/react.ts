@@ -51,7 +51,6 @@ export const config = {
     'react/jsx-no-useless-fragment': ['warn'],
     'react/jsx-pascal-case': ['error'],
     'react/jsx-props-no-spreading': 'off',
-    'react/jsx-sort-default-props': 'off',
     'react/jsx-sort-props': 'off',
     'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': ['error'],
@@ -120,6 +119,8 @@ export const config = {
     'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-tag-spacing': 'off',
     'react/jsx-wrap-multilines': 'off',
+    'react/no-object-type-as-default-prop': 'off',
+    'react/sort-default-props': 'off',
   } satisfies React,
 } satisfies FlatConfigItem;
 
