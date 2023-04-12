@@ -1,6 +1,6 @@
 import prettierConfig from 'eslint-config-prettier';
 import type { FlatConfig } from '../../types/flat-eslint-config.js';
-import { ESLint, Import, TypeScript } from '../plugin-configs/index.js';
+import { ESLint, Import, TypeScript } from '../plugins/index.js';
 
 const config: FlatConfig = [
   prettierConfig,

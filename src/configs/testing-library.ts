@@ -1,7 +1,7 @@
 import type { FlatConfig } from '../../types/flat-eslint-config.js';
 import { isDependencyListed } from '../lib/dependency.js';
 import { readPackage } from '../lib/read-package.js';
-import { JestDom, TestingLibrary } from '../plugin-configs/index.js';
+import { JestDom, TestingLibrary } from '../plugins/index.js';
 
 const packageJson = readPackage();
 

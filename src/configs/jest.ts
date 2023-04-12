@@ -1,5 +1,5 @@
 import type { FlatConfig } from '../../types/flat-eslint-config.js';
-import { Jest } from '../plugin-configs/index.js';
+import { Jest } from '../plugins/index.js';
 import testingLibrary from './testing-library.js';
 
 const config: FlatConfig = [
